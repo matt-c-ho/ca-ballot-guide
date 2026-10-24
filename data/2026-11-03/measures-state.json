@@ -46,7 +46,24 @@
       "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop1-text-proposed-laws.pdf"
     },
     "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
-    "argSrc": null
+    "argSrc": null,
+    "reading": [
+      {
+        "source": "CalMatters",
+        "title": "Voter guide: Prop 1",
+        "url": "https://calmatters.org/california-voter-guide-2026/proposition-1-housing-bond/"
+      },
+      {
+        "source": "KQED",
+        "title": "Voter guide: Prop 1",
+        "url": "https://www.kqed.org/voterguide/california/proposition-1"
+      },
+      {
+        "source": "California Secretary of State",
+        "title": "Quick Guide to Props: Prop 1",
+        "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/1"
+      }
+    ]
   },
   {
     "id": "2",
@@ -94,7 +111,24 @@
       "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop2-text-proposed-laws.pdf"
     },
     "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
-    "argSrc": null
+    "argSrc": null,
+    "reading": [
+      {
+        "source": "CalMatters",
+        "title": "Voter guide: Prop 2",
+        "url": "https://calmatters.org/california-voter-guide-2026/proposition-2-rainy-day-fund/"
+      },
+      {
+        "source": "KQED",
+        "title": "Voter guide: Prop 2",
+        "url": "https://www.kqed.org/voterguide/california/proposition-2"
+      },
+      {
+        "source": "California Secretary of State",
+        "title": "Quick Guide to Props: Prop 2",
+        "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/2"
+      }
+    ]
   },
   {
     "id": "3",
@@ -142,7 +176,24 @@
       "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop3-text-proposed-laws.pdf"
     },
     "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
-    "argSrc": null
+    "argSrc": null,
+    "reading": [
+      {
+        "source": "CalMatters",
+        "title": "Voter guide: Prop 3",
+        "url": "https://calmatters.org/california-voter-guide-2026/proposition-3-high-income-tax/"
+      },
+      {
+        "source": "KQED",
+        "title": "Voter guide: Prop 3",
+        "url": "https://www.kqed.org/voterguide/california/proposition-3"
+      },
+      {
+        "source": "California Secretary of State",
+        "title": "Quick Guide to Props: Prop 3",
+        "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/3"
+      }
+    ]
   },
   {
     "id": "4",
@@ -189,7 +240,24 @@
       "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop4-text-proposed-laws.pdf"
     },
     "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
-    "argSrc": null
+    "argSrc": null,
+    "reading": [
+      {
+        "source": "CalMatters",
+        "title": "Voter guide: Prop 4",
+        "url": "https://calmatters.org/california-voter-guide-2026/proposition-4-public-fundraising/"
+      },
+      {
+        "source": "KQED",
+        "title": "Voter guide: Prop 4",
+        "url": "https://www.kqed.org/voterguide/california/proposition-4"
+      },
+      {
+        "source": "California Secretary of State",
+        "title": "Quick Guide to Props: Prop 4",
+        "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/4"
+      }
+    ]
   },
   {
     "id": "5",
@@ -237,7 +305,24 @@
       "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop5-text-proposed-laws.pdf"
     },
     "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
-    "argSrc": null
+    "argSrc": null,
+    "reading": [
+      {
+        "source": "CalMatters",
+        "title": "Voter guide: Prop 5",
+        "url": "https://calmatters.org/california-voter-guide-2026/proposition-5-recall-reform/"
+      },
+      {
+        "source": "KQED",
+        "title": "Voter guide: Prop 5",
+        "url": "https://www.kqed.org/voterguide/california/proposition-5"
+      },
+      {
+        "source": "California Secretary of State",
+        "title": "Quick Guide to Props: Prop 5",
+        "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/5"
+      }
+    ]
   },
   {
     "id": "37",
@@ -286,7 +371,24 @@
       "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop37-text-proposed-laws.pdf"
     },
     "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
-    "argSrc": null
+    "argSrc": null,
+    "reading": [
+      {
+        "source": "CalMatters",
+        "title": "Voter guide: Prop 37",
+        "url": "https://calmatters.org/california-voter-guide-2026/proposition-37-homebuyers-loan/"
+      },
+      {
+        "source": "KQED",
+        "title": "Voter guide: Prop 37",
+        "url": "https://www.kqed.org/voterguide/california/proposition-37"
+      },
+      {
+        "source": "California Secretary of State",
+        "title": "Quick Guide to Props: Prop 37",
+        "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/37"
+      }
+    ]
   },
   {
     "id": "38",
@@ -336,7 +438,24 @@
       "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop38-text-proposed-laws.pdf"
     },
     "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
-    "argSrc": null
+    "argSrc": null,
+    "reading": [
+      {
+        "source": "CalMatters",
+        "title": "Voter guide: Prop 38",
+        "url": "https://calmatters.org/california-voter-guide-2026/proposition-38-research-bond/"
+      },
+      {
+        "source": "KQED",
+        "title": "Voter guide: Prop 38",
+        "url": "https://www.kqed.org/voterguide/california/proposition-38"
+      },
+      {
+        "source": "California Secretary of State",
+        "title": "Quick Guide to Props: Prop 38",
+        "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/38"
+      }
+    ]
   },
   {
     "id": "39",
@@ -385,7 +504,24 @@
       "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop39-text-proposed-laws.pdf"
     },
     "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
-    "argSrc": null
+    "argSrc": null,
+    "reading": [
+      {
+        "source": "CalMatters",
+        "title": "Voter guide: Prop 39",
+        "url": "https://calmatters.org/california-voter-guide-2026/proposition-39-voter-id/"
+      },
+      {
+        "source": "KQED",
+        "title": "Voter guide: Prop 39",
+        "url": "https://www.kqed.org/voterguide/california/proposition-39"
+      },
+      {
+        "source": "California Secretary of State",
+        "title": "Quick Guide to Props: Prop 39",
+        "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/39"
+      }
+    ]
   },
   {
     "id": "40",
@@ -437,7 +573,24 @@
       "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop40-text-proposed-laws.pdf"
     },
     "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
-    "argSrc": null
+    "argSrc": null,
+    "reading": [
+      {
+        "source": "CalMatters",
+        "title": "Voter guide: Prop 40",
+        "url": "https://calmatters.org/california-voter-guide-2026/proposition-40-billionaire-tax/"
+      },
+      {
+        "source": "KQED",
+        "title": "Voter guide: Prop 40",
+        "url": "https://www.kqed.org/voterguide/california/proposition-40"
+      },
+      {
+        "source": "California Secretary of State",
+        "title": "Quick Guide to Props: Prop 40",
+        "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/40"
+      }
+    ]
   },
   {
     "id": "41",
@@ -486,7 +639,24 @@
       "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop41-text-proposed-laws.pdf"
     },
     "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
-    "argSrc": null
+    "argSrc": null,
+    "reading": [
+      {
+        "source": "CalMatters",
+        "title": "Voter guide: Prop 41",
+        "url": "https://calmatters.org/california-voter-guide-2026/proposition-41-tax-audits/"
+      },
+      {
+        "source": "KQED",
+        "title": "Voter guide: Prop 41",
+        "url": "https://www.kqed.org/voterguide/california/proposition-41"
+      },
+      {
+        "source": "California Secretary of State",
+        "title": "Quick Guide to Props: Prop 41",
+        "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/41"
+      }
+    ]
   },
   {
     "id": "42",
@@ -533,7 +703,24 @@
       "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop42-text-proposed-laws.pdf"
     },
     "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
-    "argSrc": null
+    "argSrc": null,
+    "reading": [
+      {
+        "source": "CalMatters",
+        "title": "Voter guide: Prop 42",
+        "url": "https://calmatters.org/california-voter-guide-2026/proposition-42-property-taxes/"
+      },
+      {
+        "source": "KQED",
+        "title": "Voter guide: Prop 42",
+        "url": "https://www.kqed.org/voterguide/california/proposition-42"
+      },
+      {
+        "source": "California Secretary of State",
+        "title": "Quick Guide to Props: Prop 42",
+        "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/42"
+      }
+    ]
   },
   {
     "id": "43",
@@ -582,7 +769,24 @@
       "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop43-text-proposed-laws.pdf"
     },
     "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
-    "argSrc": null
+    "argSrc": null,
+    "reading": [
+      {
+        "source": "CalMatters",
+        "title": "Voter guide: Prop 43",
+        "url": "https://calmatters.org/california-voter-guide-2026/proposition-43-tax-threshold/"
+      },
+      {
+        "source": "KQED",
+        "title": "Voter guide: Prop 43",
+        "url": "https://www.kqed.org/voterguide/california/proposition-43"
+      },
+      {
+        "source": "California Secretary of State",
+        "title": "Quick Guide to Props: Prop 43",
+        "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/43"
+      }
+    ]
   },
   {
     "id": "44",
@@ -629,7 +833,24 @@
       "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop44-text-proposed-laws.pdf"
     },
     "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
-    "argSrc": null
+    "argSrc": null,
+    "reading": [
+      {
+        "source": "CalMatters",
+        "title": "Voter guide: Prop 44",
+        "url": "https://calmatters.org/california-voter-guide-2026/proposition-44-clinic-funding/"
+      },
+      {
+        "source": "KQED",
+        "title": "Voter guide: Prop 44",
+        "url": "https://www.kqed.org/voterguide/california/proposition-44"
+      },
+      {
+        "source": "California Secretary of State",
+        "title": "Quick Guide to Props: Prop 44",
+        "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/44"
+      }
+    ]
   },
   {
     "id": "45",
@@ -677,6 +898,23 @@
       "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop45-text-proposed-laws.pdf"
     },
     "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
-    "argSrc": null
+    "argSrc": null,
+    "reading": [
+      {
+        "source": "CalMatters",
+        "title": "Voter guide: Prop 45",
+        "url": "https://calmatters.org/california-voter-guide-2026/proposition-45-environmental-review/"
+      },
+      {
+        "source": "KQED",
+        "title": "Voter guide: Prop 45",
+        "url": "https://www.kqed.org/voterguide/california/proposition-45"
+      },
+      {
+        "source": "California Secretary of State",
+        "title": "Quick Guide to Props: Prop 45",
+        "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/45"
+      }
+    ]
   }
 ]

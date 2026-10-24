@@ -81,6 +81,7 @@ All content lives in `data/`, so you never need to touch `app.js` to update text
 | `supporters`, `opponents`, `pro`, `con`, `argSrc` | Listed supporters and opponents, and each side's argument. `argSrc: null` on a statewide measure means "official ballot argument." |
 | `money` | `{ "yes": 32.3, "no": 99.15, "yesNote": "...", "noNote": "..." }` in millions of dollars, or `null` |
 | `deep` | List of "Go deeper" bullet points |
+| `reading` | (optional) "Further reading" links shown under Go deeper: `[{ "source": "CalMatters", "title": "Voter guide: Prop 1", "url": "https://..." }]`. Use nonpartisan news organizations and public agencies only, never campaign or endorsement pages. |
 | `groups` | Ids of linked groups in `groups.json` |
 | `sources` | Statewide: `guide`, `analysis`, `arguments`, `text` URLs. Local: `links: [[title, url], ...]` |
 
@@ -123,6 +124,7 @@ Fill in `data/<election>/results.json`:
 - **Facts** come from the official ballot title and summary and the Legislative Analyst's Office (LAO) analysis. For local measures, they come from the county impartial analysis or named sources.
 - **Arguments** are each side's own words, attributed to them. Give both sides the same treatment.
 - **Context** (money, news background) always names its source.
+- **Further reading** links go to nonpartisan news organizations (CalMatters, KQED, Local News Matters) and public agencies (Secretary of State). No campaign sites, endorsement guides, or polling. Give every measure in a jurisdiction the same set of sources where coverage exists.
 - Every measure has the same sections in the same order. Yes and No are styled identically.
 - No recommendations and no polling.
 

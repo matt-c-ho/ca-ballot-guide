@@ -52,7 +52,14 @@
           "https://growsf.org/voter-guide/san-francisco-voter-guide-november-2026-election/measures/prop-rtm/"
         ]
       ]
-    }
+    },
+    "reading": [
+      {
+        "source": "Local News Matters (Bay City News Foundation)",
+        "title": "Santa Clara County ballot, Nov. 3, 2026",
+        "url": "https://localnewsmatters.org/santa-clara-november-3-2026/"
+      }
+    ]
   },
   {
     "id": "O",
@@ -91,7 +98,14 @@
     "jurisdiction": "school",
     "sources": {
       "links": []
-    }
+    },
+    "reading": [
+      {
+        "source": "Local News Matters (Bay City News Foundation)",
+        "title": "Santa Clara County ballot, Nov. 3, 2026",
+        "url": "https://localnewsmatters.org/santa-clara-november-3-2026/"
+      }
+    ]
   },
   {
     "id": "P",
@@ -136,7 +150,14 @@
           "https://www.ballotready.org/measures/measure-p-da5e0f5a-c64c-49a3-bc9f-f27f360bd59c"
         ]
       ]
-    }
+    },
+    "reading": [
+      {
+        "source": "Local News Matters (Bay City News Foundation)",
+        "title": "Santa Clara County ballot, Nov. 3, 2026",
+        "url": "https://localnewsmatters.org/santa-clara-november-3-2026/"
+      }
+    ]
   },
   {
     "id": "Q",
@@ -182,7 +203,14 @@
           "https://www.cambriansd.org/fs/pages/3082"
         ]
       ]
-    }
+    },
+    "reading": [
+      {
+        "source": "Local News Matters (Bay City News Foundation)",
+        "title": "Santa Clara County ballot, Nov. 3, 2026",
+        "url": "https://localnewsmatters.org/santa-clara-november-3-2026/"
+      }
+    ]
   },
   {
     "id": "R",
@@ -226,6 +254,13 @@
           "https://www.orchardsd.org/article/3055305"
         ]
       ]
-    }
+    },
+    "reading": [
+      {
+        "source": "Local News Matters (Bay City News Foundation)",
+        "title": "Santa Clara County ballot, Nov. 3, 2026",
+        "url": "https://localnewsmatters.org/santa-clara-november-3-2026/"
+      }
+    ]
   }
 ]

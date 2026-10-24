@@ -44,16 +44,24 @@
     "max": 100,
     "intro": "Reported contributions from top donors to committees supporting and opposing each measure. Committees reported about $636 million across 11 measures as of October 5. The billionaire tax fight (Props 40–42) accounts for more than a third.",
     "source": "Source: FPPC Top 10 Contributors lists as of October 5, 2026, as compiled by California Today (Oct 19 update). Figures change weekly; totals cover top contributors only. Where a \"No\" bar is empty, no opposing committee reported $1M or more, or opposition runs through another measure's committee (41 and 42 are opposed by the Yes on 40 campaign).",
+    "fundersSource": "Who they are: descriptions from news reporting by CalMatters, KPBS, and Mission Local, and from each organization's own description.",
     "funders": [
-      ["Building a Better California", "~$262M total: No on 40 ($88.5M), Yes on 42 ($97.8M), Yes on 41 ($58.35M), Yes on 45 ($10M), Yes on 37 ($6M), Yes on 1 ($1M). The FPPC lists its top donors as Sergey Brin and John Doerr."],
-      ["SEIU-UHW", "~$49M: Yes on 40 ($31.8M), Yes on 44 ($16.9M). Also the listed opponent of 41 and 42."],
-      ["California Teachers Association", "$33.3M to Yes on 3."],
-      ["Gary Michelson entities", "$31.2M to Yes on 38 (the measure's proponent)."],
-      ["California Association of Realtors", "~$21.85M to Yes on 37."],
-      ["Richard Uihlein", "$17M to Yes on 39."]
+      ["Building a Better California", "~$262M total: No on 40 ($88.5M), Yes on 42 ($97.8M), Yes on 41 ($58.35M), Yes on 45 ($10M), Yes on 37 ($6M), Yes on 1 ($1M). The FPPC lists its top donors as Sergey Brin and John Doerr.", "A political committee funded mainly by Google co-founder Sergey Brin, who had given it $102 million by mid-August, with about $20 million more from other Silicon Valley investors such as John Doerr and Ripple co-founder Chris Larsen."],
+      ["SEIU-UHW", "~$49M: Yes on 40 ($31.8M), Yes on 44 ($16.9M). Also the listed opponent of 41 and 42.", "SEIU United Healthcare Workers West, a labor union representing hospital, clinic, and other healthcare workers in California."],
+      ["California Teachers Association", "$33.3M to Yes on 3.", "The state's largest teachers union, representing public school teachers and other educators."],
+      ["Gary Michelson entities", "$31.2M to Yes on 38 (the measure's proponent).", "Gary Michelson is a retired spinal surgeon and philanthropist. He wrote Prop 38 and is the principal funder of the California Institute for Immunology and Immunotherapy, which CalMatters reports is currently the only institute that meets the measure's criteria for half of the bond money."],
+      ["California Association of Realtors", "~$21.85M to Yes on 37.", "The trade association for real estate agents and brokers in California."],
+      ["Richard Uihlein", "$17M to Yes on 39.", "An Illinois businessman, co-founder of the Wisconsin-based packaging company Uline, and a major national donor to conservative causes. Reporters describe Prop 39 as his first significant spending in California state politics."]
     ]
   },
   "sources": [
+    ["CalMatters, Prop 38 and its backer (largest funders)", "https://calmatters.org/politics/elections/2026/10/prop-38-california/"],
+    ["KPBS/CalMatters, out-of-state funding for the voter ID measure (largest funders)", "https://www.kpbs.org/news/politics/2026/10/07/why-are-out-of-state-billionaires-funding-a-california-voter-id-measure"],
+    ["Mission Local, Sergey Brin and Prop 40 (largest funders)", "https://missionlocal.org/2026/08/california-billionaire-tax-sergey-brin-prop-40/"],
+    ["CalMatters 2026 voter guide (further reading)", "https://calmatters.org/california-voter-guide-2026/"],
+    ["KQED 2026 voter guide (further reading)", "https://www.kqed.org/voterguide"],
+    ["Secretary of State Quick Guide to Props (further reading)", "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03"],
+    ["Local News Matters, Santa Clara County ballot (further reading)", "https://localnewsmatters.org/santa-clara-november-3-2026/"],
     ["Official Voter Information Guide, Nov 3, 2026 (CA Secretary of State): titles, Yes/No meanings, LAO analyses, arguments", "https://voterguide.sos.ca.gov/"],
     ["Secretary of State certification of measures", "https://www.sos.ca.gov/administration/news-releases-and-advisories/2026-news-releases-and-advisories/california-secretary-state-shirley-n-weber-phd-certifies-measures-november-3-2026-general-election-ballot"],
     ["FPPC Top 10 Contributors", "https://www.fppc.ca.gov/search-filings/top-10-contributors-list/november-2026-general-election/"],

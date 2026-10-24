@@ -179,7 +179,10 @@ function detail(id) {
    <section class="section">
     <details class="deep" style="border:0;padding:0"><summary>Go deeper: details and context</summary>
      <div class="prose"><ul>${(m.deep || []).map(d => `<li>${rich(d)}</li>`).join("")}</ul>
-     <p class="small">Read the source: ${readLinks}</p></div>
+     <p class="small">Read the source: ${readLinks}</p>
+     ${(m.reading || []).length ? `<h4>Further reading</h4>
+     <ul class="small">${m.reading.map(r => `<li><b>${esc(r.source)}:</b> <a href="${r.url}" target="_blank" rel="noopener">${esc(r.title)}</a></li>`).join("")}</ul>
+     <p class="src">Independent coverage from nonpartisan news organizations and public agencies, offered for context. Their framing and conclusions are their own.</p>` : ""}</div>
     </details>
    </section>
    ${(m.groups || []).filter(g => S.groups[g]).length ? `<section class="section"><h3>Read it together with</h3><div class="plinks">${m.groups.filter(g => S.groups[g]).map(g => `<button data-group="${g}">${esc(S.groups[g].title)} →</button>`).join("")}</div></section>` : ""}
@@ -225,8 +228,8 @@ function moneyView() {
     <div class="axis"><span></span><div class="ticks">${ticks.map(t => `<span style="left:calc(${t / max} * (100% - 5.5rem))">$${t}M</span>`).join("")}</div></div>
    </section>
    <section class="section"><h3>Largest funders</h3>
-    <dl class="kv">${(M.funders || []).map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}</dl>
-    <p class="src">${esc(M.source)}</p>
+    <dl class="kv">${(M.funders || []).map(([k, v, who]) => `<dt>${esc(k)}</dt><dd>${esc(v)}${who ? `<span class="who">${esc(who)}</span>` : ""}</dd>`).join("")}</dl>
+    <p class="src">${esc(M.source)}${M.fundersSource ? ` ${esc(M.fundersSource)}` : ""}</p>
    </section>`;
 }
 

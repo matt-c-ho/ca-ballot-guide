@@ -40,7 +40,11 @@ for (const e of index.elections) {
       for (const g of m.groups || []) if (!groups[g]) err(where, `unknown group "${g}"`);
       for (const k of ["what", "fiscal", "short_term", "long_term"]) termRefs(m[k], `${where}.${k}`);
       (m.deep || []).forEach((d, i) => termRefs(d, `${where}.deep[${i}]`));
-      if (m.money && (typeof m.money.yes !== "number" || typeof m.money.no !== "number")) err(where, "money.yes and money.no must be numbers (millions)");
+      (m.reading || []).forEach((r, i) => {
+        if (!r.source || !r.title) err(`${where}.reading[${i}]`, "needs source and title");
+        if (!/^https:\/\//.test(r.url || "")) err(`${where}.reading[${i}]`, "url must start with https://");
+      });
+      if (m.money &&(typeof m.money.yes !== "number" || typeof m.money.no !== "number")) err(where, "money.yes and money.no must be numbers (millions)");
     }
     for (const s of j.sections || []) for (const id of s.measures) if (!ids.has(id)) err(`${dir}/election.json`, `section lists unknown measure "${id}"`);
   }
