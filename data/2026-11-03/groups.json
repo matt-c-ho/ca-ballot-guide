@@ -1,0 +1,84 @@
+{
+  "tax": {
+    "title": "The billionaire tax and its two challengers",
+    "measures": [
+      "40",
+      "41",
+      "42"
+    ],
+    "summary": "Prop 40 creates a one-time wealth tax. Props 41 and 42 are general tax rules, but each is written to apply to taxes on this same ballot, and each conflicts with a feature of Prop 40. The LAO prints the same warning on all three measures: if Prop 41 or 42 gets more yes votes than Prop 40, Prop 40 could be stopped even if a majority approves it.",
+    "body": "<div class=\"prose\"> <p>Each challenger hits a different feature of Prop 40:</p> <ul> <li><b>Prop 41</b> bars any new tax from being excluded from the [[gann|state spending limit]]. Prop 40 excludes its revenue from that limit.</li> <li><b>Prop 42</b> bars new taxes on owning [[personal-property|personal property]] and taxes based on past residency. Prop 40 taxes net worth and uses residency on January 1, 2026.</li> </ul> <p>Under the [[conflict|conflicting measures rule]], the margin matters as much as passage. A voter who supports Prop 40 and also votes yes on 41 or 42 may be adding votes that could cancel it.</p> <p>Props 41 and 42 also have lasting effects beyond Prop 40: audits of every future special tax (41), and a permanent constitutional bar on wealth-style taxes (42).</p> </div> <div class=\"tablewrap\"><table> <thead><tr><th>Prop 40</th><th>Props 41 / 42</th><th>Likely result for the billionaire tax</th></tr></thead> <tbody> <tr><td>Fails</td><td>Any result</td><td class=\"outcome\">No tax.</td></tr> <tr><td>Passes</td><td>Both fail</td><td class=\"outcome\">Tax takes effect (subject to any other legal challenge).</td></tr> <tr><td>Passes</td><td>41 or 42 passes, with fewer yes votes than 40</td><td class=\"outcome\">Prop 40 generally prevails where they conflict, so the tax likely takes effect. 41 and 42 still apply to future taxes.</td></tr> <tr><td>Passes</td><td>41 or 42 passes, with more yes votes than 40</td><td class=\"outcome\">Courts could find a conflict and stop Prop 40.</td></tr> </tbody></table></div> <p class=\"src\">Source: LAO analyses of Props 40, 41, and 42, Official Voter Information Guide. Courts decide whether measures conflict; the table describes the general rule, not a guaranteed outcome.</p> <div class=\"callout small\">Money context: Building a Better California, whose top donors the FPPC lists as Sergey Brin and John Doerr, has put about $245 million into No on 40, Yes on 41, and Yes on 42 combined. SEIU-UHW has put about $32 million into Yes on 40.</div>",
+    "legalConflict": true
+  },
+  "budget": {
+    "title": "State budget: borrowing, saving, and taxing",
+    "measures": [
+      "1",
+      "38",
+      "2",
+      "3",
+      "37"
+    ],
+    "summary": "These measures don't conflict legally, but together they shape the state budget for decades. Two add long-term debt, one changes savings rules, one keeps an existing tax, and one uses a different kind of borrowing that doesn't touch the General Fund.",
+    "body": "<div class=\"tablewrap\"><table> <thead><tr><th>Prop</th><th>Effect on the state budget</th><th>Timing</th></tr></thead> <tbody> <tr><td><b>1</b></td><td>$500–600M a year to repay $11.25B in [[go-bond|general obligation bonds]]</td><td>~25 years</td></tr> <tr><td><b>38</b></td><td>$500–600M a year to repay $8.4B in bonds, possibly offset by research revenue</td><td>~20 years</td></tr> <tr><td><b>2</b></td><td>More money held in reserve; extra debt payments extended to 2040</td><td>Ongoing</td></tr> <tr><td><b>3</b></td><td>Keeps $5–15B a year in income tax revenue</td><td>From 2031</td></tr> <tr><td><b>37</b></td><td>No direct state cost: $25B in [[revenue-bond|revenue bonds]] repaid by borrowers</td><td>Ongoing</td></tr> </tbody></table></div> <div class=\"prose\"><p>Props 1 and 38 together would cost about <b>$1 billion a year</b> from the General Fund for roughly two decades. For scale, Prop 3's revenue, if approved, would be about 5–15 times that. Prop 2 changes how much of good-year revenue must be saved before it can be spent.</p></div>"
+  },
+  "housing": {
+    "title": "Housing cost and supply",
+    "measures": [
+      "1",
+      "37",
+      "45"
+    ],
+    "summary": "Three different approaches to housing. They don't conflict and could all pass.",
+    "body": "<div class=\"tablewrap\"><table> <thead><tr><th>Prop</th><th>Approach</th><th>Who it mainly helps</th><th>Who pays</th></tr></thead> <tbody> <tr><td><b>1</b></td><td>Public money for affordable rental construction, homeownership help, veterans' loans</td><td>Lower-income renters, veterans, farmworkers, students</td><td>State General Fund, ~25 years</td></tr> <tr><td><b>37</b></td><td>Low-down-payment loans for new homes</td><td>Middle-income buyers (up to 2× area median income)</td><td>Borrowers, through bond investors</td></tr> <tr><td><b>45</b></td><td>Faster, narrower environmental review and lawsuits</td><td>Builders of housing and other covered projects</td><td>Higher agency costs at first, partly fee-covered</td></tr> </tbody></table></div> <div class=\"prose\"><p>Prop 37 helps buyers of new homes specifically; how many new homes get built is affected by permitting and review timelines, which is what Prop 45 addresses. The LAO says whether either measure increases total construction is uncertain.</p></div>"
+  },
+  "elections": {
+    "title": "How elections work",
+    "measures": [
+      "4",
+      "5",
+      "39"
+    ],
+    "summary": "Three independent changes to election rules. No legal conflicts between them.",
+    "body": "<div class=\"tablewrap\"><table> <thead><tr><th>Prop</th><th>Changes</th><th>Needs later action?</th></tr></thead> <tbody> <tr><td><b>4</b></td><td>Allows public campaign financing programs</td><td>Yes. A state or local government must choose to create one.</td></tr> <tr><td><b>5</b></td><td>Removes the replacement question from recalls</td><td>No, but only matters if a recall qualifies.</td></tr> <tr><td><b>39</b></td><td>Requires ID to vote; citizenship verification</td><td>Yes. The Legislature must define acceptable IDs and \"best efforts.\"</td></tr> </tbody></table></div>"
+  },
+  "special": {
+    "title": "Special taxes, state and local",
+    "measures": [
+      "41",
+      "43"
+    ],
+    "summary": "Both measures deal with [[special-tax|special taxes]], taxes earmarked for a specific purpose, at different levels of government.",
+    "body": "<div class=\"prose\"><ul> <li><b>Prop 41</b> applies to <i>state</i> special taxes: audits before an initiative reaches the ballot and every four years after it passes.</li> <li><b>Prop 43</b> applies to <i>local</i> special taxes: citizen-proposed ones would need two-thirds approval instead of a simple majority, starting 2027.</li> </ul><p>Neither changes taxes already in place. Both make it harder or slower to add new earmarked taxes. Prop 43 is the measure most likely to affect future Santa Clara County and San José ballots.</p></div>"
+  },
+  "transit": {
+    "title": "Local taxes and Prop 43",
+    "measures": [
+      "RTM",
+      "43"
+    ],
+    "summary": "Prop 43 changes the vote needed for citizen-proposed local special taxes, which is exactly how RTM reached the ballot.",
+    "body": "<div class=\"prose\"><ul> <li><b>RTM</b> qualified by voter petition, so under current court rulings it passes with a simple majority.</li> <li><b>Prop 43</b> would require two-thirds for citizen-proposed local special taxes, but only for new, increased, or extended taxes starting <b>January 1, 2027</b>. It would not apply to RTM on this ballot.</li> <li>If Prop 43 passes, a future renewal of RTM after 14 years, or a similar citizen-led transit or housing tax, would need two-thirds.</li> <li>News reports describe Prop 43 as replacing a broader Howard Jarvis initiative that San José officials warned could have voided Measure E, the city's 2020 property transfer tax for housing and homelessness (about $55M a year). Prop 43 as written applies only going forward, so existing taxes such as Measure E are not affected.</li> </ul></div>"
+  },
+  "schools": {
+    "title": "School measures that cover parts of San José",
+    "measures": [
+      "O",
+      "P",
+      "Q",
+      "R"
+    ],
+    "summary": "Whether you see these depends on which elementary school district your address is in.",
+    "body": "<div class=\"tablewrap\"><table> <thead><tr><th>Measure</th><th>District</th><th>Type</th><th>Cost to owners</th><th>Needs</th></tr></thead> <tbody> <tr><td><b>O</b></td><td>Alum Rock</td><td>Parcel tax, 7 yrs</td><td>$310/parcel/yr</td><td>2/3</td></tr> <tr><td><b>P</b></td><td>Alum Rock</td><td>$100M bond</td><td>&lt;$26 per $100k assessed value</td><td>55%</td></tr> <tr><td><b>Q</b></td><td>Cambrian</td><td>Parcel tax, 8 yrs</td><td>$148/parcel/yr</td><td>2/3</td></tr> <tr><td><b>R</b></td><td>Orchard</td><td>Parcel tax, 8 yrs</td><td>4¢/sq ft, max $89/home</td><td>2/3</td></tr> </tbody></table></div> <div class=\"prose\"><p>Parcel taxes can pay for teachers and programs. Bonds can only pay for buildings and equipment. Parcel taxes need two-thirds; school bonds need 55% (Prop 39 of 2000).</p></div>"
+  },
+  "health": {
+    "title": "Health care funding",
+    "measures": [
+      "40",
+      "44",
+      "38"
+    ],
+    "summary": "Three measures that direct or regulate health-related money in different ways.",
+    "body": "<div class=\"prose\"><ul> <li><b>Prop 40</b>: 90% of a one-time wealth tax goes to health care services. Sponsored by SEIU-UHW.</li> <li><b>Prop 44</b>: requires nonprofit community clinics to spend 90% of revenue on program services. Also sponsored by SEIU-UHW. Opposed by major physician groups and the clinics.</li> <li><b>Prop 38</b>: $8.4B in borrowing for immunology research.</li> </ul><p>Note that the California Primary Care Association, which represents community clinics, is a listed opponent of both Prop 40 and Prop 44.</p></div>"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "2026-11-03",
+  "name": "November 3, 2026 General Election",
+  "date": "2026-11-03",
+  "status": "upcoming",
+  "lastChecked": "2026-10-24",
+  "eyebrow": "November 3, 2026 · California · Santa Clara County · San José",
+  "lede": "The 14 statewide measures plus the local measures on San José ballots, explained from the official Voter Information Guide and the Legislative Analyst's nonpartisan analysis. Each side's case is shown in its own words. This guide makes no recommendations.",
+  "keyDates": [
+    { "label": "OCT 27", "text": "Last day to request a new mail ballot" },
+    { "label": "NOV 3", "text": "Election Day · polls 7 a.m.–8 p.m. · mail ballots must be postmarked by today" },
+    { "label": "NOV 10", "text": "Last day for postmarked mail ballots to arrive" }
+  ],
+  "jurisdictions": [
+    {
+      "id": "ca",
+      "tab": "State props",
+      "title": "14 statewide propositions",
+      "file": "measures-state.json",
+      "intro": "Select a measure for what a Yes or No vote does, the fiscal impact, both sides' arguments, and the money behind each side. Measures marked Linked interact with others on this ballot. Every statewide measure passes with a simple majority."
+    },
+    {
+      "id": "santa-clara",
+      "tab": "Santa Clara & San José",
+      "eyebrow": "Santa Clara County · San José",
+      "title": "Local measures",
+      "file": "measures-santa-clara.json",
+      "intro": "A San José ballot this November has the 14 state propositions, the regional transit tax (RTM), and, depending on your address, a school district measure.",
+      "notOnBallot": [
+        "<b>No City of San José measures</b> on November 3. The city's only 2026 measure, Measure A (hotel tax from 4% to 6%, about $10M a year for general city services), was decided June 2 and led with about 66% in early returns.",
+        "<b>No countywide Santa Clara County measures.</b> Other cities in the county have their own measures (Palo Alto, Mountain View, Sunnyvale, Milpitas, Santa Clara, Cupertino, Gilroy, Morgan Hill, Los Altos), which San José voters do not see."
+      ],
+      "sections": [
+        { "title": "Every San José voter", "measures": ["RTM"] },
+        { "title": "Depends on your school district", "measures": ["O", "P", "Q", "R"],
+          "note": "Your sample ballot booklet lists exactly which measures you'll see. You can also look up your ballot at <a href=\"https://www.vote411.org/\" target=\"_blank\" rel=\"noopener\">VOTE411</a>." }
+      ],
+      "groups": ["transit", "schools"],
+      "method": "Local measures have no LAO analysis. Their facts come from the measure's ballot question, district materials, and named secondary sources, and the official arguments are in the Santa Clara County voter information guide. Campaign money for local measures is not compiled yet."
+    }
+  ],
+  "money": {
+    "asOf": "2026-10-05",
+    "max": 100,
+    "intro": "Reported contributions from top donors to committees supporting and opposing each measure. Committees reported about $636 million across 11 measures as of October 5. The billionaire tax fight (Props 40–42) accounts for more than a third.",
+    "source": "Source: FPPC Top 10 Contributors lists as of October 5, 2026, as compiled by California Today (Oct 19 update). Figures change weekly; totals cover top contributors only. Where a \"No\" bar is empty, no opposing committee reported $1M or more, or opposition runs through another measure's committee (41 and 42 are opposed by the Yes on 40 campaign).",
+    "funders": [
+      ["Building a Better California", "~$262M total: No on 40 ($88.5M), Yes on 42 ($97.8M), Yes on 41 ($58.35M), Yes on 45 ($10M), Yes on 37 ($6M), Yes on 1 ($1M). The FPPC lists its top donors as Sergey Brin and John Doerr."],
+      ["SEIU-UHW", "~$49M: Yes on 40 ($31.8M), Yes on 44 ($16.9M). Also the listed opponent of 41 and 42."],
+      ["California Teachers Association", "$33.3M to Yes on 3."],
+      ["Gary Michelson entities", "$31.2M to Yes on 38 (the measure's proponent)."],
+      ["California Association of Realtors", "~$21.85M to Yes on 37."],
+      ["Richard Uihlein", "$17M to Yes on 39."]
+    ]
+  },
+  "sources": [
+    ["Official Voter Information Guide, Nov 3, 2026 (CA Secretary of State): titles, Yes/No meanings, LAO analyses, arguments", "https://voterguide.sos.ca.gov/"],
+    ["Secretary of State certification of measures", "https://www.sos.ca.gov/administration/news-releases-and-advisories/2026-news-releases-and-advisories/california-secretary-state-shirley-n-weber-phd-certifies-measures-november-3-2026-general-election-ballot"],
+    ["FPPC Top 10 Contributors", "https://www.fppc.ca.gov/search-filings/top-10-contributors-list/november-2026-general-election/"],
+    ["California Today, 2026 propositions master guide (money compilation, some background)", "https://californiatoday.com/guides/elections/2026-california-propositions-master-guide/"],
+    ["GrowSF, 14 state ballot measures (background on Props 43–44)", "https://growsf.org/news/2026-07-02-14-state-measures/"],
+    ["California Choices (key dates, Santa Clara County measure list)", "https://californiachoices.org/"],
+    ["Ballotpedia, Santa Clara County ballot measures", "https://ballotpedia.org/Santa_Clara_County,_California_ballot_measures"],
+    ["KQED, Regional Measure RTM", "https://www.kqed.org/voterguide/california/regional-measure-rtm"],
+    ["LWV Bay Area, RTM pros & cons", "https://my.lwv.org/sites/default/files/2026_nov_bay_transit_measure_pros_cons.pdf"],
+    ["GrowSF, RTM spending detail", "https://growsf.org/voter-guide/san-francisco-voter-guide-november-2026-election/measures/prop-rtm/"],
+    ["Cambrian SD, Measure Q", "https://www.cambriansd.org/fs/pages/3082"],
+    ["Orchard SD parcel tax announcement", "https://www.orchardsd.org/article/3055305"],
+    ["BallotReady, Measure P", "https://www.ballotready.org/measures/measure-p-da5e0f5a-c64c-49a3-bc9f-f27f360bd59c"],
+    ["San José Spotlight, Measure A returns", "https://sanjosespotlight.com/san-jose-hotel-tax-on-track-for-victory/"],
+    ["San José Spotlight, Measure E and the Howard Jarvis initiative", "https://sanjosespotlight.com/state-proposition-could-wipe-out-san-joses-measure-e-funds/"]
+  ]
+}

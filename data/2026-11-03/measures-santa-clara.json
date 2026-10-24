@@ -1,0 +1,231 @@
+[
+  {
+    "id": "RTM",
+    "label": "Measure RTM",
+    "title": "Bay Area transit sales tax",
+    "official": "Connect Bay Area Transit Initiative (Regional Measure RTM)",
+    "origin": "Petition",
+    "type": "Regional initiative · sales tax",
+    "area": "Every voter in Santa Clara, San Mateo, San Francisco, Alameda, and Contra Costa counties",
+    "topics": [
+      "local",
+      "transit"
+    ],
+    "threshold": "Simple majority of the combined vote across all five counties (not county by county)",
+    "short": "A 0.5% sales tax in Santa Clara County for 14 years to fund BART, Caltrain, VTA, and other transit.",
+    "what": "Adds a 0.5% sales tax in Santa Clara, San Mateo, Alameda, and Contra Costa counties, and 1% in San Francisco, for 14 years. It would raise about $980 million a year region-wide for transit operations, plus some road repaving, fare discounts, accessibility, and wayfinding. State law SB 63 (2025) authorized the district; the measure qualified by voter petition.",
+    "yes": "A new 0.5% sales tax would apply to purchases in Santa Clara County for 14 years, with the money going to regional transit and related road repairs.",
+    "no": "No new regional transit sales tax. Transit agencies would rely on existing funding.",
+    "yesNoSrc": "Plain-language summary based on the ballot question. The official wording is in your county voter guide.",
+    "fiscal": "About $980 million a year region-wide. GrowSF estimates about $290 million a year from Santa Clara County in the first full year (FY 2028).",
+    "short_term": "Sales tax in Santa Clara County rises by half a cent. Supporters say it prevents major BART, Caltrain, and Muni service cuts. BART has said it would cut train hours sharply starting January 2027 if the measure fails.",
+    "long_term": "Funding for 14 years, then the tax expires unless renewed. Independent efficiency reviews of BART, Muni, Caltrain, and AC Transit, with funding that can be withheld for poor performance.",
+    "supporters": "State Sens. Scott Wiener and Jesse Arreguín; Rep. Nancy Pelosi; Chris Larsen; SEIU Local 1021 (per KQED)",
+    "opponents": "Former Sens. Steve Glazer and Quentin Kopp; former BART director Debora Allen; Contra Costa and San Francisco taxpayer associations (per KQED)",
+    "pro": "Transit is vital to the region's economy, environment, and quality of life. Agencies face a severe budget crisis from pandemic-era drops in ridership and revenue, and without new money would have to make major cuts, such as eliminating two BART lines.",
+    "con": "Agencies already receive about $6 billion a year from taxes, tolls, and grants. They should cut costs first, by redirecting capital funds, renegotiating labor contracts, reducing overtime, and automating, and come back later with a smaller tax.",
+    "argSrc": "KQED Voter Guide summary of each side's case",
+    "deep": [
+      "Santa Clara County spending plan (GrowSF estimates, first full year about $290M): county transportation agency 84.37% (~$245M), which may also go to road repaving; Caltrain 10.38% (~$30M); fare programs 2.78%; accessibility 1.11%; mapping and wayfinding 1.11%; MTC administration 0.25%. Opponents (Fixes Before Funding) argue fixed percentages written into law limit flexibility. These are campaign and advocacy figures; the binding split is in SB 63.",
+      "Why a simple majority: it was placed on the ballot by voter petition. Under court rulings since 2017, citizen-initiated special taxes pass with a majority. Prop 43 on the state ballot would require two-thirds for such taxes, but only starting January 1, 2027, so it would not apply to RTM.",
+      "Sales taxes take a larger share of income from lower-income households, a point raised in the League of Women Voters' pros and cons.",
+      "VTA's history: in 2024 VTA opposed an earlier version of the regional bill (SB 1031), citing concern that Santa Clara County revenue might not return to the county and the effect on renewing local transit taxes. VTA's current Measure A half-cent tax (2000) expires in 2036.",
+      "Marin, Napa, Sonoma, and Solano are not in the district and would not pay the tax."
+    ],
+    "money": null,
+    "groups": [
+      "transit"
+    ],
+    "jurisdiction": "bay-area-transit",
+    "sources": {
+      "links": [
+        [
+          "League of Women Voters pros & cons (PDF)",
+          "https://my.lwv.org/sites/default/files/2026_nov_bay_transit_measure_pros_cons.pdf"
+        ],
+        [
+          "KQED voter guide: RTM",
+          "https://www.kqed.org/voterguide/california/regional-measure-rtm"
+        ],
+        [
+          "GrowSF: RTM spending detail",
+          "https://growsf.org/voter-guide/san-francisco-voter-guide-november-2026-election/measures/prop-rtm/"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "O",
+    "label": "Measure O",
+    "title": "Alum Rock school parcel tax",
+    "official": "Measure O — Alum Rock Union Elementary School District",
+    "origin": "School board",
+    "type": "School district parcel tax",
+    "area": "Voters in the Alum Rock Union Elementary School District (East San José)",
+    "topics": [
+      "local",
+      "schools"
+    ],
+    "threshold": "Two-thirds (66.67%), the rule for school parcel taxes",
+    "short": "$310 per parcel per year for 7 years for Alum Rock elementary schools.",
+    "what": "A flat parcel tax of $310 per parcel per year for seven years for the Alum Rock Union Elementary School District.",
+    "yes": "Property owners in the district would pay $310 per parcel per year for seven years to fund district schools.",
+    "no": "No new Alum Rock parcel tax.",
+    "yesNoSrc": "Plain-language summary based on Ballotpedia's listing. Check the ballot question and impartial analysis in your county voter guide.",
+    "fiscal": "$310 per parcel per year for 7 years.",
+    "short_term": "Annual charge on property tax bills in the district.",
+    "long_term": "Expires after seven years unless renewed.",
+    "supporters": "Not yet compiled",
+    "opponents": "Not yet compiled",
+    "pro": null,
+    "con": null,
+    "argSrc": null,
+    "deep": [
+      "A flat parcel tax charges every parcel the same amount regardless of property value, unlike a bond, which is repaid through a rate on assessed value.",
+      "Read together with Measure P, a bond on the same ballot from the same district."
+    ],
+    "money": null,
+    "groups": [
+      "schools"
+    ],
+    "jurisdiction": "school",
+    "sources": {
+      "links": []
+    }
+  },
+  {
+    "id": "P",
+    "label": "Measure P",
+    "title": "Alum Rock school repair bond",
+    "official": "Measure P — Alum Rock Union Elementary School District",
+    "origin": "School board",
+    "type": "School facilities bond",
+    "area": "Voters in the Alum Rock Union Elementary School District (East San José)",
+    "topics": [
+      "local",
+      "schools"
+    ],
+    "threshold": "55%, the rule for school facilities bonds",
+    "short": "$100 million in bonds to repair roofs, plumbing, HVAC, and security systems.",
+    "what": "Authorizes $100 million in bonds for school facilities: repairing roofs and plumbing, replacing heating, ventilation, and air conditioning, and upgrading emergency communication and security systems. Repaid by property owners in the district.",
+    "yes": "The district could borrow $100 million for school repairs, repaid through property taxes in the district.",
+    "no": "The district could not issue these bonds.",
+    "yesNoSrc": "Plain-language summary based on the ballot question as listed by BallotReady.",
+    "fiscal": "Average levy under $26 per $100,000 of assessed value, raising about $6.3 million a year while bonds are outstanding. The ballot question says current tax rates would not increase.",
+    "short_term": "Repairs funded as bonds are sold.",
+    "long_term": "Property owners repay the bonds for as long as they are outstanding, typically decades.",
+    "supporters": "Not yet compiled",
+    "opponents": "Not yet compiled",
+    "pro": null,
+    "con": null,
+    "argSrc": null,
+    "deep": [
+      "\"Current tax rates would not increase\" usually means the new bonds are timed to replace older bonds as they are paid off. Without the measure, the rate could fall as old bonds retire.",
+      "Includes audits, independent oversight, and spending disclosure, as required for school bonds passed at 55%.",
+      "Read together with Measure O, a parcel tax from the same district."
+    ],
+    "money": null,
+    "groups": [
+      "schools"
+    ],
+    "jurisdiction": "school",
+    "sources": {
+      "links": [
+        [
+          "BallotReady: Measure P",
+          "https://www.ballotready.org/measures/measure-p-da5e0f5a-c64c-49a3-bc9f-f27f360bd59c"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "Q",
+    "label": "Measure Q",
+    "title": "Cambrian school parcel tax",
+    "official": "Measure Q — Cambrian School District",
+    "origin": "School board",
+    "type": "School district parcel tax",
+    "area": "Voters in the Cambrian School District (parts of San José and Campbell)",
+    "topics": [
+      "local",
+      "schools"
+    ],
+    "threshold": "Two-thirds (66.67%)",
+    "short": "$148 per parcel per year for 8 years for Cambrian elementary and middle schools.",
+    "what": "A parcel tax of $148 per parcel per year for eight years, adjusted yearly for inflation, for core academics, teacher recruitment and retention, class sizes, and counseling. Funds cannot pay administrator salaries.",
+    "yes": "Property owners in the district would pay $148 per parcel per year for eight years, starting in 2027–28.",
+    "no": "No new Cambrian parcel tax.",
+    "yesNoSrc": "Plain-language summary based on the district's Measure Q page.",
+    "fiscal": "About $1 million a year, kept by the district.",
+    "short_term": "Collection begins in fiscal year 2027–28.",
+    "long_term": "Eight years, adjusted for inflation each year.",
+    "supporters": "Not yet compiled",
+    "opponents": "Not yet compiled",
+    "pro": null,
+    "con": null,
+    "argSrc": null,
+    "deep": [
+      "Covers Bagby, Fammatre, Farnham, Price Middle, and Steindorf STEAM Magnet schools.",
+      "Homeowners 65 and older can apply for an exemption.",
+      "Annual independent audits and public reporting.",
+      "The district's page does not say whether Measure Q replaces its 2018 parcel tax (Measure H)."
+    ],
+    "money": null,
+    "groups": [
+      "schools"
+    ],
+    "jurisdiction": "school",
+    "sources": {
+      "links": [
+        [
+          "Cambrian SD: Measure Q",
+          "https://www.cambriansd.org/fs/pages/3082"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "R",
+    "label": "Measure R",
+    "title": "Orchard school parcel tax",
+    "official": "Measure R — Orchard School District",
+    "origin": "School board",
+    "type": "School district parcel tax",
+    "area": "Voters in the Orchard School District (North San José)",
+    "topics": [
+      "local",
+      "schools"
+    ],
+    "threshold": "Two-thirds (66.67%)",
+    "short": "4¢ per building square foot, up to $89 per home, for 8 years.",
+    "what": "A parcel tax of 4 cents per building square foot, capped at $89 per residential parcel and $7,500 per commercial parcel, for eight years starting July 1, 2027. For teacher and staff retention, core academics, STEAM, student mental health, and instructional materials.",
+    "yes": "Property owners in the district would pay up to $89 per home per year for eight years.",
+    "no": "No new Orchard parcel tax.",
+    "yesNoSrc": "Plain-language summary based on the district's announcement.",
+    "fiscal": "About $1.4 million a year.",
+    "short_term": "Collection begins July 1, 2027.",
+    "long_term": "Eight years.",
+    "supporters": "Not yet compiled",
+    "opponents": "Not yet compiled",
+    "pro": null,
+    "con": null,
+    "argSrc": null,
+    "deep": [
+      "Exemptions for qualifying seniors and some SSI and SSDI recipients.",
+      "Separate account, annual expenditure reports, and an independent audit."
+    ],
+    "money": null,
+    "groups": [
+      "schools"
+    ],
+    "jurisdiction": "school",
+    "sources": {
+      "links": [
+        [
+          "Orchard SD announcement",
+          "https://www.orchardsd.org/article/3055305"
+        ]
+      ]
+    }
+  }
+]

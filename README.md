@@ -1,0 +1,131 @@
+# California Ballot Guide
+
+A nonpartisan, plain-language guide to California ballot measures. For each measure it shows:
+
+- what a Yes or No vote does
+- the fiscal impact and its short- and long-term effects
+- each side's arguments, in their own words
+- the money behind each side
+- linked measures that interact with each other
+
+It covers statewide propositions and local measures, currently Santa Clara County and San José.
+
+It is a static site: plain HTML, CSS, and JavaScript, with all content in JSON files under `data/`. There is no build step and nothing to install.
+
+## Run it locally
+
+The page loads its data with `fetch`, so it must be served over HTTP. Opening `index.html` directly from disk won't work.
+
+```sh
+python3 -m http.server 8000
+# then open http://localhost:8000
+```
+
+Any static server works, for example `npx serve`.
+
+## Deploy on Vercel
+
+The site is hosted on Vercel, connected to the GitHub repository.
+
+- Each push to `main` deploys to production. Each pull request gets its own preview URL.
+- `vercel.json` sets the build command to `node scripts/validate.mjs`, so a deploy fails if the data is invalid. There is no install step, and the repository root is served as-is.
+
+To deploy by hand, run `npx vercel` for a preview or `npx vercel --prod` for production. To use a custom domain, add it in the Vercel project under **Settings → Domains**.
+
+## Project layout
+
+```
+index.html                  page shell
+assets/styles.css           design tokens (light + dark), components
+assets/app.js               loads data, routing, rendering, notes
+data/
+  elections.json            list of elections + which one is the default
+  glossary.json             key terms, shared across elections
+  topics.json               topic ids → labels (each has a color token in styles.css)
+  2026-11-03/
+    election.json           name, key dates, tabs (jurisdictions), money summary, sources
+    measures-state.json     statewide propositions
+    measures-santa-clara.json  local measures for Santa Clara County / San José
+    groups.json             "linked measures" groups
+    results.json            election results (empty until results are in)
+scripts/validate.mjs        data checks (runs on every Vercel build)
+vercel.json                 Vercel build settings
+```
+
+## Editing content
+
+All content lives in `data/`, so you never need to touch `app.js` to update text.
+
+- **Glossary links.** Write `[[term-key|text shown]]` in any text field, for example `[[go-bond|general obligation bonds]]`. Keys must exist in `data/glossary.json`.
+- **HTML.** Group `body` fields and local `notOnBallot` and `note` fields accept simple HTML, such as tables and lists. All other text is shown as plain text.
+- **Check your changes.** After editing, run `node scripts/validate.mjs`. It catches:
+  - missing fields
+  - unknown topics, groups, and glossary terms
+  - duplicate ids
+  - bad results entries
+
+### Measure fields
+
+| Field | Meaning |
+|---|---|
+| `id` | Short id shown in the tile: `"40"`, `"RTM"`, `"O"`. Must be unique within the election. |
+| `label` | How it's referred to in text: `"Prop 40"`, `"Measure RTM"` |
+| `title`, `short` | Plain-language name and one-line summary |
+| `official` | Official ballot title |
+| `origin` | `Legislature`, `Petition`, or `School board` |
+| `type`, `threshold` | Measure type and the vote needed to pass |
+| `area` | (local) Who votes on it |
+| `topics` | Topic ids from `topics.json`. The first non-`local` topic sets the color. |
+| `what`, `yes`, `no`, `yesNoSrc` | What it does, what each vote means, and where that wording comes from |
+| `fiscal`, `short_term`, `long_term` | Impact |
+| `supporters`, `opponents`, `pro`, `con`, `argSrc` | Listed supporters and opponents, and each side's argument. `argSrc: null` on a statewide measure means "official ballot argument." |
+| `money` | `{ "yes": 32.3, "no": 99.15, "yesNote": "...", "noNote": "..." }` in millions of dollars, or `null` |
+| `deep` | List of "Go deeper" bullet points |
+| `groups` | Ids of linked groups in `groups.json` |
+| `sources` | Statewide: `guide`, `analysis`, `arguments`, `text` URLs. Local: `links: [[title, url], ...]` |
+
+A group with `"legalConflict": true` marks its measures with a **Linked** tag on their cards.
+
+## Adding a new election
+
+1. Copy `data/2026-11-03/` to a new folder named after the election date, for example `data/2028-03-07/`.
+2. Edit `election.json`:
+   - name, dates, and lede
+   - `jurisdictions` (each one becomes a tab and points to a measures file)
+   - `money`
+   - `sources`
+3. Replace the measures files and `groups.json`. Reset `results.json` to `"status": "pending"` with empty `measures`.
+4. Add the election to `data/elections.json`. Set `default` to it once it's ready.
+5. Run `node scripts/validate.mjs`.
+
+When `elections.json` lists more than one election, the site shows an election picker. Past elections stay available at `?election=<id>`.
+
+## Adding results
+
+Fill in `data/<election>/results.json`:
+
+```json
+{
+  "status": "partial",
+  "updated": "2026-11-04 9:00 PT",
+  "source": "California Secretary of State, semi-official results",
+  "sourceUrl": "https://electionresults.sos.ca.gov/",
+  "measures": {
+    "40": { "yes": 5123456, "no": 4987654, "yesPct": 50.7, "outcome": "leading", "final": false }
+  }
+}
+```
+
+`outcome` is one of `passed`, `failed`, `leading`, or `trailing`. Set it with the measure's threshold in mind: a school parcel tax needs two-thirds, so 60% yes is still `trailing`. When results exist, each measure card shows a status chip and each measure page gets a Results section. Fetching results automatically (for example, a scheduled GitHub Action that writes this file) is a planned future step.
+
+## Editorial rules (neutrality)
+
+- **Facts** come from the official ballot title and summary and the Legislative Analyst's Office (LAO) analysis. For local measures, they come from the county impartial analysis or named sources.
+- **Arguments** are each side's own words, attributed to them. Give both sides the same treatment.
+- **Context** (money, news background) always names its source.
+- Every measure has the same sections in the same order. Yes and No are styled identically.
+- No recommendations and no polling.
+
+## Privacy
+
+Leanings and notes are stored only in the visitor's own browser (`localStorage`). The site has no analytics and no server. Fonts load from Google Fonts.

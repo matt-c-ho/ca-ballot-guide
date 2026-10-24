@@ -1,0 +1,682 @@
+[
+  {
+    "id": "1",
+    "label": "Prop 1",
+    "title": "Housing and veterans bond",
+    "official": "Authorizes Bonds for Housing Affordability Programs. Legislative Statute.",
+    "origin": "Legislature",
+    "type": "Legislative statute · bond",
+    "topics": [
+      "housing",
+      "budget"
+    ],
+    "short": "Borrow $11.25 billion for affordable housing and veterans' home loans.",
+    "what": "Lets the state sell $11.25 billion in [[go-bond|general obligation bonds]]. About $10 billion goes to state housing programs, mostly affordable rental housing. The other $1.25 billion funds Cal-Vet home loans for veterans, which the veterans repay.",
+    "yes": "The state could borrow $11.25 billion to support veterans and affordable housing.",
+    "no": "The state could not borrow $11.25 billion to support veterans and affordable housing.",
+    "fiscal": "$500–600 million a year from the [[general-fund|General Fund]] for about 25 years to repay the bonds.",
+    "short_term": "Money becomes available to housing programs as bonds are sold over several years.",
+    "long_term": "About $500–600 million a year of state budget goes to repayment for roughly 25 years. The LAO estimates the money could subsidize up to 40,000 rental units.",
+    "supporters": "US Vets; CA Federation of Teachers; Self-Help for the Elderly; Habitat for Humanity CA; CA Alliance of Child & Family Services",
+    "opponents": "None submitted",
+    "pro": "Prop. 1 builds affordable homes for veterans, seniors, people with disabilities, low- and middle-income working families, vulnerable Californians and essential workers—teachers, firefighters and nurses. Expands homeownership opportunities, fast-tracks affordable shovel-ready homes, helps those one crisis away from homelessness. Requires strict fiscal accountability and public oversight with no new taxes.",
+    "con": null,
+    "deep": [
+      "Allocation of the $10 billion for state programs: $7.2 billion affordable multifamily rental housing (including $150 million for youth housing); $1.1 billion homeownership assistance; $500 million infrastructure; $450 million farmworker housing; $350 million UC and CSU student housing; $200 million tribal housing; $200 million local pilot programs.",
+      "The $1.25 billion veterans' share is repaid by veterans' loan payments. The LAO notes those payments have always covered what is owed on past Cal-Vet bonds.",
+      "\"No new taxes\" is accurate, and the bonds are still repaid from existing General Fund revenue, about a quarter of one percent of the budget each year.",
+      "Combined with Prop 38, the two bonds would cost about $1 billion a year in General Fund repayment."
+    ],
+    "money": {
+      "yes": 7.9,
+      "no": 0,
+      "yesNote": "Airbnb, two carpenters' councils, and Building a Better California ($1M each); Anthropic ($0.5M)",
+      "noNote": "No opposing committee above $1M"
+    },
+    "groups": [
+      "budget",
+      "housing"
+    ],
+    "threshold": "Simple majority (more than 50% yes)",
+    "jurisdiction": "ca",
+    "sources": {
+      "guide": "https://voterguide.sos.ca.gov/propositions/1/",
+      "analysis": "https://voterguide.sos.ca.gov/propositions/1/analysis.htm",
+      "arguments": "https://voterguide.sos.ca.gov/propositions/1/arguments-rebuttals.htm",
+      "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop1-text-proposed-laws.pdf"
+    },
+    "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
+    "argSrc": null
+  },
+  {
+    "id": "2",
+    "label": "Prop 2",
+    "title": "Bigger rainy day fund",
+    "official": "Increases State's Rainy Day Fund. Legislative Constitutional Amendment.",
+    "origin": "Legislature",
+    "type": "Legislative constitutional amendment",
+    "topics": [
+      "budget"
+    ],
+    "short": "Raise the cap on the state's main savings reserve from 10% to 20%.",
+    "what": "Raises the cap on the state's [[rainy-day|Rainy Day Fund]] from 10% to 20% of General Fund taxes and requires bigger deposits in years with unusually high capital gains revenue. It also extends required extra debt payments from 2030 to 2040. Deposits would no longer count against the [[gann|state spending limit]] until they are withdrawn.",
+    "yes": "Rules for building state budget reserves and paying down extra state debts would change. As a result, state budget reserves would be higher. The state also would be required to make extra debt payments for longer.",
+    "no": "Rules for building state budget reserves and paying down extra state debts would not change.",
+    "fiscal": "State budget reserves would be higher.",
+    "short_term": "More money is set aside in good years, leaving less available to spend in those years.",
+    "long_term": "Larger cushion for downturns. Because deposits stop counting against the spending limit, the state is less likely to hit that limit, which also affects when taxpayer rebates are triggered.",
+    "supporters": "CA Professional Firefighters; LA Chamber of Commerce; Gavin Newsom; Xavier Becerra; Assemblymember Jesse Gabriel",
+    "opponents": "None listed (argument against signed by Asm. David Tangipa, Sen. Steven Choi, and Carl DeMaio)",
+    "pro": "Vote yes on Proposition 2 to protect schools, healthcare, and public safety funding. Proposition 2 doubles the state's Rainy Day Fund, stops politicians from overspending when there is a budget surplus, and ensures education funding continues during economic downturns. It has bipartisan support from firefighters, hospitals, health clinics, and educators.",
+    "con": "Proposition 2 guarantees more spending, not savings, creating a loophole that makes taxpayer rebates less likely by excluding reserve deposits from California's constitutional spending limit. It provides no new funding for education, healthcare, or public safety. Vote No to protect taxpayer rebates and constitutional limits.",
+    "deep": [
+      "Current rule (Prop 2 of 2014): deposit 0.75% of General Fund taxes yearly until the fund reaches 10% of General Fund taxes; above that, the money goes to infrastructure.",
+      "Prop 2 raises the ceiling to 20% and adds larger deposits when revenue from investment gains is very high.",
+      "Extends the required extra debt payments from 2030 to 2040 and widens what they can cover, including amounts owed to schools and repayment of federal loans.",
+      "The spending-limit change is the main point of disagreement. Supporters see it as making saving possible; opponents see it as making rebates under the limit less likely.",
+      "The state currently holds about $20 billion in general-purpose reserves (California Today)."
+    ],
+    "money": {
+      "yes": 0,
+      "no": 0,
+      "yesNote": "No committee on either side has raised $1M",
+      "noNote": ""
+    },
+    "groups": [
+      "budget"
+    ],
+    "threshold": "Simple majority (more than 50% yes)",
+    "jurisdiction": "ca",
+    "sources": {
+      "guide": "https://voterguide.sos.ca.gov/propositions/2/",
+      "analysis": "https://voterguide.sos.ca.gov/propositions/2/analysis.htm",
+      "arguments": "https://voterguide.sos.ca.gov/propositions/2/arguments-rebuttals.htm",
+      "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop2-text-proposed-laws.pdf"
+    },
+    "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
+    "argSrc": null
+  },
+  {
+    "id": "3",
+    "label": "Prop 3",
+    "title": "Keep high-income tax rates",
+    "official": "Provides Permanent Funding for Schools and Health Care by Extending Existing Tax on High Incomes. Initiative Constitutional Amendment.",
+    "origin": "Petition",
+    "type": "Initiative constitutional amendment",
+    "topics": [
+      "taxes",
+      "budget"
+    ],
+    "short": "Make the 2012 income tax rates on top earners permanent instead of expiring.",
+    "what": "Makes permanent the higher income tax rates on high earners that voters approved in 2012 (Prop 30) and extended in 2016 (Prop 55). They are now set to expire after the 2030 tax year.",
+    "yes": "An income tax increase on high-income earners in place since 2012 would become permanent instead of expiring in 2031.",
+    "no": "An income tax increase on high-income earners in place since 2012 would expire in 2031.",
+    "fiscal": "Maintains $5 billion to $15 billion of annual state income tax revenue after 2030.",
+    "short_term": "No change to anyone's taxes before 2031. The rates in place today continue.",
+    "long_term": "Keeps $5–15 billion a year that would otherwise be lost starting in 2031. Roughly 40% goes to schools and community colleges.",
+    "supporters": "California Teachers Association; CA School Nurses Organization; California State PTA; Planned Parenthood Affiliates of CA",
+    "opponents": "California Taxpayers Association; Family Business Association of California; California Hispanic Chambers of Commerce",
+    "pro": "PROPOSITION 3 PROTECTS OUR SCHOOLS AND HEALTHCARE WITHOUT RAISING YOUR TAXES. Prop. 3 prevents a massive tax cut for millionaires and billionaires by maintaining the current tax rates the wealthiest 2% have paid for 15 years and requires strict accountability and audits to ensure school funding gets to classrooms. Vote YES.",
+    "con": "Californians already pay the nation's highest income, sales, and gas taxes—and have the highest cost of living. Prop. 3 makes temporary income taxes permanent while Sacramento wastes billions on failed programs instead of voters' priorities. Don't reward failure. Fix spending first before making taxes permanent. No on Prop. 3.",
+    "deep": [
+      "Rates (single filers; thresholds roughly double for joint filers, adjusted yearly for inflation): 10.3% on income from about $371,000 to $446,000; 11.3% from $446,000 to $743,000; 12.3% above $743,000. Without Prop 3, income above $371,000 would be taxed at 9.3% starting in 2031.",
+      "The LAO says the top 2% of taxpayers pay these rates and pay about half of all state income taxes.",
+      "Revenue swings with the stock market because high earners' income depends heavily on capital gains, which is why the range is wide ($5–15 billion).",
+      "As a constitutional amendment, a future change would need another statewide vote."
+    ],
+    "money": {
+      "yes": 49.3,
+      "no": 0,
+      "yesNote": "California Teachers Association $33.3M; National Education Association $7.5M",
+      "noNote": "No opposing committee above $1M"
+    },
+    "groups": [
+      "budget"
+    ],
+    "threshold": "Simple majority (more than 50% yes)",
+    "jurisdiction": "ca",
+    "sources": {
+      "guide": "https://voterguide.sos.ca.gov/propositions/3/",
+      "analysis": "https://voterguide.sos.ca.gov/propositions/3/analysis.htm",
+      "arguments": "https://voterguide.sos.ca.gov/propositions/3/arguments-rebuttals.htm",
+      "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop3-text-proposed-laws.pdf"
+    },
+    "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
+    "argSrc": null
+  },
+  {
+    "id": "4",
+    "label": "Prop 4",
+    "title": "Allow public campaign financing",
+    "official": "Repeals Prohibition Against Public Funding of Election Campaigns. Legislative Statute.",
+    "origin": "Legislature",
+    "type": "Legislative statute",
+    "topics": [
+      "elections"
+    ],
+    "short": "Lift the 1988 ban so state and local governments may fund campaigns.",
+    "what": "Repeals the 1988 law that bars the state, counties, and most cities from offering [[public-financing|public campaign financing]]. It does not create a program. Any government that wants one would have to set it up, within limits the measure sets.",
+    "yes": "State and local governments could create public campaign financing programs for public office candidates, subject to limits on which public funds could be used, how the public funds could be used, and who could receive them.",
+    "no": "State and most local governments would remain unable to create public campaign finance programs for public office candidates.",
+    "fiscal": "A few hundred thousand dollars a year for the FPPC to advise governments. Any future program's cost depends on how it is designed.",
+    "short_term": "Nothing changes until a government chooses to create a program.",
+    "long_term": "Possible new programs at state or local level, each with its own cost, which the LAO says could be significant for governments that create one.",
+    "supporters": "League of Women Voters of CA; California Nurses Association; Mental Health Advocacy; Social Security Works; Consumer Watchdog",
+    "opponents": "California Taxpayers Assn; Howard Jarvis Taxpayers Assn; Family Business Assn of California; United Latinos Action",
+    "pro": "YES ON 4. California is the ONLY state that bans public funding of campaigns— communities in all other 49 states have this right. Special interests want to keep the ban to protect their power. Prop. 4 removes it. Strict taxpayer safeguards. Vote YES: Elections should be won, not bought.",
+    "con": "Prop. 4 allows politicians to use YOUR taxpayer money to fund their negative campaigns. Prop. 4 has NO LIMIT on the number of candidates who can get taxpayer money and NO LIMIT on how much taxpayer money they can get. Worse yet, Prop. 4 allows SPECIAL INTEREST MONEY IN POLITICS. NO ON PROP. 4.",
+    "deep": [
+      "The current ban does not apply to [[charter-city|charter cities]]; Los Angeles, San Francisco, Oakland, Long Beach, and Berkeley already run programs.",
+      "Limits on any program: no money earmarked for education, transportation, or public safety; no public funds for legal defense, fines, or repaying a candidate's personal loans; candidates must show broad support in their district and agree to spending limits.",
+      "The FPPC would issue guidance but would not be required to run local programs.",
+      "Also triples the maximum fine for campaign contributions from foreign entities."
+    ],
+    "money": {
+      "yes": 0,
+      "no": 0,
+      "yesNote": "No committee on either side has raised $1M",
+      "noNote": ""
+    },
+    "groups": [
+      "elections"
+    ],
+    "threshold": "Simple majority (more than 50% yes)",
+    "jurisdiction": "ca",
+    "sources": {
+      "guide": "https://voterguide.sos.ca.gov/propositions/4/",
+      "analysis": "https://voterguide.sos.ca.gov/propositions/4/analysis.htm",
+      "arguments": "https://voterguide.sos.ca.gov/propositions/4/arguments-rebuttals.htm",
+      "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop4-text-proposed-laws.pdf"
+    },
+    "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
+    "argSrc": null
+  },
+  {
+    "id": "5",
+    "label": "Prop 5",
+    "title": "Change how recalls work",
+    "official": "Changes Recall Election Process for Statewide Officers. Legislative Constitutional Amendment.",
+    "origin": "Legislature",
+    "type": "Legislative constitutional amendment",
+    "topics": [
+      "elections"
+    ],
+    "short": "Remove the \"who replaces them?\" question from state recall ballots.",
+    "what": "Removes the second question from state [[recall|recall elections]]. If an official is recalled, the vacancy would be filled by succession, appointment, or a later special election, depending on the office.",
+    "yes": "Recall elections would no longer include a question about who should fill the vacancy. Instead, vacancies typically would be filled through special elections or appointments, depending on the office and timing.",
+    "no": "Voters would continue to be asked who should fill the vacancy as part of recall elections.",
+    "fiscal": "Net effect unknown. Each future recall could cost or save millions depending on the office.",
+    "short_term": "No effect unless a recall qualifies.",
+    "long_term": "A recalled governor would be succeeded by the lieutenant governor. Legislative seats would go to a special election; other statewide offices would be filled by the governor's appointment.",
+    "supporters": "None submitted (argument in favor endorsed by League of Women Voters of CA and California Common Cause)",
+    "opponents": "None submitted (argument against signed by Sen. Brian Jones and Asm. Joe Patterson)",
+    "pro": "Proposition 5 restores the recall to its original purpose: removing corrupt officials. It closes the loophole that allows replacements to win with a small fraction of the vote, reducing the politics and costs of future recalls. Endorsed by League of Women Voters of California and California Common Cause. Vote YES",
+    "con": "Proposition 5 degrades California's century-old recall process by limiting voters' right to select a replacement for recalled officials. Instead, when statewide elected officials are recalled, other politicians would choose a replacement. For lower offices, another costly, taxpayer-funded election would come months later, leaving the office vacant and the people unrepresented.",
+    "deep": [
+      "A recalled governor would be replaced by the lieutenant governor, either until the next statewide election or, late in a term, for the rest of it.",
+      "A recalled official could run in the special election that follows.",
+      "Although the title says \"statewide officers,\" the LAO notes the change also applies to legislative recalls.",
+      "Background: the 2003 governor recall drew 135 replacement candidates and the 2021 recall drew 46. Under today's rules a replacement can win with a plurality, without a majority.",
+      "The measure's author, former Sen. Josh Newman, was himself recalled in 2018."
+    ],
+    "money": {
+      "yes": 0,
+      "no": 0,
+      "yesNote": "No committee on either side has raised $1M",
+      "noNote": ""
+    },
+    "groups": [
+      "elections"
+    ],
+    "threshold": "Simple majority (more than 50% yes)",
+    "jurisdiction": "ca",
+    "sources": {
+      "guide": "https://voterguide.sos.ca.gov/propositions/5/",
+      "analysis": "https://voterguide.sos.ca.gov/propositions/5/analysis.htm",
+      "arguments": "https://voterguide.sos.ca.gov/propositions/5/arguments-rebuttals.htm",
+      "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop5-text-proposed-laws.pdf"
+    },
+    "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
+    "argSrc": null
+  },
+  {
+    "id": "37",
+    "label": "Prop 37",
+    "title": "Loans for middle-income homebuyers",
+    "official": "Creates Loan Program for Middle-Income Buyers of Qualified New Homes. Initiative Statute.",
+    "origin": "Petition",
+    "type": "Initiative statute · revenue bond",
+    "topics": [
+      "housing"
+    ],
+    "short": "State-backed second loans so buyers of new homes can put 3% down.",
+    "what": "Lets the California Housing Finance Agency sell up to $25 billion in [[revenue-bond|revenue bonds]] and lend eligible buyers up to 17% of a newly built home's price as a fixed-rate second loan. The buyer puts at least 3% down. Borrowers' payments repay the bonds.",
+    "yes": "The state would create a new homebuying assistance program. The state could sell up to $25 billion in revenue bonds to fund the program. Bonds would be paid back by homeowners' payments on their home loans.",
+    "no": "The state would not be required to create a new homebuying assistance program.",
+    "fiscal": "No direct state or local costs.",
+    "short_term": "A new loan program opens to buyers of qualifying new homes.",
+    "long_term": "Unknown how much investors will buy the bonds and whether the program will lead to more homes being built (LAO).",
+    "supporters": "United Nurses Associations of California; California Conference of Carpenters; California State Treasurer Fiona Ma",
+    "opponents": "None submitted",
+    "pro": "Zero Taxpayer Cost—No Taxpayer Risk. Prop. 37 makes buying a home more affordable, keeping homeownership attainable for hardworking and middle-class Californians, with low-interest mortgages funded by private bond investors, NOT TAXPAYERS. Must be CA resident to qualify, meet income requirements, occupy home, make monthly payments, repay loan. Strict accountability/audits.",
+    "con": null,
+    "deep": [
+      "Eligibility: California resident for at least a year, lives in the home, household income up to twice the [[ami|area median income]].",
+      "Home must be newly built (or the first sale of a converted nonresidential building) and priced under a county cap of roughly $1 million to $1.5 million.",
+      "The 17% loan is a second mortgage with monthly payments, not a grant.",
+      "Builders can opt into a \"qualified builder option\" that pairs higher labor standards with more flexible construction-defect rules.",
+      "Proponent is former Senate leader Robert Hertzberg."
+    ],
+    "money": {
+      "yes": 29.55,
+      "no": 0,
+      "yesNote": "California Association of Realtors ~$21.85M (including its Homeownership for Families committee); Building a Better California $6M",
+      "noNote": "No opposing committee"
+    },
+    "groups": [
+      "housing",
+      "budget"
+    ],
+    "threshold": "Simple majority (more than 50% yes)",
+    "jurisdiction": "ca",
+    "sources": {
+      "guide": "https://voterguide.sos.ca.gov/propositions/37/",
+      "analysis": "https://voterguide.sos.ca.gov/propositions/37/analysis.htm",
+      "arguments": "https://voterguide.sos.ca.gov/propositions/37/arguments-rebuttals.htm",
+      "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop37-text-proposed-laws.pdf"
+    },
+    "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
+    "argSrc": null
+  },
+  {
+    "id": "38",
+    "label": "Prop 38",
+    "title": "Immunology research bond",
+    "official": "Authorizes Bonds for Immunology Medical Research. Initiative Statute.",
+    "origin": "Petition",
+    "type": "Initiative statute · bond",
+    "topics": [
+      "health",
+      "budget"
+    ],
+    "short": "Borrow $8.4 billion for immune-system medical research.",
+    "what": "Authorizes $8.4 billion in [[go-bond|general obligation bonds]] for immunology and immunotherapy research. Half goes to one University of California–affiliated nonprofit research institute and half to competitive research grants.",
+    "yes": "The state could borrow $8.4 billion to support medical research in immunology and immunotherapy conducted by California research institutes and universities.",
+    "no": "The state could not borrow $8.4 billion to support medical research in immunology and immunotherapy conducted by California research institutes and universities.",
+    "fiscal": "$500–600 million a year for about 20 years, with some or all of the cost offset if the research generates revenue.",
+    "short_term": "Grants and institute funding begin as bonds are sold.",
+    "long_term": "About $500–600 million a year from the General Fund for roughly 20 years. Any offset depends on research producing marketable treatments.",
+    "supporters": "Michael J. Fox Foundation; Alzheimer's Los Angeles; Kidney Cancer Assoc; American Nurses Assoc\\CA",
+    "opponents": "Robert M. Kaplan, Ph.D. (Stanford)",
+    "pro": "YES on 38 supports life-saving immunology research to cure and prevent diseases like cancer, heart disease, Alzheimer's. Strong accountability including independent audits. Mandates 20% Rx discount. Designed to ensure no cost to taxpayers. YES on 38 could save your life and someone you love.",
+    "con": "California should continue supporting biomedical research, but Proposition 38 is the wrong approach. It would commit taxpayers to decades of new bond debt while limiting California's flexibility to address changing health priorities. Research funding should be guided through the normal budget process—not by ballot initiatives.",
+    "deep": [
+      "At least $4.2 billion must go to cancer, heart disease, and Alzheimer's research.",
+      "The single institute is chosen by the Department of Public Health; grant funds are awarded by a council of seven UC campuses and 10–15 other California institutions.",
+      "Treatments developed with the money must be sold in California at a 20% discount, and 10% of resulting revenue goes to the state until the bonds are repaid.",
+      "Proponent is Gary K. Michelson, whose entities account for $31.2 million of the yes campaign's funds. California Today reports the institute criteria match the California Institute for Immunology and Immunotherapy, which he co-founded.",
+      "The \"no cost to taxpayers\" claim in the yes argument depends on future research revenue. The LAO's estimate is $500–600 million a year in repayment, possibly offset later."
+    ],
+    "money": {
+      "yes": 48.2,
+      "no": 0,
+      "yesNote": "Gary Michelson entities $31.2M",
+      "noNote": "No opposing committee above $1M reported"
+    },
+    "groups": [
+      "budget",
+      "health"
+    ],
+    "threshold": "Simple majority (more than 50% yes)",
+    "jurisdiction": "ca",
+    "sources": {
+      "guide": "https://voterguide.sos.ca.gov/propositions/38/",
+      "analysis": "https://voterguide.sos.ca.gov/propositions/38/analysis.htm",
+      "arguments": "https://voterguide.sos.ca.gov/propositions/38/arguments-rebuttals.htm",
+      "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop38-text-proposed-laws.pdf"
+    },
+    "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
+    "argSrc": null
+  },
+  {
+    "id": "39",
+    "label": "Prop 39",
+    "title": "Voter ID and citizenship checks",
+    "official": "Prohibits Citizens from Voting Unless They Present Government-Issued Identification. Initiative Constitutional Amendment.",
+    "origin": "Petition",
+    "type": "Initiative constitutional amendment",
+    "topics": [
+      "elections"
+    ],
+    "short": "Require government ID to vote in person and ID digits on mail ballots.",
+    "what": "Requires government-issued ID to vote in person. To vote by mail, a voter must designate an ID in their registration and write its last four digits on each ballot envelope; a mismatch means the ballot is not counted. Also requires officials to make \"best efforts\" to verify voters' citizenship.",
+    "yes": "Voters would be required to present additional identifying information to elections officials each time they vote.",
+    "no": "A voter's identity would continue to be established with the voter's signature.",
+    "fiscal": "Tens of millions to low hundreds of millions of dollars a year to implement.",
+    "short_term": "The Legislature must pass laws defining which IDs count and what \"best efforts\" means before full implementation.",
+    "long_term": "Ongoing state and county costs. Fewer people may stay registered, from removal of ineligible voters or of eligible voters who lack ID; the LAO expects any savings from that to be smaller than the costs.",
+    "supporters": "The Transparency Foundation; Latino American Political Assn; Howard Jarvis Taxpayers Assn; CA Women's Leadership Assn",
+    "opponents": "ACLU California Action; Common Cause; League of Women Voters of California",
+    "pro": "Yes on Prop. 39 gives California a BIPARTISAN solution for VOTER ID. Supported by a solid majority of Democratic, Independent and Republican voters. Increases trust and confidence in our elections.",
+    "con": "No on Prop. 39. This would advance Trump's voter suppression agenda by adding costly, unnecessary barriers that could block eligible California voters, expose personal information to identity theft, and waste hundreds of millions in taxpayer dollars. Don't let MAGA billionaires decide which voters count. Vote No.",
+    "deep": [
+      "How it works today: identity is established at registration with a driver's license number, state ID number, or last four of a Social Security number. In-person voters sign the roster; mail voters sign the envelope, and officials verify mail-ballot signatures before counting.",
+      "Scale: in November 2024 about 13 million of 16 million California voters used a [[vbm|mail ballot]].",
+      "Creates a free state voter ID card on request.",
+      "Officials must report each year the share of registered voters in each county whose citizenship has been verified. The State Auditor reviews compliance every odd-numbered year.",
+      "U.S. citizenship is already required to register; falsely claiming it is perjury. San Francisco and Oakland allow certain noncitizen parents to vote only in school board elections.",
+      "As a constitutional amendment, the requirement would apply to every election in California, state and local."
+    ],
+    "money": {
+      "yes": 22,
+      "no": 21,
+      "yesNote": "Richard Uihlein $17M",
+      "noNote": "California Democratic Party $5.45M; Federated Indians of Graton Rancheria $2M; Reed Hastings $1M (three committees)"
+    },
+    "groups": [
+      "elections"
+    ],
+    "threshold": "Simple majority (more than 50% yes)",
+    "jurisdiction": "ca",
+    "sources": {
+      "guide": "https://voterguide.sos.ca.gov/propositions/39/",
+      "analysis": "https://voterguide.sos.ca.gov/propositions/39/analysis.htm",
+      "arguments": "https://voterguide.sos.ca.gov/propositions/39/arguments-rebuttals.htm",
+      "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop39-text-proposed-laws.pdf"
+    },
+    "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
+    "argSrc": null
+  },
+  {
+    "id": "40",
+    "label": "Prop 40",
+    "title": "One-time billionaire tax",
+    "official": "Imposes One-Time Tax on Certain Taxpayers. Initiative Constitutional Amendment and Statute.",
+    "origin": "Petition",
+    "type": "Initiative constitutional amendment & statute",
+    "topics": [
+      "taxes",
+      "health"
+    ],
+    "short": "A one-time 5% tax on the net worth of California billionaires, mostly for health care.",
+    "what": "Imposes a one-time [[wealth-tax|wealth tax]] of 5% of [[net-worth|net worth]] on people worth $1 billion or more who were California residents on January 1, 2026. Ninety percent of the money goes to health care; the rest to education, food assistance, and running the tax.",
+    "yes": "The state would collect a one-time tax from billionaires equal to 5 percent of their wealth.",
+    "no": "The state would not collect a one-time tax from billionaires equal to 5 percent of their wealth.",
+    "fiscal": "Temporary revenue of tens of billions of dollars over several years. Possible ongoing loss of less than $1 billion a year in income tax if some billionaires leave.",
+    "short_term": "Tax due in 2027, or spread over five years at extra cost. Tens of billions of dollars for health care over several years.",
+    "long_term": "Possible ongoing income tax loss of under $1 billion a year. The LAO says timing and amounts are very hard to predict because of stock prices and taxpayer responses.",
+    "supporters": "US Senator Bernie Sanders; SEIU United Healthcare Workers West",
+    "opponents": "California Primary Care Association; California School Boards Association; California Taxpayers Association",
+    "pro": "Vote YES on 40 to tax billionaires. Trump slashed healthcare funding to pay for billionaire tax breaks, eliminating coverage for over a million Californians and doubling health insurance premiums for millions more. It's time to make billionaires pay their fair share and stop sticking the middle class with the bill.",
+    "con": "Prop. 40 is a flawed, one-time tax scheme that hurts our economy, damages our state budget, and contains a loophole exposing all Californians to taxes we can't afford—but does nothing to lower healthcare costs. No safeguards, no accountability. Join California Teachers Association, California Medical Association, California Children's Hospital Association, California Professional Firefighters, State Building and Construction Trades Council of California, Democrats and Republicans: NO on 40.",
+    "deep": [
+      "Who pays: a few hundred Californians with net worth over $1 billion, many of whom built wealth in California technology companies.",
+      "What counts: businesses, securities, art, collectibles, and intellectual property worldwide. Real estate, pensions, and retirement accounts are generally excluded.",
+      "Residency date of January 1, 2026 means moving away now does not avoid the tax. That backward-looking date is what Prop 42 calls a [[retroactive|retroactive tax]].",
+      "The revenue is exempt from the [[prop98|Prop 98 school guarantee]], reserve rules, and the [[gann|state spending limit]]. That exemption is the hook Prop 41 targets.",
+      "Administration could cost tens of millions of dollars a year for several years, paid from the tax revenue.",
+      "Governor Newsom and both candidates for governor oppose it, per the official argument against and the September 30 debate.",
+      "Read with Props 41 and 42: if either gets more yes votes than Prop 40, Prop 40 could be stopped even if a majority approves it. See Linked measures."
+    ],
+    "money": {
+      "yes": 32.3,
+      "no": 99.15,
+      "yesNote": "SEIU-UHW entities $31.8M",
+      "noNote": "Main No committee $88.7M ($88.5M from Building a Better California); Golden State Promise $10.45M (Ripple Labs and Chris Larsen)"
+    },
+    "groups": [
+      "tax",
+      "health"
+    ],
+    "threshold": "Simple majority (more than 50% yes)",
+    "jurisdiction": "ca",
+    "sources": {
+      "guide": "https://voterguide.sos.ca.gov/propositions/40/",
+      "analysis": "https://voterguide.sos.ca.gov/propositions/40/analysis.htm",
+      "arguments": "https://voterguide.sos.ca.gov/propositions/40/arguments-rebuttals.htm",
+      "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop40-text-proposed-laws.pdf"
+    },
+    "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
+    "argSrc": null
+  },
+  {
+    "id": "41",
+    "label": "Prop 41",
+    "title": "Tax audits and spending-limit rule",
+    "official": "Prohibits New State Taxes That Exclude Revenues from State Spending Limit. Requires Audits for New State Special Taxes. Initiative Constitutional Amendment.",
+    "origin": "Petition",
+    "type": "Initiative constitutional amendment",
+    "topics": [
+      "taxes"
+    ],
+    "short": "Audit programs funded by new special taxes; bar new taxes from escaping the spending limit.",
+    "what": "Two parts. First, the State Auditor must review programs funded by any proposed new [[special-tax|special tax]] before a voter initiative reaches the ballot, and audit them every four years after. Second, no state tax enacted or taking effect on or after January 1, 2026 may be excluded from the [[gann|state spending limit]], including taxes on this same ballot.",
+    "yes": "When special taxes are proposed by voter initiatives, the California State Auditor would review programs funded by the tax before the initiative appears on the ballot. The California State Auditor also would regularly review programs funded by special taxes approved by voters or the Legislature. In addition, the state might not be able to exclude any new special tax spending from its spending limit.",
+    "no": "The California State Auditor's responsibility to review government programs would not change. The state spending limit requirements would not change.",
+    "fiscal": "Net effect unknown. Audit costs in the low millions of dollars a year, growing over time, mostly paid by new tax revenue.",
+    "short_term": "Could stop Prop 40 if Prop 41 gets more yes votes. Audits start with the next special tax proposal.",
+    "long_term": "Every new special tax gets a pre-ballot audit summary in the voter guide and four-year reviews. Future taxes could not be written to sit outside the spending limit.",
+    "supporters": "CA Society of CPAs (CalCPAs); CalAsian Chamber of Commerce; California Taxpayers Association (CalTax)",
+    "opponents": "US Senator Bernie Sanders; SEIU United Healthcare Workers West",
+    "pro": "Californians deserve better results for our taxes. Billions have flowed into programs like homelessness, with too little to show for it. Prop. 41 requires the independent State Auditor to conduct PUBLIC AUDITS of programs funded by new taxes—so we get more transparency, more accountability and better outcomes for taxpayers.",
+    "con": "Prop. 41 isn't really about audits—it's a billionaire-funded trick designed to undo the California Billionaire Tax. Billionaires would rather millions of Californians lose healthcare than pay a modest tax on their extreme wealth. Don't fall for the billionaires' lies. Vote NO on 41.",
+    "deep": [
+      "The pre-ballot audit happens once supporters gather 25% of required signatures, before it is known whether the measure qualifies. It must identify ways to cut the program's annual cost by 10%.",
+      "If the measure fails or never reaches the ballot, the audit is paid from the General Fund; if it passes, from the new tax.",
+      "Audit summaries add pages to the voter guide, costing a few hundred thousand dollars per qualifying initiative.",
+      "The text does not name Prop 40, but it applies to taxes on the same ballot. Prop 40 exempts its revenue from the spending limit, which is the conflict the LAO flags.",
+      "The audits apply to state special taxes. Local special taxes are the subject of Prop 43."
+    ],
+    "money": {
+      "yes": 58.4,
+      "no": 0,
+      "yesNote": "Building a Better California $58.35M",
+      "noNote": "No separate committee; opposed by the Yes on 40 campaign"
+    },
+    "groups": [
+      "tax",
+      "special"
+    ],
+    "threshold": "Simple majority (more than 50% yes)",
+    "jurisdiction": "ca",
+    "sources": {
+      "guide": "https://voterguide.sos.ca.gov/propositions/41/",
+      "analysis": "https://voterguide.sos.ca.gov/propositions/41/analysis.htm",
+      "arguments": "https://voterguide.sos.ca.gov/propositions/41/arguments-rebuttals.htm",
+      "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop41-text-proposed-laws.pdf"
+    },
+    "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
+    "argSrc": null
+  },
+  {
+    "id": "42",
+    "label": "Prop 42",
+    "title": "Ban new taxes on what people own",
+    "official": "Prohibits New State Personal Property Taxes and Certain Retroactive State Taxes. Initiative Constitutional Amendment.",
+    "origin": "Petition",
+    "type": "Initiative constitutional amendment",
+    "topics": [
+      "taxes"
+    ],
+    "short": "Constitutionally bar new state taxes on owning assets, and most retroactive taxes.",
+    "what": "Bars any new state tax on owning [[personal-property|personal property]] (everything other than real estate, including stocks, retirement savings, business stakes, and digital assets). Also bars [[retroactive|retroactive taxes]], including ones based on where someone lived before the tax took effect. Applies to taxes enacted or taking effect on or after January 1, 2026, including on this ballot.",
+    "yes": "The state could not establish new taxes on the ownership of financial assets or other personal property.",
+    "no": "The state would continue to have the option to establish new taxes on the ownership of financial assets or other personal property.",
+    "fiscal": "Possibility that tax revenues will not go up as much in the future.",
+    "short_term": "Could stop Prop 40 if Prop 42 gets more yes votes.",
+    "long_term": "A permanent constitutional limit on future tax options. The LAO says when and by how much revenues would be lower is unclear.",
+    "supporters": "CA Professional Firefighters; State Building & Construction Trades Council of CA; AMVETS Department of CA",
+    "opponents": "US Senator Bernie Sanders; SEIU United Healthcare Workers West",
+    "pro": "California's Constitution currently allows the Legislature to tax retirement and savings—even though you already paid taxes on that money when you earned it! Prop. 42 protects Californians from this double taxation, by prohibiting new and retroactive taxes on personal property, including retirement and savings. You earned it. Prop. 42 protects it.",
+    "con": "This is just another billionaire-funded trick. Prop. 42 isn't really about protecting your retirement savings—its only real purpose is to undo the California Billionaire Tax. Billionaires would rather millions of Californians lose healthcare than pay a modest tax on their extreme wealth. Vote NO on 42.",
+    "deep": [
+      "Today: the state and local governments already tax some personal property, such as the vehicle license fee and county taxes on business equipment. Those existing taxes are unaffected. Simply owning stocks or investment accounts is not taxed; income from them is.",
+      "Prop 40 is both a tax on owning assets (net worth) and keyed to a past residency date, so it falls under both prohibitions. That is why the LAO flags the conflict.",
+      "Because it is a constitutional amendment, a future wealth tax or similar would first need voters to amend the Constitution again.",
+      "At $97.8 million, Yes on 42 is the largest single committee on the ballot."
+    ],
+    "money": {
+      "yes": 97.8,
+      "no": 0,
+      "yesNote": "Building a Better California (all but ~$22,500)",
+      "noNote": "No separate committee; opposed by the Yes on 40 campaign"
+    },
+    "groups": [
+      "tax"
+    ],
+    "threshold": "Simple majority (more than 50% yes)",
+    "jurisdiction": "ca",
+    "sources": {
+      "guide": "https://voterguide.sos.ca.gov/propositions/42/",
+      "analysis": "https://voterguide.sos.ca.gov/propositions/42/analysis.htm",
+      "arguments": "https://voterguide.sos.ca.gov/propositions/42/arguments-rebuttals.htm",
+      "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop42-text-proposed-laws.pdf"
+    },
+    "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
+    "argSrc": null
+  },
+  {
+    "id": "43",
+    "label": "Prop 43",
+    "title": "Two-thirds vote for citizen-proposed local taxes",
+    "official": "Limits Voters' Ability to Raise Revenues for Local Government Services. Legislative Constitutional Amendment.",
+    "origin": "Legislature",
+    "type": "Legislative constitutional amendment",
+    "topics": [
+      "taxes",
+      "local"
+    ],
+    "short": "Local special taxes proposed by voter petition would need two-thirds approval.",
+    "what": "Local [[special-tax|special taxes]] placed on the ballot by a city council or board already need a [[two-thirds|two-thirds vote]]. Court rulings since 2017 let special taxes placed on the ballot by citizen petition pass with a simple majority. Starting January 1, 2027, Prop 43 would require two-thirds for those too.",
+    "yes": "Certain local government taxes would require two-thirds approval by voters.",
+    "no": "Certain local government taxes could continue to be approved by voters with a majority vote.",
+    "fiscal": "Local government tax revenues may not go up as much in the future.",
+    "short_term": "No effect on existing taxes. Applies to new, increased, or extended citizen-proposed special taxes from 2027.",
+    "long_term": "Harder to pass voter-initiated local taxes for specific purposes, such as transit, housing, or schools. Actual effect depends on future local measures.",
+    "supporters": "California Taxpayers Association; Family Business Association of California; California Hispanic Chambers of Commerce",
+    "opponents": "California Professional Firefighters; California Federation of Teachers; Nurse Alliance of SEIU CA",
+    "pro": "Prop. 43 protects taxpayers by restoring Proposition 13's two-thirds vote requirement to pass local special taxes, including sales taxes, real estate taxes and utility taxes. Courts have allowed special interests to pass earmarked tax increases with fewer votes. Prop. 43 closes this loophole, protecting taxpayers, homeowners and renters. Vote yes.",
+    "con": "PROPOSITION 43 LIMITS VOTERS' ABILITY TO FUND ESSENTIAL LOCAL SERVICES including fire protection, 911 response, schools, roads, hospitals and affordable housing. It doesn't cut your taxes and lets just 33.4% of voters veto what nearly 67% want. Protect your vote and majority rule. Vote NO on Proposition 43.",
+    "deep": [
+      "Applies to cities, counties, special districts, and school districts.",
+      "The Legislature placed it on the ballot with near-unanimous votes (Senate 35–1, Assembly 68–2). News reports describe it as replacing a broader Howard Jarvis Taxpayers Association initiative, which would also have affected some existing taxes.",
+      "Local angle: any future citizen-led special tax in Santa Clara County or San José would need two-thirds if this passes. It would not apply to the regional transit measure (RTM) on this ballot, because Prop 43 starts in 2027.",
+      "Unusual setup: a legislative measure whose listed supporters are taxpayer groups and whose listed opponents are public-employee unions."
+    ],
+    "money": {
+      "yes": 14,
+      "no": 5.4,
+      "yesNote": "California Business Roundtable Issues PAC $9.85M",
+      "noNote": "Led by SEIU"
+    },
+    "groups": [
+      "special",
+      "transit"
+    ],
+    "threshold": "Simple majority (more than 50% yes)",
+    "jurisdiction": "ca",
+    "sources": {
+      "guide": "https://voterguide.sos.ca.gov/propositions/43/",
+      "analysis": "https://voterguide.sos.ca.gov/propositions/43/analysis.htm",
+      "arguments": "https://voterguide.sos.ca.gov/propositions/43/arguments-rebuttals.htm",
+      "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop43-text-proposed-laws.pdf"
+    },
+    "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
+    "argSrc": null
+  },
+  {
+    "id": "44",
+    "label": "Prop 44",
+    "title": "90% spending rule for community clinics",
+    "official": "Requires Community Health Clinics Spend 90% of Revenue on Program Services. Initiative Statute.",
+    "origin": "Petition",
+    "type": "Initiative statute",
+    "topics": [
+      "health"
+    ],
+    "short": "Nonprofit community clinics must spend 90% of revenue on services or pay a penalty.",
+    "what": "Requires private nonprofit [[fqhc|Federally Qualified Health Centers]] to spend at least 90% of annual revenue on \"program services.\" The Attorney General defines that term. Clinics that fall short pay the gap to the state as a penalty, refundable if they comply within five years.",
+    "yes": "Certain private nonprofit health care clinics would have to spend at least 90 percent of their revenue each year on providing health care services.",
+    "no": "The new requirement on health care clinic spending would not go into effect.",
+    "fiscal": "State costs in the low tens of millions of dollars a year, covered by fees on clinics.",
+    "short_term": "The Attorney General writes rules defining \"program services\"; clinics adjust spending.",
+    "long_term": "The LAO says clinics currently report spending about 80% of revenue on health care services on average, and some that cannot meet 90% might close.",
+    "supporters": "None submitted (campaign run by SEIU-UHW)",
+    "opponents": "American Academy of Pediatrics CA; CA School Nurses Org; CA Academy of Family Physicians; CA Medical Assoc.",
+    "pro": "Prop. 44 holds community clinics and their executives accountable by requiring that 90% of clinic revenue be spent on clinics' charitable mission: patient care and services that make care possible. It increases transparency, reduces wasteful executive spending, and ensures healthcare dollars go where they belong: caring for Californians in need.",
+    "con": "Prop. 44 is a dangerous measure that will shut down hundreds of community health clinics and eliminate vital patient services for millions of Californians. American Academy of Pediatrics CA, California Medical Association, California Academy of Family Physicians, California School Nurses Organization, doctors, nurses and patients urge NO on 44!",
+    "deep": [
+      "California has about 2,000 safety-net clinics (LAO).",
+      "The definition of \"program services\" matters a great deal. The measure says it includes but is not limited to patient services; the final line will be set in Attorney General rulemaking.",
+      "Unrefunded penalties go to clinic workforce programs.",
+      "The same union, SEIU-UHW, sponsors Prop 40. News reports say a similar bill (AB 1113) died in the Legislature."
+    ],
+    "money": {
+      "yes": 16.9,
+      "no": 16.8,
+      "yesNote": "SEIU-UHW political issues committee (100%)",
+      "noNote": "AltaMed $5.5M and other clinics"
+    },
+    "groups": [
+      "health"
+    ],
+    "threshold": "Simple majority (more than 50% yes)",
+    "jurisdiction": "ca",
+    "sources": {
+      "guide": "https://voterguide.sos.ca.gov/propositions/44/",
+      "analysis": "https://voterguide.sos.ca.gov/propositions/44/analysis.htm",
+      "arguments": "https://voterguide.sos.ca.gov/propositions/44/arguments-rebuttals.htm",
+      "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop44-text-proposed-laws.pdf"
+    },
+    "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
+    "argSrc": null
+  },
+  {
+    "id": "45",
+    "label": "Prop 45",
+    "title": "Faster environmental review",
+    "official": "Modifies Environmental Review for Certain Projects. Initiative Statute.",
+    "origin": "Petition",
+    "type": "Initiative statute",
+    "topics": [
+      "housing",
+      "environment"
+    ],
+    "short": "An optional fast track through CEQA for housing, water, energy, and other projects.",
+    "what": "Creates an optional, faster path through [[ceqa|CEQA]] for nine kinds of \"essential\" projects: housing, water systems, clean energy, health facilities, fire and police stations, wildfire risk reduction, broadband, schools, and transportation. It sets binding deadlines and narrows what courts can stop.",
+    "yes": "Certain public and private projects would be eligible for new project review and court challenge procedures. For example, new procedures would tighten time limits for environmental review and reduce the scope of what courts can consider when reviewing legal challenges.",
+    "no": "Public and private projects would continue to use existing project review and court challenge procedures.",
+    "fiscal": "Initial state and local costs in the high tens of millions of dollars a year, possibly over $100 million, partly covered by fees. Longer-term effects uncertain and potentially larger, in either direction.",
+    "short_term": "Agencies set up new procedures; applicants choose between the new track and existing law.",
+    "long_term": "Could speed approval of covered projects. The LAO says long-term fiscal effects could be significant, positive or negative.",
+    "supporters": "California Children's Hospital Association; California Water Association; California Council for Affordable Housing",
+    "opponents": "Coalition for Clean Air; CA Environmental Voters; Physicians for Social Responsibility, LA; National Wildlife Federation",
+    "pro": "The failing status quo is making California unaffordable. Prop. 45 fixes our broken system and lowers our high cost of living by cutting red tape to build housing, water, schools, hospitals, clean energy, and wildfire prevention faster—while maintaining California's strong environmental protections. Vote YES for a more affordable California.",
+    "con": "PROPOSITION 45 LIMITS ENVIRONMENTAL AND PUBLIC REVIEW OF PROJECTS BUILT IN YOUR COMMUNITY. It guts The California Environmental Quality Act—flipping California law to protect corporate profits over public health and our air and water. Prop. 45 won't lower your costs: its utility and corporate funders profit while taxpayers pay more. VOTE NO.",
+    "deep": [
+      "Key changes on the fast track: a 365-business-day limit to finish an [[eir|environmental impact report]]; the applicant may propose a single alternative instead of the agency developing several; standards are frozen at the date of application; public comment periods are capped; tribal consultation is limited to federally recognized tribes.",
+      "Courts could no longer halt an entire project over a CEQA violation, only the deficient part while the agency fixes it.",
+      "Exclusions: Delta water conveyance, nuclear energy, and high-speed rail are not eligible.",
+      "Proponent attorney Kurt Oneto also filed Props 41 and 42."
+    ],
+    "money": {
+      "yes": 30.4,
+      "no": 22.2,
+      "yesNote": "Building a Better California $10M; CA Building Industry Assn ~$7.9M; CalChamber and Edison International $2M each",
+      "noNote": "Clean and Healthy California $7.1M; Wendy Schmidt $5M; building trades and laborers' unions"
+    },
+    "groups": [
+      "housing"
+    ],
+    "threshold": "Simple majority (more than 50% yes)",
+    "jurisdiction": "ca",
+    "sources": {
+      "guide": "https://voterguide.sos.ca.gov/propositions/45/",
+      "analysis": "https://voterguide.sos.ca.gov/propositions/45/analysis.htm",
+      "arguments": "https://voterguide.sos.ca.gov/propositions/45/arguments-rebuttals.htm",
+      "text": "https://vig.cdn.sos.ca.gov/2026/general/pdf/prop45-text-proposed-laws.pdf"
+    },
+    "yesNoSrc": "\"What your vote means,\" Official Voter Information Guide.",
+    "argSrc": null
+  }
+]

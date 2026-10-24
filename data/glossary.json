@@ -1,0 +1,118 @@
+{
+  "go-bond": {
+    "term": "General obligation bond",
+    "definition": "Money the state borrows and repays, with interest, from the General Fund (the main state budget). Needs voter approval. Props 1 and 38 are this type."
+  },
+  "revenue-bond": {
+    "term": "Revenue bond",
+    "definition": "Borrowing repaid from a specific income stream, such as homeowners' loan payments, rather than from the General Fund. Prop 37 uses this type, which is why the LAO finds no direct state cost."
+  },
+  "general-fund": {
+    "term": "General Fund",
+    "definition": "The state's main account. It pays for most public services, including schools, health care, and prisons. Bond repayments and most tax revenue flow through it."
+  },
+  "lao": {
+    "term": "Legislative Analyst's Office (LAO)",
+    "definition": "The Legislature's nonpartisan fiscal and policy adviser. It writes the impartial analysis and fiscal estimate printed for each proposition in the official guide."
+  },
+  "ica": {
+    "term": "Constitutional amendment",
+    "definition": "Changes the California Constitution. Once approved, it can be changed only by another statewide vote. Can be placed on the ballot by the Legislature or by petition."
+  },
+  "statute": {
+    "term": "Statute",
+    "definition": "An ordinary law. An initiative statute generally cannot be changed by the Legislature unless the measure itself allows it, so it can also be hard to amend later."
+  },
+  "initiative": {
+    "term": "Initiative",
+    "definition": "A measure placed on the ballot by collecting voter signatures. In 2026 a statute needed about 546,000 valid signatures and a constitutional amendment 874,641."
+  },
+  "legislative": {
+    "term": "Legislative measure",
+    "definition": "A measure the Legislature voted to place on the ballot. Constitutional amendments and bonds from the Legislature require voter approval."
+  },
+  "special-tax": {
+    "term": "Special tax",
+    "definition": "A tax whose money is dedicated to a specific purpose, such as parks or fire service. A general tax goes into a general account and can be spent on anything."
+  },
+  "gann": {
+    "term": "State spending limit (Gann limit)",
+    "definition": "A cap on how much tax revenue the state can spend each year, adopted by voters in 1979 (Prop 4 of that year). Some spending, such as infrastructure, is excluded. Prop 40 exempts its revenue from this limit; Prop 41 would bar new taxes from being exempted."
+  },
+  "prop98": {
+    "term": "Prop 98 guarantee",
+    "definition": "A 1988 constitutional rule that sets a minimum share of state revenue for K–12 schools and community colleges. Prop 40 exempts its revenue from this rule."
+  },
+  "rainy-day": {
+    "term": "Rainy Day Fund (BSA)",
+    "definition": "The Budget Stabilization Account, the state's main savings reserve, set up in its current form by Prop 2 of 2014. Today it is capped at 10% of General Fund taxes."
+  },
+  "wealth-tax": {
+    "term": "Wealth tax",
+    "definition": "A tax on what a person owns (net worth), not on what they earn in a year. California has no wealth tax today. Prop 40 would impose one, once."
+  },
+  "net-worth": {
+    "term": "Net worth",
+    "definition": "The value of everything a person owns, such as stocks, businesses, and art, minus their debts."
+  },
+  "personal-property": {
+    "term": "Personal property",
+    "definition": "Everything a person owns other than real estate: cars, business equipment, stocks, savings, digital assets. Some is taxed today (the vehicle license fee, business equipment). Owning stocks or savings is not taxed."
+  },
+  "retroactive": {
+    "term": "Retroactive tax",
+    "definition": "A tax that applies to something that already happened, such as income earned or residency on a date before the tax passed. Prop 40 uses residency on January 1, 2026."
+  },
+  "conflict": {
+    "term": "Conflicting measures rule",
+    "definition": "If two measures on the same ballot both pass and conflict, the one with more yes votes generally prevails where they conflict. Courts decide whether they actually conflict."
+  },
+  "ceqa": {
+    "term": "CEQA",
+    "definition": "The California Environmental Quality Act (1970). It requires government agencies to study and disclose a project's environmental effects before approving it, and lets the public sue over the review."
+  },
+  "eir": {
+    "term": "Environmental impact report (EIR)",
+    "definition": "The detailed study CEQA requires for projects that may significantly harm the environment. It must analyze alternatives and ways to reduce harm."
+  },
+  "fqhc": {
+    "term": "Federally Qualified Health Center (FQHC)",
+    "definition": "A community clinic that serves medically underserved areas or populations and receives federal funding and enhanced Medi-Cal payment rates."
+  },
+  "recall": {
+    "term": "Recall election",
+    "definition": "A vote on removing an elected official before their term ends. Today the ballot asks two questions: remove the official? and who should replace them? The replacement with the most votes wins, even without a majority."
+  },
+  "public-financing": {
+    "term": "Public campaign financing",
+    "definition": "A government program that gives candidates public money, usually matching small donations, in exchange for accepting spending limits and other rules."
+  },
+  "charter-city": {
+    "term": "Charter city",
+    "definition": "A city that has adopted its own charter, giving it more control over municipal affairs. Charter cities are already exempt from California's ban on public campaign financing."
+  },
+  "vbm": {
+    "term": "Vote by mail (VBM)",
+    "definition": "Every active registered voter in California is mailed a ballot. In November 2024 about 13 million of 16 million voters used one."
+  },
+  "two-thirds": {
+    "term": "Two-thirds vote",
+    "definition": "A supermajority. A measure needing two-thirds passes only if at least 66.67% vote yes, so a 34% minority can block it."
+  },
+  "ami": {
+    "term": "Area median income (AMI)",
+    "definition": "The midpoint household income for a county, used to set eligibility for housing programs. Prop 37 allows borrowers earning up to twice their county's AMI."
+  },
+  "committee": {
+    "term": "Ballot measure committee",
+    "definition": "A group formed to raise and spend money supporting or opposing a measure. California requires it to disclose its top contributors, which the FPPC publishes."
+  },
+  "parcel-tax": {
+    "term": "Parcel tax",
+    "definition": "A flat annual tax on each property parcel, usually the same amount regardless of value. School parcel taxes need two-thirds voter approval."
+  },
+  "fppc": {
+    "term": "Fair Political Practices Commission (FPPC)",
+    "definition": "The state agency that enforces campaign finance and disclosure law and publishes each ballot committee's top 10 contributors."
+  }
+}

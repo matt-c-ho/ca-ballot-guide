@@ -1,0 +1,11 @@
+{
+  "default": "2026-11-03",
+  "elections": [
+    {
+      "id": "2026-11-03",
+      "name": "November 3, 2026 General Election",
+      "date": "2026-11-03",
+      "status": "upcoming"
+    }
+  ]
+}
