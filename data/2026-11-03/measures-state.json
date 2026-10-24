@@ -28,9 +28,9 @@
       "Combined with Prop 38, the two bonds would cost about $1 billion a year in General Fund repayment."
     ],
     "money": {
-      "yes": 7.9,
+      "yes": 8.14,
       "no": 0,
-      "yesNote": "Airbnb, two carpenters' councils, and Building a Better California ($1M each); Anthropic ($0.5M)",
+      "yesNote": "Two carpenters' councils, Airbnb, and Building a Better California ($1M each); Meta's California committee ($0.6M); Anthropic ($0.5M)",
       "noNote": "No opposing committee above $1M"
     },
     "groups": [
@@ -159,9 +159,9 @@
       "As a constitutional amendment, a future change would need another statewide vote."
     ],
     "money": {
-      "yes": 49.3,
+      "yes": 77.73,
       "no": 0,
-      "yesNote": "California Teachers Association $33.3M; National Education Association $7.5M",
+      "yesNote": "California Teachers Association $60M; National Education Association $7.5M; California School Employees Association $2.6M",
       "noNote": "No opposing committee above $1M"
     },
     "groups": [
@@ -353,9 +353,9 @@
       "Proponent is former Senate leader Robert Hertzberg."
     ],
     "money": {
-      "yes": 29.55,
+      "yes": 30.89,
       "no": 0,
-      "yesNote": "California Association of Realtors ~$21.85M (including its Homeownership for Families committee); Building a Better California $6M",
+      "yesNote": "Realtor groups ~$16.1M (California Association of Realtors' Homeownership for Families committee $14.85M; National Association of Realtors $1.25M); Building a Better California $6M",
       "noNote": "No opposing committee"
     },
     "groups": [
@@ -420,9 +420,9 @@
       "The \"no cost to taxpayers\" claim in the yes argument depends on future research revenue. The LAO's estimate is $500–600 million a year in repayment, possibly offset later."
     ],
     "money": {
-      "yes": 48.2,
+      "yes": 81.23,
       "no": 0,
-      "yesNote": "Gary Michelson entities $31.2M",
+      "yesNote": "Gary Michelson and his Michelson Center for Public Policy $66.2M; Meyer Luskin $5M",
       "noNote": "No opposing committee above $1M reported"
     },
     "groups": [
@@ -487,10 +487,10 @@
       "As a constitutional amendment, the requirement would apply to every election in California, state and local."
     ],
     "money": {
-      "yes": 22,
-      "no": 21,
-      "yesNote": "Richard Uihlein $17M",
-      "noNote": "California Democratic Party $5.45M; Federated Indians of Graton Rancheria $2M; Reed Hastings $1M (three committees)"
+      "yes": 29.85,
+      "no": 27.94,
+      "yesNote": "Richard Uihlein $17M; Joseph Gebbia $8M; Carl DeMaio's Reform California $3.1M",
+      "noNote": "California Democratic Party ~$6.3M across three committees; California Nurses Association $2M; Federated Indians of Graton Rancheria $2M; Patty Quillin and Quinn Delaney $1.5M each; Reed Hastings $1M"
     },
     "groups": [
       "elections"
@@ -555,10 +555,10 @@
       "Read with Props 41 and 42: if either gets more yes votes than Prop 40, Prop 40 could be stopped even if a majority approves it. See Linked measures."
     ],
     "money": {
-      "yes": 32.3,
-      "no": 99.15,
+      "yes": 32.39,
+      "no": 129.21,
       "yesNote": "SEIU-UHW entities $31.8M",
-      "noNote": "Main No committee $88.7M ($88.5M from Building a Better California); Golden State Promise $10.45M (Ripple Labs and Chris Larsen)"
+      "noNote": "Main No committee $118.8M ($118.5M from Building a Better California); Golden State Promise $10.45M (Ripple Labs and Chris Larsen)"
     },
     "groups": [
       "tax",
@@ -621,7 +621,7 @@
       "The audits apply to state special taxes. Local special taxes are the subject of Prop 43."
     ],
     "money": {
-      "yes": 58.4,
+      "yes": 58.37,
       "no": 0,
       "yesNote": "Building a Better California $58.35M",
       "noNote": "No separate committee; opposed by the Yes on 40 campaign"
@@ -683,12 +683,12 @@
       "Today: the state and local governments already tax some personal property, such as the vehicle license fee and county taxes on business equipment. Those existing taxes are unaffected. Simply owning stocks or investment accounts is not taxed; income from them is.",
       "Prop 40 is both a tax on owning assets (net worth) and keyed to a past residency date, so it falls under both prohibitions. That is why the LAO flags the conflict.",
       "Because it is a constitutional amendment, a future wealth tax or similar would first need voters to amend the Constitution again.",
-      "At $97.8 million, Yes on 42 is the largest single committee on the ballot."
+      "At $128 million (as of October 23), Yes on 42 is the largest single committee on the ballot."
     ],
     "money": {
-      "yes": 97.8,
+      "yes": 127.97,
       "no": 0,
-      "yesNote": "Building a Better California (all but ~$22,500)",
+      "yesNote": "Building a Better California $127.8M",
       "noNote": "No separate committee; opposed by the Yes on 40 campaign"
     },
     "groups": [
@@ -751,10 +751,10 @@
       "Unusual setup: a legislative measure whose listed supporters are taxpayer groups and whose listed opponents are public-employee unions."
     ],
     "money": {
-      "yes": 14,
-      "no": 5.4,
-      "yesNote": "California Business Roundtable Issues PAC $9.85M",
-      "noNote": "Led by SEIU"
+      "yes": 14.71,
+      "no": 7.19,
+      "yesNote": "California Business Roundtable Issues PAC $10.24M; Howard Jarvis Taxpayers Association's Protect Prop. 13 $1.04M; Kilroy Realty and Douglas Emmett ($1M each)",
+      "noNote": "Led by SEIU California ($1.5M), with firefighters', teachers', and building-trades unions"
     },
     "groups": [
       "special",
@@ -816,10 +816,10 @@
       "The same union, SEIU-UHW, sponsors Prop 40. News reports say a similar bill (AB 1113) died in the Legislature."
     ],
     "money": {
-      "yes": 16.9,
-      "no": 16.8,
+      "yes": 16.93,
+      "no": 17.48,
       "yesNote": "SEIU-UHW political issues committee (100%)",
-      "noNote": "AltaMed $5.5M and other clinics"
+      "noNote": "AltaMed $6.1M and other community clinics"
     },
     "groups": [
       "health"
@@ -881,10 +881,10 @@
       "Proponent attorney Kurt Oneto also filed Props 41 and 42."
     ],
     "money": {
-      "yes": 30.4,
-      "no": 22.2,
-      "yesNote": "Building a Better California $10M; CA Building Industry Assn ~$7.9M; CalChamber and Edison International $2M each",
-      "noNote": "Clean and Healthy California $7.1M; Wendy Schmidt $5M; building trades and laborers' unions"
+      "yes": 38.95,
+      "no": 31.72,
+      "yesNote": "Building a Better California $10M; California Building Industry Association and its committee ~$9.9M; CA Business PAC $3.9M; PG&E $2.4M; Edison International $2M",
+      "noNote": "Wendy Schmidt $10M; Clean and Healthy California $7.1M; building trades, laborers', and iron workers' unions"
     },
     "groups": [
       "housing"
