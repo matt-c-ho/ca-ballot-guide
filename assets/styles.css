@@ -93,6 +93,12 @@ dl.kv dd{margin:0}
 @media (max-width:520px){dl.kv{grid-template-columns:1fr}dl.kv dd{margin-bottom:6px}}
 blockquote{margin:0;padding:14px 16px;background:var(--soft);border-radius:12px;font-size:.95rem}
 blockquote cite{display:block;margin-top:8px;font-style:normal;font-size:.8rem;color:var(--muted)}
+.faq{display:grid;max-width:68ch}
+.faq details{border-top:1px solid var(--line);padding:10px 0}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;font-weight:600}
+.faq details[open] summary{margin-bottom:8px}
+.faq p{margin:0 0 6px}
 details.deep{border-top:1px solid var(--line);padding-top:12px}
 details.deep summary{cursor:pointer;font-weight:700;color:var(--accent)}
 details.deep[open] summary{margin-bottom:12px}

@@ -40,6 +40,10 @@ for (const e of index.elections) {
       for (const g of m.groups || []) if (!groups[g]) err(where, `unknown group "${g}"`);
       for (const k of ["what", "fiscal", "short_term", "long_term"]) termRefs(m[k], `${where}.${k}`);
       (m.deep || []).forEach((d, i) => termRefs(d, `${where}.deep[${i}]`));
+      (m.faq || []).forEach((f, i) => {
+        if (!f.q || !f.a) err(`${where}.faq[${i}]`, "needs q and a");
+        termRefs(f.a, `${where}.faq[${i}]`);
+      });
       (m.reading || []).forEach((r, i) => {
         if (!r.source || !r.title) err(`${where}.reading[${i}]`, "needs source and title");
         if (!/^https:\/\//.test(r.url || "")) err(`${where}.reading[${i}]`, "url must start with https://");

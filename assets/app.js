@@ -161,6 +161,10 @@ function detail(id) {
      <dt>Long term</dt><dd>${rich(m.long_term)}</dd>
     </dl>
    </section>
+   ${(m.faq || []).length ? `<section class="section"><h3>Common questions</h3>
+    <div class="faq">${m.faq.map(f => `<details><summary>${esc(f.q)}</summary><p>${rich(f.a)}</p>${f.src ? `<p class="src">Source: ${esc(f.src)}</p>` : ""}</details>`).join("")}</div>
+    <p class="src">Plain-language answers written for this guide from the sources named under each answer.</p>
+   </section>` : ""}
    <section class="section"><h3>The case each side makes</h3>
     <div class="two">
      <div style="display:grid;gap:8px;min-width:0;align-content:start"><span class="eyebrow">For</span>${arg(m.pro, "pro", m)}<p class="small"><b>Listed supporters:</b> ${esc(m.supporters)}</p></div>

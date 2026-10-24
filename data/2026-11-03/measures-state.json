@@ -63,6 +63,33 @@
         "title": "Quick Guide to Props: Prop 1",
         "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/1"
       }
+    ],
+    "faq": [
+      {
+        "q": "Will Prop 1 raise my taxes?",
+        "a": "No. It creates no new tax. The state would repay the $10 billion housing portion from its existing [[general-fund|General Fund]], about $500–600 million a year for about 25 years. That is roughly a quarter of 1% of the state budget. Because of interest, the total cost is about 15% more (after inflation) than paying up front.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Who is the housing for?",
+        "a": "Mostly lower-income Californians. The largest share, $7.2 billion, goes to rental housing, where units generally must be reserved for low-income households for 55 years. Another $1.1 billion helps low- and moderate-income first-time buyers. Smaller amounts go to farmworker housing, UC and CSU student housing, tribal housing, and veterans' home loans.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "How much housing would it pay for?",
+        "a": "The LAO estimates subsidies for up to 40,000 rental apartments, about 2,500 farmworker units, and about 1,200 student beds. It would also help up to 40,000 households become or stay homeowners, including about 2,100 veterans. The bond money is usually combined with other government funding.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Does the veterans' part cost taxpayers?",
+        "a": "Not directly. The $1.25 billion for Cal-Vet home loans is repaid by veterans' monthly loan payments. The LAO says those payments have always covered what the state owes on past veterans' bonds.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Hasn't California passed housing bonds before?",
+        "a": "Yes. Voters approved $2 billion in 2024 for housing people facing homelessness who have mental health or substance use challenges, including veterans. Voters also approved $1 billion for veterans' home loans in 2018.",
+        "src": "LAO analysis"
+      }
     ]
   },
   {
@@ -127,6 +154,33 @@
         "source": "California Secretary of State",
         "title": "Quick Guide to Props: Prop 2",
         "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/2"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does Prop 2 raise taxes or cut programs?",
+        "a": "It changes no taxes. It changes how much the state must save. In good years more money goes into savings, so less is available to spend that year. In a downturn there would be more savings to draw on, which the LAO says would make balancing the budget somewhat easier.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "How big would the rainy day fund get?",
+        "a": "Today the state must keep making deposits until the fund reaches 10% of General Fund taxes. Prop 2 raises that cap to 20%. It also requires larger deposits when taxes on investment gains are very high, such as during a stock market boom. The state now has about $20 billion in reserves it can use for any program.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Could the state still use the money in an emergency?",
+        "a": "Today the state can stop deposits or withdraw money from the fund during a budget emergency. The LAO's description of Prop 2 does not list any change to that rule.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Why does the spending limit part matter?",
+        "a": "Deposits into the rainy day fund would no longer count toward the [[gann|state spending limit]] until they are withdrawn. That makes the state less likely to hit the limit. Exceeding the limit is what triggers taxpayer rebates, which is the main point of disagreement. Supporters say the change makes saving possible. Opponents say it makes rebates less likely.",
+        "src": "LAO analysis; official arguments"
+      },
+      {
+        "q": "What are the \"extra debt payments\"?",
+        "a": "Today the state must make extra payments toward state worker pension and retiree health debts through 2030. Each year's payment equals the amount first deposited into the rainy day fund. Prop 2 extends these payments to 2040. It also lets them cover more things, such as required payments to schools, repaying money borrowed from other state funds, and certain federal loans.",
+        "src": "LAO analysis"
       }
     ]
   },
@@ -193,6 +247,38 @@
         "title": "Quick Guide to Props: Prop 3",
         "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/3"
       }
+    ],
+    "faq": [
+      {
+        "q": "Will my taxes go up?",
+        "a": "No one's tax rate goes up. Prop 3 keeps the current higher rates on high-income earners instead of letting them expire after the 2030 tax year. Only the top 2% of taxpayers pay these rates.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Who pays these rates?",
+        "a": "For a single filer, they apply to income above about $371,000 a year. The thresholds are roughly double for joint filers and are adjusted each year for inflation. The LAO says the top 2% of taxpayers who pay these rates also pay about half of all state income taxes.",
+        "src": "LAO analysis; Prop 3 rate table"
+      },
+      {
+        "q": "What happens if it fails?",
+        "a": "The higher rates expire, and starting in 2031 the top rate on income above those thresholds would fall to 9.3%. The state would lose an estimated $5 billion to $15 billion a year.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Where does the money go?",
+        "a": "Roughly 40% goes to schools and community colleges. The rest goes to other state programs, with part set aside in budget reserves.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Why is the revenue estimate so wide?",
+        "a": "High earners' income depends heavily on the stock market, such as gains from selling stock. In a weak year the measure might bring in about $5 billion. In a strong year it might bring in $15 billion.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Weren't these rates supposed to be temporary?",
+        "a": "Yes. Voters approved them as temporary in 2012 (Prop 30) and extended them in 2016 (Prop 55). Prop 3 would make them permanent. Because it is a [[ica|constitutional amendment]], changing them later would take another statewide vote.",
+        "src": "LAO analysis"
+      }
     ]
   },
   {
@@ -256,6 +342,33 @@
         "source": "California Secretary of State",
         "title": "Quick Guide to Props: Prop 4",
         "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/4"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does Prop 4 spend tax money on campaigns?",
+        "a": "Not by itself. It lifts the ban on public campaign financing but does not create a program. The state, a county, or a city would have to set up its own program, within the limits Prop 4 sets.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Could money for schools or police be used?",
+        "a": "No. Money meant for education, transportation, or public safety cannot be used for campaigns.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Who could receive public funds?",
+        "a": "Only candidates who show broad support in their district and agree to spending limits and other program rules. Public funds could not pay for legal defense, fines, or repaying a candidate's personal loans to their own campaign.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Do any California cities already do this?",
+        "a": "Yes. [[charter-city|Charter cities]] are exempt from the current ban. Los Angeles, San Francisco, Long Beach, Oakland, and Berkeley already provide public funds to some campaigns.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "What does it cost?",
+        "a": "The state would spend a few hundred thousand dollars a year for the [[fppc|FPPC]] to advise governments considering a program. The LAO says a future program's cost could be significant for any government that creates one, depending on its design.",
+        "src": "LAO analysis"
       }
     ]
   },
@@ -321,6 +434,33 @@
         "source": "California Secretary of State",
         "title": "Quick Guide to Props: Prop 5",
         "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/5"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Could voters still recall officials?",
+        "a": "Yes. Recalls would still happen the same way. Prop 5 only removes the second question, which asks who should replace the official if they are recalled.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Who would replace a recalled governor?",
+        "a": "The lieutenant governor. If the recall happens in the first two years of the term, before the nomination period for the next statewide election closes, the lieutenant governor serves until voters elect a new governor at a later statewide election. If it happens later in the term, the lieutenant governor serves the rest of the term.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "What about legislators and other officials?",
+        "a": "A recalled legislator's seat would typically be filled by a special election. Other offices, such as attorney general or lieutenant governor, would be filled by the governor's appointment, as they are now when an office becomes vacant. Despite the measure's title, the LAO notes it covers legislators too.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "How does it work today?",
+        "a": "Voters answer both questions at once. If the official is recalled, whoever gets the most votes on the second question takes office, even without a majority. There were 135 replacement candidates in the 2003 governor recall and 46 in 2021.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Would it save money?",
+        "a": "It depends on future recalls. A separate special election could cost millions. Dropping the replacement candidates from the ballot could save millions. The LAO says the net effect is unknown.",
+        "src": "LAO analysis"
       }
     ]
   },
@@ -388,6 +528,33 @@
         "title": "Quick Guide to Props: Prop 37",
         "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/37"
       }
+    ],
+    "faq": [
+      {
+        "q": "Is the 17% help a grant?",
+        "a": "No. It is a loan covering up to 17% of the home price, which the buyer repays with monthly payments. Those payments repay the bonds and cover the program's costs.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Who qualifies?",
+        "a": "California residents whose household income is no more than double the typical income in their area. The buyer must be the first purchaser of a newly built home, the price must be under set limits, and the buyer needs a down payment of at least 3%.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Does it cost taxpayers?",
+        "a": "The LAO finds no direct state or local cost. These are [[revenue-bond|revenue bonds]], repaid by homebuyers' loan payments rather than the [[general-fund|General Fund]].",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Will it lead to more homes being built?",
+        "a": "The LAO says that is unknown. It depends on how many investors buy the bonds, how the loans compare in cost with other down payment programs, and whether builders and buyers respond.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "What is the \"qualified builder option\"?",
+        "a": "Builders can choose to meet higher labor standards, such as using workers with certain training. In exchange they get more flexible construction-defect rules. Any builder's new homes can qualify for the loans, whether or not it chooses the option.",
+        "src": "LAO analysis"
+      }
     ]
   },
   {
@@ -416,7 +583,7 @@
       "At least $4.2 billion must go to cancer, heart disease, and Alzheimer's research.",
       "The single institute is chosen by the Department of Public Health; grant funds are awarded by a council of seven UC campuses and 10–15 other California institutions.",
       "Treatments developed with the money must be sold in California at a 20% discount, and 10% of resulting revenue goes to the state until the bonds are repaid.",
-      "Proponent is Gary K. Michelson, whose entities account for $31.2 million of the yes campaign's funds. California Today reports the institute criteria match the California Institute for Immunology and Immunotherapy, which he co-founded.",
+      "Proponent is Gary K. Michelson, whose entities account for about $66.2 million of the yes campaign's funds (FPPC, Oct 23). CalMatters reports the institute criteria currently match only the California Institute for Immunology and Immunotherapy, of which he is the principal funder.",
       "The \"no cost to taxpayers\" claim in the yes argument depends on future research revenue. The LAO's estimate is $500–600 million a year in repayment, possibly offset later."
     ],
     "money": {
@@ -454,6 +621,38 @@
         "source": "California Secretary of State",
         "title": "Quick Guide to Props: Prop 38",
         "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/38"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Will Prop 38 raise my taxes?",
+        "a": "It creates no new tax. The state would repay the bonds from its [[general-fund|General Fund]], about $500–600 million a year for about 20 years. Because of interest, the total cost is about 10% more (after inflation) than paying up front.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Who gets the money?",
+        "a": "About half goes to one research institute, selected by the Department of Public Health using criteria on size, funding, and ties to a UC campus. The other half becomes competitive grants, awarded by a council of 7 UC campuses and 10–15 other California research institutions to its own members. At least $4.2 billion must go to cancer, heart disease, and Alzheimer's research.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Is the institute share written for one institute?",
+        "a": "CalMatters reported that only one institute currently meets the criteria: the California Institute for Immunology and Immunotherapy. Its principal funder is Gary Michelson, who wrote Prop 38. The Department of Public Health would make the selection.",
+        "src": "CalMatters; LAO analysis"
+      },
+      {
+        "q": "Could the state get its money back?",
+        "a": "Possibly, in part. Ten percent of any revenue from discoveries goes to the state until the bond cost is repaid. The LAO says the amount could be significant but is uncertain, and repayment could take decades.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "What do Californians get besides research?",
+        "a": "Treatments developed with the money and sold in California must generally be offered at a 20% discount. Grant recipients must buy at least half their goods and services from California suppliers when reasonably possible.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Has California funded medical research with bonds before?",
+        "a": "Yes. Voters approved $8.5 billion in stem cell research bonds through Prop 71 (2004) and Prop 14 (2020).",
+        "src": "LAO analysis"
       }
     ]
   },
@@ -520,6 +719,38 @@
         "source": "California Secretary of State",
         "title": "Quick Guide to Props: Prop 39",
         "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/39"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What ID would I need?",
+        "a": "To vote in person, you would show a government-issued ID. To vote by mail, you would choose an ID in your voter registration and write its last four digits on each ballot envelope. The Legislature would still have to decide which IDs count.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "What if I don't have an ID?",
+        "a": "The state would have to provide a voter ID card free to anyone who asks for one.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Can I still vote by mail?",
+        "a": "Yes. All registered voters get a mail ballot today, and the LAO does not describe Prop 39 changing that. You would need to select an ID in your registration, and officials would check that the ID digits on your envelope match your registration before counting your ballot.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "How is identity checked today?",
+        "a": "When you register, you give a driver's license number, state ID number, or the last four digits of your Social Security number. In-person voters sign the roster. Mail voters sign the envelope, and officials check that signature before counting the ballot. In November 2024, about 13 million of 16 million California voters voted by mail.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Can noncitizens vote now?",
+        "a": "No, not in state or federal elections or almost any local election. Falsely claiming citizenship to register is perjury. The one exception: San Francisco and Oakland let certain noncitizen parents vote only in school board elections.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "When would it take effect, and what would it cost?",
+        "a": "The Legislature must first pass laws filling in details, such as which IDs count and what \"best efforts\" to verify citizenship means. The LAO estimates ongoing costs of tens of millions to low hundreds of millions of dollars a year. It would apply to every election in California, state and local.",
+        "src": "LAO analysis"
       }
     ]
   },
@@ -590,6 +821,43 @@
         "title": "Quick Guide to Props: Prop 40",
         "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/40"
       }
+    ],
+    "faq": [
+      {
+        "q": "Who would pay?",
+        "a": "Only people with a [[net-worth|net worth]] of $1 billion or more who were California residents on January 1, 2026. That is a few hundred people.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Does it affect me if I'm not a billionaire?",
+        "a": "Not directly. The LAO says some billionaires might leave or otherwise reduce their income taxes, which could cost the state less than $1 billion a year in ongoing income tax revenue. That would leave less money in the [[general-fund|General Fund]] for other services.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Can billionaires avoid it by moving?",
+        "a": "Not the tax itself, because it is based on residency on January 1, 2026. Moving away later could still reduce the state income taxes they would pay in future years.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "How much money, and where would it go?",
+        "a": "The LAO expects tens of billions of dollars over several years, but the timing and amount are very hard to predict. Ninety percent must go to health care, and the rest to education, food assistance, and running the tax. The money would not count toward the [[gann|state spending limit]] or the [[prop98|school funding guarantee]].",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "What counts as wealth?",
+        "a": "Net worth: what a person owns, such as stocks, businesses, and other investments, minus debts. Real estate, pensions, and retirement accounts are generally excluded.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Is it really one-time?",
+        "a": "Yes. The tax is due in 2027. Taxpayers can spread payments over five years but pay more to do so.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "What if Prop 40 and Prop 41 or 42 all pass?",
+        "a": "When measures passed at the same election [[conflict|conflict]], the one with the most yes votes generally wins. Props 41 and 42 are written to apply to taxes on this ballot. If either gets more yes votes than Prop 40, Prop 40 could be blocked even if a majority approves it.",
+        "src": "California Constitution, Art. II, Sec. 10; LAO"
+      }
     ]
   },
   {
@@ -656,6 +924,33 @@
         "title": "Quick Guide to Props: Prop 41",
         "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/41"
       }
+    ],
+    "faq": [
+      {
+        "q": "Does Prop 41 raise or cut any taxes?",
+        "a": "No. It adds audit requirements and changes how new taxes count toward the [[gann|state spending limit]].",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "What would the audits do?",
+        "a": "When an initiative proposing a new state [[special-tax|special tax]] collects 25% of its needed signatures, the State Auditor would review the programs it would fund. The review must include ways to cut their yearly cost by 10%, and a summary would appear in the voter guide. Programs funded by special taxes created after January 1, 2026, by voters or the Legislature, would be audited every four years.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Who pays for the audits?",
+        "a": "If the tax passes, the new tax revenue pays. If it fails or never reaches the ballot, the [[general-fund|General Fund]] pays. The LAO estimates the cost in the low millions of dollars a year, growing over time. Each audit summary would add a few hundred thousand dollars to the cost of printing and mailing the voter guide.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Why is it linked to Prop 40?",
+        "a": "Prop 41 says no tax enacted or taking effect on or after January 1, 2026 can be excluded from the state spending limit, including taxes on this ballot. Prop 40 excludes its revenue from that limit. If Prop 41 gets more yes votes than Prop 40, Prop 40 could be blocked.",
+        "src": "LAO analysis; measure text"
+      },
+      {
+        "q": "Does it apply to local taxes?",
+        "a": "Its audits cover state special taxes. Local special taxes are the subject of Prop 43.",
+        "src": "Measure text"
+      }
     ]
   },
   {
@@ -719,6 +1014,38 @@
         "source": "California Secretary of State",
         "title": "Quick Guide to Props: Prop 42",
         "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/42"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Would this change any taxes I pay now?",
+        "a": "No. Existing taxes on personal property, such as the vehicle license fee and county taxes on business equipment, stay the same. Prop 42 bars new ones.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Does it affect the property tax on my home?",
+        "a": "No. [[personal-property|Personal property]] means everything people own other than real estate.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Would my stocks or retirement account be taxed?",
+        "a": "They are not taxed today just for owning them. The income they earn is. Prop 42 would prevent a new tax on simply owning them. Income from them would still be taxed as it is now.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "What is a retroactive tax?",
+        "a": "A tax that applies to things that happened in the past, such as a tax on money someone earned two years ago. Prop 42 limits when the Legislature or a ballot measure can impose one.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "How does it relate to Prop 40?",
+        "a": "Prop 40 taxes ownership of assets and is based on where someone lived on January 1, 2026, so it falls under both of Prop 42's bans. The official summary says Prop 42 nullifies conflicting taxes enacted after January 1, 2026. If Prop 42 gets more yes votes than Prop 40, Prop 40 could be blocked.",
+        "src": "Official title and summary; LAO"
+      },
+      {
+        "q": "Could it be changed later?",
+        "a": "It is a [[ica|constitutional amendment]], so changing it would take another statewide vote.",
+        "src": "Measure type"
       }
     ]
   },
@@ -786,6 +1113,33 @@
         "title": "Quick Guide to Props: Prop 43",
         "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/43"
       }
+    ],
+    "faq": [
+      {
+        "q": "Does it change any local taxes we already have?",
+        "a": "No. Starting January 1, 2027, it applies to new, increased, or extended local special taxes proposed by voters. A voter-proposed tax that is up for renewal after that date would need two-thirds.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "What is a special tax?",
+        "a": "A local tax dedicated to a specific purpose, such as transit, parks, or housing. Prop 43 does not affect general taxes, which can be spent on anything.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "What is the rule today?",
+        "a": "Special taxes placed on the ballot by a city council or board already need a [[two-thirds|two-thirds vote]]. Recent court decisions let special taxes proposed by voters through petitions pass with a simple majority. Prop 43 would require two-thirds for those as well.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Does it affect Measure RTM on my ballot?",
+        "a": "No. Prop 43 does not start until January 1, 2027, so it does not change the vote needed for anything on this ballot.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Who put it on the ballot?",
+        "a": "The Legislature, by a near-unanimous vote. News reports describe it as replacing a broader Howard Jarvis Taxpayers Association initiative that would also have affected some existing taxes.",
+        "src": "Legislative record; news reports"
+      }
     ]
   },
   {
@@ -849,6 +1203,33 @@
         "source": "California Secretary of State",
         "title": "Quick Guide to Props: Prop 44",
         "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/44"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Which clinics does it cover?",
+        "a": "Private nonprofit safety-net clinics, which mainly serve low-income and uninsured patients. California has about 2,000 safety-net clinics, and most are private nonprofits. Clinics run by counties and other public agencies are not covered.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "How much do clinics spend on care now?",
+        "a": "On average, about 80% of their revenue goes to health care services, though it varies by clinic. Prop 44 would require at least 90%.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "What counts as health care spending?",
+        "a": "The Attorney General would decide, starting from the reports clinics already file with the federal government. That definition will determine how many clinics already meet the 90% rule.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "What if a clinic falls short?",
+        "a": "It pays the state the amount of the shortfall as a penalty. It gets the money back if it complies within five years. If not, the money goes to clinic workforce programs. Clinics can ask for a temporary waiver in some cases.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Could clinics close?",
+        "a": "The LAO says some clinics that cannot meet the requirement might close. Others might spend more on patient care, which could raise state Medi-Cal costs. The state would spend low tens of millions of dollars a year on enforcement, paid by fees on clinics.",
+        "src": "LAO analysis"
       }
     ]
   },
@@ -914,6 +1295,33 @@
         "source": "California Secretary of State",
         "title": "Quick Guide to Props: Prop 45",
         "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/45"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does Prop 45 get rid of CEQA?",
+        "a": "No. It creates an optional faster track through [[ceqa|CEQA]] for certain \"essential\" projects. Applicants can use the new process or the existing one.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Which projects qualify?",
+        "a": "Nine categories: housing, water systems, clean energy, health facilities, fire and police stations, wildfire risk reduction, broadband, schools, and transportation. Delta water conveyance, nuclear energy, and high-speed rail are excluded.",
+        "src": "LAO analysis (Figure 1); measure text"
+      },
+      {
+        "q": "What would change in the review?",
+        "a": "There would be a 365-business-day limit to finish an [[eir|environmental impact report]], and impacts would be judged by the standards in place when the application is filed. The applicant could propose a single alternative instead of the agency developing several. Public comment periods would have a maximum length, and tribal consultation would be limited to federally recognized tribes.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "Could people still sue?",
+        "a": "Yes, but courts could consider less, and lawsuits would face time limits. A court could stop only the part of a project with a flawed review, not the whole project, while the agency fixes it.",
+        "src": "LAO analysis"
+      },
+      {
+        "q": "What would it cost?",
+        "a": "The LAO estimates state and local costs in the high tens of millions of dollars a year at first, possibly over $100 million, partly covered by fees. Longer-term effects are uncertain but could be larger. Faster projects could lower costs and raise tax revenue, while approving projects with harmful environmental effects could create new costs.",
+        "src": "LAO analysis"
       }
     ]
   }

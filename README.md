@@ -81,6 +81,7 @@ All content lives in `data/`, so you never need to touch `app.js` to update text
 | `supporters`, `opponents`, `pro`, `con`, `argSrc` | Listed supporters and opponents, and each side's argument. `argSrc: null` on a statewide measure means "official ballot argument." |
 | `money` | `{ "yes": 32.3, "no": 99.15, "yesNote": "...", "noNote": "..." }` in millions of dollars, or `null` |
 | `deep` | List of "Go deeper" bullet points |
+| `faq` | (optional) "Common questions": `[{ "q": "...", "a": "...", "src": "LAO analysis" }]`. Answers are plain text with glossary links, factual, and name their source. No "should I vote" questions. |
 | `reading` | (optional) "Further reading" links shown under Go deeper: `[{ "source": "CalMatters", "title": "Voter guide: Prop 1", "url": "https://..." }]`. Use nonpartisan news organizations and public agencies only, never campaign or endorsement pages. |
 | `groups` | Ids of linked groups in `groups.json` |
 | `sources` | Statewide: `guide`, `analysis`, `arguments`, `text` URLs. Local: `links: [[title, url], ...]` |
