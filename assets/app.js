@@ -90,7 +90,7 @@ function jurisdictionView(j) {
     <section style="display:grid;gap:10px">
       ${j.eyebrow ? `<span class="eyebrow">${esc(j.eyebrow)}</span>` : ""}
       <h2>${esc(j.title)}</h2>
-      <p class="muted" style="max-width:68ch">${rich(j.intro)}</p>
+      <p class="muted">${rich(j.intro)}</p>
       ${sectioned ? "" : `<p class="small muted">You've noted a leaning on ${decided} of ${list.length}. Leanings stay in this browser only.</p>`}
     </section>
     ${j.notOnBallot ? `<section class="section"><h3>What's not on the ballot</h3><div class="prose small">${j.notOnBallot.map(p => `<p>${p}</p>`).join("")}</div></section>` : ""}
@@ -202,12 +202,12 @@ function linkedView(only) {
   if (only && S.groups[only]) {
     const g = S.groups[only];
     $view.innerHTML = `<button class="back" data-view="linked">← All linked groups</button>
-     <section style="display:grid;gap:10px"><span class="eyebrow">${g.measures.map(id => esc(S.byId[id]?.label || id)).join(" · ")}</span><h2>${esc(g.title)}</h2><p class="muted" style="max-width:68ch">${rich(g.summary)}</p></section>
+     <section style="display:grid;gap:10px"><span class="eyebrow">${g.measures.map(id => esc(S.byId[id]?.label || id)).join(" · ")}</span><h2>${esc(g.title)}</h2><p class="muted">${rich(g.summary)}</p></section>
      <section class="section">${rich(g.body)}</section>
      <section class="section"><h3>Open a measure</h3><div class="plinks">${g.measures.filter(id => S.byId[id]).map(id => `<button data-open="${id}">${esc(S.byId[id].label)}: ${esc(S.byId[id].title)}</button>`).join("")}</div></section>`;
     return;
   }
-  $view.innerHTML = `<section style="display:grid;gap:10px"><h2>Linked measures</h2><p class="muted" style="max-width:68ch">Some measures only make sense read together. Groups marked as a legal conflict have real consequences for how your votes combine; the others share a subject or a budget.</p></section>
+  $view.innerHTML = `<section style="display:grid;gap:10px"><h2>Linked measures</h2><p class="muted">Some measures only make sense read together. Groups marked as a legal conflict have real consequences for how your votes combine; the others share a subject or a budget.</p></section>
    <div class="grouplist">${Object.entries(S.groups).map(([k, g]) => `<button class="gcard" data-group="${k}">
      <span class="gnums">${g.measures.map(id => `<span style="${S.byId[id] ? tcol(S.byId[id]) : ""}">${esc(id)}</span>`).join("")}${g.legalConflict ? '<span class="tag link" style="align-self:center">Legal conflict</span>' : ""}</span>
      <h3>${esc(g.title)}</h3><span class="muted small">${rich(g.summary).replace(/<[^>]+>/g, "")}</span></button>`).join("")}</div>`;
@@ -220,7 +220,7 @@ function moneyView() {
   const rows = S.measures.filter(m => m.money).sort((a, b) => (b.money.yes + b.money.no) - (a.money.yes + a.money.no));
   const w = v => `calc(${Math.min(v, max) / max} * (100% - 5.5rem))`;
   $view.innerHTML = `
-   <section style="display:grid;gap:10px"><h2>Follow the money</h2><p class="muted" style="max-width:68ch">${esc(M.intro)}</p></section>
+   <section style="display:grid;gap:10px"><h2>Follow the money</h2><p class="muted">${esc(M.intro)}</p></section>
    <section class="section">
     <div class="legend"><span><i class="sw" style="background:var(--accent)"></i>Supporting</span><span><i class="sw" style="background:var(--muted)"></i>Opposing</span><span class="muted small">Millions of dollars · sorted by total</span></div>
     <div class="bars">${rows.map(m => `
@@ -238,7 +238,7 @@ function moneyView() {
 }
 
 function glossaryView() {
-  $view.innerHTML = `<section style="display:grid;gap:10px"><h2>Key terms</h2><p class="muted" style="max-width:68ch">Dotted-underlined words throughout the guide open these definitions.</p></section>
+  $view.innerHTML = `<section style="display:grid;gap:10px"><h2>Key terms</h2><p class="muted">Dotted-underlined words throughout the guide open these definitions.</p></section>
    <div class="gloss">${Object.entries(S.glossary).sort((a, b) => a[1].term.localeCompare(b[1].term)).map(([k, g]) => `<article id="t-${k}"><h3>${esc(g.term)}</h3><p class="small">${esc(g.definition)}</p></article>`).join("")}</div>`;
 }
 

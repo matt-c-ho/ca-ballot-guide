@@ -55,13 +55,6 @@
     ]
   },
   "sources": [
-    ["CalMatters, Prop 38 and its backer (largest funders)", "https://calmatters.org/politics/elections/2026/10/prop-38-california/"],
-    ["KPBS/CalMatters, out-of-state funding for the voter ID measure (largest funders)", "https://www.kpbs.org/news/politics/2026/10/07/why-are-out-of-state-billionaires-funding-a-california-voter-id-measure"],
-    ["Mission Local, Sergey Brin and Prop 40 (largest funders)", "https://missionlocal.org/2026/08/california-billionaire-tax-sergey-brin-prop-40/"],
-    ["CalMatters 2026 voter guide (further reading)", "https://calmatters.org/california-voter-guide-2026/"],
-    ["KQED 2026 voter guide (further reading)", "https://www.kqed.org/voterguide"],
-    ["Secretary of State Quick Guide to Props (further reading)", "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03"],
-    ["Local News Matters, Santa Clara County ballot (further reading)", "https://localnewsmatters.org/santa-clara-november-3-2026/"],
     ["Official Voter Information Guide, Nov 3, 2026 (CA Secretary of State): titles, Yes/No meanings, LAO analyses, arguments", "https://voterguide.sos.ca.gov/"],
     ["Secretary of State certification of measures", "https://www.sos.ca.gov/administration/news-releases-and-advisories/2026-news-releases-and-advisories/california-secretary-state-shirley-n-weber-phd-certifies-measures-november-3-2026-general-election-ballot"],
     ["FPPC Top 10 Contributors (money totals, as of Oct 23)", "https://www.fppc.ca.gov/search-filings/top-10-contributors-list/november-2026-general-election/"],
@@ -76,6 +69,13 @@
     ["Orchard SD parcel tax announcement", "https://www.orchardsd.org/article/3055305"],
     ["BallotReady, Measure P", "https://www.ballotready.org/measures/measure-p-da5e0f5a-c64c-49a3-bc9f-f27f360bd59c"],
     ["San José Spotlight, Measure A returns", "https://sanjosespotlight.com/san-jose-hotel-tax-on-track-for-victory/"],
-    ["San José Spotlight, Measure E and the Howard Jarvis initiative", "https://sanjosespotlight.com/state-proposition-could-wipe-out-san-joses-measure-e-funds/"]
+    ["San José Spotlight, Measure E and the Howard Jarvis initiative", "https://sanjosespotlight.com/state-proposition-could-wipe-out-san-joses-measure-e-funds/"],
+    ["CalMatters, Prop 38 and its backer (largest funders)", "https://calmatters.org/politics/elections/2026/10/prop-38-california/"],
+    ["KPBS/CalMatters, out-of-state funding for the voter ID measure (largest funders)", "https://www.kpbs.org/news/politics/2026/10/07/why-are-out-of-state-billionaires-funding-a-california-voter-id-measure"],
+    ["Mission Local, Sergey Brin and Prop 40 (largest funders)", "https://missionlocal.org/2026/08/california-billionaire-tax-sergey-brin-prop-40/"],
+    ["CalMatters 2026 voter guide (further reading)", "https://calmatters.org/california-voter-guide-2026/"],
+    ["KQED 2026 voter guide (further reading)", "https://www.kqed.org/voterguide"],
+    ["Secretary of State Quick Guide to Props (further reading)", "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03"],
+    ["Local News Matters, Santa Clara County ballot (further reading)", "https://localnewsmatters.org/santa-clara-november-3-2026/"]
   ]
 }
