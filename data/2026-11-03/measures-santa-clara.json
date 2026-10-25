@@ -59,6 +59,43 @@
         "title": "Santa Clara County ballot, Nov. 3, 2026",
         "url": "https://localnewsmatters.org/santa-clara-november-3-2026/"
       }
+    ],
+    "faq": [
+      {
+        "q": "How much more would I pay?",
+        "a": "The sales tax in Santa Clara County would go up by 0.5%, which is 50 cents on a $100 purchase, for 14 years. Like other California sales taxes, it would not apply to most groceries or prescription medicine.",
+        "src": "Ballot question; state sales tax rules"
+      },
+      {
+        "q": "Where would Santa Clara County's share go?",
+        "a": "GrowSF estimates the county would raise about $290 million in the first full year. About 84% would go to the county transportation agency, which can also use some of it to repave roads, and about 10% to Caltrain. The rest would go to fare discounts, accessibility, and maps and signs. The binding split is set in state law (SB 63).",
+        "src": "GrowSF estimates; SB 63"
+      },
+      {
+        "q": "Why does it need only a simple majority?",
+        "a": "It reached the ballot by voter petition, and courts have ruled that special taxes proposed by voters pass with a simple majority. The count is a single combined vote across all five counties, not county by county.",
+        "src": "Ballot information; KQED"
+      },
+      {
+        "q": "What happens if it fails?",
+        "a": "The League of Women Voters notes that BART, Muni, Caltrain, and AC Transit face combined operating deficits of more than $800 million a year. The agencies warn of less frequent service, station closures, higher fares, and shorter hours without new money. Opponents argue the agencies could close the gap with savings and existing funds.",
+        "src": "League of Women Voters of the Bay Area; KQED"
+      },
+      {
+        "q": "Who would oversee the money?",
+        "a": "An independent oversight committee would check that money is spent according to the SB 63 plan. BART, Muni, Caltrain, and AC Transit would get independent efficiency reviews and could have part of their funding withheld if they don't respond. A county could also convene a review committee to withhold funds from an agency that falls short on fares, service, cleanliness, or maintenance.",
+        "src": "League of Women Voters of the Bay Area"
+      },
+      {
+        "q": "Would state Prop 43 change the vote needed?",
+        "a": "No. Prop 43 would require two-thirds for voter-proposed local special taxes, but only starting January 1, 2027, so it does not apply to RTM.",
+        "src": "LAO analysis of Prop 43"
+      },
+      {
+        "q": "What about counties that aren't included?",
+        "a": "Marin, Napa, Sonoma, and Solano are outside the district and would not pay the tax. Golden Gate Transit would receive a small share, 0.40% of the money collected in San Francisco.",
+        "src": "League of Women Voters of the Bay Area"
+      }
     ]
   },
   {
@@ -74,21 +111,24 @@
       "schools"
     ],
     "threshold": "Two-thirds (66.67%), the rule for school parcel taxes",
-    "short": "$310 per parcel per year for 7 years for Alum Rock elementary schools.",
-    "what": "A flat parcel tax of $310 per parcel per year for seven years for the Alum Rock Union Elementary School District.",
-    "yes": "Property owners in the district would pay $310 per parcel per year for seven years to fund district schools.",
-    "no": "No new Alum Rock parcel tax.",
-    "yesNoSrc": "Plain-language summary based on Ballotpedia's listing. Check the ballot question and impartial analysis in your county voter guide.",
-    "fiscal": "$310 per parcel per year for 7 years.",
-    "short_term": "Annual charge on property tax bills in the district.",
+    "short": "Replaces the current $214.10 parcel tax with $310 per parcel per year for 7 years for Alum Rock elementary schools.",
+    "what": "Replaces the district's current parcel tax of $214.10 per parcel a year, approved in 2022, with a flat $310 per parcel for seven years starting July 1, 2027. It would raise about $6.5 million a year for services for students with disabilities, core academics, teacher recruitment and retention, and students experiencing housing instability.",
+    "yes": "The current $214.10 parcel tax would be replaced with a $310 per parcel tax for seven years.",
+    "no": "The current $214.10 parcel tax, approved in 2022, would stay in place until it expires.",
+    "yesNoSrc": "Plain-language summary based on the ballot question. Check the impartial analysis in your county voter guide.",
+    "fiscal": "$310 per parcel per year for 7 years, raising about $6.5 million a year, up from about $4.5 million under the current tax.",
+    "short_term": "Starting July 1, 2027, the annual charge on property tax bills in the district rises from $214.10 to $310 per parcel.",
     "long_term": "Expires after seven years unless renewed.",
     "supporters": "Not yet compiled",
-    "opponents": "Not yet compiled",
+    "opponents": "Silicon Valley Taxpayers Association (per the Mercury News)",
     "pro": null,
     "con": null,
     "argSrc": null,
     "deep": [
       "A flat parcel tax charges every parcel the same amount regardless of property value, unlike a bond, which is repaid through a rate on assessed value.",
+      "Exemptions for homeowners over 65 and people receiving Supplemental Security Income for a disability (Mercury News). Funds cannot go to administrators' salaries.",
+      "Background (Mercury News, citing a June 2026 county civil grand jury report): enrollment fell about 39% over the past decade, and the district closed six schools for 2025–26 after a budget shortfall reached $20 million.",
+      "This would be the district's fourth parcel tax since 2010.",
       "Read together with Measure P, a bond on the same ballot from the same district."
     ],
     "money": null,
@@ -97,13 +137,58 @@
     ],
     "jurisdiction": "school",
     "sources": {
-      "links": []
+      "links": [
+        [
+          "Ballot question (Local News Matters listing)",
+          "https://localnewsmatters.org/santa-clara-november-3-2026/"
+        ],
+        [
+          "Hoodline, summarizing Mercury News reporting on Measures O and P",
+          "https://hoodline.com/2026/10/east-san-jose-district-seeks-215m-in-taxes-after-closing-six-schools-firing-two-chiefs/"
+        ],
+        [
+          "Ballotpedia: 2022 parcel tax (Measure I)",
+          "https://ballotpedia.org/Alum_Rock_Union_School_District,_California,_Measure_I,_Parcel_Tax_(June_2022)"
+        ]
+      ]
     },
     "reading": [
       {
         "source": "Local News Matters (Bay City News Foundation)",
         "title": "Santa Clara County ballot, Nov. 3, 2026",
         "url": "https://localnewsmatters.org/santa-clara-november-3-2026/"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is this a new tax?",
+        "a": "No, it replaces an existing one. Alum Rock already has a parcel tax of $214.10 per parcel a year, which voters approved in 2022. Measure O would replace it with a $310 tax, an increase of $95.90 a year per parcel, for seven years.",
+        "src": "Ballot question; Mercury News, via Hoodline"
+      },
+      {
+        "q": "What happens if it fails?",
+        "a": "The current $214.10 tax stays in place until it expires. Voters approved it in 2022 for seven years.",
+        "src": "Ballotpedia (2022 measure)"
+      },
+      {
+        "q": "What would the money pay for?",
+        "a": "Services for students with disabilities; reading, writing, math, and science programs; recruiting and keeping qualified teachers; and support for students experiencing housing instability. The Mercury News reports the money cannot be used for administrators' salaries.",
+        "src": "Ballot question; Mercury News, via Hoodline"
+      },
+      {
+        "q": "Is anyone exempt?",
+        "a": "Yes. Seniors can apply for an exemption. The Mercury News reports that homeowners over 65 and people receiving Supplemental Security Income for a disability qualify. Exemptions are handled through the district.",
+        "src": "Ballot question; Mercury News, via Hoodline"
+      },
+      {
+        "q": "How much would it raise, and when?",
+        "a": "About $6.5 million a year, starting July 1, 2027. The current tax was estimated to raise about $4.5 million a year.",
+        "src": "Ballot question; Mercury News; Ballotpedia"
+      },
+      {
+        "q": "How is it different from Measure P?",
+        "a": "Both are from the same district and are voted on separately. Measure O (two-thirds needed) pays for programs and staff. Measure P (55% needed) is a $100 million bond for building repairs. Either can pass without the other.",
+        "src": "Ballot question"
       }
     ]
   },
@@ -129,13 +214,16 @@
     "short_term": "Repairs funded as bonds are sold.",
     "long_term": "Property owners repay the bonds for as long as they are outstanding, typically decades.",
     "supporters": "Not yet compiled",
-    "opponents": "Not yet compiled",
+    "opponents": "Silicon Valley Taxpayers Association (per the Mercury News)",
     "pro": null,
     "con": null,
     "argSrc": null,
     "deep": [
       "\"Current tax rates would not increase\" usually means the new bonds are timed to replace older bonds as they are paid off. Without the measure, the rate could fall as old bonds retire.",
       "Includes audits, independent oversight, and spending disclosure, as required for school bonds passed at 55%.",
+      "Average rate of about $25.52 per $100,000 of assessed value, about $6.3 million a year through 2054. Total repayment about $170 million including interest (Mercury News).",
+      "The Mercury News reported the district spent $52.9 million in bond funds from 2021–22 through 2024–25 without a functioning citizens' bond oversight committee. The district says it will establish one if the measures pass.",
+      "Prior district bonds: Measure G ($179M, 2008), Measure J ($125M, 2012), Measure I ($140M, 2016), Measure S ($71.5M, 2022).",
       "Read together with Measure O, a parcel tax from the same district."
     ],
     "money": null,
@@ -148,6 +236,10 @@
         [
           "BallotReady: Measure P",
           "https://www.ballotready.org/measures/measure-p-da5e0f5a-c64c-49a3-bc9f-f27f360bd59c"
+        ],
+        [
+          "Hoodline, summarizing Mercury News reporting on Measures O and P",
+          "https://hoodline.com/2026/10/east-san-jose-district-seeks-215m-in-taxes-after-closing-six-schools-firing-two-chiefs/"
         ]
       ]
     },
@@ -156,6 +248,38 @@
         "source": "Local News Matters (Bay City News Foundation)",
         "title": "Santa Clara County ballot, Nov. 3, 2026",
         "url": "https://localnewsmatters.org/santa-clara-november-3-2026/"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Will my property taxes go up?",
+        "a": "The ballot question says it would not increase current tax rates. In practice that usually means the new bonds are timed to replace older bonds as they are paid off, so the school bond portion of your bill stays about where it is instead of falling. The average levy would be about $25.52 per $100,000 of assessed value. On a home assessed at $600,000, that is about $153 a year.",
+        "src": "Ballot question; Mercury News, via Hoodline"
+      },
+      {
+        "q": "How long would we pay, and what is the total cost?",
+        "a": "About $6.3 million a year through 2054. With interest, the total repaid would be about $170 million on $100 million borrowed.",
+        "src": "Mercury News, via Hoodline"
+      },
+      {
+        "q": "What would it pay for?",
+        "a": "Repairing leaky roofs and plumbing, replacing heating, ventilation, and air conditioning, and upgrading emergency communication and security systems. The Mercury News reports the full project list also includes classrooms, restrooms, play areas, cafeterias, and athletic facilities.",
+        "src": "Ballot question; Mercury News, via Hoodline"
+      },
+      {
+        "q": "Who would oversee the spending?",
+        "a": "Bonds passed at 55% legally require a citizens' oversight committee and annual audits. The Mercury News reported the district spent $52.9 million in bond money from 2021–22 through 2024–25 without a functioning oversight committee, and says it will set one up if the measures pass.",
+        "src": "State law; Mercury News, via Hoodline"
+      },
+      {
+        "q": "Why does it need only 55%?",
+        "a": "School facilities bonds can pass with 55% if they include accountability rules such as a project list, audits, and an oversight committee. That rule comes from a 2000 state ballot measure, also called Prop 39, which is different from Prop 39 on this ballot.",
+        "src": "State law"
+      },
+      {
+        "q": "Has the district passed bonds before?",
+        "a": "Yes, four since 2008: Measure G ($179 million, 2008), Measure J ($125 million, 2012), Measure I ($140 million, 2016), and Measure S ($71.5 million, 2022).",
+        "src": "Mercury News, via Hoodline"
       }
     ]
   },
@@ -210,6 +334,38 @@
         "title": "Santa Clara County ballot, Nov. 3, 2026",
         "url": "https://localnewsmatters.org/santa-clara-november-3-2026/"
       }
+    ],
+    "faq": [
+      {
+        "q": "How much would it cost?",
+        "a": "$148 per parcel a year, about $12.33 a month, adjusted each year for inflation, for eight years. It would first be collected in the 2027–28 fiscal year.",
+        "src": "Ballot question; Cambrian School District Measure Q page"
+      },
+      {
+        "q": "Do businesses pay too?",
+        "a": "Yes. Every parcel, residential or commercial, pays the same flat amount regardless of its value.",
+        "src": "Cambrian School District Measure Q page"
+      },
+      {
+        "q": "Is anyone exempt?",
+        "a": "Homeowners 65 and older can apply for an exemption. People who already have a senior exemption from the district do not need to reapply.",
+        "src": "Cambrian School District Measure Q page"
+      },
+      {
+        "q": "What would the money pay for?",
+        "a": "Core academics (math, science, engineering, technology, reading, writing, and arts), recruiting and keeping teachers, and manageable class sizes. It cannot be used for administrators' salaries.",
+        "src": "Ballot question; Cambrian School District Measure Q page"
+      },
+      {
+        "q": "What happens if it fails?",
+        "a": "The district says its budget committee has identified possible cuts to music programs, library staff and hours, elementary physical education aides, and academic and mental health support. The district closed Sartorette Elementary this year to save about $1 million a year.",
+        "src": "Cambrian School District Measure Q page"
+      },
+      {
+        "q": "Which schools would it fund?",
+        "a": "All five: Bagby, Fammatre, and Farnham elementary schools, Price Middle School, and Steindorf STEAM Magnet.",
+        "src": "Cambrian School District Measure Q page"
+      }
     ]
   },
   {
@@ -260,6 +416,33 @@
         "source": "Local News Matters (Bay City News Foundation)",
         "title": "Santa Clara County ballot, Nov. 3, 2026",
         "url": "https://localnewsmatters.org/santa-clara-november-3-2026/"
+      }
+    ],
+    "faq": [
+      {
+        "q": "How much would I pay?",
+        "a": "4 cents per square foot of building, capped at $89 a year for a residential parcel and $7,500 for a non-residential parcel. For example, a 1,500-square-foot home would pay $60. Any home over about 2,225 square feet would pay the $89 cap.",
+        "src": "Ballot question"
+      },
+      {
+        "q": "How long would it last, and how much would it raise?",
+        "a": "Eight years starting July 1, 2027, raising about $1.4 million a year.",
+        "src": "Ballot question"
+      },
+      {
+        "q": "What would the money pay for?",
+        "a": "Keeping teachers and staff, STEAM education (science, technology, engineering, arts, and math), visual and performing arts, student mental health, and instructional materials.",
+        "src": "Ballot question; Orchard School District"
+      },
+      {
+        "q": "Is anyone exempt?",
+        "a": "Qualifying seniors can apply for an exemption. The district also lists exemptions for some people receiving SSI or SSDI disability benefits.",
+        "src": "Ballot question; Orchard School District"
+      },
+      {
+        "q": "How would spending be tracked?",
+        "a": "The money would go into a separate account, with annual spending reports and an independent audit.",
+        "src": "Ballot question; Orchard School District"
       }
     ]
   }
