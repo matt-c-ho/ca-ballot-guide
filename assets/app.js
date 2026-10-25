@@ -29,11 +29,11 @@ async function load() {
     getJSON(`${id}/election.json`), getJSON("glossary.json"), getJSON("topics.json"),
     getJSON(`${id}/groups.json`, true), getJSON(`${id}/results.json`, true)
   ]);
-  Object.assign(S, { election, glossary, topics, groups: groups || {}, results });
+  Object.assign(S, { election, glossary, topics, groups: Object.assign(Object.create(null), groups), results });
   const lists = await Promise.all(election.jurisdictions.map(j => getJSON(`${id}/${j.file}`)));
   S.measures = [];
   election.jurisdictions.forEach((j, i) => lists[i].forEach(m => S.measures.push({ ...m, _j: j.id })));
-  S.byId = Object.fromEntries(S.measures.map(m => [m.id, m]));
+  S.byId = Object.assign(Object.create(null), Object.fromEntries(S.measures.map(m => [m.id, m])));
   S.mine = store.get();
 }
 
@@ -338,12 +338,15 @@ function shell() {
   $("footer").innerHTML = `A nonpartisan study guide. Verify against the <a href="https://voterguide.sos.ca.gov/" target="_blank" rel="noopener">Official Voter Information Guide</a> and your county sample ballot before you vote. Content checked ${esc(E.lastChecked)}.`;
 }
 
+// Malformed %-escapes in a shared link should fall back to the default view, not throw.
+const safeDecode = (s) => { try { return decodeURIComponent(s); } catch { return ""; } };
+
 function go(token, push = true) {
   const E = S.election;
   token = token || E.jurisdictions[0].id;
   let tab = token;
   const m = token.match(/^m-(.+)$/), g = token.match(/^g-(.+)$/);
-  if (m) { detail(decodeURIComponent(m[1])); tab = S.byId[decodeURIComponent(m[1])]?._j || E.jurisdictions[0].id; }
+  if (m) { const id = safeDecode(m[1]); detail(id); tab = S.byId[id]?._j || E.jurisdictions[0].id; }
   else if (g) { linkedView(g[1]); tab = "linked"; }
   else if (jur(token)) jurisdictionView(jur(token));
   else ({ linked: () => linkedView(), money: moneyView, glossary: glossaryView, about: aboutView }[token]
