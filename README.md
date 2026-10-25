@@ -28,7 +28,8 @@ Any static server works, for example `npx serve`.
 The site is hosted on Vercel, connected to the GitHub repository.
 
 - Each push to `main` deploys to production. Each pull request gets its own preview URL.
-- `vercel.json` sets the build command to `node scripts/validate.mjs`, so a deploy fails if the data is invalid. There is no install step, and the repository root is served as-is.
+- `vercel.json` runs `node scripts/validate.mjs` first, so a deploy fails if the data is invalid. It then copies only `index.html`, `assets/`, and `data/` into `dist/`, which is what gets served. README, scripts, and config files are not published. There is no install step.
+- `vercel.json` also sets security headers (Content-Security-Policy and others). If you add a script, font, or image from a new domain, add that domain to the policy or the browser will block it.
 
 To deploy by hand, run `npx vercel` for a preview or `npx vercel --prod` for production. To use a custom domain, add it in the Vercel project under **Settings → Domains**.
 
@@ -49,7 +50,7 @@ data/
     groups.json             "linked measures" groups
     results.json            election results (empty until results are in)
 scripts/validate.mjs        data checks (runs on every Vercel build)
-vercel.json                 Vercel build settings
+vercel.json                 Vercel build settings and security headers
 ```
 
 ## Editing content
