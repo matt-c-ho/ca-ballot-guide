@@ -267,13 +267,66 @@ function aboutView() {
    </div></section>`;
 }
 
+/* ---------- Key dates ticker ----------
+ * Shows one upcoming deadline at a time (California time), starting with the
+ * next one, and rolls up to the following one every 15 seconds. */
+const TICK_MS = 15000;
+const caToday = () => new Intl.DateTimeFormat("en-CA", { timeZone: "America/Los_Angeles" }).format(new Date());
+const daysUntil = (iso) => Math.round((Date.parse(iso) - Date.parse(caToday())) / 864e5);
+const when = (n) => n === 0 ? "Today" : n === 1 ? "Tomorrow" : `In ${n} days`;
+let tickTimer = null;
+
+function dateTicker(all) {
+  const box = $("dates");
+  clearTimeout(tickTimer);
+  const upcoming = () => all.filter(d => !d.date || d.date >= caToday());
+  let list = upcoming();
+  if (!list.length) { box.hidden = true; return; }
+  box.hidden = false;
+  const item = (d) => `<span class="date"><b>${esc(d.label)}</b><span>${esc(d.text)}${d.date ? ` <i>· ${when(daysUntil(d.date))}</i>` : ""}</span></span>`;
+  box.innerHTML = `<ul class="sr-only">${list.map(d => `<li>${esc(d.label)}: ${esc(d.text)}</li>`).join("")}</ul>
+    <div class="roll" aria-hidden="true">${item(list[0])}</div>
+    ${list.length > 1 ? `<div class="dots">${list.map((d, k) => `<button type="button" aria-label="Show ${esc(d.label)}"${k ? "" : ' aria-current="true"'}></button>`).join("")}</div>` : ""}`;
+  if (list.length < 2) return;
+  const roll = box.querySelector(".roll"), dots = [...box.querySelectorAll(".dots button")];
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)");
+  let i = 0, held = false;
+
+  const show = (k) => {
+    if (k === i) return;
+    i = k;
+    dots.forEach((d, n) => d.toggleAttribute("aria-current", n === i));
+    const cur = roll.lastElementChild;
+    roll.style.height = cur.offsetHeight + "px";
+    roll.insertAdjacentHTML("beforeend", item(list[i]));
+    const nu = roll.lastElementChild;
+    if (reduce.matches) { roll.querySelectorAll(".date:not(:last-child)").forEach(e => e.remove()); roll.style.height = ""; return; }
+    nu.classList.add("enter");
+    void nu.offsetHeight;
+    roll.style.height = nu.offsetHeight + "px";
+    cur.classList.add("leave"); nu.classList.remove("enter");
+    setTimeout(() => { cur.remove(); if (roll.childElementCount === 1) roll.style.height = ""; }, 600);
+  };
+  const schedule = () => { clearTimeout(tickTimer); tickTimer = setTimeout(tick, TICK_MS); };
+  const tick = () => {
+    if (upcoming().length !== list.length) return dateTicker(all);
+    if (!held && !document.hidden) show((i + 1) % list.length);
+    schedule();
+  };
+  dots.forEach((d, k) => d.onclick = () => { show(k); schedule(); });
+  box.onmouseenter = box.onfocusin = () => { held = true; };
+  box.onmouseleave = () => { held = box.contains(document.activeElement); };
+  box.onfocusout = (e) => { if (!box.contains(e.relatedTarget)) held = box.matches(":hover"); };
+  schedule();
+}
+
 /* ---------- Shell ---------- */
 function shell() {
   const E = S.election;
   document.title = `${E.name} · California Ballot Guide`;
   $("eyebrow").textContent = E.eyebrow || E.name;
   $("lede").textContent = E.lede || "";
-  $("dates").innerHTML = (E.keyDates || []).map(d => `<span><b>${esc(d.label)}</b>${esc(d.text)}</span>`).join("");
+  dateTicker(E.keyDates || []);
   const sel = $("election-select");
   if (S.index.elections.length > 1) {
     sel.hidden = false;

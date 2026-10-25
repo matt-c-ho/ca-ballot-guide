@@ -7,9 +7,9 @@
   "eyebrow": "November 3, 2026 · California · Santa Clara County · San José",
   "lede": "The 14 statewide measures plus the local measures on San José ballots, explained from the official Voter Information Guide and the Legislative Analyst's nonpartisan analysis. Each side's case is shown in its own words. This guide makes no recommendations.",
   "keyDates": [
-    { "label": "OCT 27", "text": "Last day to request a new mail ballot" },
-    { "label": "NOV 3", "text": "Election Day · polls 7 a.m.–8 p.m. · mail ballots must be postmarked by today" },
-    { "label": "NOV 10", "text": "Last day for postmarked mail ballots to arrive" }
+    { "date": "2026-10-27", "label": "OCT 27", "text": "Last day to request a new mail ballot" },
+    { "date": "2026-11-03", "label": "NOV 3", "text": "Election Day · polls 7 a.m.–8 p.m. · mail ballots must be postmarked by this date" },
+    { "date": "2026-11-10", "label": "NOV 10", "text": "Last day for postmarked mail ballots to arrive" }
   ],
   "jurisdictions": [
     {

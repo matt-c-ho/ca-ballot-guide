@@ -27,6 +27,9 @@ for (const e of index.elections) {
   const election = read(`${dir}/election.json`);
   const groups = existsSync(`${dir}/groups.json`) ? read(`${dir}/groups.json`) : {};
   const ids = new Set();
+  (election.keyDates || []).forEach((d, i) => {
+    if (d.date && !/^\d{4}-\d{2}-\d{2}$/.test(d.date)) err(`${dir}/election.json keyDates[${i}]`, "date must be YYYY-MM-DD");
+  });
 
   for (const j of election.jurisdictions) {
     const file = `${dir}/${j.file}`;
