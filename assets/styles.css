@@ -224,3 +224,6 @@ footer .wrap{padding-block:20px;font-size:.82rem;color:var(--muted)}
 /* iOS Safari zooms the page when a text field under 16px gets focus, and often
    stays zoomed, which makes the page look wider than the screen. */
 @media (pointer:coarse){textarea,input,select,.election-select{font-size:16px}}
+
+/* Hero stat tiles exist only for the design-explore looks */
+.hero-stats{display:none}

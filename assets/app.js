@@ -453,8 +453,29 @@ function dateTicker(all) {
 }
 
 /* ---------- Shell ---------- */
+// Design exploration (design-explore branch only): ?look=editorial or ?look=dashboard
+// loads an alternate stylesheet on top of styles.css. Not for main.
+const LOOK = new URLSearchParams(location.search).get("look");
+function applyLook() {
+  if (!/^(editorial|dashboard)$/.test(LOOK || "")) return;
+  document.documentElement.dataset.look = LOOK;
+  const l = document.createElement("link"); l.rel = "stylesheet"; l.href = `assets/look-${LOOK}.css`; document.head.append(l);
+  const E = S.election, all = S.measures, days = E.date ? daysUntil(E.date) : null;
+  const decided = all.filter(m => ["Yes", "No"].includes((S.mine[m.id] || {}).lean)).length;
+  const raised = all.reduce((t, m) => t + (m.money ? m.money.yes + m.money.no : 0), 0);
+  const tiles = [
+    [days > 0 ? days : days === 0 ? "Today" : "Done", days > 1 ? "days to Election Day" : days === 1 ? "day to Election Day" : "Election Day"],
+    [all.length, "measures covered"],
+    [`$${Math.round(raised)}M`, "raised by campaigns"],
+    [`${decided}/${all.filter(m => (S.mine[m.id] || {}).lean !== "N/A").length}`, "decided on My ballot"]
+  ];
+  document.querySelector("header.mast .wrap").insertAdjacentHTML("beforeend",
+    `<div class="hero-stats">${tiles.map(([v, k]) => `<div class="stat"><span class="v">${esc(String(v))}</span><span class="k">${esc(k)}</span></div>`).join("")}</div>`);
+}
+
 function shell() {
   const E = S.election;
+  applyLook();
   document.title = `${E.name} · California Ballot Guide`;
   $("eyebrow").textContent = E.eyebrow || E.name;
   $("lede").textContent = E.lede || "";

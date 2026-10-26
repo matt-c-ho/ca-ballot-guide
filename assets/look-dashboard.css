@@ -1,0 +1,59 @@
+/* Design exploration B — "Dashboard": bold, app-like, data-forward.
+   Loaded on top of styles.css with ?look=dashboard (design-explore branch only). */
+:root[data-look="dashboard"]{
+  --bg:#f1f3f8; --paper:#ffffff; --ink:#0d1324; --muted:#586078; --line:#e2e6ef;
+  --accent:#4f46e5; --accent-ink:#ffffff; --soft:#eef0fe; --hero:#0b1022;
+  --shadow:0 1px 2px rgb(13 19 36 / .05), 0 6px 18px -10px rgb(13 19 36 / .18);
+}
+@media (prefers-color-scheme: dark){:root[data-look="dashboard"]:not([data-theme="light"]){
+  --bg:#0a0e1a; --paper:#121829; --ink:#e9ecf5; --muted:#99a2ba; --line:#232b40;
+  --accent:#8b85ff; --accent-ink:#0a0e1a; --soft:#1b2238; --hero:#060914;
+  --shadow:0 1px 2px rgb(0 0 0 / .4), 0 8px 22px -12px rgb(0 0 0 / .7);
+}}
+
+/* Dark gradient hero with glass stat tiles */
+[data-look="dashboard"] header.mast{
+  color:#fff;
+  background:
+    radial-gradient(60% 120% at 100% 0%, color-mix(in srgb,#4f46e5 70%,transparent), transparent 60%),
+    radial-gradient(45% 90% at 0% 100%, color-mix(in srgb,#0ea5e9 40%,transparent), transparent 60%),
+    var(--hero);
+}
+[data-look="dashboard"] header.mast .wrap{padding-block:44px 28px;gap:18px}
+[data-look="dashboard"] header.mast .eyebrow,[data-look="dashboard"] .lede{color:#b8c0da}
+[data-look="dashboard"] h1{font-size:clamp(2.3rem,6vw,3.8rem);letter-spacing:-.035em}
+[data-look="dashboard"] .dates .date{background:rgb(255 255 255 / .1);color:#fff;border:1px solid rgb(255 255 255 / .14);backdrop-filter:blur(8px)}
+[data-look="dashboard"] .dates .date i{color:#b8c0da}
+[data-look="dashboard"] .dates b{background:#fff;color:#0b1022}
+[data-look="dashboard"] .dates .dots button::before{background:rgb(255 255 255 / .35)}
+[data-look="dashboard"] .dates .dots button[aria-current]::before{background:#fff}
+
+[data-look="dashboard"] .hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:6px}
+[data-look="dashboard"] .stat{display:grid;gap:4px;padding:16px 18px;border-radius:18px;background:rgb(255 255 255 / .07);border:1px solid rgb(255 255 255 / .12);backdrop-filter:blur(10px)}
+[data-look="dashboard"] .stat .v{font-family:var(--f-display);font-weight:700;font-size:clamp(1.5rem,3vw,2.1rem);letter-spacing:-.03em;line-height:1;color:#fff}
+[data-look="dashboard"] .stat .k{font-size:.8rem;color:#b8c0da}
+@media (max-width:640px){[data-look="dashboard"] .hero-stats{grid-template-columns:1fr 1fr}}
+
+/* Segmented-control tabs */
+[data-look="dashboard"] nav.tabs{box-shadow:var(--shadow);border-bottom:0}
+[data-look="dashboard"] nav.tabs .wrap{padding-block:10px}
+[data-look="dashboard"] nav.tabs .wrap > button{border:0;border-radius:10px;padding:8px 14px}
+[data-look="dashboard"] nav.tabs button[aria-current="true"]{background:var(--soft);color:var(--accent)}
+
+/* Content */
+[data-look="dashboard"] main .wrap{padding-block:36px 80px;gap:28px}
+[data-look="dashboard"] h2{letter-spacing:-.025em;font-size:clamp(1.7rem,3vw,2.2rem)}
+[data-look="dashboard"] .section{border:0;border-radius:18px;box-shadow:var(--shadow);padding:24px 26px}
+@media (max-width:520px){[data-look="dashboard"] .section{padding:20px 18px}}
+[data-look="dashboard"] .chip{border-radius:10px;border:1px solid var(--line);background:var(--paper)}
+[data-look="dashboard"] .chip[aria-pressed="true"]{background:var(--tc,var(--ink));border-color:var(--tc,var(--ink))}
+
+/* Cards: tiles with a topic color bar and a solid number badge */
+[data-look="dashboard"] .grid{gap:16px}
+[data-look="dashboard"] .card{border:0;border-radius:18px;padding:20px 18px 18px;box-shadow:inset 0 4px 0 var(--tc), var(--shadow)}
+[data-look="dashboard"] .card:hover{box-shadow:inset 0 4px 0 var(--tc), 0 18px 36px -18px color-mix(in srgb,var(--tc) 55%,transparent)}
+[data-look="dashboard"] .pnum{background:var(--tc);color:#fff;border-radius:14px}
+[data-look="dashboard"] .tag{border-radius:8px}
+[data-look="dashboard"] .dhead .pnum{border-radius:22px;box-shadow:0 14px 30px -14px var(--tc)}
+[data-look="dashboard"] blockquote{border-radius:14px}
+@media (prefers-color-scheme: dark){:root[data-look="dashboard"]:not([data-theme="light"]) .pnum{color:var(--bg)}}
