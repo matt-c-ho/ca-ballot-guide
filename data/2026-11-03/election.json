@@ -46,7 +46,7 @@
   "money": {
     "asOf": "2026-10-26",
     "max": 140,
-    "summary": "Top donors on each side",
+    "summary": "raised by top donors",
     "intro": "Reported contributions from top donors to committees supporting and opposing each measure. Committees reported about $731 million across 11 measures as of October 26. The billionaire tax fight (Props 40–42) accounts for nearly half.",
     "source": "Source: FPPC Top 10 Contributors lists, last updated October 26, 2026, using the FPPC's aggregated support and oppose totals. Figures change often; totals cover top contributors only, and money passed between committees on the same side can be counted twice. Where a \"No\" bar is empty, no opposing committee reported $1M or more, or opposition runs through another measure's committee (41 and 42 are opposed by the Yes on 40 campaign, counted once under 40).",
     "fundersSource": "Who they are: descriptions from news reporting by CalMatters, KPBS, and Mission Local, and from each organization's own description.",

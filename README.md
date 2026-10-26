@@ -130,6 +130,14 @@ Fill in `data/<election>/results.json`:
 - Every measure has the same sections in the same order. Yes and No are styled identically in every explanation of a measure. The only exception is reported results and the viewer's own choices on My ballot, which use fixed Yes/No colors (`--yes`, `--no` in `styles.css`: green/red in light mode, blue/gray in dark mode, checked for color-blind separation) and always carry a text label or icon.
 - No recommendations and no polling.
 
+## Header carousel
+
+The header shows one card at a time and rolls to the next every 15 seconds. The first card is the viewer's **next step**, worked out from My ballot (how many measures are decided, whether the ballot is marked cast, Election Day, and whether results are in). It links to My ballot and only ever suggests logistics, never how to vote. The rest are the upcoming `keyDates` from `election.json`; past dates drop off.
+
+## Short intros
+
+Each page leads with a one-line `summary` (and the header with `ledeShort`), with an (i) button that expands the full `intro` / `lede` in place. Keep summaries to 50 characters so they fit one line on a phone; the validator enforces this.
+
 ## My ballot
 
 The **My ballot** tab lists every measure with the viewer's choice: Undecided, Yes, or No, plus N/A for district-dependent measures that are not on their ballot. These are the same leanings set on each measure page. An "I've cast my ballot" checkbox records the date it was checked; unchecked means no vote is assumed.

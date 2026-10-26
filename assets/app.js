@@ -274,7 +274,7 @@ function moneyView() {
   const rows = S.measures.filter(m => m.money).sort((a, b) => (b.money.yes + b.money.no) - (a.money.yes + a.money.no));
   const w = v => `calc(${Math.min(v, max) / max} * (100% - 5.5rem))`;
   $view.innerHTML = `
-   <section style="display:grid;gap:10px"><h2>Follow the money</h2>${intro(M.summary ? `${esc(M.summary)}, as of ${fmtDay(M.asOf)}.` : esc(M.intro), M.summary ? `<p>${esc(M.intro)}</p>` : "")}</section>
+   <section style="display:grid;gap:10px"><h2>Follow the money</h2>${intro(M.summary ? `<b>$${Math.round(S.measures.reduce((t, m) => t + (m.money ? m.money.yes + m.money.no : 0), 0))}M</b> ${esc(M.summary)}, as of ${fmtDay(M.asOf)}.` : esc(M.intro), M.summary ? `<p>${esc(M.intro)}</p>` : "")}</section>
    <section class="section">
     <div class="legend"><span><i class="sw" style="background:var(--accent)"></i>Supporting</span><span><i class="sw" style="background:var(--muted)"></i>Opposing</span><span class="muted small">Millions of dollars · sorted by total</span></div>
     <div class="bars">${rows.map(m => `
@@ -416,17 +416,36 @@ const daysUntil = (iso) => Math.round((Date.parse(iso) - Date.parse(caToday())) 
 const when = (n) => n === 0 ? "Today" : n === 1 ? "Tomorrow" : `In ${n} days`;
 let tickTimer = null;
 
+// The viewer's next step, shown first in the carousel. Logistics only: it never
+// suggests how to vote. Measures marked N/A don't count toward "decided".
+function nextAction() {
+  const E = S.election, b = ballotStore.get();
+  const all = S.measures.filter(m => (S.mine[m.id] || {}).lean !== "N/A");
+  const decided = all.filter(m => ["Yes", "No"].includes((S.mine[m.id] || {}).lean)).length;
+  const phase = ballotPhase();
+  if (phase === "after") return hasResults()
+    ? { label: "NEXT", text: "Results are in · See them next to your choices", view: "mine" }
+    : { label: "NEXT", text: "Polls are closed · Results will appear on My ballot", view: "mine" };
+  if (b.voted) return { label: "DONE", text: `Ballot cast ✓ · Results after polls close, ${fmtDay(E.date)} 8 p.m.`, view: "mine" };
+  if (phase === "eday") return { label: "TODAY", text: `Polls close 8 p.m. today · ${decided} of ${all.length} decided`, view: "mine" };
+  if (decided < all.length) return { label: "NEXT", text: `${decided} of ${all.length} decided · Finish My ballot`, view: "mine" };
+  return { label: "NEXT", text: `All ${all.length} decided · Return your ballot by ${fmtDay(E.date)}, then mark it cast`, view: "mine" };
+}
+
 function dateTicker(all) {
   const box = $("dates");
   clearTimeout(tickTimer);
-  const upcoming = () => all.filter(d => !d.date || d.date >= caToday());
+  const upcoming = () => [nextAction(), ...all.filter(d => !d.date || d.date >= caToday())].filter(Boolean);
+  const sig = l => l.map(d => d.label + d.text).join("|");
   let list = upcoming();
   if (!list.length) { box.hidden = true; return; }
   box.hidden = false;
-  const item = (d) => `<span class="date"><b>${esc(d.label)}</b><span>${esc(d.text)}${d.date ? ` <i>· ${when(daysUntil(d.date))}</i>` : ""}</span></span>`;
-  box.innerHTML = `<ul class="sr-only">${list.map(d => `<li>${esc(d.label)}: ${esc(d.text)}</li>`).join("")}</ul>
-    <div class="roll" aria-hidden="true">${item(list[0])}</div>
-    ${list.length > 1 ? `<div class="dots">${list.map((d, k) => `<button type="button" aria-label="Show ${esc(d.label)}"${k ? "" : ' aria-current="true"'}></button>`).join("")}</div>` : ""}`;
+  const item = (d) => d.view
+    ? `<button type="button" class="date next" data-view="${d.view}"><b>${esc(d.label)}</b><span>${esc(d.text)}&nbsp;→</span></button>`
+    : `<span class="date"><b>${esc(d.label)}</b><span>${esc(d.text)}${d.date ? ` <i>· ${when(daysUntil(d.date))}</i>` : ""}</span></span>`;
+  box.setAttribute("role", "group"); box.setAttribute("aria-label", "Next step and key dates");
+  box.innerHTML = `<div class="roll">${item(list[0])}</div>
+    ${list.length > 1 ? `<div class="dots">${list.map((d, k) => `<button type="button" aria-label="Show ${d.view ? "next step" : esc(d.label)}"${k ? "" : ' aria-current="true"'}></button>`).join("")}</div>` : ""}`;
   if (list.length < 2) return;
   const roll = box.querySelector(".roll"), dots = [...box.querySelectorAll(".dots button")];
   const reduce = matchMedia("(prefers-reduced-motion: reduce)");
@@ -449,7 +468,7 @@ function dateTicker(all) {
   };
   const schedule = () => { clearTimeout(tickTimer); tickTimer = setTimeout(tick, TICK_MS); };
   const tick = () => {
-    if (upcoming().length !== list.length) return dateTicker(all);
+    if (sig(upcoming()) !== sig(list)) return dateTicker(all);
     if (!held && !document.hidden) show((i + 1) % list.length);
     schedule();
   };
@@ -461,33 +480,11 @@ function dateTicker(all) {
 }
 
 /* ---------- Shell ---------- */
-// Design exploration (design-explore branch only): ?look=editorial or ?look=dashboard
-// loads an alternate stylesheet on top of styles.css. Not for main.
-const LOOK = new URLSearchParams(location.search).get("look");
-function applyLook() {
-  if (!/^(editorial|dashboard)$/.test(LOOK || "")) return;
-  document.documentElement.dataset.look = LOOK;
-  const l = document.createElement("link"); l.rel = "stylesheet"; l.href = `assets/look-${LOOK}.css`; document.head.append(l);
-  const E = S.election, all = S.measures, days = E.date ? daysUntil(E.date) : null;
-  const decided = all.filter(m => ["Yes", "No"].includes((S.mine[m.id] || {}).lean)).length;
-  const raised = all.reduce((t, m) => t + (m.money ? m.money.yes + m.money.no : 0), 0);
-  const tiles = [
-    [days > 0 ? days : days === 0 ? "Today" : "Done", days > 1 ? "days to Election Day" : days === 1 ? "day to Election Day" : "Election Day"],
-    [all.length, "measures covered"],
-    [`$${Math.round(raised)}M`, "raised by campaigns"],
-    [`${decided}/${all.filter(m => (S.mine[m.id] || {}).lean !== "N/A").length}`, "decided on My ballot"]
-  ];
-  document.querySelector("header.mast .wrap").insertAdjacentHTML("beforeend",
-    `<div class="hero-stats">${tiles.map(([v, k]) => `<div class="stat"><span class="v">${esc(String(v))}</span><span class="k">${esc(k)}</span></div>`).join("")}</div>`);
-}
-
 function shell() {
   const E = S.election;
-  applyLook();
   document.title = `${E.name} · California Ballot Guide`;
   $("eyebrow").textContent = E.eyebrow || E.name;
   $("lede").outerHTML = `<div class="lede" id="lede">${intro(esc(E.ledeShort || E.lede || ""), E.ledeShort ? `<p>${esc(E.lede)}</p>` : "")}</div>`;
-  dateTicker(E.keyDates || []);
   const sel = $("election-select");
   if (S.index.elections.length > 1) {
     sel.hidden = false;
@@ -504,6 +501,7 @@ const safeDecode = (s) => { try { return decodeURIComponent(s); } catch { return
 
 function go(token, push = true) {
   const E = S.election;
+  dateTicker(E.keyDates || []);
   token = token || E.jurisdictions[0].id;
   let tab = token;
   const m = token.match(/^m-(.+)$/), g = token.match(/^g-(.+)$/);
@@ -534,12 +532,14 @@ document.addEventListener("click", e => {
     S.mine[id].lean = t.dataset.lean === "Undecided" ? "" : t.dataset.lean; store.set(S.mine);
     t.parentNode.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b === t));
     if (t.dataset.mid) myBallotView();
+    dateTicker(S.election.keyDates || []);
   }
 });
 document.addEventListener("change", e => {
   if (!e.target.matches("[data-voted]")) return;
   ballotStore.set(e.target.checked ? { voted: true, on: caToday() } : {});
   myBallotView();
+  dateTicker(S.election.keyDates || []);
 });
 document.addEventListener("input", e => {
   const id = e.target.dataset?.note;

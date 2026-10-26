@@ -1,8 +1,9 @@
 
 /* Layout: a ballot-booklet reader — sticky tab bar, measure grid, single-column detail with plain layer + expandable "go deeper" layer */
 :root{
-  --bg:#f5f7fb; --paper:#ffffff; --ink:#1c2433; --muted:#5b6578; --line:#dfe4ee;
-  --accent:#2f62c9; --accent-ink:#ffffff; --yes:#0a6b47; --no:#e46a52; --no-ink:#ffffff; --soft:#eaf0fb; --mark:#1c2433; --hero:#e9f1ff;
+  --bg:#f6f5f1; --paper:#ffffff; --ink:#14171f; --muted:#5f6472; --line:#e6e3da;
+  --accent:#2b4fd8; --accent-ink:#ffffff; --yes:#0a6b47; --no:#e46a52; --no-ink:#ffffff; --soft:#eef0fb; --mark:#14171f; --hero:#f6f5f1;
+  --shadow:0 1px 2px rgb(20 23 31 / .04), 0 10px 30px -14px rgb(20 23 31 / .14);
   --c-taxes:#c7790a; --c-budget:#0f8a7e; --c-housing:#d1495b; --c-elections:#6a4fc4;
   --c-health:#2e8b3e; --c-local:#2f62c9; --c-environment:#4f8a1c; --c-transit:#0b7fb3; --c-schools:#b8458f;
   --f-display:"Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
@@ -10,13 +11,13 @@
   --f-mono:"IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#11161f; --paper:#1a2130; --ink:#e8ecf3; --muted:#a2acbd; --line:#2c3547;
-  --accent:#8db1ff; --accent-ink:#11161f; --yes:#3a6ad4; --no:#a3acba; --no-ink:#11161f; --soft:#212c40; --mark:#e8ecf3; --hero:#17223a;
+  --bg:#0f1115; --paper:#171a21; --ink:#eceef3; --muted:#9aa1b0; --line:#262a33;
+  --accent:#8fa8ff; --accent-ink:#0f1115; --yes:#3a6ad4; --no:#a3acba; --no-ink:#11161f; --soft:#1f2430; --mark:#eceef3; --hero:#0f1115; --shadow:0 1px 2px rgb(0 0 0 / .3), 0 12px 30px -16px rgb(0 0 0 / .6);
   --c-taxes:#f0b450; --c-budget:#4fd1c0; --c-housing:#ff8a98; --c-elections:#b4a2ff;
   --c-health:#7bd88a; --c-local:#8db1ff; --c-environment:#a6d96a; --c-transit:#5cc4ef; --c-schools:#f08cc8; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#11161f; --paper:#1a2130; --ink:#e8ecf3; --muted:#a2acbd; --line:#2c3547;
-  --accent:#8db1ff; --accent-ink:#11161f; --yes:#3a6ad4; --no:#a3acba; --no-ink:#11161f; --soft:#212c40; --mark:#e8ecf3; --hero:#17223a;
+  --bg:#0f1115; --paper:#171a21; --ink:#eceef3; --muted:#9aa1b0; --line:#262a33;
+  --accent:#8fa8ff; --accent-ink:#0f1115; --yes:#3a6ad4; --no:#a3acba; --no-ink:#11161f; --soft:#1f2430; --mark:#eceef3; --hero:#0f1115; --shadow:0 1px 2px rgb(0 0 0 / .3), 0 12px 30px -16px rgb(0 0 0 / .6);
   --c-taxes:#f0b450; --c-budget:#4fd1c0; --c-housing:#ff8a98; --c-elections:#b4a2ff;
   --c-health:#7bd88a; --c-local:#8db1ff; --c-environment:#a6d96a; --c-transit:#5cc4ef; --c-schools:#f08cc8; color-scheme:dark}
 
@@ -225,9 +226,6 @@ footer .wrap{padding-block:20px;font-size:.82rem;color:var(--muted)}
    stays zoomed, which makes the page look wider than the screen. */
 @media (pointer:coarse){textarea,input,select,.election-select{font-size:16px}}
 
-/* Hero stat tiles exist only for the design-explore looks */
-.hero-stats{display:none}
-
 /* One-line intros with an (i) toggle for the full explanation */
 .intro{display:grid;gap:8px}
 .info{font:italic 700 .78rem/1 Georgia,"Times New Roman",serif;width:20px;height:20px;border-radius:50%;border:1.5px solid currentColor;background:none;color:var(--accent);cursor:pointer;padding:0;vertical-align:2px;margin-left:2px}
@@ -237,3 +235,65 @@ footer .wrap{padding-block:20px;font-size:.82rem;color:var(--muted)}
 details.fold{gap:0}
 details.fold > summary{cursor:pointer;font-family:var(--f-display);font-weight:700;font-size:1.05rem;color:var(--ink)}
 details.fold[open] > summary{margin-bottom:12px}
+
+/* ---------- Editorial layer: larger type, softer surfaces, frosted pill nav ---------- */
+body{font-size:16.5px}
+.eyebrow{text-transform:uppercase;letter-spacing:.09em;font-size:.72rem}
+
+/* Hero: big tight headline over a soft color wash */
+header.mast{
+  background:
+    radial-gradient(55% 90% at 92% 0%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 70%),
+    radial-gradient(45% 70% at 0% 100%, color-mix(in srgb, var(--c-housing) 10%, transparent), transparent 70%),
+    var(--hero);
+  border-bottom:1px solid var(--line);
+}
+header.mast .wrap{padding-block:64px 40px;gap:20px}
+h1{font-size:clamp(2.6rem,7.5vw,4.8rem);letter-spacing:-.04em;line-height:.95}
+.lede{font-size:clamp(1.05rem,1.6vw,1.25rem);line-height:1.5}
+.dates .date{box-shadow:var(--shadow)}
+
+
+/* Frosted sticky nav with pill tabs */
+nav.tabs{background:color-mix(in srgb,var(--paper) 72%,transparent);backdrop-filter:saturate(1.6) blur(16px);-webkit-backdrop-filter:saturate(1.6) blur(16px)}
+nav.tabs .wrap{padding-block:10px;gap:6px}
+nav.tabs button{border:0;border-radius:999px;padding:8px 15px}
+nav.tabs button[aria-current="true"]{background:var(--ink);color:var(--paper)}
+
+/* Content rhythm */
+main .wrap{padding-block:48px 88px;gap:36px}
+h2{font-size:clamp(1.9rem,3.6vw,2.6rem);letter-spacing:-.03em}
+.section{border-radius:22px;padding:28px 30px;box-shadow:var(--shadow);gap:14px}
+@media (max-width:520px){.section{padding:22px 20px}}
+
+/* Filters: quiet outline pills, solid ink when on */
+.chip{border:1px solid var(--line);color:var(--ink);background:var(--paper)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+/* Cards: borderless, big numeral on top, topic as colored dot */
+.grid{grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
+.card{grid-template-columns:1fr;gap:8px;border-radius:22px;padding:22px;border-color:transparent;box-shadow:var(--shadow)}
+.card:hover{transform:translateY(-4px);border-color:transparent;box-shadow:0 24px 48px -24px color-mix(in srgb,var(--tc) 45%,transparent)}
+.card .pnum{grid-row:auto;background:none;padding:0;min-width:0;height:auto;font-size:2.6rem;letter-spacing:-.04em;justify-self:start;place-items:start}
+.card .t{font-size:1.12rem;letter-spacing:-.01em}
+.tag{background:transparent;border:1px solid var(--line)}
+.tag.topic{background:transparent;color:var(--ink);border-color:var(--line);display:inline-flex;align-items:center;gap:6px}
+.tag.topic::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--tc)}
+.tag.topic.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+/* Measure page header */
+.dhead .pnum{background:none;font-size:4.2rem;letter-spacing:-.05em;min-width:0;height:auto;padding:0}
+.dhead h2{font-size:clamp(2rem,4.4vw,3rem)}
+blockquote{border-radius:16px}
+
+/* Phones: keep the hero compact so content starts on the first screen */
+@media (max-width:640px){
+  header.mast .wrap{padding-block:28px 18px;gap:12px}
+  h1{font-size:clamp(1.9rem,8.4vw,2.6rem)}
+  main .wrap{padding-block:28px 64px;gap:28px}
+}
+
+/* Carousel: the viewer's next step, first and tappable */
+.dates .date.next{font:inherit;font-size:.88rem;color:var(--ink);text-align:left;cursor:pointer;border:1.5px solid var(--accent);background:var(--paper)}
+.dates .date.next b{background:var(--ink);color:var(--paper)}
+.dates .date.next:hover{background:var(--soft)}
