@@ -68,7 +68,9 @@ function resultChip(id) {
   const cls = r.outcome === "passed" || r.outcome === "leading" ? "pass" : "fail";
   return `<span class="result ${cls}">${word}${r.yesPct != null ? ` · ${r.yesPct}% yes` : ""}${r.final ? "" : " · counting"}</span>`;
 }
-const leanChip = id => { const l = (S.mine[id] || {}).lean; return l ? `<span class="lean">My lean: ${l}</span>` : ""; };
+const leanChip = id => { const l = (S.mine[id] || {}).lean; return l ? `<span class="lean">${l === "N/A" ? "Not on my ballot" : `My lean: ${l}`}</span>` : ""; };
+// Measures in a section marked dependsOnAddress (e.g. school district measures) may not be on everyone's ballot.
+const dependsOnAddress = m => (jur(m._j)?.sections || []).some(sec => sec.dependsOnAddress && sec.measures.includes(m.id));
 
 function card(m) {
   const big = m.id.length > 2;
@@ -195,7 +197,8 @@ function detail(id) {
    </section>
    ${(m.groups || []).filter(g => S.groups[g]).length ? `<section class="section"><h3>Read it together with</h3><div class="plinks">${m.groups.filter(g => S.groups[g]).map(g => `<button data-group="${g}">${esc(S.groups[g].title)} →</button>`).join("")}</div></section>` : ""}
    <section class="section"><h3>My notes</h3>
-    <div class="seg" role="group" aria-label="My leaning">${["Undecided", "Yes", "No"].map(o => `<button data-lean="${o}" aria-pressed="${(n.lean || "Undecided") === o}">${o}</button>`).join("")}</div>
+    <div class="seg" role="group" aria-label="My leaning">${["Undecided", "Yes", "No", ...(dependsOnAddress(m) ? ["N/A"] : [])].map(o => `<button data-lean="${o}" aria-pressed="${(n.lean || "Undecided") === o}"${o === "N/A" ? ' title="Not on my ballot"' : ""}>${o}</button>`).join("")}</div>
+    ${dependsOnAddress(m) ? '<p class="src">This measure is only on ballots in its district. Choose N/A if it isn\'t on yours.</p>' : ""}
     <textarea id="note-${m.id}" data-note="${m.id}" placeholder="Questions, reasons, things to check…">${esc(n.note || "")}</textarea>
     <p class="src">Saved only in this browser.</p>
    </section>`;

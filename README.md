@@ -130,6 +130,10 @@ Fill in `data/<election>/results.json`:
 - Every measure has the same sections in the same order. Yes and No are styled identically.
 - No recommendations and no polling.
 
+## District-dependent measures
+
+In `election.json`, a jurisdiction section with `"dependsOnAddress": true` (for example, school district measures) marks measures that are only on some voters' ballots. Those measures get an extra **N/A** choice in My notes, shown on cards as "Not on my ballot".
+
 ## Privacy
 
 Leanings and notes are stored only in the visitor's own browser (`localStorage`). The site has no analytics and no server. Fonts load from Google Fonts.
