@@ -97,7 +97,8 @@
         "a": "Marin, Napa, Sonoma, and Solano are outside the district and would not pay the tax. Golden Gate Transit would receive a small share, 0.40% of the money collected in San Francisco.",
         "src": "League of Women Voters of the Bay Area"
       }
-    ]
+    ],
+    "passPct": 50
   },
   {
     "id": "O",
@@ -192,7 +193,8 @@
         "a": "Both are from the same district and are voted on separately. Measure O (two-thirds needed) pays for programs and staff. Measure P (55% needed) is a $100 million bond for building repairs. Either can pass without the other.",
         "src": "Ballot question"
       }
-    ]
+    ],
+    "passPct": 66.67
   },
   {
     "id": "P",
@@ -284,7 +286,8 @@
         "a": "Yes, four since 2008: Measure G ($179 million, 2008), Measure J ($125 million, 2012), Measure I ($140 million, 2016), and Measure S ($71.5 million, 2022).",
         "src": "Mercury News, via Hoodline"
       }
-    ]
+    ],
+    "passPct": 55
   },
   {
     "id": "Q",
@@ -370,7 +373,8 @@
         "a": "All five: Bagby, Fammatre, and Farnham elementary schools, Price Middle School, and Steindorf STEAM Magnet.",
         "src": "Cambrian School District Measure Q page"
       }
-    ]
+    ],
+    "passPct": 66.67
   },
   {
     "id": "R",
@@ -449,6 +453,7 @@
         "a": "The money would go into a separate account, with annual spending reports and an independent audit.",
         "src": "Ballot question; Orchard School District"
       }
-    ]
+    ],
+    "passPct": 66.67
   }
 ]

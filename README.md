@@ -74,7 +74,7 @@ All content lives in `data/`, so you never need to touch `app.js` to update text
 | `title`, `short` | Plain-language name and one-line summary |
 | `official` | Official ballot title |
 | `origin` | `Legislature`, `Petition`, or `School board` |
-| `type`, `threshold` | Measure type and the vote needed to pass |
+| `type`, `threshold`, `passPct` | Measure type, the vote needed to pass in words, and as a number (`50`, `55`, `66.67`) for the results chart |
 | `area` | (local) Who votes on it |
 | `topics` | Topic ids from `topics.json`. Give a measure **every** topic whose rule it meets (the rules are in `topics.json` and on the Method & sources page). List the main subject first; the first non-`local` topic sets the color. Cards show all topics. |
 | `what`, `yes`, `no`, `yesNoSrc` | What it does, what each vote means, and where that wording comes from |

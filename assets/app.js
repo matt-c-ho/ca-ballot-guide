@@ -80,7 +80,8 @@ function resultChip(id) {
   if (!r) return "";
   const word = { passed: "Passed", failed: "Failed", leading: "Leading", trailing: "Trailing" }[r.outcome] || "";
   const cls = r.outcome === "passed" || r.outcome === "leading" ? "pass" : "fail";
-  return `<span class="result ${cls}">${word}${r.yesPct != null ? ` · ${r.yesPct}% yes` : ""}${r.final ? "" : " · counting"}</span>`;
+  const need = S.byId[id]?.passPct || 50;
+  return `<span class="result ${cls}">${word}${r.yesPct != null ? ` · ${r.yesPct}% yes` : ""}${need !== 50 ? ` · needs ${need > 66 ? "66.7" : need}%` : ""}${r.final ? "" : " · counting"}</span>`;
 }
 const leanChip = id => { const l = (S.mine[id] || {}).lean; return l ? `<span class="lean">${l === "N/A" ? "Not on my ballot" : `My lean: ${l}`}</span>` : ""; };
 // Measures in a section marked dependsOnAddress (e.g. school district measures) may not be on everyone's ballot.
@@ -131,14 +132,28 @@ function arg(text, side, m) {
   return `<blockquote>${esc(text)}<cite>${esc(cite)}</cite></blockquote>`;
 }
 
+// Share of the yes vote a measure needs, as words for captions and labels.
+const passWords = pct => pct > 66 ? "two-thirds (66.7%) yes" : pct === 50 ? "more than 50% yes" : `${pct}% yes`;
+
+// Results as a two-bar chart: Yes and No on one 0–100% scale, each labeled with its
+// share and vote count. Both bars use the same color (Yes and No are never styled
+// differently); a tick on the Yes bar marks the share needed to pass.
 function resultsSection(m) {
   const r = resultFor(m.id);
   if (!r) return "";
-  const y = r.yesPct ?? 0;
+  const yes = r.yesPct ?? 0, no = r.noPct ?? Math.round((100 - yes) * 10) / 10, need = m.passPct || 50;
+  const count = v => v != null ? `<span class="muted">${v.toLocaleString()}</span>` : "";
+  const bar = (k, pct, votes, tick) => `<div class="rrow">
+      <span class="rk">${k}</span>
+      <span class="rtrack"><span class="rfill" style="width:${pct}%"></span>${tick ? `<span class="rneed" style="left:${need}%"></span>` : ""}</span>
+      <span class="rv"><b>${pct}%</b> ${count(votes)}</span></div>`;
   return `<section class="section"><h3>Results</h3>
-    <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">${resultChip(m.id)}
-      ${r.yes != null ? `<span class="small muted num">${r.yes.toLocaleString()} yes · ${r.no.toLocaleString()} no</span>` : ""}</div>
-    <div class="rbar" role="img" aria-label="${y}% yes"><span class="ry" style="width:${y}%"></span><span class="rn" style="width:${100 - y}%"></span></div>
+    <div>${resultChip(m.id)}</div>
+    <div class="rchart" role="img" aria-label="Yes ${yes}%${r.yes != null ? ` (${r.yes.toLocaleString()} votes)` : ""}, No ${no}%${r.no != null ? ` (${r.no.toLocaleString()} votes)` : ""}. Needs ${passWords(need)} to pass.">
+      ${bar("Yes", yes, r.yes, true)}
+      ${bar("No", no, r.no, false)}
+    </div>
+    <p class="small muted"><span class="rneed-key" aria-hidden="true"></span>Needs ${passWords(need)} to pass.</p>
     <p class="src">${esc(S.results.source || "")}${S.results.updated ? ` · updated ${esc(S.results.updated)}` : ""}${S.results.sourceUrl ? ` · <a href="${S.results.sourceUrl}" target="_blank" rel="noopener">official results</a>` : ""}</p>
   </section>`;
 }

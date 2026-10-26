@@ -90,7 +90,8 @@
         "a": "Yes. Voters approved $2 billion in 2024 for housing people facing homelessness who have mental health or substance use challenges, including veterans. Voters also approved $1 billion for veterans' home loans in 2018.",
         "src": "LAO analysis"
       }
-    ]
+    ],
+    "passPct": 50
   },
   {
     "id": "2",
@@ -182,7 +183,8 @@
         "a": "Today the state must make extra payments toward state worker pension and retiree health debts through 2030. Each year's payment equals the amount first deposited into the rainy day fund. Prop 2 extends these payments to 2040. It also lets them cover more things, such as required payments to schools, repaying money borrowed from other state funds, and certain federal loans.",
         "src": "LAO analysis"
       }
-    ]
+    ],
+    "passPct": 50
   },
   {
     "id": "3",
@@ -280,7 +282,8 @@
         "a": "Yes. Voters approved them as temporary in 2012 (Prop 30) and extended them in 2016 (Prop 55). Prop 3 would make them permanent. Because it is a [[ica|constitutional amendment]], changing them later would take another statewide vote.",
         "src": "LAO analysis"
       }
-    ]
+    ],
+    "passPct": 50
   },
   {
     "id": "4",
@@ -371,7 +374,8 @@
         "a": "The state would spend a few hundred thousand dollars a year for the [[fppc|FPPC]] to advise governments considering a program. The LAO says a future program's cost could be significant for any government that creates one, depending on its design.",
         "src": "LAO analysis"
       }
-    ]
+    ],
+    "passPct": 50
   },
   {
     "id": "5",
@@ -463,7 +467,8 @@
         "a": "It depends on future recalls. A separate special election could cost millions. Dropping the replacement candidates from the ballot could save millions. The LAO says the net effect is unknown.",
         "src": "LAO analysis"
       }
-    ]
+    ],
+    "passPct": 50
   },
   {
     "id": "37",
@@ -557,7 +562,8 @@
         "a": "Builders can choose to meet higher labor standards, such as using workers with certain training. In exchange they get more flexible construction-defect rules. Any builder's new homes can qualify for the loans, whether or not it chooses the option.",
         "src": "LAO analysis"
       }
-    ]
+    ],
+    "passPct": 50
   },
   {
     "id": "38",
@@ -656,7 +662,8 @@
         "a": "Yes. Voters approved $8.5 billion in stem cell research bonds through Prop 71 (2004) and Prop 14 (2020).",
         "src": "LAO analysis"
       }
-    ]
+    ],
+    "passPct": 50
   },
   {
     "id": "39",
@@ -754,7 +761,8 @@
         "a": "The Legislature must first pass laws filling in details, such as which IDs count and what \"best efforts\" to verify citizenship means. The LAO estimates ongoing costs of tens of millions to low hundreds of millions of dollars a year. It would apply to every election in California, state and local.",
         "src": "LAO analysis"
       }
-    ]
+    ],
+    "passPct": 50
   },
   {
     "id": "40",
@@ -861,7 +869,8 @@
         "a": "When measures passed at the same election [[conflict|conflict]], the one with the most yes votes generally wins. Props 41 and 42 are written to apply to taxes on this ballot. If either gets more yes votes than Prop 40, Prop 40 could be blocked even if a majority approves it.",
         "src": "California Constitution, Art. II, Sec. 10; LAO"
       }
-    ]
+    ],
+    "passPct": 50
   },
   {
     "id": "41",
@@ -955,7 +964,8 @@
         "a": "Its audits cover state special taxes. Local special taxes are the subject of Prop 43.",
         "src": "Measure text"
       }
-    ]
+    ],
+    "passPct": 50
   },
   {
     "id": "42",
@@ -1051,7 +1061,8 @@
         "a": "It is a [[ica|constitutional amendment]], so changing it would take another statewide vote.",
         "src": "Measure type"
       }
-    ]
+    ],
+    "passPct": 50
   },
   {
     "id": "43",
@@ -1144,7 +1155,8 @@
         "a": "The Legislature, by a near-unanimous vote. News reports describe it as replacing a broader Howard Jarvis Taxpayers Association initiative that would also have affected some existing taxes.",
         "src": "Legislative record; news reports"
       }
-    ]
+    ],
+    "passPct": 50
   },
   {
     "id": "44",
@@ -1235,7 +1247,8 @@
         "a": "The LAO says some clinics that cannot meet the requirement might close. Others might spend more on patient care, which could raise state Medi-Cal costs. The state would spend low tens of millions of dollars a year on enforcement, paid by fees on clinics.",
         "src": "LAO analysis"
       }
-    ]
+    ],
+    "passPct": 50
   },
   {
     "id": "45",
@@ -1327,6 +1340,7 @@
         "a": "The LAO estimates state and local costs in the high tens of millions of dollars a year at first, possibly over $100 million, partly covered by fees. Longer-term effects are uncertain but could be larger. Faster projects could lower costs and raise tax revenue, while approving projects with harmful environmental effects could create new costs.",
         "src": "LAO analysis"
       }
-    ]
+    ],
+    "passPct": 50
   }
 ]

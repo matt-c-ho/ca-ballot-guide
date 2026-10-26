@@ -6,7 +6,7 @@ const read = (p) => JSON.parse(readFileSync(p, "utf8"));
 const errors = [];
 const err = (where, msg) => errors.push(`${where}: ${msg}`);
 
-const REQUIRED = ["id", "label", "title", "official", "origin", "type", "topics", "threshold",
+const REQUIRED = ["id", "label", "passPct", "title", "official", "origin", "type", "topics", "threshold",
   "short", "what", "yes", "no", "fiscal", "short_term", "long_term", "supporters", "opponents", "deep", "groups"];
 const OUTCOMES = ["passed", "failed", "leading", "trailing"];
 
@@ -53,7 +53,8 @@ for (const e of index.elections) {
         if (!r.source || !r.title) err(`${where}.reading[${i}]`, "needs source and title");
         if (!/^https:\/\//.test(r.url || "")) err(`${where}.reading[${i}]`, "url must start with https://");
       });
-      if (m.money &&(typeof m.money.yes !== "number" || typeof m.money.no !== "number")) err(where, "money.yes and money.no must be numbers (millions)");
+      if (typeof m.passPct !== "number" || m.passPct < 50 || m.passPct > 100) err(where, "passPct must be a number from 50 to 100");
+      if (m.money && (typeof m.money.yes !== "number" || typeof m.money.no !== "number")) err(where, "money.yes and money.no must be numbers (millions)");
     }
     for (const s of j.sections || []) for (const id of s.measures) if (!ids.has(id)) err(`${dir}/election.json`, `section lists unknown measure "${id}"`);
   }
