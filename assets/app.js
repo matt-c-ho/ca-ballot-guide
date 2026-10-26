@@ -69,8 +69,14 @@ const isLinkedTax = m => (m.groups || []).some(g => S.groups[g]?.legalConflict);
 const jur = id => S.election.jurisdictions.find(j => j.id === id);
 const originLabel = o => o === "Legislature" ? "the Legislature" : o === "School board" ? "the school board" : "petition signatures";
 
+// Results are shown only after polls close (election.pollsClose, California time),
+// whatever results.json contains. This also keeps any pre-election test data off the site.
+const caNow = () => new Intl.DateTimeFormat("sv-SE", { timeZone: "America/Los_Angeles", dateStyle: "short", timeStyle: "short" }).format(new Date());
+const pollsClosed = () => !!S.election.date && caNow() >= `${S.election.date} ${S.election.pollsClose || "20:00"}`;
+const resultFor = id => pollsClosed() ? S.results?.measures?.[id] : undefined;
+
 function resultChip(id) {
-  const r = S.results?.measures?.[id];
+  const r = resultFor(id);
   if (!r) return "";
   const word = { passed: "Passed", failed: "Failed", leading: "Leading", trailing: "Trailing" }[r.outcome] || "";
   const cls = r.outcome === "passed" || r.outcome === "leading" ? "pass" : "fail";
@@ -126,7 +132,7 @@ function arg(text, side, m) {
 }
 
 function resultsSection(m) {
-  const r = S.results?.measures?.[m.id];
+  const r = resultFor(m.id);
   if (!r) return "";
   const y = r.yesPct ?? 0;
   return `<section class="section"><h3>Results</h3>
@@ -255,11 +261,12 @@ function moneyView() {
 /* ---------- My ballot ----------
  * The viewer's planned or cast choices, worded by date and by whether they
  * marked their ballot as cast, with results alongside once they are reported. */
+// "after" starts when polls close, not at midnight: from then on, an unmarked ballot can't be cast.
 function ballotPhase() {
-  const today = caToday(), day = S.election.date;
-  return !day || today < day ? "before" : today === day ? "eday" : "after";
+  const day = S.election.date;
+  return !day || caToday() < day ? "before" : pollsClosed() ? "after" : "eday";
 }
-const hasResults = () => Object.keys(S.results?.measures || {}).length > 0;
+const hasResults = () => pollsClosed() && Object.keys(S.results?.measures || {}).length > 0;
 const fmtDay = iso => new Date(iso + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" });
 
 // How the viewer's Yes/No choice compares with the reported outcome.
@@ -298,7 +305,7 @@ function myBallotView() {
 
   let summary = `${decided} of ${counted} decided${skipped ? ` · ${skipped} not on my ballot` : ""}`;
   if (results) {
-    const st = all.map(m => sideStatus(leanOf(m.id), S.results.measures[m.id])).filter(Boolean);
+    const st = all.map(m => sideStatus(leanOf(m.id), resultFor(m.id))).filter(Boolean);
     const won = st.filter(x => x.done && x.mine).length, lost = st.filter(x => x.done && !x.mine).length;
     const ahead = st.filter(x => !x.done && x.mine).length, behind = st.filter(x => !x.done && !x.mine).length;
     const parts = [won && `won ${won}`, lost && `lost ${lost}`, ahead && `ahead on ${ahead}`, behind && `behind on ${behind}`].filter(Boolean);
@@ -306,7 +313,7 @@ function myBallotView() {
   }
 
   const row = m => {
-    const lean = leanOf(m.id), r = S.results?.measures?.[m.id], st = sideStatus(lean, r);
+    const lean = leanOf(m.id), st = sideStatus(lean, resultFor(m.id));
     return `<div class="brow-m">
       <button class="pn" data-open="${esc(m.id)}" style="${tcol(m)}" aria-label="Open ${esc(m.label)}">${esc(m.id)}</button>
       <div class="bm-t"><button class="linkish" data-open="${esc(m.id)}">${esc(m.title)}</button>

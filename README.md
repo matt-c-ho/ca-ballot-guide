@@ -136,12 +136,12 @@ The **My ballot** tab lists every measure with the viewer's choice: Undecided, Y
 
 The page's wording follows the date (California time) and the checkbox:
 
-| | Before or on Election Day | After Election Day |
+| | Before polls close | After polls close (8 p.m. PT on Election Day) |
 |---|---|---|
-| Not marked as cast | "My ballot plan" | "My leanings" (not counted as votes) |
+| Not marked as cast | "My ballot plan" | "My leanings" (not counted as votes; switches when polls close) |
 | Marked as cast | "My votes" | "My votes" |
 
-Once `results.json` has entries, each measure shows its result and whether the viewer's side is ahead, behind, won, or lost, with a summary at the top. Choices and the checkbox are stored only in the browser.
+Results appear only after polls close (`pollsClose` in `election.json`, California time, default 8 p.m.), even if `results.json` already has entries; this keeps any pre-election test data off the site. After that, once `results.json` has entries, each measure shows its result and whether the viewer's side is ahead, behind, won, or lost, with a summary at the top. Choices and the checkbox are stored only in the browser.
 
 ## District-dependent measures
 
