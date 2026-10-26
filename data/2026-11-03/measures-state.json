@@ -28,7 +28,7 @@
       "Combined with Prop 38, the two bonds would cost about $1 billion a year in General Fund repayment."
     ],
     "money": {
-      "yes": 8.14,
+      "yes": 8.17,
       "no": 0,
       "yesNote": "Two carpenters' councils, Airbnb, and Building a Better California ($1M each); Meta's California committee ($0.6M); Anthropic ($0.5M)",
       "noNote": "No opposing committee above $1M"
@@ -591,7 +591,7 @@
       "At least $4.2 billion must go to cancer, heart disease, and Alzheimer's research.",
       "The single institute is chosen by the Department of Public Health; grant funds are awarded by a council of seven UC campuses and 10–15 other California institutions.",
       "Treatments developed with the money must be sold in California at a 20% discount, and 10% of resulting revenue goes to the state until the bonds are repaid.",
-      "Proponent is Gary K. Michelson, whose entities account for about $66.2 million of the yes campaign's funds (FPPC, Oct 23). CalMatters reports the institute criteria currently match only the California Institute for Immunology and Immunotherapy, of which he is the principal funder.",
+      "Proponent is Gary K. Michelson, whose entities account for about $66.2 million of the yes campaign's funds (FPPC, Oct 26). CalMatters reports the institute criteria currently match only the California Institute for Immunology and Immunotherapy, of which he is the principal funder.",
       "The \"no cost to taxpayers\" claim in the yes argument depends on future research revenue. The LAO's estimate is $500–600 million a year in repayment, possibly offset later."
     ],
     "money": {
@@ -696,9 +696,9 @@
     ],
     "money": {
       "yes": 29.85,
-      "no": 27.94,
+      "no": 28.53,
       "yesNote": "Richard Uihlein $17M; Joseph Gebbia $8M; Carl DeMaio's Reform California $3.1M",
-      "noNote": "California Democratic Party ~$6.3M across three committees; California Nurses Association $2M; Federated Indians of Graton Rancheria $2M; Patty Quillin and Quinn Delaney $1.5M each; Reed Hastings $1M"
+      "noNote": "California Democratic Party ~$6.5M across three committees; California Nurses Association $2M; Federated Indians of Graton Rancheria $2M; Patty Quillin and Quinn Delaney $1.5M each; Reed Hastings $1M"
     },
     "groups": [
       "elections"
@@ -992,7 +992,7 @@
       "Today: the state and local governments already tax some personal property, such as the vehicle license fee and county taxes on business equipment. Those existing taxes are unaffected. Simply owning stocks or investment accounts is not taxed; income from them is.",
       "Prop 40 is both a tax on owning assets (net worth) and keyed to a past residency date, so it falls under both prohibitions. That is why the LAO flags the conflict.",
       "Because it is a constitutional amendment, a future wealth tax or similar would first need voters to amend the Constitution again.",
-      "At $128 million (as of October 23), Yes on 42 is the largest single committee on the ballot."
+      "At $128 million (as of October 26), Yes on 42 is the largest single committee on the ballot."
     ],
     "money": {
       "yes": 127.97,
@@ -1187,7 +1187,7 @@
     ],
     "money": {
       "yes": 16.93,
-      "no": 17.48,
+      "no": 17.51,
       "yesNote": "SEIU-UHW political issues committee (100%)",
       "noNote": "AltaMed $6.1M and other community clinics"
     },
