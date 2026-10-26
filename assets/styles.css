@@ -22,6 +22,10 @@
 
 *{box-sizing:border-box}
 html,body{margin:0}
+/* Keep the page exactly as wide as the screen on phones: no font inflation in
+   landscape, long words/URLs wrap, and nothing can push the page sideways. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{overflow-x:clip;overflow-wrap:break-word}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
 a{color:var(--accent)}
@@ -216,3 +220,7 @@ footer .wrap{padding-block:20px;font-size:.82rem;color:var(--muted)}
 .ih b{font-size:.95rem;color:var(--ink);font-variant-numeric:tabular-nums}
 .ihl{font-weight:600}
 @media (max-width:640px){.brow-m .iseg{grid-column:1/-1;justify-self:end}}
+
+/* iOS Safari zooms the page when a text field under 16px gets focus, and often
+   stays zoomed, which makes the page look wider than the screen. */
+@media (pointer:coarse){textarea,input,select,.election-select{font-size:16px}}
