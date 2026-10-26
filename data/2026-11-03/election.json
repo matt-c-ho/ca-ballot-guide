@@ -5,7 +5,8 @@
   "pollsClose": "20:00",
   "status": "upcoming",
   "lastChecked": "2026-10-24",
-  "eyebrow": "November 3, 2026 · California · Santa Clara County · San José",
+  "eyebrow": "Nov 3, 2026 · California · San José",
+  "ledeShort": "Nonpartisan guide. No recommendations.",
   "lede": "The 14 statewide measures plus the local measures on San José ballots, explained from the official Voter Information Guide and the Legislative Analyst's nonpartisan analysis. Each side's case is shown in its own words. This guide makes no recommendations.",
   "keyDates": [
     { "date": "2026-10-27", "label": "OCT 27", "text": "Last day to request a new mail ballot" },
@@ -18,6 +19,7 @@
       "tab": "State props",
       "title": "14 statewide propositions",
       "file": "measures-state.json",
+      "summary": "Tap a measure for what Yes and No mean.",
       "intro": "Select a measure for what a Yes or No vote does, the fiscal impact, both sides' arguments, and the money behind each side. Measures marked Linked interact with others on this ballot. Every statewide measure passes with a simple majority."
     },
     {
@@ -26,6 +28,7 @@
       "eyebrow": "Santa Clara County · San José",
       "title": "Local measures",
       "file": "measures-santa-clara.json",
+      "summary": "School measures depend on your district.",
       "intro": "A San José ballot this November has the 14 state propositions, the regional transit tax (RTM), and, depending on your address, a school district measure.",
       "notOnBallot": [
         "<b>No City of San José measures</b> on November 3. The city's only 2026 measure, Measure A (hotel tax from 4% to 6%, about $10M a year for general city services), was decided June 2 and led with about 66% in early returns.",
@@ -43,6 +46,7 @@
   "money": {
     "asOf": "2026-10-26",
     "max": 140,
+    "summary": "Top donors on each side",
     "intro": "Reported contributions from top donors to committees supporting and opposing each measure. Committees reported about $731 million across 11 measures as of October 26. The billionaire tax fight (Props 40–42) accounts for nearly half.",
     "source": "Source: FPPC Top 10 Contributors lists, last updated October 26, 2026, using the FPPC's aggregated support and oppose totals. Figures change often; totals cover top contributors only, and money passed between committees on the same side can be counted twice. Where a \"No\" bar is empty, no opposing committee reported $1M or more, or opposition runs through another measure's committee (41 and 42 are opposed by the Yes on 40 campaign, counted once under 40).",
     "fundersSource": "Who they are: descriptions from news reporting by CalMatters, KPBS, and Mission Local, and from each organization's own description.",

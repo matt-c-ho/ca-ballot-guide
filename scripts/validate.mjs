@@ -28,6 +28,10 @@ for (const e of index.elections) {
   const election = read(`${dir}/election.json`);
   const groups = existsSync(`${dir}/groups.json`) ? read(`${dir}/groups.json`) : {};
   const ids = new Set();
+  // Summaries are meant to fit on one line on a phone.
+  const oneLine = (t, where) => { if (t && t.length > 50) err(where, `summary is ${t.length} characters; keep it to one line on a phone (50 max)`); };
+  oneLine(election.ledeShort, `${dir}/election.json ledeShort`); oneLine(election.money?.summary, `${dir}/election.json money.summary`);
+  for (const j of election.jurisdictions) oneLine(j.summary, `${dir}/election.json [${j.id}].summary`);
   if (election.pollsClose && !/^\d{2}:\d{2}$/.test(election.pollsClose)) err(`${dir}/election.json`, "pollsClose must be HH:MM (California time)");
   (election.keyDates || []).forEach((d, i) => {
     if (d.date && !/^\d{4}-\d{2}-\d{2}$/.test(d.date)) err(`${dir}/election.json keyDates[${i}]`, "date must be YYYY-MM-DD");

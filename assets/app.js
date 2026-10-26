@@ -68,6 +68,15 @@ const esc = (t) => String(t ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<":
 const rich = (t) => String(t ?? "").replace(/\[\[([\w-]+)\|([^\]]+)\]\]/g,
   (_, k, l) => S.glossary[k] ? `<button class="term" data-term="${k}">${l}</button>` : l);
 const T = (k, l) => rich(`[[${k}|${l}]]`);
+// A one-line summary with an (i) button that expands the full explanation in place,
+// so intros don't push the content people came for below the fold on phones.
+let infoSeq = 0;
+const intro = (short, full) => {
+  if (!full) return `<p class="muted one">${short}</p>`;
+  const id = `more-${++infoSeq}`;
+  return `<div class="intro"><p class="muted one">${short}&nbsp;<button class="info" type="button" aria-expanded="false" aria-controls="${id}" aria-label="More about this">i</button></p>
+    <div class="more muted" id="${id}" hidden>${full}</div></div>`;
+};
 const fmt = v => v >= 1 ? `$${v.toFixed(v % 1 ? 1 : 0)}M` : "under $1M";
 const topicOf = m => m.topics.find(t => t !== "local") || "local";
 const tcol = m => `--tc:var(--c-${topicOf(m)})`;
@@ -121,10 +130,9 @@ function jurisdictionView(j) {
     <section style="display:grid;gap:10px">
       ${j.eyebrow ? `<span class="eyebrow">${esc(j.eyebrow)}</span>` : ""}
       <h2>${esc(j.title)}</h2>
-      <p class="muted">${rich(j.intro)}</p>
-      ${sectioned ? "" : `<p class="small muted">You've noted a leaning on ${decided} of ${list.length}. Leanings stay in this browser only. <button class="linkish small" data-view="mine" style="color:var(--accent)">See My ballot →</button></p>`}
+      ${intro(j.summary ? rich(j.summary) : rich(j.intro), j.summary ? `<p>${rich(j.intro)}</p>${sectioned ? "" : `<p>You've noted a leaning on ${decided} of ${list.length}. Leanings stay in this browser only.</p>`}` : "")}
     </section>
-    ${j.notOnBallot ? `<section class="section"><h3>What's not on the ballot</h3><div class="prose small">${j.notOnBallot.map(p => `<p>${p}</p>`).join("")}</div></section>` : ""}
+    ${j.notOnBallot ? `<details class="section deep fold"><summary>What's not on the ballot</summary><div class="prose small">${j.notOnBallot.map(p => `<p>${p}</p>`).join("")}</div></details>` : ""}
     ${chips}
     ${sectioned
       ? j.sections.map(sec => `<div style="display:grid;gap:10px"><span class="eyebrow">${esc(sec.title)}</span>
@@ -253,7 +261,7 @@ function linkedView(only) {
      <section class="section"><h3>Open a measure</h3><div class="plinks">${g.measures.filter(id => S.byId[id]).map(id => `<button data-open="${id}">${esc(S.byId[id].label)}: ${esc(S.byId[id].title)}</button>`).join("")}</div></section>`;
     return;
   }
-  $view.innerHTML = `<section style="display:grid;gap:10px"><h2>Linked measures</h2><p class="muted">Some measures only make sense read together. Groups marked as a legal conflict have real consequences for how your votes combine; the others share a subject or a budget.</p></section>
+  $view.innerHTML = `<section style="display:grid;gap:10px"><h2>Linked measures</h2>${intro("Measures best read together.", "<p>Some measures only make sense read together. Groups marked as a legal conflict have real consequences for how your votes combine; the others share a subject or a budget.</p>")}</section>
    <div class="grouplist">${Object.entries(S.groups).map(([k, g]) => `<button class="gcard" data-group="${k}">
      <span class="gnums">${g.measures.map(id => `<span style="${S.byId[id] ? tcol(S.byId[id]) : ""}">${esc(id)}</span>`).join("")}${g.legalConflict ? '<span class="tag link" style="align-self:center">Legal conflict</span>' : ""}</span>
      <h3>${esc(g.title)}</h3><span class="muted small">${rich(g.summary).replace(/<[^>]+>/g, "")}</span></button>`).join("")}</div>`;
@@ -266,7 +274,7 @@ function moneyView() {
   const rows = S.measures.filter(m => m.money).sort((a, b) => (b.money.yes + b.money.no) - (a.money.yes + a.money.no));
   const w = v => `calc(${Math.min(v, max) / max} * (100% - 5.5rem))`;
   $view.innerHTML = `
-   <section style="display:grid;gap:10px"><h2>Follow the money</h2><p class="muted">${esc(M.intro)}</p></section>
+   <section style="display:grid;gap:10px"><h2>Follow the money</h2>${intro(M.summary ? `${esc(M.summary)}, as of ${fmtDay(M.asOf)}.` : esc(M.intro), M.summary ? `<p>${esc(M.intro)}</p>` : "")}</section>
    <section class="section">
     <div class="legend"><span><i class="sw" style="background:var(--accent)"></i>Supporting</span><span><i class="sw" style="background:var(--muted)"></i>Opposing</span><span class="muted small">Millions of dollars · sorted by total</span></div>
     <div class="bars">${rows.map(m => `
@@ -367,7 +375,7 @@ function myBallotView() {
 }
 
 function glossaryView() {
-  $view.innerHTML = `<section style="display:grid;gap:10px"><h2>Key terms</h2><p class="muted">Dotted-underlined words throughout the guide open these definitions.</p></section>
+  $view.innerHTML = `<section style="display:grid;gap:10px"><h2>Key terms</h2>${intro("Tap any dotted word for its definition.")}</section>
    <div class="gloss">${Object.entries(S.glossary).sort((a, b) => a[1].term.localeCompare(b[1].term)).map(([k, g]) => `<article id="t-${k}"><h3>${esc(g.term)}</h3><p class="small">${esc(g.definition)}</p></article>`).join("")}</div>`;
 }
 
@@ -478,7 +486,7 @@ function shell() {
   applyLook();
   document.title = `${E.name} · California Ballot Guide`;
   $("eyebrow").textContent = E.eyebrow || E.name;
-  $("lede").textContent = E.lede || "";
+  $("lede").outerHTML = `<div class="lede" id="lede">${intro(esc(E.ledeShort || E.lede || ""), E.ledeShort ? `<p>${esc(E.lede)}</p>` : "")}</div>`;
   dateTicker(E.keyDates || []);
   const sel = $("election-select");
   if (S.index.elections.length > 1) {
@@ -513,6 +521,10 @@ document.addEventListener("click", e => {
   const t = e.target.closest("button"); hidePop(e);
   if (!t) return;
   if (t.dataset.term) { e.stopPropagation(); showPop(t); return; }
+  if (t.classList.contains("info")) {
+    const box = document.getElementById(t.getAttribute("aria-controls")), open = t.getAttribute("aria-expanded") !== "true";
+    t.setAttribute("aria-expanded", open); box.hidden = !open; return;
+  }
   if (t.dataset.view) return go(t.dataset.view);
   if (t.dataset.open) return go("m-" + encodeURIComponent(t.dataset.open));
   if (t.dataset.group) return go("g-" + t.dataset.group);

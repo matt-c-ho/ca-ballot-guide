@@ -227,3 +227,13 @@ footer .wrap{padding-block:20px;font-size:.82rem;color:var(--muted)}
 
 /* Hero stat tiles exist only for the design-explore looks */
 .hero-stats{display:none}
+
+/* One-line intros with an (i) toggle for the full explanation */
+.intro{display:grid;gap:8px}
+.info{font:italic 700 .78rem/1 Georgia,"Times New Roman",serif;width:20px;height:20px;border-radius:50%;border:1.5px solid currentColor;background:none;color:var(--accent);cursor:pointer;padding:0;vertical-align:2px;margin-left:2px}
+.info[aria-expanded="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.more[hidden]{display:none}
+.more{display:grid;gap:8px;font-size:.92rem;padding:12px 14px;background:var(--soft);border-radius:12px}
+details.fold{gap:0}
+details.fold > summary{cursor:pointer;font-family:var(--f-display);font-weight:700;font-size:1.05rem;color:var(--ink)}
+details.fold[open] > summary{margin-bottom:12px}
