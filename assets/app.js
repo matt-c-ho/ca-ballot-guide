@@ -51,6 +51,16 @@ const ballotStore = {
 };
 // N/A is offered only for measures that are not on every ballot (see dependsOnAddress).
 const leansFor = m => ["Undecided", "Yes", "No", ...(dependsOnAddress(m) ? ["N/A"] : [])];
+// Icons for the My ballot choice grid (adapted from Lucide, ISC license).
+const ICON = {
+  "Undecided": '<path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/>',
+  "Yes": '<path d="M20 6 9 17l-5-5"/>',
+  "No": '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
+  "N/A": '<circle cx="12" cy="12" r="9"/><path d="m5.7 5.7 12.6 12.6"/>'
+};
+const icon = k => `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICON[k]}</svg>`;
+const CHOICES = ["Undecided", "Yes", "No", "N/A"];
+const choiceName = { "Undecided": "Undecided", "Yes": "Yes", "No": "No", "N/A": "Not on my ballot" };
 
 /* ---------- Helpers ---------- */
 const esc = (t) => String(t ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -136,8 +146,8 @@ function arg(text, side, m) {
 const passWords = pct => pct > 66 ? "two-thirds (66.7%) yes" : pct === 50 ? "more than 50% yes" : `${pct}% yes`;
 
 // Results as a two-bar chart: Yes and No on one 0–100% scale, each labeled with its
-// share and vote count. Both bars use the same color (Yes and No are never styled
-// differently); a tick on the Yes bar marks the share needed to pass.
+// share and vote count (--yes / --no colors; the labels, not the colors, carry the
+// meaning). A tick on the Yes bar marks the share needed to pass.
 function resultsSection(m) {
   const r = resultFor(m.id);
   if (!r) return "";
@@ -145,7 +155,7 @@ function resultsSection(m) {
   const count = v => v != null ? `<span class="muted">${v.toLocaleString()}</span>` : "";
   const bar = (k, pct, votes, tick) => `<div class="rrow">
       <span class="rk">${k}</span>
-      <span class="rtrack"><span class="rfill" style="width:${pct}%"></span>${tick ? `<span class="rneed" style="left:${need}%"></span>` : ""}</span>
+      <span class="rtrack"><span class="rfill${k === "No" ? " no" : ""}" style="width:${pct}%"></span>${tick ? `<span class="rneed" style="left:${need}%"></span>` : ""}</span>
       <span class="rv"><b>${pct}%</b> ${count(votes)}</span></div>`;
   return `<section class="section"><h3>Results</h3>
     <div>${resultChip(m.id)}</div>
@@ -333,7 +343,9 @@ function myBallotView() {
       <button class="pn" data-open="${esc(m.id)}" style="${tcol(m)}" aria-label="Open ${esc(m.label)}">${esc(m.id)}</button>
       <div class="bm-t"><button class="linkish" data-open="${esc(m.id)}">${esc(m.title)}</button>
         ${results ? `<span class="bm-r">${resultChip(m.id) || '<span class="small muted">No results yet</span>'}${st ? `<span class="side ${st.mine ? "pass" : "fail"}">${st.text}</span>` : ""}</span>` : ""}</div>
-      <div class="seg" role="group" aria-label="${word} on ${esc(m.label)}">${leansFor(m).map(o => `<button data-lean="${o}" data-mid="${esc(m.id)}" aria-pressed="${(lean || "Undecided") === o}"${o === "N/A" ? ' title="Not on my ballot"' : ""}>${o}</button>`).join("")}</div>
+      <div class="iseg" role="group" aria-label="${word} on ${esc(m.label)}">${CHOICES.map(o => leansFor(m).includes(o)
+        ? `<button class="ib" data-lean="${o}" data-mid="${esc(m.id)}" aria-pressed="${(lean || "Undecided") === o}" aria-label="${choiceName[o]}" title="${choiceName[o]}">${icon(o)}</button>`
+        : `<span class="ib off" title="On every ballot, so N/A doesn't apply">${icon(o)}</span>`).join("")}</div>
     </div>`;
   };
 
@@ -346,7 +358,9 @@ function myBallotView() {
     </section>
     ${E.jurisdictions.map(j => {
       const list = all.filter(m => m._j === j.id);
-      return list.length ? `<section class="section"><h3>${esc(j.tab)}</h3><div class="blist">${list.map(row).join("")}</div>
+      const n = o => list.filter(m => (leanOf(m.id) || "Undecided") === o).length;
+      const head = `<div class="brow-m bhead" aria-hidden="true"><span></span><span></span><div class="iseg">${CHOICES.map(o => `<span class="ih"><span class="ihl">${o === "N/A" ? "N/A" : o === "Undecided" ? "?" : o}</span><b>${n(o)}</b></span>`).join("")}</div></div>`;
+      return list.length ? `<section class="section"><h3>${esc(j.tab)}</h3><div class="blist">${head}${list.map(row).join("")}</div>
         ${list.some(dependsOnAddress) ? '<p class="src">Some of these depend on your district. Choose N/A for any that are not on your ballot.</p>' : ""}</section>` : "";
     }).join("")}
     <p class="src">Your choices and the checkbox are saved only in this browser. Nothing is sent anywhere.</p>`;

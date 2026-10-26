@@ -2,7 +2,7 @@
 /* Layout: a ballot-booklet reader — sticky tab bar, measure grid, single-column detail with plain layer + expandable "go deeper" layer */
 :root{
   --bg:#f5f7fb; --paper:#ffffff; --ink:#1c2433; --muted:#5b6578; --line:#dfe4ee;
-  --accent:#2f62c9; --accent-ink:#ffffff; --soft:#eaf0fb; --mark:#1c2433; --hero:#e9f1ff;
+  --accent:#2f62c9; --accent-ink:#ffffff; --yes:#0a6b47; --no:#e46a52; --no-ink:#ffffff; --soft:#eaf0fb; --mark:#1c2433; --hero:#e9f1ff;
   --c-taxes:#c7790a; --c-budget:#0f8a7e; --c-housing:#d1495b; --c-elections:#6a4fc4;
   --c-health:#2e8b3e; --c-local:#2f62c9; --c-environment:#4f8a1c; --c-transit:#0b7fb3; --c-schools:#b8458f;
   --f-display:"Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
@@ -11,12 +11,12 @@
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#11161f; --paper:#1a2130; --ink:#e8ecf3; --muted:#a2acbd; --line:#2c3547;
-  --accent:#8db1ff; --accent-ink:#11161f; --soft:#212c40; --mark:#e8ecf3; --hero:#17223a;
+  --accent:#8db1ff; --accent-ink:#11161f; --yes:#3a6ad4; --no:#a3acba; --no-ink:#11161f; --soft:#212c40; --mark:#e8ecf3; --hero:#17223a;
   --c-taxes:#f0b450; --c-budget:#4fd1c0; --c-housing:#ff8a98; --c-elections:#b4a2ff;
   --c-health:#7bd88a; --c-local:#8db1ff; --c-environment:#a6d96a; --c-transit:#5cc4ef; --c-schools:#f08cc8; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#11161f; --paper:#1a2130; --ink:#e8ecf3; --muted:#a2acbd; --line:#2c3547;
-  --accent:#8db1ff; --accent-ink:#11161f; --soft:#212c40; --mark:#e8ecf3; --hero:#17223a;
+  --accent:#8db1ff; --accent-ink:#11161f; --yes:#3a6ad4; --no:#a3acba; --no-ink:#11161f; --soft:#212c40; --mark:#e8ecf3; --hero:#17223a;
   --c-taxes:#f0b450; --c-budget:#4fd1c0; --c-housing:#ff8a98; --c-elections:#b4a2ff;
   --c-health:#7bd88a; --c-local:#8db1ff; --c-environment:#a6d96a; --c-transit:#5cc4ef; --c-schools:#f08cc8; color-scheme:dark}
 
@@ -174,15 +174,16 @@ footer .wrap{padding-block:20px;font-size:.82rem;color:var(--muted)}
 .result{display:inline-flex;align-items:center;gap:6px;font-size:.74rem;font-weight:700;border-radius:999px;padding:2px 9px;background:var(--soft);color:var(--ink)}
 .result.pass{background:color-mix(in srgb,var(--c-budget) 16%,var(--paper));color:var(--c-budget)}
 .result.fail{background:color-mix(in srgb,var(--c-housing) 14%,var(--paper));color:var(--c-housing)}
-.rchart{display:grid;gap:10px}
-.rrow{display:grid;grid-template-columns:2.4rem 1fr minmax(8.5rem,auto);gap:12px;align-items:center}
+.rchart{display:grid;grid-template-columns:2.4rem 1fr auto;gap:10px 12px;align-items:center}
+.rrow{display:contents}
 .rk{font-weight:700}
 .rtrack{position:relative;height:20px;background:var(--soft);border-radius:0 4px 4px 0}
-.rfill{position:absolute;inset:0 auto 0 0;background:var(--accent);border-radius:0 4px 4px 0}
+.rfill{position:absolute;inset:0 auto 0 0;background:var(--yes);border-radius:0 4px 4px 0}
+.rfill.no{background:var(--no)}
 .rneed{position:absolute;top:-5px;bottom:-5px;width:2px;margin-left:-1px;background:var(--ink)}
 .rneed-key{display:inline-block;width:2px;height:12px;background:var(--ink);margin-right:8px;vertical-align:-1px}
 .rv{font-variant-numeric:tabular-nums;white-space:nowrap}
-@media (max-width:480px){.rrow{grid-template-columns:2.2rem 1fr;row-gap:2px}.rv{grid-column:2}}
+@media (max-width:480px){.rchart{grid-template-columns:2.2rem 1fr;row-gap:2px}.rv{grid-column:2;margin-bottom:8px}}
 .election-select{font:inherit;font-size:.85rem;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:4px 12px;background:var(--paper);color:var(--ink);justify-self:start}
 .loading{padding:40px 0;color:var(--muted)}
 
@@ -201,3 +202,17 @@ footer .wrap{padding-block:20px;font-size:.82rem;color:var(--muted)}
 .voted{display:flex;gap:10px;align-items:center;font-weight:600;cursor:pointer}
 .voted input{width:20px;height:20px;accent-color:var(--accent)}
 @media (max-width:640px){.brow-m{grid-template-columns:auto 1fr}.brow-m .seg{grid-column:1/-1;justify-self:stretch}.brow-m .seg button{flex:1;padding:6px 8px}}
+
+/* My ballot choice grid: four icon boxes per measure, aligned in columns */
+.iseg{display:grid;grid-template-columns:repeat(4,40px);gap:4px;justify-self:end}
+.ib{display:grid;place-items:center;height:34px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--muted);cursor:pointer;padding:0}
+.ib:hover{border-color:var(--muted);color:var(--ink)}
+.ib[aria-pressed="true"]{color:var(--ink);background:var(--soft);border-color:var(--muted)}
+.ib[data-lean="Yes"][aria-pressed="true"]{background:var(--yes);border-color:var(--yes);color:#fff}
+.ib[data-lean="No"][aria-pressed="true"]{background:var(--no);border-color:var(--no);color:var(--no-ink)}
+.ib.off{opacity:.25;cursor:default;border-style:dashed}
+.bhead{padding:0 0 6px}
+.ih{display:grid;justify-items:center;font-size:.72rem;color:var(--muted);line-height:1.2}
+.ih b{font-size:.95rem;color:var(--ink);font-variant-numeric:tabular-nums}
+.ihl{font-weight:600}
+@media (max-width:640px){.brow-m .iseg{grid-column:1/-1;justify-self:end}}

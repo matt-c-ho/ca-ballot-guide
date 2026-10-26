@@ -127,7 +127,7 @@ Fill in `data/<election>/results.json`:
 - **Arguments** are each side's own words, attributed to them. Give both sides the same treatment.
 - **Context** (money, news background) always names its source.
 - **Further reading** links go to nonpartisan news organizations (CalMatters, KQED, Local News Matters) and public agencies (Secretary of State). No campaign sites, endorsement guides, or polling. Give every measure in a jurisdiction the same set of sources where coverage exists.
-- Every measure has the same sections in the same order. Yes and No are styled identically.
+- Every measure has the same sections in the same order. Yes and No are styled identically in every explanation of a measure. The only exception is reported results and the viewer's own choices on My ballot, which use fixed Yes/No colors (`--yes`, `--no` in `styles.css`: green/red in light mode, blue/gray in dark mode, checked for color-blind separation) and always carry a text label or icon.
 - No recommendations and no polling.
 
 ## My ballot
