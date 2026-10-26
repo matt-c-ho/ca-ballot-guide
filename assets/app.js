@@ -140,6 +140,17 @@ function jurisdictionView(j) {
           ${sec.note ? `<p class="small muted">${sec.note}</p>` : ""}</div>`).join("")
       : `<div class="grid">${shown.map(card).join("")}</div>`}
     ${j.groups ? `<section class="section"><h3>Read together</h3><div class="plinks">${j.groups.filter(g => S.groups[g]).map(g => `<button data-group="${g}">${esc(S.groups[g].title)} →</button>`).join("")}</div></section>` : ""}`;
+  // On phones the filters are one swipeable row; re-rendering resets it, so bring
+  // the selected chip back into view.
+  const row = $view.querySelector(".filters"), on = row?.querySelector('[aria-pressed="true"]');
+  if (row && on && row.scrollWidth > row.clientWidth) {
+    const r = row.getBoundingClientRect(), c = on.getBoundingClientRect();
+    if (c.right > r.right - 24) row.scrollLeft += c.left - r.left - 16;
+  }
+  if (row) {
+    const edge = () => row.classList.toggle("at-end", row.scrollLeft + row.clientWidth >= row.scrollWidth - 2);
+    row.addEventListener("scroll", edge, { passive: true }); edge();
+  }
 }
 
 function arg(text, side, m) {

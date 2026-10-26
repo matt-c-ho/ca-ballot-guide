@@ -297,3 +297,13 @@ blockquote{border-radius:16px}
 .dates .date.next{font:inherit;font-size:.88rem;color:var(--ink);text-align:left;cursor:pointer;border:1.5px solid var(--accent);background:var(--paper)}
 .dates .date.next b{background:var(--ink);color:var(--paper)}
 .dates .date.next:hover{background:var(--soft)}
+
+/* Phones: topic filters become one swipeable row (like the tab bar) instead of
+   wrapping onto several lines; a fade at the right edge hints there's more. */
+@media (max-width:640px){
+  .filters{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding:2px 16px;
+    -webkit-mask-image:linear-gradient(to right,#000 calc(100% - 36px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 36px),transparent)}
+  .filters::-webkit-scrollbar{display:none}
+  .filters .chip{flex:none}
+  .filters.at-end{-webkit-mask-image:none;mask-image:none}
+}
