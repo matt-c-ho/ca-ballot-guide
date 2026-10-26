@@ -193,7 +193,8 @@
     "type": "Initiative constitutional amendment",
     "topics": [
       "taxes",
-      "budget"
+      "budget",
+      "schools"
     ],
     "short": "Make the 2012 income tax rates on top earners permanent instead of expiring.",
     "what": "Makes permanent the higher income tax rates on high earners that voters approved in 2012 (Prop 30) and extended in 2016 (Prop 55). They are now set to expire after the 2030 tax year.",
@@ -472,7 +473,8 @@
     "origin": "Petition",
     "type": "Initiative statute · revenue bond",
     "topics": [
-      "housing"
+      "housing",
+      "budget"
     ],
     "short": "State-backed second loans so buyers of new homes can put 3% down.",
     "what": "Lets the California Housing Finance Agency sell up to $25 billion in [[revenue-bond|revenue bonds]] and lend eligible buyers up to 17% of a newly built home's price as a fixed-rate second loan. The buyer puts at least 3% down. Borrowers' payments repay the bonds.",
@@ -763,7 +765,8 @@
     "type": "Initiative constitutional amendment & statute",
     "topics": [
       "taxes",
-      "health"
+      "health",
+      "budget"
     ],
     "short": "A one-time 5% tax on the net worth of California billionaires, mostly for health care.",
     "what": "Imposes a one-time [[wealth-tax|wealth tax]] of 5% of [[net-worth|net worth]] on people worth $1 billion or more who were California residents on January 1, 2026. Ninety percent of the money goes to health care; the rest to education, food assistance, and running the tax.",
@@ -868,7 +871,8 @@
     "origin": "Petition",
     "type": "Initiative constitutional amendment",
     "topics": [
-      "taxes"
+      "taxes",
+      "budget"
     ],
     "short": "Audit programs funded by new special taxes; bar new taxes from escaping the spending limit.",
     "what": "Two parts. First, the State Auditor must review programs funded by any proposed new [[special-tax|special tax]] before a voter initiative reaches the ballot, and audit them every four years after. Second, no state tax enacted or taking effect on or after January 1, 2026 may be excluded from the [[gann|state spending limit]], including taxes on this same ballot.",

@@ -9,7 +9,8 @@
     "area": "Every voter in Santa Clara, San Mateo, San Francisco, Alameda, and Contra Costa counties",
     "topics": [
       "local",
-      "transit"
+      "transit",
+      "taxes"
     ],
     "threshold": "Simple majority of the combined vote across all five counties (not county by county)",
     "short": "A 0.5% sales tax in Santa Clara County for 14 years to fund BART, Caltrain, VTA, and other transit.",
@@ -108,7 +109,8 @@
     "area": "Voters in the Alum Rock Union Elementary School District (East San José)",
     "topics": [
       "local",
-      "schools"
+      "schools",
+      "taxes"
     ],
     "threshold": "Two-thirds (66.67%), the rule for school parcel taxes",
     "short": "Replaces the current $214.10 parcel tax with $310 per parcel per year for 7 years for Alum Rock elementary schools.",
@@ -202,7 +204,8 @@
     "area": "Voters in the Alum Rock Union Elementary School District (East San José)",
     "topics": [
       "local",
-      "schools"
+      "schools",
+      "budget"
     ],
     "threshold": "55%, the rule for school facilities bonds",
     "short": "$100 million in bonds to repair roofs, plumbing, HVAC, and security systems.",
@@ -293,7 +296,8 @@
     "area": "Voters in the Cambrian School District (parts of San José and Campbell)",
     "topics": [
       "local",
-      "schools"
+      "schools",
+      "taxes"
     ],
     "threshold": "Two-thirds (66.67%)",
     "short": "$148 per parcel per year for 8 years for Cambrian elementary and middle schools.",
@@ -378,7 +382,8 @@
     "area": "Voters in the Orchard School District (North San José)",
     "topics": [
       "local",
-      "schools"
+      "schools",
+      "taxes"
     ],
     "threshold": "Two-thirds (66.67%)",
     "short": "4¢ per building square foot, up to $89 per home, for 8 years.",

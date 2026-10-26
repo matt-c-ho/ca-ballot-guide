@@ -12,6 +12,7 @@ const OUTCOMES = ["passed", "failed", "leading", "trailing"];
 
 const glossary = read("data/glossary.json");
 const topics = read("data/topics.json");
+for (const [k, t] of Object.entries(topics)) if (!t.label || !t.rule) err(`data/topics.json [${k}]`, "needs label and rule");
 const index = read("data/elections.json");
 
 const termRefs = (text, where) => {

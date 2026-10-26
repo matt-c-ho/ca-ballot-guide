@@ -1,11 +1,11 @@
 {
-  "taxes": "Taxes",
-  "budget": "Budget & bonds",
-  "housing": "Housing",
-  "elections": "Elections",
-  "health": "Health",
-  "local": "Local government",
-  "environment": "Environment",
-  "transit": "Transit",
-  "schools": "Schools"
+  "taxes": { "label": "Taxes", "rule": "Creates, extends, or bans a tax, or changes how taxes are approved or limited." },
+  "budget": { "label": "Budget & bonds", "rule": "Borrows money through bonds; changes how the state saves, pays down debt, or limits spending; or changes state revenue by $1 billion or more a year." },
+  "housing": { "label": "Housing", "rule": "Builds, finances, or speeds approval of homes." },
+  "elections": { "label": "Elections", "rule": "Changes how voting, campaigns, or recalls work." },
+  "health": { "label": "Health", "rule": "Funds or regulates health care, clinics, or medical research." },
+  "local": { "label": "Local government", "rule": "Decided only by local voters, or a statewide measure aimed mainly at local governments' taxes or finances." },
+  "environment": { "label": "Environment", "rule": "Changes environmental review or protection rules." },
+  "transit": { "label": "Transit", "rule": "Funds or changes public transit." },
+  "schools": { "label": "Schools", "rule": "Funds public schools or community colleges, directly or through a large, fixed share of its revenue." }
 }

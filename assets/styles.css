@@ -78,6 +78,7 @@ main .wrap{padding-block:28px 64px;display:grid;gap:28px}
 .card .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;align-items:center}
 .tag{font-size:.74rem;font-weight:600;border-radius:999px;padding:2px 9px;background:var(--soft);color:var(--muted)}
 .tag.topic{background:color-mix(in srgb,var(--tc) 12%,var(--paper));color:var(--tc)}
+.tag.topic.on{background:var(--tc);color:var(--paper)}
 .tag.link{background:var(--accent);color:var(--accent-ink)}
 .lean{font-size:.74rem;font-weight:600;padding:2px 9px;border-radius:999px;border:1px dashed var(--muted);color:var(--ink)}
 

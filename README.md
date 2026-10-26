@@ -42,7 +42,7 @@ assets/app.js               loads data, routing, rendering, notes
 data/
   elections.json            list of elections + which one is the default
   glossary.json             key terms, shared across elections
-  topics.json               topic ids → labels (each has a color token in styles.css)
+  topics.json               topic ids → label and tagging rule (each has a color token in styles.css)
   2026-11-03/
     election.json           name, key dates, tabs (jurisdictions), money summary, sources
     measures-state.json     statewide propositions
@@ -76,7 +76,7 @@ All content lives in `data/`, so you never need to touch `app.js` to update text
 | `origin` | `Legislature`, `Petition`, or `School board` |
 | `type`, `threshold` | Measure type and the vote needed to pass |
 | `area` | (local) Who votes on it |
-| `topics` | Topic ids from `topics.json`. The first non-`local` topic sets the color. |
+| `topics` | Topic ids from `topics.json`. Give a measure **every** topic whose rule it meets (the rules are in `topics.json` and on the Method & sources page). List the main subject first; the first non-`local` topic sets the color. Cards show all topics. |
 | `what`, `yes`, `no`, `yesNoSrc` | What it does, what each vote means, and where that wording comes from |
 | `fiscal`, `short_term`, `long_term` | Impact |
 | `supporters`, `opponents`, `pro`, `con`, `argSrc` | Listed supporters and opponents, and each side's argument. `argSrc: null` on a statewide measure means "official ballot argument." |

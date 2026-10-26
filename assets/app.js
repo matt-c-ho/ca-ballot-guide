@@ -53,6 +53,10 @@ const T = (k, l) => rich(`[[${k}|${l}]]`);
 const fmt = v => v >= 1 ? `$${v.toFixed(v % 1 ? 1 : 0)}M` : "under $1M";
 const topicOf = m => m.topics.find(t => t !== "local") || "local";
 const tcol = m => `--tc:var(--c-${topicOf(m)})`;
+const topicLabel = k => S.topics[k]?.label || "";
+// Topics shown on a card: all of them, main topic first. "Local government" is
+// left off cards on the local tabs, where every measure has it.
+const cardTopics = m => m.topics.filter(t => S.topics[t] && !(t === "local" && m._j !== S.election.jurisdictions[0].id));
 const isLinkedTax = m => (m.groups || []).some(g => S.groups[g]?.legalConflict);
 const jur = id => S.election.jurisdictions.find(j => j.id === id);
 const originLabel = o => o === "Legislature" ? "the Legislature" : o === "School board" ? "the school board" : "petition signatures";
@@ -72,7 +76,7 @@ function card(m) {
     <span class="pnum num"${big ? ' style="font-size:1.15rem"' : ""}>${esc(m.id)}</span>
     <span class="t">${esc(m.title)}</span>
     <span class="s">${esc(m.short)}</span>
-    <span class="meta"><span class="tag topic">${esc(S.topics[topicOf(m)] || "")}</span><span class="tag">${esc(m.origin)}</span>${isLinkedTax(m) ? '<span class="tag link">Linked</span>' : ""}${resultChip(m.id)}${leanChip(m.id)}</span>
+    <span class="meta">${cardTopics(m).map(t => `<span class="tag topic${S.filter === t ? " on" : ""}" style="--tc:var(--c-${t})">${esc(topicLabel(t))}</span>`).join("")}<span class="tag">${esc(m.origin)}</span>${isLinkedTax(m) ? '<span class="tag link">Linked</span>' : ""}${resultChip(m.id)}${leanChip(m.id)}</span>
   </button>`;
 }
 
@@ -83,7 +87,7 @@ function jurisdictionView(j) {
   const topicsHere = [...new Set(list.flatMap(m => m.topics))].filter(t => S.topics[t]);
   const chips = sectioned ? "" : `<div class="filters" role="group" aria-label="Filter by topic">
     <button class="chip" aria-pressed="${S.filter === "all"}" data-filter="all">All</button>
-    ${topicsHere.map(k => `<button class="chip" aria-pressed="${S.filter === k}" data-filter="${k}" style="--tc:var(--c-${k})">${esc(S.topics[k])}</button>`).join("")}</div>`;
+    ${topicsHere.map(k => `<button class="chip" aria-pressed="${S.filter === k}" data-filter="${k}" style="--tc:var(--c-${k})">${esc(topicLabel(k))}</button>`).join("")}</div>`;
   const shown = list.filter(m => S.filter === "all" || m.topics.includes(S.filter));
   const decided = list.filter(m => (S.mine[m.id] || {}).lean).length;
   $view.innerHTML = `
@@ -253,6 +257,9 @@ function aboutView() {
      <li><b>Context</b> (money, background, news) comes from named secondary sources and is labeled.</li>
      <li>Every measure gets the same sections in the same order. Measures appear in ballot order. Yes and No are styled identically. No recommendations and no polling.</li>
     </ul>
+    <h3>How measures are tagged by topic</h3>
+    <p>A measure gets every topic whose rule it meets. The first topic is its main subject and sets its color. Topics are this guide's own grouping; the state does not categorize measures.</p>
+    <ul>${Object.values(S.topics).map(t => `<li><b>${esc(t.label)}:</b> ${esc(t.rule)}</li>`).join("")}</ul>
     <h3>Things every voter should know</h3>
     <ul>
      <li>Every statewide proposition passes with a simple majority (more than 50% yes).</li>
