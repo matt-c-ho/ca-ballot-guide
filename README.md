@@ -130,6 +130,19 @@ Fill in `data/<election>/results.json`:
 - Every measure has the same sections in the same order. Yes and No are styled identically.
 - No recommendations and no polling.
 
+## My ballot
+
+The **My ballot** tab lists every measure with the viewer's choice: Undecided, Yes, No, or Skip (for measures not on their ballot). These are the same leanings set on each measure page. An "I've cast my ballot" checkbox records the date it was checked; unchecked means no vote is assumed.
+
+The page's wording follows the date (California time) and the checkbox:
+
+| | Before or on Election Day | After Election Day |
+|---|---|---|
+| Not marked as cast | "My ballot plan" | "My leanings" (not counted as votes) |
+| Marked as cast | "My votes" | "My votes" |
+
+Once `results.json` has entries, each measure shows its result and whether the viewer's side is ahead, behind, won, or lost, with a summary at the top. Choices and the checkbox are stored only in the browser.
+
 ## Privacy
 
 Leanings and notes are stored only in the visitor's own browser (`localStorage`). The site has no analytics and no server. Fonts load from Google Fonts.

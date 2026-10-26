@@ -43,6 +43,13 @@ const store = {
   get() { try { return JSON.parse(localStorage.getItem(this.key()) || "{}"); } catch { return {}; } },
   set(v) { try { localStorage.setItem(this.key(), JSON.stringify(v)); } catch {} }
 };
+// Whether the viewer has cast their ballot: { voted: true, on: "YYYY-MM-DD" }. Also local only.
+const ballotStore = {
+  key: () => `ballot-guide:${S.election?.id}:status`,
+  get() { try { return JSON.parse(localStorage.getItem(this.key()) || "{}"); } catch { return {}; } },
+  set(v) { try { localStorage.setItem(this.key(), JSON.stringify(v)); } catch {} }
+};
+const LEANS = ["Undecided", "Yes", "No", "Skip"];
 
 /* ---------- Helpers ---------- */
 const esc = (t) => String(t ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -68,7 +75,7 @@ function resultChip(id) {
   const cls = r.outcome === "passed" || r.outcome === "leading" ? "pass" : "fail";
   return `<span class="result ${cls}">${word}${r.yesPct != null ? ` · ${r.yesPct}% yes` : ""}${r.final ? "" : " · counting"}</span>`;
 }
-const leanChip = id => { const l = (S.mine[id] || {}).lean; return l ? `<span class="lean">My lean: ${l}</span>` : ""; };
+const leanChip = id => { const l = (S.mine[id] || {}).lean; return l ? `<span class="lean">${l === "Skip" ? "Skipping" : `My lean: ${l}`}</span>` : ""; };
 
 function card(m) {
   const big = m.id.length > 2;
@@ -95,7 +102,7 @@ function jurisdictionView(j) {
       ${j.eyebrow ? `<span class="eyebrow">${esc(j.eyebrow)}</span>` : ""}
       <h2>${esc(j.title)}</h2>
       <p class="muted">${rich(j.intro)}</p>
-      ${sectioned ? "" : `<p class="small muted">You've noted a leaning on ${decided} of ${list.length}. Leanings stay in this browser only.</p>`}
+      ${sectioned ? "" : `<p class="small muted">You've noted a leaning on ${decided} of ${list.length}. Leanings stay in this browser only. <button class="linkish small" data-view="mine" style="color:var(--accent)">See My ballot →</button></p>`}
     </section>
     ${j.notOnBallot ? `<section class="section"><h3>What's not on the ballot</h3><div class="prose small">${j.notOnBallot.map(p => `<p>${p}</p>`).join("")}</div></section>` : ""}
     ${chips}
@@ -195,7 +202,7 @@ function detail(id) {
    </section>
    ${(m.groups || []).filter(g => S.groups[g]).length ? `<section class="section"><h3>Read it together with</h3><div class="plinks">${m.groups.filter(g => S.groups[g]).map(g => `<button data-group="${g}">${esc(S.groups[g].title)} →</button>`).join("")}</div></section>` : ""}
    <section class="section"><h3>My notes</h3>
-    <div class="seg" role="group" aria-label="My leaning">${["Undecided", "Yes", "No"].map(o => `<button data-lean="${o}" aria-pressed="${(n.lean || "Undecided") === o}">${o}</button>`).join("")}</div>
+    <div class="seg" role="group" aria-label="My leaning">${LEANS.map(o => `<button data-lean="${o}" aria-pressed="${(n.lean || "Undecided") === o}">${o}</button>`).join("")}</div>
     <textarea id="note-${m.id}" data-note="${m.id}" placeholder="Questions, reasons, things to check…">${esc(n.note || "")}</textarea>
     <p class="src">Saved only in this browser.</p>
    </section>`;
@@ -239,6 +246,84 @@ function moneyView() {
     <dl class="kv">${(M.funders || []).map(([k, v, who]) => `<dt>${esc(k)}</dt><dd>${esc(v)}${who ? `<span class="who">${esc(who)}</span>` : ""}</dd>`).join("")}</dl>
     <p class="src">${esc(M.source)}${M.fundersSource ? ` ${esc(M.fundersSource)}` : ""}</p>
    </section>`;
+}
+
+/* ---------- My ballot ----------
+ * The viewer's planned or cast choices, worded by date and by whether they
+ * marked their ballot as cast, with results alongside once they are reported. */
+function ballotPhase() {
+  const today = caToday(), day = S.election.date;
+  return !day || today < day ? "before" : today === day ? "eday" : "after";
+}
+const hasResults = () => Object.keys(S.results?.measures || {}).length > 0;
+const fmtDay = iso => new Date(iso + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" });
+
+// How the viewer's Yes/No choice compares with the reported outcome.
+function sideStatus(lean, r) {
+  if (!r || (lean !== "Yes" && lean !== "No")) return null;
+  const yesWinning = r.outcome === "passed" || r.outcome === "leading";
+  const mine = lean === "Yes" ? yesWinning : !yesWinning;
+  const done = r.outcome === "passed" || r.outcome === "failed";
+  return { mine, done, text: done ? (mine ? "Your side won" : "Your side lost") : (mine ? "Your side is ahead" : "Your side is behind") };
+}
+
+function myBallotView() {
+  const E = S.election, b = ballotStore.get(), phase = ballotPhase(), results = hasResults();
+  const voted = !!b.voted;
+  const all = S.measures;
+  const leanOf = id => (S.mine[id] || {}).lean || "";
+  const decided = all.filter(m => ["Yes", "No"].includes(leanOf(m.id))).length;
+  const skipped = all.filter(m => leanOf(m.id) === "Skip").length;
+  const counted = all.length - skipped;
+  const word = voted ? "My vote" : phase === "after" ? "My leaning" : "My plan";
+  const days = E.date ? daysUntil(E.date) : null;
+
+  let title, intro;
+  if (voted) {
+    title = "My votes";
+    intro = `You marked your ballot as cast${b.on ? ` on ${fmtDay(b.on)}` : ""}. These are the choices you recorded.`;
+  } else if (phase === "after") {
+    title = "My leanings";
+    intro = "You didn't mark your ballot as cast, so these are shown as the leanings you saved, not votes.";
+  } else {
+    title = "My ballot plan";
+    intro = phase === "eday"
+      ? "Election Day is today. Polls are open 7 a.m. to 8 p.m., and mail ballots must be postmarked today."
+      : `Plan your choices before you fill in your ballot. Election Day is ${fmtDay(E.date)}, ${when(days).toLowerCase()}.`;
+  }
+
+  let summary = `${decided} of ${counted} decided${skipped ? ` · ${skipped} skipped` : ""}`;
+  if (results) {
+    const st = all.map(m => sideStatus(leanOf(m.id), S.results.measures[m.id])).filter(Boolean);
+    const won = st.filter(x => x.done && x.mine).length, lost = st.filter(x => x.done && !x.mine).length;
+    const ahead = st.filter(x => !x.done && x.mine).length, behind = st.filter(x => !x.done && !x.mine).length;
+    const parts = [won && `won ${won}`, lost && `lost ${lost}`, ahead && `ahead on ${ahead}`, behind && `behind on ${behind}`].filter(Boolean);
+    summary = parts.length ? `Your side: ${parts.join(" · ")}` : "No results yet for the measures you decided";
+  }
+
+  const row = m => {
+    const lean = leanOf(m.id), r = S.results?.measures?.[m.id], st = sideStatus(lean, r);
+    return `<div class="brow-m">
+      <button class="pn" data-open="${esc(m.id)}" style="${tcol(m)}" aria-label="Open ${esc(m.label)}">${esc(m.id)}</button>
+      <div class="bm-t"><button class="linkish" data-open="${esc(m.id)}">${esc(m.title)}</button>
+        ${results ? `<span class="bm-r">${resultChip(m.id) || '<span class="small muted">No results yet</span>'}${st ? `<span class="side ${st.mine ? "pass" : "fail"}">${st.text}</span>` : ""}</span>` : ""}</div>
+      <div class="seg" role="group" aria-label="${word} on ${esc(m.label)}">${LEANS.map(o => `<button data-lean="${o}" data-mid="${esc(m.id)}" aria-pressed="${(lean || "Undecided") === o}">${o}</button>`).join("")}</div>
+    </div>`;
+  };
+
+  $view.innerHTML = `
+    <section style="display:grid;gap:10px"><h2>${title}</h2><p class="muted">${esc(intro)}</p></section>
+    <section class="section">
+      <label class="voted"><input type="checkbox" data-voted${voted ? " checked" : ""}> I've cast my ballot${voted && b.on ? ` <span class="muted small">(marked ${fmtDay(b.on)})</span>` : ""}</label>
+      <p class="small"><b>${esc(summary)}</b></p>
+      ${results ? `<p class="src">${esc(S.results.source || "Results")}${S.results.updated ? ` · updated ${esc(S.results.updated)}` : ""}${S.results.status !== "final" ? " · counting continues" : ""}</p>` : ""}
+    </section>
+    ${E.jurisdictions.map(j => {
+      const list = all.filter(m => m._j === j.id);
+      return list.length ? `<section class="section"><h3>${esc(j.tab)}</h3><div class="blist">${list.map(row).join("")}</div>
+        ${j.id !== E.jurisdictions[0].id ? '<p class="src">Choose Skip for measures that are not on your ballot.</p>' : ""}</section>` : "";
+    }).join("")}
+    <p class="src">Your choices and the checkbox are saved only in this browser. Nothing is sent anywhere.</p>`;
 }
 
 function glossaryView() {
@@ -340,7 +425,7 @@ function shell() {
     sel.innerHTML = S.index.elections.map(e => `<option value="${e.id}"${e.id === E.id ? " selected" : ""}>${esc(e.name)}</option>`).join("");
     sel.onchange = () => { location.search = `?election=${sel.value}`; };
   }
-  const tabs = [...E.jurisdictions.map(j => [j.id, j.tab]), ["linked", "Linked measures"], ["money", "Follow the money"], ["glossary", "Key terms"], ["about", "Method & sources"]];
+  const tabs = [...E.jurisdictions.map(j => [j.id, j.tab]), ["mine", "My ballot"], ["linked", "Linked measures"], ["money", "Follow the money"], ["glossary", "Key terms"], ["about", "Method & sources"]];
   $("tabbar").innerHTML = tabs.map(([k, t]) => `<button data-view="${k}">${esc(t)}</button>`).join("");
   $("footer").innerHTML = `A nonpartisan study guide. Verify against the <a href="https://voterguide.sos.ca.gov/" target="_blank" rel="noopener">Official Voter Information Guide</a> and your county sample ballot before you vote. Content checked ${esc(E.lastChecked)}.`;
 }
@@ -356,7 +441,7 @@ function go(token, push = true) {
   if (m) { const id = safeDecode(m[1]); detail(id); tab = S.byId[id]?._j || E.jurisdictions[0].id; }
   else if (g) { linkedView(g[1]); tab = "linked"; }
   else if (jur(token)) jurisdictionView(jur(token));
-  else ({ linked: () => linkedView(), money: moneyView, glossary: glossaryView, about: aboutView }[token]
+  else ({ mine: myBallotView, linked: () => linkedView(), money: moneyView, glossary: glossaryView, about: aboutView }[token]
         || (() => { tab = E.jurisdictions[0].id; jurisdictionView(E.jurisdictions[0]); }))();
   document.querySelectorAll("#tabbar button").forEach(b => b.setAttribute("aria-current", b.dataset.view === tab));
   if (push) { history.pushState(null, "", `${location.search}#${token}`); window.scrollTo({ top: 0 }); }
@@ -372,10 +457,16 @@ document.addEventListener("click", e => {
   if (t.dataset.group) return go("g-" + t.dataset.group);
   if (t.dataset.filter) { S.filter = t.dataset.filter; return go(location.hash.slice(1) || S.election.jurisdictions[0].id, false); }
   if (t.dataset.lean) {
-    const id = $view.dataset.id; S.mine[id] = S.mine[id] || {};
+    const id = t.dataset.mid || $view.dataset.id; S.mine[id] = S.mine[id] || {};
     S.mine[id].lean = t.dataset.lean === "Undecided" ? "" : t.dataset.lean; store.set(S.mine);
     t.parentNode.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b === t));
+    if (t.dataset.mid) myBallotView();
   }
+});
+document.addEventListener("change", e => {
+  if (!e.target.matches("[data-voted]")) return;
+  ballotStore.set(e.target.checked ? { voted: true, on: caToday() } : {});
+  myBallotView();
 });
 document.addEventListener("input", e => {
   const id = e.target.dataset?.note;

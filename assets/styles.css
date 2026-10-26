@@ -123,6 +123,7 @@ details.deep[open] summary{margin-bottom:12px}
 .seg button{font:inherit;font-size:.88rem;background:var(--paper);color:var(--ink);border:0;padding:6px 14px;cursor:pointer}
 .seg button+button{border-left:1px solid var(--line)}
 .seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.seg button[data-lean="Undecided"][aria-pressed="true"],.seg button[data-lean="Skip"][aria-pressed="true"]{background:var(--soft);color:var(--ink);font-weight:600}
 textarea{font:inherit;font-size:.93rem;width:100%;min-height:80px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);resize:vertical}
 
 /* matrix */
@@ -178,3 +179,19 @@ footer .wrap{padding-block:20px;font-size:.82rem;color:var(--muted)}
 .rbar .rn{background:var(--muted)}
 .election-select{font:inherit;font-size:.85rem;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:4px 12px;background:var(--paper);color:var(--ink);justify-self:start}
 .loading{padding:40px 0;color:var(--muted)}
+
+/* My ballot */
+.blist{display:grid}
+.brow-m{display:grid;grid-template-columns:auto 1fr auto;gap:6px 14px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.brow-m:first-child{border-top:0}
+.brow-m .pn{font-family:var(--f-display);font-weight:800;font-size:1rem;color:var(--tc);background:color-mix(in srgb,var(--tc) 13%,var(--paper));border:0;border-radius:10px;min-width:2.6rem;height:2.6rem;padding:0 6px;cursor:pointer}
+.bm-t{display:grid;gap:4px;min-width:0}
+.linkish{font:inherit;font-weight:600;text-align:left;background:none;border:0;padding:0;color:var(--ink);cursor:pointer}
+.linkish:hover{color:var(--accent)}
+.bm-r{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.side{font-size:.74rem;font-weight:700;border-radius:999px;padding:2px 9px;border:1.5px solid currentColor}
+.side.pass{color:var(--c-budget)}
+.side.fail{color:var(--c-housing)}
+.voted{display:flex;gap:10px;align-items:center;font-weight:600;cursor:pointer}
+.voted input{width:20px;height:20px;accent-color:var(--accent)}
+@media (max-width:640px){.brow-m{grid-template-columns:auto 1fr}.brow-m .seg{grid-column:1/-1;justify-self:stretch}.brow-m .seg button{flex:1;padding:6px 8px}}
