@@ -32,7 +32,7 @@
       ],
       "sections": [
         { "title": "Every San José voter", "measures": ["RTM"] },
-        { "title": "Depends on your school district", "measures": ["O", "P", "Q", "R"],
+        { "title": "Depends on your school district", "measures": ["O", "P", "Q", "R"], "dependsOnAddress": true,
           "note": "Your sample ballot booklet lists exactly which measures you'll see. You can also look up your ballot at <a href=\"https://www.vote411.org/\" target=\"_blank\" rel=\"noopener\">VOTE411</a>." }
       ],
       "groups": ["transit", "schools"],

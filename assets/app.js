@@ -49,7 +49,8 @@ const ballotStore = {
   get() { try { return JSON.parse(localStorage.getItem(this.key()) || "{}"); } catch { return {}; } },
   set(v) { try { localStorage.setItem(this.key(), JSON.stringify(v)); } catch {} }
 };
-const LEANS = ["Undecided", "Yes", "No", "Skip"];
+// N/A is offered only for measures that are not on every ballot (see dependsOnAddress).
+const leansFor = m => ["Undecided", "Yes", "No", ...(dependsOnAddress(m) ? ["N/A"] : [])];
 
 /* ---------- Helpers ---------- */
 const esc = (t) => String(t ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -75,7 +76,9 @@ function resultChip(id) {
   const cls = r.outcome === "passed" || r.outcome === "leading" ? "pass" : "fail";
   return `<span class="result ${cls}">${word}${r.yesPct != null ? ` · ${r.yesPct}% yes` : ""}${r.final ? "" : " · counting"}</span>`;
 }
-const leanChip = id => { const l = (S.mine[id] || {}).lean; return l ? `<span class="lean">${l === "Skip" ? "Skipping" : `My lean: ${l}`}</span>` : ""; };
+const leanChip = id => { const l = (S.mine[id] || {}).lean; return l ? `<span class="lean">${l === "N/A" ? "Not on my ballot" : `My lean: ${l}`}</span>` : ""; };
+// Measures in a section marked dependsOnAddress (e.g. school district measures) may not be on everyone's ballot.
+const dependsOnAddress = m => (jur(m._j)?.sections || []).some(sec => sec.dependsOnAddress && sec.measures.includes(m.id));
 
 function card(m) {
   const big = m.id.length > 2;
@@ -202,7 +205,8 @@ function detail(id) {
    </section>
    ${(m.groups || []).filter(g => S.groups[g]).length ? `<section class="section"><h3>Read it together with</h3><div class="plinks">${m.groups.filter(g => S.groups[g]).map(g => `<button data-group="${g}">${esc(S.groups[g].title)} →</button>`).join("")}</div></section>` : ""}
    <section class="section"><h3>My notes</h3>
-    <div class="seg" role="group" aria-label="My leaning">${LEANS.map(o => `<button data-lean="${o}" aria-pressed="${(n.lean || "Undecided") === o}">${o}</button>`).join("")}</div>
+    <div class="seg" role="group" aria-label="My leaning">${leansFor(m).map(o => `<button data-lean="${o}" aria-pressed="${(n.lean || "Undecided") === o}"${o === "N/A" ? ' title="Not on my ballot"' : ""}>${o}</button>`).join("")}</div>
+    ${dependsOnAddress(m) ? '<p class="src">This measure is only on ballots in its district. Choose N/A if it isn\'t on yours.</p>' : ""}
     <textarea id="note-${m.id}" data-note="${m.id}" placeholder="Questions, reasons, things to check…">${esc(n.note || "")}</textarea>
     <p class="src">Saved only in this browser.</p>
    </section>`;
@@ -273,7 +277,7 @@ function myBallotView() {
   const all = S.measures;
   const leanOf = id => (S.mine[id] || {}).lean || "";
   const decided = all.filter(m => ["Yes", "No"].includes(leanOf(m.id))).length;
-  const skipped = all.filter(m => leanOf(m.id) === "Skip").length;
+  const skipped = all.filter(m => leanOf(m.id) === "N/A").length;
   const counted = all.length - skipped;
   const word = voted ? "My vote" : phase === "after" ? "My leaning" : "My plan";
   const days = E.date ? daysUntil(E.date) : null;
@@ -292,7 +296,7 @@ function myBallotView() {
       : `Plan your choices before you fill in your ballot. Election Day is ${fmtDay(E.date)}, ${when(days).toLowerCase()}.`;
   }
 
-  let summary = `${decided} of ${counted} decided${skipped ? ` · ${skipped} skipped` : ""}`;
+  let summary = `${decided} of ${counted} decided${skipped ? ` · ${skipped} not on my ballot` : ""}`;
   if (results) {
     const st = all.map(m => sideStatus(leanOf(m.id), S.results.measures[m.id])).filter(Boolean);
     const won = st.filter(x => x.done && x.mine).length, lost = st.filter(x => x.done && !x.mine).length;
@@ -307,7 +311,7 @@ function myBallotView() {
       <button class="pn" data-open="${esc(m.id)}" style="${tcol(m)}" aria-label="Open ${esc(m.label)}">${esc(m.id)}</button>
       <div class="bm-t"><button class="linkish" data-open="${esc(m.id)}">${esc(m.title)}</button>
         ${results ? `<span class="bm-r">${resultChip(m.id) || '<span class="small muted">No results yet</span>'}${st ? `<span class="side ${st.mine ? "pass" : "fail"}">${st.text}</span>` : ""}</span>` : ""}</div>
-      <div class="seg" role="group" aria-label="${word} on ${esc(m.label)}">${LEANS.map(o => `<button data-lean="${o}" data-mid="${esc(m.id)}" aria-pressed="${(lean || "Undecided") === o}">${o}</button>`).join("")}</div>
+      <div class="seg" role="group" aria-label="${word} on ${esc(m.label)}">${leansFor(m).map(o => `<button data-lean="${o}" data-mid="${esc(m.id)}" aria-pressed="${(lean || "Undecided") === o}"${o === "N/A" ? ' title="Not on my ballot"' : ""}>${o}</button>`).join("")}</div>
     </div>`;
   };
 
@@ -321,7 +325,7 @@ function myBallotView() {
     ${E.jurisdictions.map(j => {
       const list = all.filter(m => m._j === j.id);
       return list.length ? `<section class="section"><h3>${esc(j.tab)}</h3><div class="blist">${list.map(row).join("")}</div>
-        ${j.id !== E.jurisdictions[0].id ? '<p class="src">Choose Skip for measures that are not on your ballot.</p>' : ""}</section>` : "";
+        ${list.some(dependsOnAddress) ? '<p class="src">Some of these depend on your district. Choose N/A for any that are not on your ballot.</p>' : ""}</section>` : "";
     }).join("")}
     <p class="src">Your choices and the checkbox are saved only in this browser. Nothing is sent anywhere.</p>`;
 }

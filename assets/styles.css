@@ -123,7 +123,7 @@ details.deep[open] summary{margin-bottom:12px}
 .seg button{font:inherit;font-size:.88rem;background:var(--paper);color:var(--ink);border:0;padding:6px 14px;cursor:pointer}
 .seg button+button{border-left:1px solid var(--line)}
 .seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
-.seg button[data-lean="Undecided"][aria-pressed="true"],.seg button[data-lean="Skip"][aria-pressed="true"]{background:var(--soft);color:var(--ink);font-weight:600}
+.seg button[data-lean="Undecided"][aria-pressed="true"],.seg button[data-lean="N/A"][aria-pressed="true"]{background:var(--soft);color:var(--ink);font-weight:600}
 textarea{font:inherit;font-size:.93rem;width:100%;min-height:80px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);resize:vertical}
 
 /* matrix */

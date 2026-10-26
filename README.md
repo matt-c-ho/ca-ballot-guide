@@ -132,7 +132,7 @@ Fill in `data/<election>/results.json`:
 
 ## My ballot
 
-The **My ballot** tab lists every measure with the viewer's choice: Undecided, Yes, No, or Skip (for measures not on their ballot). These are the same leanings set on each measure page. An "I've cast my ballot" checkbox records the date it was checked; unchecked means no vote is assumed.
+The **My ballot** tab lists every measure with the viewer's choice: Undecided, Yes, or No, plus N/A for district-dependent measures that are not on their ballot. These are the same leanings set on each measure page. An "I've cast my ballot" checkbox records the date it was checked; unchecked means no vote is assumed.
 
 The page's wording follows the date (California time) and the checkbox:
 
@@ -142,6 +142,10 @@ The page's wording follows the date (California time) and the checkbox:
 | Marked as cast | "My votes" | "My votes" |
 
 Once `results.json` has entries, each measure shows its result and whether the viewer's side is ahead, behind, won, or lost, with a summary at the top. Choices and the checkbox are stored only in the browser.
+
+## District-dependent measures
+
+In `election.json`, a jurisdiction section with `"dependsOnAddress": true` (for example, school district measures) marks measures that are only on some voters' ballots. Those measures get an extra **N/A** choice in My notes, shown on cards as "Not on my ballot".
 
 ## Privacy
 
