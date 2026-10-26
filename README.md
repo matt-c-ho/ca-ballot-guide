@@ -10,7 +10,7 @@ A nonpartisan, plain-language guide to California ballot measures. For each meas
 
 It covers statewide propositions and local measures, currently Santa Clara County and San José.
 
-It is a static site: plain HTML, CSS, and JavaScript, with all content in JSON files under `data/`. There is no build step and nothing to install.
+It is a static site: plain HTML, CSS, and JavaScript, with all content in JSON files under `data/`. There is nothing to install and nothing to build locally. (On Vercel, a small build step validates the data and copies the site files; see below.)
 
 ## Run it locally
 
@@ -33,12 +33,15 @@ The site is hosted on Vercel, connected to the GitHub repository.
 
 To deploy by hand, run `npx vercel` for a preview or `npx vercel --prod` for production. To use a custom domain, add it in the Vercel project under **Settings → Domains**.
 
+`main` is protected by a GitHub ruleset that blocks force-pushes and branch deletion, so never rewrite its history. Work on a branch, check its Vercel preview, then fast-forward `main`.
+
 ## Project layout
 
 ```
 index.html                  page shell
 assets/styles.css           design tokens (light + dark), components
-assets/app.js               loads data, routing, rendering, notes
+assets/app.js               loads data, routing, rendering, notes, My ballot, header carousel
+assets/favicon.svg          ballot-box icon (+ favicon-32.png, apple-touch-icon.png)
 data/
   elections.json            list of elections + which one is the default
   glossary.json             key terms, shared across elections
@@ -60,9 +63,12 @@ All content lives in `data/`, so you never need to touch `app.js` to update text
 - **Glossary links.** Write `[[term-key|text shown]]` in any text field, for example `[[go-bond|general obligation bonds]]`. Keys must exist in `data/glossary.json`.
 - **HTML.** Group `body` fields and local `notOnBallot` and `note` fields accept simple HTML, such as tables and lists. All other text is shown as plain text.
 - **Check your changes.** After editing, run `node scripts/validate.mjs`. It catches:
-  - missing fields
-  - unknown topics, groups, and glossary terms
+  - missing fields (including `passPct`)
+  - unknown topics, groups, and glossary terms; topics without a label and rule
   - duplicate ids
+  - malformed `faq` and `reading` entries
+  - `keyDates` dates that aren't `YYYY-MM-DD` and a `pollsClose` that isn't `HH:MM`
+  - summaries (`ledeShort`, `summary`, `money.summary`) longer than 50 characters
   - bad results entries
 
 ### Measure fields
@@ -93,9 +99,11 @@ A group with `"legalConflict": true` marks its measures with a **Linked** tag on
 
 1. Copy `data/2026-11-03/` to a new folder named after the election date, for example `data/2028-03-07/`.
 2. Edit `election.json`:
-   - name, dates, and lede
-   - `jurisdictions` (each one becomes a tab and points to a measures file)
-   - `money`
+   - `name`, `date`, `pollsClose` (California time, e.g. `"20:00"`), `eyebrow`
+   - `lede` (full) and `ledeShort` (one line, 50 characters max)
+   - `keyDates`: `{ "date": "YYYY-MM-DD", "label": "NOV 3", "text": "..." }`
+   - `jurisdictions` (each one becomes a tab and points to a measures file), each with a one-line `summary` and full `intro`. Mark sections whose measures aren't on every ballot with `"dependsOnAddress": true`.
+   - `money` (`asOf`, `summary`, `intro`, `funders`, `max`)
    - `sources`
 3. Replace the measures files and `groups.json`. Reset `results.json` to `"status": "pending"` with empty `measures`.
 4. Add the election to `data/elections.json`. Set `default` to it once it's ready.
@@ -119,7 +127,36 @@ Fill in `data/<election>/results.json`:
 }
 ```
 
-`outcome` is one of `passed`, `failed`, `leading`, or `trailing`. Set it with the measure's threshold in mind: a school parcel tax needs two-thirds, so 60% yes is still `trailing`. When results exist, each measure card shows a status chip and each measure page gets a Results section. Fetching results automatically (for example, a scheduled GitHub Action that writes this file) is a planned future step.
+`outcome` is one of `passed`, `failed`, `leading`, or `trailing`. Set it with the measure's `passPct` in mind: a school parcel tax needs two-thirds, so 60% yes is still `trailing`. Use `leading`/`trailing` while counting continues and switch to `passed`/`failed` only once results are certified (counties certify within 30 days, by Dec 3, 2026; the Secretary of State by Dec 11, 2026). `noPct` is optional; it defaults to `100 - yesPct`.
+
+When results exist and polls have closed, each card shows a status chip, each measure page gets a Results chart (labeled Yes and No bars with a tick at the share needed to pass), and My ballot compares them with the viewer's choices.
+
+### Planned: fetching results automatically
+
+Not built yet; the `my-ballot` branch is kept for this work. Research so far:
+
+- **State propositions:** the Secretary of State publishes JSON at `https://api.sos.ca.gov/returns/ballot-measures` (yes/no votes and percentages per proposition) and county reporting status at `/returns/status`. **Before Election Day this feed serves test data** (in October 2026 every proposition showed about 80% yes and 100% reporting), so a fetcher must never publish before polls close. The site's polls-close gate is a second safeguard.
+- **Local measures (O, P, Q, R and Santa Clara's share of RTM):** published by the Santa Clara County Registrar. Its site blocks automated requests and the export format is unconfirmed, so these may need to be entered by hand.
+- **RTM** passes on the combined vote of five counties (Alameda, Contra Costa, San Francisco, San Mateo, Santa Clara). There is no single official combined total; it has to be summed from the county results.
+- Proposed approach: a script that writes `results.json` (manual first), then optionally a scheduled GitHub Action that commits it. Pushing workflow files needs the `workflow` scope on the GitHub login (`gh auth refresh -s workflow`).
+
+## Updating campaign money
+
+Money figures come from the FPPC's [Top 10 Contributors](https://www.fppc.ca.gov/search-filings/top-10-contributors-list/november-2026-general-election/) page. Use its **Top Aggregated Contributions** table (support and oppose totals per measure) rather than adding up committees by hand, which double-counts money passed between committees. Check the page's "Last Modified" date; FPPC updates within about a day of new filings close to the election.
+
+To refresh:
+
+1. Update `money.yes`, `money.no`, `yesNote`, and `noNote` for each measure in `measures-state.json` (millions of dollars).
+2. In `election.json`, update `money.asOf`, the totals in `money.intro`, `money.funders`, and `money.max` (the chart's scale) if the largest bar grows.
+3. Update any dated figures elsewhere, such as the "largest single committee" bullet on Prop 42 and the Prop 38 funder bullet.
+
+Props 41 and 42 have no separate opposing committee; the Yes on 40 campaign opposes them. The FPPC table lists that committee under all three measures. This guide counts it once, under Prop 40, and shows 41 and 42 with no opposing money.
+
+## Design
+
+- **Fonts:** Newsreader (title and headings), Public Sans (body), IBM Plex Mono (chart numbers), all from Google Fonts. Change them with `--f-display`, `--f-body`, and `--f-mono` at the top of `styles.css`.
+- **Colors:** light and dark tokens at the top of `styles.css`; topic colors are `--c-<topic>`.
+- **Phones first:** intros are one line, headings are sized so most fit one line, and topic filters scroll sideways in one row. Topic filters can be combined; a measure shows if it has any selected topic.
 
 ## Editorial rules (neutrality)
 
