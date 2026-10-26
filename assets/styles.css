@@ -6,7 +6,7 @@
   --shadow:0 1px 2px rgb(20 23 31 / .04), 0 10px 30px -14px rgb(20 23 31 / .14);
   --c-taxes:#c7790a; --c-budget:#0f8a7e; --c-housing:#d1495b; --c-elections:#6a4fc4;
   --c-health:#2e8b3e; --c-local:#2f62c9; --c-environment:#4f8a1c; --c-transit:#0b7fb3; --c-schools:#b8458f;
-  --f-display:"Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
+  --f-display:"Newsreader", Georgia, "Times New Roman", serif;
   --f-body:"Public Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
   --f-mono:"IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
 }
@@ -249,7 +249,7 @@ header.mast{
   border-bottom:1px solid var(--line);
 }
 header.mast .wrap{padding-block:64px 40px;gap:20px}
-h1{font-size:clamp(2.6rem,7.5vw,4.8rem);letter-spacing:-.04em;line-height:.95}
+h1{font-size:clamp(2.6rem,7.5vw,4.8rem);font-weight:700;letter-spacing:-.02em;line-height:1}
 .lede{font-size:clamp(1.05rem,1.6vw,1.25rem);line-height:1.5}
 .dates .date{box-shadow:var(--shadow)}
 
@@ -262,7 +262,7 @@ nav.tabs button[aria-current="true"]{background:var(--ink);color:var(--paper)}
 
 /* Content rhythm */
 main .wrap{padding-block:48px 88px;gap:36px}
-h2{font-size:clamp(1.9rem,3.6vw,2.6rem);letter-spacing:-.03em}
+h2{font-size:clamp(1.9rem,3.6vw,2.6rem);letter-spacing:-.015em}
 .section{border-radius:22px;padding:28px 30px;box-shadow:var(--shadow);gap:14px}
 @media (max-width:520px){.section{padding:22px 20px}}
 
@@ -274,7 +274,7 @@ h2{font-size:clamp(1.9rem,3.6vw,2.6rem);letter-spacing:-.03em}
 .grid{grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
 .card{grid-template-columns:1fr;gap:8px;border-radius:22px;padding:22px;border-color:transparent;box-shadow:var(--shadow)}
 .card:hover{transform:translateY(-4px);border-color:transparent;box-shadow:0 24px 48px -24px color-mix(in srgb,var(--tc) 45%,transparent)}
-.card .pnum{grid-row:auto;background:none;padding:0;min-width:0;height:auto;font-size:2.6rem;letter-spacing:-.04em;justify-self:start;place-items:start}
+.card .pnum{grid-row:auto;background:none;padding:0;min-width:0;height:auto;font-size:2.6rem;letter-spacing:-.02em;justify-self:start;place-items:start}
 .card .t{font-size:1.12rem;letter-spacing:-.01em}
 .tag{background:transparent;border:1px solid var(--line)}
 .tag.topic{background:transparent;color:var(--ink);border-color:var(--line);display:inline-flex;align-items:center;gap:6px}
@@ -282,7 +282,7 @@ h2{font-size:clamp(1.9rem,3.6vw,2.6rem);letter-spacing:-.03em}
 .tag.topic.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 
 /* Measure page header */
-.dhead .pnum{background:none;font-size:4.2rem;letter-spacing:-.05em;min-width:0;height:auto;padding:0}
+.dhead .pnum{background:none;font-size:4.2rem;letter-spacing:-.03em;min-width:0;height:auto;padding:0}
 .dhead h2{font-size:clamp(2rem,4.4vw,3rem)}
 blockquote{border-radius:16px}
 
