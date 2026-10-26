@@ -11,7 +11,7 @@ const $view = $("view");
 
 const S = {
   index: null, election: null, measures: [], byId: {}, groups: {},
-  glossary: {}, topics: {}, results: null, filter: "all", mine: {}
+  glossary: {}, topics: {}, results: null, filter: new Set(), mine: {}  // filter: selected topic ids; empty = All
 };
 
 /* ---------- Loading ---------- */
@@ -112,7 +112,7 @@ function card(m) {
     <span class="pnum num"${big ? ' style="font-size:1.15rem"' : ""}>${esc(m.id)}</span>
     <span class="t">${esc(m.title)}</span>
     <span class="s">${esc(m.short)}</span>
-    <span class="meta">${cardTopics(m).map(t => `<span class="tag topic${S.filter === t ? " on" : ""}" style="--tc:var(--c-${t})">${esc(topicLabel(t))}</span>`).join("")}<span class="tag">${esc(m.origin)}</span>${isLinkedTax(m) ? '<span class="tag link">Linked</span>' : ""}${resultChip(m.id)}${leanChip(m.id)}</span>
+    <span class="meta">${cardTopics(m).map(t => `<span class="tag topic${S.filter.has(t) ? " on" : ""}" style="--tc:var(--c-${t})">${esc(topicLabel(t))}</span>`).join("")}<span class="tag">${esc(m.origin)}</span>${isLinkedTax(m) ? '<span class="tag link">Linked</span>' : ""}${resultChip(m.id)}${leanChip(m.id)}</span>
   </button>`;
 }
 
@@ -122,9 +122,10 @@ function jurisdictionView(j) {
   const sectioned = !!j.sections;
   const topicsHere = [...new Set(list.flatMap(m => m.topics))].filter(t => S.topics[t]);
   const chips = sectioned ? "" : `<div class="filters" role="group" aria-label="Filter by topic">
-    <button class="chip" aria-pressed="${S.filter === "all"}" data-filter="all">All</button>
-    ${topicsHere.map(k => `<button class="chip" aria-pressed="${S.filter === k}" data-filter="${k}" style="--tc:var(--c-${k})">${esc(topicLabel(k))}</button>`).join("")}</div>`;
-  const shown = list.filter(m => S.filter === "all" || m.topics.includes(S.filter));
+    <button class="chip" aria-pressed="${!S.filter.size}" data-filter="all">All</button>
+    ${topicsHere.map(k => `<button class="chip" aria-pressed="${S.filter.has(k)}" data-filter="${k}" style="--tc:var(--c-${k})">${esc(topicLabel(k))}</button>`).join("")}</div>`;
+  // Several topics can be on at once; a measure shows if it has any of them.
+  const shown = list.filter(m => !S.filter.size || m.topics.some(t => S.filter.has(t)));
   const decided = list.filter(m => (S.mine[m.id] || {}).lean).length;
   $view.innerHTML = `
     <section style="display:grid;gap:10px">
@@ -138,15 +139,12 @@ function jurisdictionView(j) {
       ? j.sections.map(sec => `<div style="display:grid;gap:10px"><span class="eyebrow">${esc(sec.title)}</span>
           <div class="grid">${sec.measures.map(id => S.byId[id]).filter(Boolean).map(card).join("")}</div>
           ${sec.note ? `<p class="small muted">${sec.note}</p>` : ""}</div>`).join("")
-      : `<div class="grid">${shown.map(card).join("")}</div>`}
+      : `${S.filter.size ? `<p class="small muted" aria-live="polite">Showing ${shown.length} of ${list.length} · matching any selected topic</p>` : ""}<div class="grid">${shown.map(card).join("")}</div>`}
     ${j.groups ? `<section class="section"><h3>Read together</h3><div class="plinks">${j.groups.filter(g => S.groups[g]).map(g => `<button data-group="${g}">${esc(S.groups[g].title)} →</button>`).join("")}</div></section>` : ""}`;
-  // On phones the filters are one swipeable row; re-rendering resets it, so bring
-  // the selected chip back into view.
-  const row = $view.querySelector(".filters"), on = row?.querySelector('[aria-pressed="true"]');
-  if (row && on && row.scrollWidth > row.clientWidth) {
-    const r = row.getBoundingClientRect(), c = on.getBoundingClientRect();
-    if (c.right > r.right - 24) row.scrollLeft += c.left - r.left - 16;
-  }
+  // On phones the filters are one swipeable row; re-rendering resets it, so put it
+  // back where the viewer left it when they tapped a chip.
+  const row = $view.querySelector(".filters");
+  if (row && S.filterScroll) { row.scrollLeft = S.filterScroll; S.filterScroll = 0; }
   if (row) {
     const edge = () => row.classList.toggle("at-end", row.scrollLeft + row.clientWidth >= row.scrollWidth - 2);
     row.addEventListener("scroll", edge, { passive: true }); edge();
@@ -537,7 +535,12 @@ document.addEventListener("click", e => {
   if (t.dataset.view) return go(t.dataset.view);
   if (t.dataset.open) return go("m-" + encodeURIComponent(t.dataset.open));
   if (t.dataset.group) return go("g-" + t.dataset.group);
-  if (t.dataset.filter) { S.filter = t.dataset.filter; return go(location.hash.slice(1) || S.election.jurisdictions[0].id, false); }
+  if (t.dataset.filter) {
+    const k = t.dataset.filter;
+    S.filterScroll = t.closest(".filters")?.scrollLeft || 0;
+    if (k === "all") S.filter.clear(); else S.filter.has(k) ? S.filter.delete(k) : S.filter.add(k);
+    return go(location.hash.slice(1) || S.election.jurisdictions[0].id, false);
+  }
   if (t.dataset.lean) {
     const id = t.dataset.mid || $view.dataset.id; S.mine[id] = S.mine[id] || {};
     S.mine[id].lean = t.dataset.lean === "Undecided" ? "" : t.dataset.lean; store.set(S.mine);
