@@ -150,6 +150,8 @@ To refresh:
 2. In `election.json`, update `money.asOf`, the totals in `money.intro`, `money.funders`, and `money.max` (the chart's scale) if the largest bar grows.
 3. Update any dated figures elsewhere, such as the "largest single committee" bullet on Prop 42 and the Prop 38 funder bullet.
 
+A daily cloud routine ("CA Ballot Guide: daily FPPC money refresh", 08:00 UTC, through Nov 4, 2026) follows these steps automatically: it compares FPPC's "Last Modified" date with `money.asOf`, does nothing if they match, and otherwise updates the figures, runs the validator, and pushes to `main`. Manage it at claude.ai/code/routines. Its cloud environment must allow `www.fppc.ca.gov` and `github.com`.
+
 Props 41 and 42 have no separate opposing committee; the Yes on 40 campaign opposes them. The FPPC table lists that committee under all three measures. This guide counts it once, under Prop 40, and shows 41 and 42 with no opposing money.
 
 ## Design
