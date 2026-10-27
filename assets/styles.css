@@ -311,3 +311,15 @@ blockquote{border-radius:16px}
   .filters .chip{flex:none}
   .filters.at-end{-webkit-mask-image:none;mask-image:none}
 }
+
+/* My ballot: printable record. Screen shows icon boxes; print shows the choice as text. */
+.pchoice{display:none}
+@media print{
+  header.mast,nav.tabs,footer,.noprint,.back,.info,.more{display:none !important}
+  body{background:#fff;color:#000}
+  main .wrap{padding:0;gap:14px}
+  .section{box-shadow:none;border:1px solid #ccc;break-inside:avoid}
+  .brow-m .iseg{display:none}
+  .brow-m .pchoice{display:block;font-weight:700;justify-self:end}
+  .bhead{display:none}
+}

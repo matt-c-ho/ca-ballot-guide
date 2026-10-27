@@ -190,6 +190,15 @@ The page's wording follows the date (California time) and the checkbox:
 
 Results appear only after polls close (`pollsClose` in `election.json`, California time, default 8 p.m.), even if `results.json` already has entries; this keeps any pre-election test data off the site. After that, once `results.json` has entries, each measure shows its result and whether the viewer's side is ahead, behind, won, or lost, with a summary at the top. Choices and the checkbox are stored only in the browser.
 
+### Keeping a copy
+
+The **Keep a copy** panel on My ballot builds files on the viewer's device (nothing is uploaded):
+
+- **Download spreadsheet (CSV):** one row per measure with the viewer's choice, note, and (after polls close) the result. Text that a spreadsheet could run as a formula is made literal.
+- **Download backup (JSON):** `{ app: "ca-ballot-guide", version: 1, election, exportedAt, ballot, choices }`.
+- **Restore from backup:** reads that JSON, asks before replacing what's saved, and keeps only known measures, valid choices (N/A only where `dependsOnAddress` applies), and notes as plain text. Backups from a different election are refused.
+- **Print or save as PDF:** a print stylesheet hides the header, tabs, and buttons and prints each choice as text.
+
 ## District-dependent measures
 
 In `election.json`, a jurisdiction section with `"dependsOnAddress": true` (for example, school district measures) marks measures that are only on some voters' ballots. Those measures get an extra **N/A** choice in My notes, shown on cards as "Not on my ballot".

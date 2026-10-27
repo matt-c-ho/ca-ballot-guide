@@ -102,7 +102,7 @@ function resultChip(id) {
   const need = S.byId[id]?.passPct || 50;
   return `<span class="result ${cls}">${word}${r.yesPct != null ? ` · ${r.yesPct}% yes` : ""}${need !== 50 ? ` · needs ${need > 66 ? "66.7" : need}%` : ""}${r.final ? "" : " · counting"}</span>`;
 }
-const leanChip = id => { const l = (S.mine[id] || {}).lean; return l ? `<span class="lean">${l === "N/A" ? "Not on my ballot" : `My lean: ${l}`}</span>` : ""; };
+const leanChip = id => { const l = (S.mine[id] || {}).lean; return l ? `<span class="lean">${l === "N/A" ? "Not on my ballot" : `My lean: ${esc(l)}`}</span>` : ""; };
 // Measures in a section marked dependsOnAddress (e.g. school district measures) may not be on everyone's ballot.
 const dependsOnAddress = m => (jur(m._j)?.sections || []).some(sec => sec.dependsOnAddress && sec.measures.includes(m.id));
 
@@ -363,6 +363,7 @@ function myBallotView() {
       <div class="iseg" role="group" aria-label="${word} on ${esc(m.label)}">${CHOICES.map(o => leansFor(m).includes(o)
         ? `<button class="ib" data-lean="${o}" data-mid="${esc(m.id)}" aria-pressed="${(lean || "Undecided") === o}" aria-label="${choiceName[o]}" title="${choiceName[o]}">${icon(o)}</button>`
         : `<span class="ib off" title="On every ballot, so N/A doesn't apply">${icon(o)}</span>`).join("")}</div>
+      <span class="pchoice">${esc(choiceName[lean || "Undecided"])}</span>
     </div>`;
   };
 
@@ -380,7 +381,69 @@ function myBallotView() {
       return list.length ? `<section class="section"><h3>${esc(j.tab)}</h3><div class="blist">${head}${list.map(row).join("")}</div>
         ${list.some(dependsOnAddress) ? '<p class="src">Some of these depend on your district. Choose N/A for any that are not on your ballot.</p>' : ""}</section>` : "";
     }).join("")}
-    <p class="src">Your choices and the checkbox are saved only in this browser. Nothing is sent anywhere.</p>`;
+    <section class="section noprint"><h3>Keep a copy</h3>
+      <div class="plinks">
+        <button data-export="csv">Download spreadsheet (CSV)</button>
+        <button data-export="json">Download backup (JSON)</button>
+        <button data-export="restore">Restore from backup</button>
+        <button data-export="print">Print or save as PDF</button>
+      </div>
+      <input type="file" id="restore-file" accept="application/json,.json" hidden>
+      <p class="small muted" id="export-status" role="status"></p>
+      <p class="src">Your choices, notes, and the checkbox are saved only in this browser. Downloads are made on your device; nothing is sent anywhere. Restore a backup to move them to another browser or device.</p>
+    </section>`;
+}
+
+/* ---------- Export / restore (My ballot) ----------
+ * Everything happens in the browser: files are built and read locally. */
+const BACKUP_APP = "ca-ballot-guide";
+function download(name, type, text) {
+  const url = URL.createObjectURL(new Blob([text], { type }));
+  const a = Object.assign(document.createElement("a"), { href: url, download: name });
+  document.body.append(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+// CSV cell: quoted, and text that a spreadsheet might run as a formula is made literal.
+const csvCell = v => { let t = String(v ?? ""); if (/^[=+\-@\t\r]/.test(t)) t = "'" + t; return `"${t.replace(/"/g, '""')}"`; };
+
+function exportCSV() {
+  const E = S.election, b = ballotStore.get();
+  const rows = [
+    [E.name], [`Ballot cast: ${b.voted ? (b.on || "yes") : "not marked"}`], [`Exported: ${new Date().toLocaleString()}`], [],
+    ["Area", "Measure", "Title", "My choice", "My note", "Result (% yes)", "Outcome"]
+  ];
+  for (const m of S.measures) {
+    const n = S.mine[m.id] || {}, r = resultFor(m.id);
+    rows.push([jur(m._j)?.tab || "", m.label, m.title, choiceName[n.lean || "Undecided"], n.note || "", r?.yesPct ?? "", r?.outcome ?? ""]);
+  }
+  download(`my-ballot-${E.id}.csv`, "text/csv;charset=utf-8", "﻿" + rows.map(r => r.map(csvCell).join(",")).join("\r\n"));
+  return "Spreadsheet downloaded.";
+}
+
+function exportJSON() {
+  const E = S.election;
+  const data = { app: BACKUP_APP, version: 1, election: E.id, exportedAt: new Date().toISOString(), ballot: ballotStore.get(), choices: S.mine };
+  download(`my-ballot-${E.id}-backup.json`, "application/json", JSON.stringify(data, null, 2));
+  return "Backup downloaded. Keep it somewhere safe; it includes your notes.";
+}
+
+// Accept only known measures, valid choices, and plain-text notes from a backup file.
+function restoreBackup(text) {
+  let d; try { d = JSON.parse(text); } catch { return "That file isn't a valid backup."; }
+  if (!d || d.app !== BACKUP_APP || typeof d.choices !== "object") return "That file isn't a backup from this guide.";
+  if (d.election !== S.election.id) return `That backup is for a different election (${String(d.election).slice(0, 20)}).`;
+  const mine = {};
+  for (const m of S.measures) {
+    const c = d.choices[m.id]; if (!c || typeof c !== "object") continue;
+    const lean = leansFor(m).includes(c.lean) && c.lean !== "Undecided" ? c.lean : "";
+    const note = typeof c.note === "string" ? c.note.slice(0, 5000) : "";
+    if (lean || note) mine[m.id] = { ...(lean && { lean }), ...(note && { note }) };
+  }
+  const b = d.ballot && d.ballot.voted === true ? { voted: true, ...(/^\d{4}-\d{2}-\d{2}$/.test(d.ballot.on || "") && { on: d.ballot.on }) } : {};
+  if (!confirm(`Replace the choices and notes saved in this browser with this backup (${Object.keys(mine).length} measures)?`)) return "Restore cancelled.";
+  S.mine = mine; store.set(mine); ballotStore.set(b);
+  myBallotView(); dateTicker(S.election.keyDates || []);
+  return `Restored ${Object.keys(mine).length} measures from the backup.`;
 }
 
 function glossaryView() {
@@ -532,6 +595,14 @@ document.addEventListener("click", e => {
     const box = document.getElementById(t.getAttribute("aria-controls")), open = t.getAttribute("aria-expanded") !== "true";
     t.setAttribute("aria-expanded", open); box.hidden = !open; return;
   }
+  if (t.dataset.export) {
+    const say = msg => { const el = $("export-status"); if (el) el.textContent = msg; };
+    const k = t.dataset.export;
+    if (k === "csv") return say(exportCSV());
+    if (k === "json") return say(exportJSON());
+    if (k === "print") return window.print();
+    if (k === "restore") return $("restore-file").click();
+  }
   if (t.dataset.view) return go(t.dataset.view);
   if (t.dataset.open) return go("m-" + encodeURIComponent(t.dataset.open));
   if (t.dataset.group) return go("g-" + t.dataset.group);
@@ -550,6 +621,11 @@ document.addEventListener("click", e => {
   }
 });
 document.addEventListener("change", e => {
+  if (e.target.id === "restore-file") {
+    const f = e.target.files?.[0]; if (!f) return;
+    f.text().then(txt => { const msg = restoreBackup(txt); const el = $("export-status"); if (el) el.textContent = msg; });
+    e.target.value = ""; return;
+  }
   if (!e.target.matches("[data-voted]")) return;
   ballotStore.set(e.target.checked ? { voted: true, on: caToday() } : {});
   myBallotView();
