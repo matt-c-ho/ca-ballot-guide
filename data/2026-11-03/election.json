@@ -44,11 +44,11 @@
     }
   ],
   "money": {
-    "asOf": "2026-10-28",
+    "asOf": "2026-10-29",
     "max": 160,
     "summary": "raised by top donors",
-    "intro": "Reported contributions from top donors to committees supporting and opposing each measure. Committees reported about $797 million across 11 measures as of October 28. The billionaire tax fight (Props 40–42) accounts for nearly half.",
-    "source": "Source: FPPC Top 10 Contributors lists, last updated October 28, 2026, using the FPPC's aggregated support and oppose totals. Figures change often; totals cover top contributors only, and money passed between committees on the same side can be counted twice. Where a \"No\" bar is empty, no opposing committee reported $1M or more, or opposition runs through another measure's committee (41 and 42 are opposed by the Yes on 40 campaign, counted once under 40).",
+    "intro": "Reported contributions from top donors to committees supporting and opposing each measure. Committees reported about $797 million across 11 measures as of October 29. The billionaire tax fight (Props 40–42) accounts for nearly half.",
+    "source": "Source: FPPC Top 10 Contributors lists, last updated October 29, 2026, using the FPPC's aggregated support and oppose totals. Figures change often; totals cover top contributors only, and money passed between committees on the same side can be counted twice. Where a \"No\" bar is empty, no opposing committee reported $1M or more, or opposition runs through another measure's committee (41 and 42 are opposed by the Yes on 40 campaign, counted once under 40).",
     "fundersSource": "Who they are: descriptions from news reporting by CalMatters, KPBS, and Mission Local, and from each organization's own description.",
     "funders": [
       ["Building a Better California", "~$372M total: Yes on 42 ($157.1M), No on 40 ($140.0M), Yes on 41 ($58.35M), Yes on 45 ($10M), Yes on 37 ($6M), Yes on 1 ($1M). The FPPC lists its top donors as Sergey Brin and John Doerr.", "A political committee funded mainly by Google co-founder Sergey Brin, who had given it $102 million by mid-August, with about $20 million more from other Silicon Valley investors such as John Doerr and Ripple co-founder Chris Larsen."],
@@ -62,7 +62,7 @@
   "sources": [
     ["Official Voter Information Guide, Nov 3, 2026 (CA Secretary of State): titles, Yes/No meanings, LAO analyses, arguments", "https://voterguide.sos.ca.gov/"],
     ["Secretary of State certification of measures", "https://www.sos.ca.gov/administration/news-releases-and-advisories/2026-news-releases-and-advisories/california-secretary-state-shirley-n-weber-phd-certifies-measures-november-3-2026-general-election-ballot"],
-    ["FPPC Top 10 Contributors (money totals, as of Oct 28)", "https://www.fppc.ca.gov/search-filings/top-10-contributors-list/november-2026-general-election/"],
+    ["FPPC Top 10 Contributors (money totals, as of Oct 29)", "https://www.fppc.ca.gov/search-filings/top-10-contributors-list/november-2026-general-election/"],
     ["California Today, 2026 propositions master guide (background)", "https://californiatoday.com/guides/elections/2026-california-propositions-master-guide/"],
     ["GrowSF, 14 state ballot measures (background on Props 43–44)", "https://growsf.org/news/2026-07-02-14-state-measures/"],
     ["California Choices (key dates, Santa Clara County measure list)", "https://californiachoices.org/"],
