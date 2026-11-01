@@ -66,6 +66,27 @@ for (const e of index.elections) {
     for (const id of g.measures) if (!ids.has(id)) err(`${dir}/groups.json [${k}]`, `unknown measure "${id}"`);
     termRefs(g.summary, `${dir}/groups.json [${k}].summary`); termRefs(g.body, `${dir}/groups.json [${k}].body`);
   }
+  if (existsSync(`${dir}/committees.json`)) {
+    const where = `${dir}/committees.json`, C = read(`${dir}/committees.json`);
+    const num = v => typeof v === "number" && Number.isFinite(v);
+    for (const f of ["exportDate", "latestLate", "since"]) if (!/^\d{4}-\d{2}-\d{2}$/.test(C[f] || "")) err(where, `${f} must be YYYY-MM-DD`);
+    for (const [cid, c] of Object.entries(C.committees || {})) {
+      const w = `${where} [${cid}]`;
+      if (!/^\d+$/.test(cid)) err(w, "committee id must be digits");
+      if (!c.name) err(w, "missing name");
+      if (c.url !== `https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=${cid}`) err(w, "url must be its Cal-Access page");
+      for (const m of c.measures || []) {
+        if (!ids.has(m.id)) err(w, `unknown measure "${m.id}"`);
+        if (!["yes", "no"].includes(m.side)) err(w, `bad side "${m.side}"`);
+      }
+      for (const p of [...(c.donors || []), ...(c.recipients || [])]) {
+        if (!p.name || !num(p.total) || p.total <= 0) err(w, `bad entry "${p.name}"`);
+        if (!["person", "committee", "organization"].includes(p.kind)) err(w, `bad kind for "${p.name}"`);
+        for (const banned of ["city", "zip", "address", "employer", "occupation"]) if (banned in p) err(w, `"${banned}" must not be published`);
+      }
+    }
+  }
+
   if (existsSync(`${dir}/results.json`)) {
     const r = read(`${dir}/results.json`);
     for (const [id, x] of Object.entries(r.measures || {})) {

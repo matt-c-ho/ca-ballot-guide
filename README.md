@@ -52,7 +52,9 @@ data/
     measures-santa-clara.json  local measures for Santa Clara County / San José
     groups.json             "linked measures" groups
     results.json            election results (empty until results are in)
+    committees.json         committee donors and giving (generated, do not edit)
 scripts/validate.mjs        data checks (runs on every Vercel build)
+scripts/build-committees.py generates committees.json from official sources
 vercel.json                 Vercel build settings and security headers
 ```
 
@@ -153,6 +155,27 @@ To refresh:
 A daily cloud routine ("CA Ballot Guide: daily FPPC money refresh", 08:00 UTC, through Nov 4, 2026) follows these steps automatically: it compares FPPC's "Last Modified" date with `money.asOf`, does nothing if they match, and otherwise updates the figures, runs the validator, and pushes to `main`. Manage it at claude.ai/code/routines. Its cloud environment must allow `www.fppc.ca.gov` and `github.com`.
 
 Props 41 and 42 have no separate opposing committee; the Yes on 40 campaign opposes them. The FPPC table lists that committee under all three measures. This guide counts it once, under Prop 40, and shows 41 and 42 with no opposing money.
+
+## Committee detail
+
+`data/<election>/committees.json` powers the committee pages (`#c-<id>`): who gave to each committee and what it gave to others. It comes only from official sources, and nothing in it is typed by hand:
+
+```
+python3 scripts/build-committees.py --cache /tmp/calaccess --report /tmp/committees-report.txt
+```
+
+The script reads the [FPPC list](https://www.fppc.ca.gov/search-filings/top-10-contributors-list/november-2026-general-election/) to find each measure's committees and any committee FPPC lists as giving them $1M or more. It then streams those committees' records from the Secretary of State's [CAL-ACCESS raw export](https://www.sos.ca.gov/campaign-lobbying/helpful-resources/raw-data-campaign-finance-and-lobbying-activity). Delete the cache directory to pick up a newer export. This is a snapshot: rerun it to refresh, because the daily routine does not. Doing that in the routine would also require allowing `campaignfinance.cdn.sos.ca.gov`.
+
+Rules it applies:
+
+- **Latest version only.** Uses the highest amendment of each Form 460, counting from January 1, 2025, and adds Form 497 late reports dated after the last Form 460 period.
+- **What counts as received.** Cash (Schedule A), stock and in-kind gifts (Schedule C), and loans still owed (Schedule B). Memo rows are skipped because filers do not count them in totals. Gifts under $100 are only reported as a lump sum, so they appear as their own line.
+- **What counts as given.** Schedule D contributions. Where Schedule D leaves the recipient blank, the same `TRAN_ID` on Schedule E names it. Otherwise the page says the recipient is not named.
+- **Reconciliation.** A committee is left out unless its itemized rows match its own filed schedule totals, within 0.5% or $1,000.
+- **IDs.** Older committees file under legacy IDs, which `FILER_XREF_CD` maps to their public IDs. Cal-Access links use public IDs.
+- **Privacy.** Publishes names and amounts only, never addresses, employers, or occupations. `validate.mjs` enforces this.
+
+Read the `--report` file after each run. Its FPPC comparison should be checked by hand, because differences are normal but not always harmless. The export can be newer than FPPC, FPPC combines affiliated donors (Homeownership for Families and California Association of Realtors, for example), and FPPC's page can contain typos ("$2,000,0000" for the Graton Rancheria tribal council). A few small gaps remain unexplained, such as about 0.1–0.2% on in-kind gifts to Yes on 40.
 
 ## Design
 

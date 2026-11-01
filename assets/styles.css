@@ -314,6 +314,22 @@ blockquote{border-radius:16px}
 
 /* My ballot: printable record. Screen shows icon boxes; print shows the choice as text. */
 .pchoice{display:none}
+/* Committee donors and giving */
+.cmte-groups{display:grid;gap:20px}
+.cmte-group{display:grid;gap:8px;min-width:0}
+.cmte-group h4{margin:0}
+.cmte-sides{display:grid;grid-template-columns:1fr 1fr;gap:12px 20px}
+@media (max-width:520px){.cmte-sides{grid-template-columns:1fr}}
+.cmte-side{display:grid;gap:4px;align-content:start;min-width:0}
+.cmte-names{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:.9rem}
+.cmte-names .linkish,.flows .linkish{font-weight:500;color:var(--accent);overflow-wrap:anywhere}
+.cmte-more{display:block;margin-top:4px;font-size:.88rem;color:var(--accent)}
+.flows{list-style:none;margin:0;padding:0;display:grid;font-size:.93rem}
+.flows li{display:grid;grid-template-columns:minmax(0,1fr) max-content;gap:12px;padding:9px 0;border-top:1px solid var(--line)}
+.flows li:first-child{border-top:0}
+.flow-name{min-width:0;overflow-wrap:anywhere}
+.flow-amt{font-weight:600;white-space:nowrap}
+
 @media print{
   header.mast,nav.tabs,footer,.noprint,.back,.info,.more{display:none !important}
   body{background:#fff;color:#000}

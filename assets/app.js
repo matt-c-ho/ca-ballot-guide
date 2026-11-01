@@ -1,7 +1,7 @@
 /*
  * California Ballot Guide — app
  * All content lives in /data. This file only loads and renders it.
- * Routes (URL hash):  #<jurisdiction-id>  #m-<measure-id>  #linked  #g-<group-id>  #money  #glossary  #about
+ * Routes (URL hash):  #<jurisdiction-id>  #m-<measure-id>  #linked  #g-<group-id>  #money  #c-<committee-id>  #glossary  #about
  * Election is chosen with ?election=<id> (defaults to data/elections.json "default").
  */
 
@@ -11,7 +11,7 @@ const $view = $("view");
 
 const S = {
   index: null, election: null, measures: [], byId: {}, groups: {},
-  glossary: {}, topics: {}, results: null, filter: new Set(), mine: {}  // filter: selected topic ids; empty = All
+  glossary: {}, topics: {}, results: null, committees: null, filter: new Set(), mine: {}  // filter: selected topic ids; empty = All
 };
 
 /* ---------- Loading ---------- */
@@ -25,11 +25,12 @@ async function load() {
   S.index = await getJSON("elections.json");
   const want = new URLSearchParams(location.search).get("election");
   const id = S.index.elections.some(e => e.id === want) ? want : S.index.default;
-  const [election, glossary, topics, groups, results] = await Promise.all([
+  const [election, glossary, topics, groups, results, committees] = await Promise.all([
     getJSON(`${id}/election.json`), getJSON("glossary.json"), getJSON("topics.json"),
-    getJSON(`${id}/groups.json`, true), getJSON(`${id}/results.json`, true)
+    getJSON(`${id}/groups.json`, true), getJSON(`${id}/results.json`, true),
+    getJSON(`${id}/committees.json`, true)
   ]);
-  Object.assign(S, { election, glossary, topics, groups: Object.assign(Object.create(null), groups), results });
+  Object.assign(S, { election, glossary, topics, groups: Object.assign(Object.create(null), groups), results, committees });
   const lists = await Promise.all(election.jurisdictions.map(j => getJSON(`${id}/${j.file}`)));
   S.measures = [];
   election.jurisdictions.forEach((j, i) => lists[i].forEach(m => S.measures.push({ ...m, _j: j.id })));
@@ -239,7 +240,8 @@ function detail(id) {
     ${mo ? `<dl class="kv">
       <dt>Supporting</dt><dd><b class="num">${mo.yes ? fmt(mo.yes) : "under $1M"}</b>${mo.yesNote ? ` · ${esc(mo.yesNote)}` : ""}</dd>
       <dt>Opposing</dt><dd><b class="num">${mo.no ? fmt(mo.no) : "under $1M"}</b>${mo.noNote ? ` · ${esc(mo.noNote)}` : ""}</dd></dl>
-      <p class="src">Top-contributor totals reported to the ${T("fppc", "FPPC")} as of ${esc(S.election.money?.asOf || "")}. Current lists at fppc.ca.gov.</p>`
+      <p class="src">Top-contributor totals reported to the ${T("fppc", "FPPC")} as of ${esc(S.election.money?.asOf || "")}. Current lists at fppc.ca.gov.</p>
+      ${committeeLinks(id)}`
       : `<p class="small muted">Not compiled yet. Local committees file with the county registrar.</p>`}
    </section>
    <section class="section">
@@ -295,9 +297,80 @@ function moneyView() {
     <div class="axis"><span></span><div class="ticks">${ticks.map(t => `<span style="left:calc(${t / max} * (100% - 5.5rem))">$${t}M</span>`).join("")}</div></div>
    </section>
    <section class="section"><h3>Largest funders</h3>
-    <dl class="kv">${(M.funders || []).map(([k, v, who]) => `<dt>${esc(k)}</dt><dd>${esc(v)}${who ? `<span class="who">${esc(who)}</span>` : ""}</dd>`).join("")}</dl>
+    <dl class="kv">${(M.funders || []).map(([k, v, who, cid]) => `<dt>${esc(k)}</dt><dd>${esc(v)}${who ? `<span class="who">${esc(who)}</span>` : ""}${cid && S.committees?.committees[cid] ? `<button class="linkish cmte-more" data-committee="${esc(cid)}">Donors and giving</button>` : ""}</dd>`).join("")}</dl>
     <p class="src">${esc(M.source)}${M.fundersSource ? ` ${esc(M.fundersSource)}` : ""}</p>
-   </section>`;
+   </section>
+   ${S.committees ? `<section class="section"><h3>Committees behind each measure</h3>
+    <p class="small muted">Open a committee to see who gave to it and what it gave to others, from its filings with the Secretary of State.</p>
+    <div class="cmte-groups">${rows.map(m => committeeLinks(m.id, true)).join("")}</div>
+   </section>` : ""}`;
+}
+
+/* ---------- Committees (data/<election>/committees.json, built by scripts/build-committees.py) ---------- */
+const dollars = v => v >= 999500 ? `$${(v / 1e6).toFixed(1).replace(/\.0$/, "")}M` : `$${Math.round(v).toLocaleString("en-US")}`;
+const measureLabel = id => S.byId[id]?.label || `Prop ${id}`;
+
+function committeesFor(id) {
+  const all = Object.entries(S.committees?.committees || {});
+  const pick = side => all.filter(([, c]) => c.measures.some(m => m.id === id && m.side === side)).map(([cid, c]) => [cid, c]);
+  return { yes: pick("yes"), no: pick("no") };
+}
+
+// The same layout for both sides of every measure. `titled` adds the measure's name for the money page.
+function committeeLinks(id, titled = false) {
+  const { yes, no } = committeesFor(id);
+  if (!yes.length && !no.length) return "";
+  const side = (label, list) => `<div class="cmte-side"><span class="eyebrow">${label}</span>
+    ${list.length ? `<ul class="cmte-names">${list.map(([cid, c]) => `<li><button class="linkish" data-committee="${esc(cid)}">${esc(c.name)}</button></li>`).join("")}</ul>` : `<p class="small muted">No committee on the FPPC list</p>`}</div>`;
+  return `<div class="cmte-group">${titled ? `<h4><button class="linkish" data-open="${esc(id)}">${esc(measureLabel(id))}</button></h4>` : `<h4>Committees</h4>`}
+    <div class="cmte-sides">${side("Supporting", yes)}${side("Opposing", no)}</div></div>`;
+}
+
+// One donor or recipient: its name, its amount, and how that amount breaks down.
+function flowRow(p, isDonor) {
+  const parts = [];
+  const direct = p.total - (p.noncash || 0) - (p.loan || 0) - (p.late || 0);
+  if (p.noncash && direct > 0.5) parts.push(`${dollars(direct)} cash`);
+  if (p.stock) parts.push(`${dollars(p.stock)} stock`);
+  if (p.noncash && p.noncash - (p.stock || 0) > 0.5) parts.push(`${dollars(p.noncash - (p.stock || 0))} in-kind`);
+  if (p.loan) parts.push(`${dollars(p.loan)} loan`);
+  if (p.late) parts.push(`${dollars(p.late)} in late reports`);
+  const single = parts.length === 1 && !p.noncash && !p.loan && !p.late;
+  const note = single ? "" : parts.join(", ");
+  const name = p.id && S.committees.committees[p.id]
+    ? `<button class="linkish" data-committee="${esc(p.id)}">${esc(p.name)}</button>`
+    : p.id ? `<a href="https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=${encodeURIComponent(p.id)}" target="_blank" rel="noopener">${esc(p.name)}</a>`
+    : esc(p.name);
+  const kind = isDonor && p.kind === "organization" && !p.id ? `<span class="who">Company or organization. This filing does not list its funders.</span>` : "";
+  return `<li><span class="flow-name">${name}${note ? `<span class="who">${esc(note)}</span>` : ""}${kind}</span><span class="flow-amt num">${dollars(p.total)}</span></li>`;
+}
+
+function committeeView(id) {
+  const D = S.committees, c = D?.committees[id];
+  if (!c) return moneyView();
+  const r = c.received, g = c.gave;
+  const received = r.itemized + r.unitemized + r.noncash + Math.max(r.loans, 0) + r.late;
+  const given = g.cash + g.noncash + g.late;
+  const line = (k, v) => v > 0.5 ? `<dt>${k}</dt><dd class="num">${dollars(v)}</dd>` : "";
+  const more = (n, shown, word) => n > shown ? `<p class="small muted">Plus ${(n - shown).toLocaleString("en-US")} more ${word} in these filings.</p>` : "";
+  const sides = c.measures.map(m => `<button data-open="${esc(m.id)}">${m.side === "yes" ? "Supports" : "Opposes"} ${esc(measureLabel(m.id))}</button>`).join("");
+  $view.innerHTML = `
+   <section style="display:grid;gap:10px"><span class="eyebrow">Committee</span><h2>${esc(c.name)}</h2>
+    ${sides ? `<div class="plinks">${sides}</div>` : ""}
+    <p class="small"><a href="${esc(c.url)}" target="_blank" rel="noopener">View this committee on Cal-Access</a> · <button class="linkish" data-view="money">Back to Follow the money</button></p>
+   </section>
+   <section class="section"><h3>Received: ${dollars(received)}</h3>
+    <dl class="kv">
+     ${line("Itemized cash gifts", r.itemized)}${line("Gifts under $100 each, reported only as a total", r.unitemized)}${line("Stock and in-kind gifts", r.noncash)}${line("Loans still owed", r.loans)}${line(`Late reports since ${fmtDay(c.thru)}`, r.late)}
+    </dl>
+    <h4>Largest donors</h4>
+    ${c.donors.length ? `<ol class="flows">${c.donors.map(p => flowRow(p, true)).join("")}</ol>${more(c.donorCount, c.donors.length, "donors")}` : `<p class="small muted">No individual donors are itemized in these filings.</p>`}
+   </section>
+   <section class="section"><h3>Gave to other campaigns: ${given > 0.5 ? dollars(given) : "none reported"}</h3>
+    ${g.late > r.late ? `<p class="small">Late reports since ${fmtDay(c.thru)} list ${dollars(g.late)} given and ${r.late > 0.5 ? dollars(r.late) : "no money"} received. The full report covering that period has not been filed yet.</p>` : ""}
+    ${c.recipients.length ? `<ol class="flows">${c.recipients.map(p => flowRow(p, false)).join("")}</ol>${more(c.recipientCount, c.recipients.length, "recipients")}` : ""}
+   </section>
+   <p class="src">Source: this committee's filings with the California Secretary of State (Cal-Access), downloaded ${fmtDay(D.exportDate)}. Covers ${fmtDay(c.from)}, ${c.from.slice(0, 4)} through ${fmtDay(c.thru)}, ${c.thru.slice(0, 4)}, plus late reports filed through ${fmtDay(D.latestLate)}. Names appear as filed. Late reports are preliminary and can be amended. A committee's totals can include money for other measures or years, so they should not be added to the measure totals, and they can differ from the FPPC's list, which combines affiliated donors and updates on its own schedule. Trails stop at people, companies, and groups that do not report their own donors here.</p>`;
 }
 
 /* ---------- My ballot ----------
@@ -576,8 +649,9 @@ function go(token, push = true) {
   dateTicker(E.keyDates || []);
   token = token || E.jurisdictions[0].id;
   let tab = token;
-  const m = token.match(/^m-(.+)$/), g = token.match(/^g-(.+)$/);
-  if (m) { const id = safeDecode(m[1]); detail(id); tab = S.byId[id]?._j || E.jurisdictions[0].id; }
+  const m = token.match(/^m-(.+)$/), g = token.match(/^g-(.+)$/), c = token.match(/^c-(\d+)$/);
+  if (c) { committeeView(c[1]); tab = "money"; }
+  else if (m) { const id = safeDecode(m[1]); detail(id); tab = S.byId[id]?._j || E.jurisdictions[0].id; }
   else if (g) { linkedView(g[1]); tab = "linked"; }
   else if (jur(token)) jurisdictionView(jur(token));
   else ({ mine: myBallotView, linked: () => linkedView(), money: moneyView, glossary: glossaryView, about: aboutView }[token]
@@ -605,6 +679,7 @@ document.addEventListener("click", e => {
   }
   if (t.dataset.view) return go(t.dataset.view);
   if (t.dataset.open) return go("m-" + encodeURIComponent(t.dataset.open));
+  if (t.dataset.committee) return go("c-" + t.dataset.committee);
   if (t.dataset.group) return go("g-" + t.dataset.group);
   if (t.dataset.filter) {
     const k = t.dataset.filter;

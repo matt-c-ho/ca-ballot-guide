@@ -1,0 +1,4667 @@
+{
+ "exportDate": "2026-11-01",
+ "latestLate": "2026-10-31",
+ "since": "2025-01-01",
+ "committees": {
+  "1018392": {
+   "name": "California Democratic Party",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1018392",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 67569494.31,
+    "unitemized": 11869.74,
+    "noncash": 148736.85,
+    "loans": 0.0,
+    "late": 3133464.0
+   },
+   "gave": {
+    "cash": 8016464.0,
+    "noncash": 18585276.66,
+    "late": 8793723.28
+   },
+   "donors": [
+    {
+     "name": "Kalshi, Inc.",
+     "total": 2175000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "California Teachers Association/ Issues PAC",
+     "total": 2145000.0,
+     "kind": "committee",
+     "id": "1045740"
+    },
+    {
+     "name": "Election Rigging Response Act, Newsom's Ballot Measure Committee",
+     "total": 2000000.0,
+     "kind": "committee",
+     "id": "1380675"
+    },
+    {
+     "name": "Uber Innovations Political Action Committee",
+     "total": 1799000.0,
+     "kind": "committee",
+     "id": "1439102"
+    },
+    {
+     "name": "California Real Estate Political Action Committee - CREPAC",
+     "total": 1550000.0,
+     "kind": "committee",
+     "id": "1047521"
+    },
+    {
+     "name": "California Correctional Peace Officers Association Local PAC",
+     "total": 1500000.0,
+     "kind": "committee",
+     "id": "1067293"
+    },
+    {
+     "name": "Anthropic PBC",
+     "total": 1375000.0,
+     "kind": "organization",
+     "late": 525000.0
+    },
+    {
+     "name": "Blue Shield of California",
+     "total": 1315000.0,
+     "kind": "organization",
+     "late": 25000.0
+    },
+    {
+     "name": "State Building and Construction Trades Council of California Independent Expenditure PAC",
+     "total": 1281000.0,
+     "kind": "committee",
+     "id": "1377164"
+    },
+    {
+     "name": "California Hospitals Committee on Issues, Sponsored by CAHHS",
+     "total": 1261000.0,
+     "kind": "committee",
+     "id": "1045082"
+    }
+   ],
+   "donorCount": 940,
+   "recipients": [
+    {
+     "name": "No on 39 - Block Election Rigging sponsored by nurses, teachers, and nonprofit labor and community health clinic organizations",
+     "total": 5318074.78,
+     "kind": "committee",
+     "id": "1493991",
+     "noncash": 456657.86,
+     "late": 1661416.92
+    },
+    {
+     "name": "Ida Obeso-Martinez for Assembly 2026",
+     "total": 4383599.43,
+     "kind": "committee",
+     "id": "1483893",
+     "noncash": 3422007.43,
+     "late": 761592.0
+    },
+    {
+     "name": "Valley Families for Melissa Hurtado for Senate 2026",
+     "total": 3690126.27,
+     "kind": "committee",
+     "id": "1456951",
+     "noncash": 2006617.94,
+     "late": 668508.33
+    },
+    {
+     "name": "United Against Prop. 39 -- Stop the Rig sponsored by nonprofit labor and civil rights organizations",
+     "total": 2600000.0,
+     "kind": "committee",
+     "measure": "United Against Prop 39 - Stop the Rig sponsored by nonprofit Labor and Civil Rights Organizations",
+     "id": "1495206"
+    },
+    {
+     "name": "Amy Slavensky for Assembly 2026",
+     "total": 2477118.17,
+     "kind": "committee",
+     "id": "1484959",
+     "noncash": 1618611.56,
+     "late": 808506.61
+    },
+    {
+     "name": "Catherine Blakespear for Senate 2026",
+     "total": 2392171.31,
+     "kind": "committee",
+     "id": "1456912",
+     "noncash": 1570608.12,
+     "late": 821563.19
+    },
+    {
+     "name": "Brian Pacheco for Assembly 2026",
+     "total": 2175450.93,
+     "kind": "committee",
+     "id": "1485456",
+     "noncash": 949331.23,
+     "late": 981119.7
+    },
+    {
+     "name": "Chris Kluwe for Assembly 2026",
+     "total": 1337861.27,
+     "kind": "committee",
+     "id": "1482344",
+     "noncash": 591345.65,
+     "late": 346515.62
+    },
+    {
+     "name": "Mara Elliott for Senate 2026",
+     "total": 1328047.23,
+     "kind": "committee",
+     "id": "1483627",
+     "noncash": 924281.79,
+     "late": 403765.44
+    },
+    {
+     "name": "Becerra for Governor 2026",
+     "total": 994675.07,
+     "kind": "committee",
+     "noncash": 994675.07
+    }
+   ],
+   "recipientCount": 73
+  },
+  "1020788": {
+   "name": "SEIU United Health Care Workers West Political Action Committee",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1020788",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 0.0,
+    "unitemized": 4472395.55,
+    "noncash": 0.0,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 4470630.0,
+    "noncash": 0.0,
+    "late": 161500.0
+   },
+   "donors": [],
+   "donorCount": 0,
+   "recipients": [
+    {
+     "name": "Yes on 40 - Billionaire Tax Now \u2013 No on 41 & 42, Sponsored by Service Employees International Union - United Healthcare Workers West",
+     "total": 2000000.0,
+     "kind": "committee",
+     "id": "1484470",
+     "measure": "2026 Billionaire Tax Act"
+    },
+    {
+     "name": "California Democratic Party",
+     "total": 810060.0,
+     "kind": "committee",
+     "id": "1018392"
+    },
+    {
+     "name": "San Diego Labor Coalition, Sponsored by Laborers' International Union of North America Local 89",
+     "total": 105500.0,
+     "kind": "committee",
+     "id": "1454100"
+    },
+    {
+     "name": "San Diego County Democratic Party",
+     "total": 75000.0,
+     "kind": "committee",
+     "id": "1018460"
+    },
+    {
+     "name": "Working Families to Support Paloma Aguirre for Board of Supervisors 2025 sponsored by Service Employees International Union Local 221",
+     "total": 75000.0,
+     "kind": "committee",
+     "id": "1298155"
+    },
+    {
+     "name": "Santa Clara County United Democratic Campaign",
+     "total": 74500.0,
+     "kind": "committee",
+     "id": "1044224"
+    },
+    {
+     "name": "Riverside County Democratic Central Committee",
+     "total": 71500.0,
+     "kind": "committee",
+     "id": "1342861"
+    },
+    {
+     "name": "San Luis Obispo County Democratic Central Committee",
+     "total": 70000.0,
+     "kind": "committee",
+     "id": "1018662"
+    },
+    {
+     "name": "Sonoma County Democratic Central Committee",
+     "total": 70000.0,
+     "kind": "committee",
+     "id": "1018636"
+    },
+    {
+     "name": "Yolo County Democratic Central Committee",
+     "total": 70000.0,
+     "kind": "committee",
+     "id": "1308176"
+    }
+   ],
+   "recipientCount": 118
+  },
+  "1021742": {
+   "name": "CA Business PAC, sponsored by CA Chamber of Commerce (aka CALBUSPAC)",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1021742",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 4460453.04,
+    "unitemized": 0.0,
+    "noncash": 0.0,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 3900000.0,
+    "noncash": 0.0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "Southern California Edison Company",
+     "total": 2000000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Sutter Health",
+     "total": 1000000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "NextEra Energy Resources, LLC (Cara Martinson)",
+     "total": 550000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "CRC Services, LLC(Francisco Leon)",
+     "total": 500000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "PG&E Corporation Major Donor Account",
+     "total": 250000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Construction Industry Jobs PAC",
+     "total": 155453.04,
+     "kind": "committee",
+     "id": "1384976"
+    },
+    {
+     "name": "Verizon",
+     "total": 25000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "CalPortland Company",
+     "total": 25000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Lowe's Companies, Inc. Political Action Committee (FED PAC ID C00251751)",
+     "total": 5000.0,
+     "kind": "committee",
+     "id": "1454875"
+    }
+   ],
+   "donorCount": 9,
+   "recipients": [
+    {
+     "name": "Yes on 45 - Building a More Affordable California, A Coalition of Water, Affordable Housing, Clean Energy, Small Business, Healthcare & Community Leaders",
+     "total": 3900000.0,
+     "kind": "committee",
+     "id": "1484853",
+     "measure": "Proposition 45"
+    }
+   ],
+   "recipientCount": 1
+  },
+  "1025675": {
+   "name": "California Association of Realtors Issues Mobilization PAC",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1025675",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 6830.05,
+    "unitemized": 12250724.13,
+    "noncash": 0.0,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 14619300.0,
+    "noncash": 0.0,
+    "late": 88500.0
+   },
+   "donors": [
+    {
+     "name": "Kaitlyn Guerra",
+     "total": 174.11,
+     "kind": "person"
+    },
+    {
+     "name": "Justin Smith",
+     "total": 160.15,
+     "kind": "person"
+    },
+    {
+     "name": "Kazimieras Viskanta",
+     "total": 160.15,
+     "kind": "person"
+    },
+    {
+     "name": "Belinda Yan",
+     "total": 160.15,
+     "kind": "person"
+    },
+    {
+     "name": "Luke Sinyard",
+     "total": 140.95,
+     "kind": "person"
+    },
+    {
+     "name": "Tylor Bradshaw",
+     "total": 140.0,
+     "kind": "person"
+    },
+    {
+     "name": "Samuel Garabedian",
+     "total": 140.0,
+     "kind": "person"
+    },
+    {
+     "name": "Michelle Stone",
+     "total": 140.0,
+     "kind": "person"
+    },
+    {
+     "name": "Ashanti Marshall",
+     "total": 140.0,
+     "kind": "person"
+    },
+    {
+     "name": "Shiwa Khaki",
+     "total": 138.21,
+     "kind": "person"
+    }
+   ],
+   "donorCount": 68,
+   "recipients": [
+    {
+     "name": "Yes on 37 - California Homeownership",
+     "total": 5002500.0,
+     "kind": "committee",
+     "measure": "PROPOSITION 37",
+     "id": "1481256"
+    },
+    {
+     "name": "Homeownership for Families, sponsored by California Association of Realtors",
+     "total": 5000000.0,
+     "kind": "committee",
+     "measure": "(25-0013A1) CALIFORNIA MIDDLE-CLASS HOMEOWNERSHIP AND FAMILY HOME CONSTRUCTION ACT OF 2026",
+     "id": "1400190"
+    },
+    {
+     "name": "YES ON 45 - BUILDING A MORE AFFORDABLE CALIFORNIA",
+     "total": 1500000.0,
+     "kind": "committee",
+     "measure": "PROPOSITION 45"
+    },
+    {
+     "name": "CA HOMES COMMITTEE",
+     "total": 1000000.0,
+     "kind": "committee",
+     "measure": "(25-0013A1) CALIFORNIA MIDDLE-CLASS HOMEOWNERSHIP AND FAMILY HOME CONSTRUCTION ACT OF 2026"
+    },
+    {
+     "name": "SAN DIEGANS AGAINST THE UNACCOUNTABLE AND UNAFFORDABLE HOUSING TAX - NO ON MEASURE A",
+     "total": 909300.0,
+     "kind": "committee",
+     "measure": "MEASURE A"
+    },
+    {
+     "name": "CITIZENS FOR ACCOUNTABLE SCHOOLS, NO ON MEASURE M, SPONSORED BY REALTORS",
+     "total": 211000.0,
+     "kind": "committee",
+     "id": "1494311",
+     "late": 11000.0
+    },
+    {
+     "name": "SAN RAFAEL RESIDENTS SAY NO TO MEASURE W, SPONSORED BY MARIN ASSOCIATION OF REALTORS",
+     "total": 150000.0,
+     "kind": "committee",
+     "measure": "MEASURE W"
+    },
+    {
+     "name": "COMMITTEE FOR RESPONSIBLE PROPERTY TAXATION - OPPOSING MEASURE PFD, SPONSORED BY REALTORS",
+     "total": 132500.0,
+     "kind": "committee",
+     "id": "1497201",
+     "late": 17500.0
+    },
+    {
+     "name": "NEIGHBORS FOR AN AFFORDABLE OAKLAND, SPONSORED BY REALTORS - NO ON MEASURE E",
+     "total": 126000.0,
+     "kind": "committee",
+     "measure": "MEASURE E"
+    },
+    {
+     "name": "YOLO COUNTY HOUSING EDUCATION COALITION SUPPORTING MEASURE V, SPONSORED BY REALTORS",
+     "total": 100000.0,
+     "kind": "committee",
+     "measure": "MEASURE V"
+    }
+   ],
+   "recipientCount": 38
+  },
+  "1038905": {
+   "name": "Consumer Attorneys of California Issues Political Action Committee",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1038905",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 4942480.0,
+    "unitemized": 0.9,
+    "noncash": 0.0,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 3150000.0,
+    "noncash": 0.0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "Taylor & Ring, LLP",
+     "total": 245000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Greene, Broillet & Wheeler, LLP",
+     "total": 170000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Mike Arias",
+     "total": 150000.0,
+     "kind": "person"
+    },
+    {
+     "name": "Altair Law, LLP",
+     "total": 150000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Cotchett, Pitre & McCarthy, LLP",
+     "total": 150000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Dreyer, Babich, Buccola, Wood & Campora, LLP",
+     "total": 150000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Law Offices of Walkup, Melodia, Kelly & Schoenberger, APC",
+     "total": 150000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "McNicholas & McNicholas, LLP",
+     "total": 150000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Panish, Shea & Ravipudi, LLP",
+     "total": 150000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Singleton & Schreiber, LLP",
+     "total": 150000.0,
+     "kind": "organization"
+    }
+   ],
+   "donorCount": 114,
+   "recipients": [
+    {
+     "name": "Yes on 50, The Election Rigging Response Act, Governor Newsom's Ballot Measure Committee",
+     "total": 2000000.0,
+     "kind": "committee",
+     "measure": "Proposition 50: The Election Rigging Response Act"
+    },
+    {
+     "name": "United Against Prop. 39 -- Stop the Rig sponsored by nonprofit labor and civil rights organizations",
+     "total": 1000000.0,
+     "kind": "committee",
+     "measure": "Prohibits Citizens from Voting Unless They Present Government-Issued Identification.  Initiative Constitutional Amendment.",
+     "id": "1495206"
+    },
+    {
+     "name": "California Democratic Party",
+     "total": 150000.0,
+     "kind": "organization",
+     "id": "1018392"
+    }
+   ],
+   "recipientCount": 3
+  },
+  "1045740": {
+   "name": "California Teachers Association/ Issues PAC",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1045740",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 40001172.0,
+    "unitemized": 25899378.35,
+    "noncash": 807.39,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 60377875.0,
+    "noncash": 1496375.19,
+    "late": 6662999.56
+   },
+   "donors": [
+    {
+     "name": "California Teachers Association",
+     "total": 40000807.39,
+     "kind": "organization",
+     "noncash": 807.39
+    },
+    {
+     "name": "Joseph Bartell",
+     "total": 500.0,
+     "kind": "person"
+    },
+    {
+     "name": "Denise Bolton",
+     "total": 72.0,
+     "kind": "person"
+    },
+    {
+     "name": "Deborah Farrington",
+     "total": 60.0,
+     "kind": "person"
+    },
+    {
+     "name": "James Vanmeter",
+     "total": 60.0,
+     "kind": "person"
+    },
+    {
+     "name": "Pia Vanmeter",
+     "total": 60.0,
+     "kind": "person"
+    },
+    {
+     "name": "Joanna Cusenza",
+     "total": 60.0,
+     "kind": "person"
+    },
+    {
+     "name": "Mildred Dodd",
+     "total": 60.0,
+     "kind": "person"
+    },
+    {
+     "name": "Theresa Nutt",
+     "total": 60.0,
+     "kind": "person"
+    },
+    {
+     "name": "Elizabeth Ravenscroft",
+     "total": 60.0,
+     "kind": "person"
+    }
+   ],
+   "donorCount": 13,
+   "recipients": [
+    {
+     "name": "Yes on Prop 3, sponsored by education and labor organizations",
+     "total": 60501618.98,
+     "kind": "committee",
+     "id": "1483562",
+     "noncash": 563619.42,
+     "late": 6662999.56
+    },
+    {
+     "name": "The Election Rigging Response Act, Governor Newsom's Ballot Measure Cmte",
+     "total": 3927755.77,
+     "kind": "committee",
+     "id": "1380675",
+     "noncash": 927755.77
+    },
+    {
+     "name": "California Democratic Party",
+     "total": 1345000.0,
+     "kind": "committee",
+     "id": "1018392"
+    },
+    {
+     "name": "No on 39 - Block Election Rigging sponsored by nurses, teachers, and nonprofit labor and community health clinic organizations",
+     "total": 1000000.0,
+     "kind": "committee",
+     "measure": "Establishes Additional Voter Identification and Citizenship Verification Requirements. Initiative Constitutional Amendment. Proposition 39",
+     "id": "1493991"
+    },
+    {
+     "name": "No on Prop 43 Stop the Local Taxpayer Deception Act, sponsored by labor organizations",
+     "total": 500000.0,
+     "kind": "committee",
+     "measure": "Limits Voters' Ability to Raise Revenues for Local Government Services. Legislative Constitutional Amendment.                         Proposition: 43",
+     "id": "1492508"
+    },
+    {
+     "name": "The Community of People Who Support Special Ed Students, Yes on M, Sponsored by Sacramento City Teachers Association",
+     "total": 475000.0,
+     "kind": "committee",
+     "measure": "Sacramento City Unified School District Special Education Protection and Student Support and Early Intervention Measure                                                              Measure: M"
+    },
+    {
+     "name": "ALLIANCE FOR A BETTER CA, SPONSORED BY WORKING FAMILIES AND LABOR ORGANIZATIONS",
+     "total": 460000.0,
+     "kind": "committee",
+     "id": "1340076"
+    },
+    {
+     "name": "California for Voter Education & Participation",
+     "total": 107000.0,
+     "kind": "committee",
+     "id": "1483305"
+    },
+    {
+     "name": "California for All of Us Supporting Prop 50 - McKinnor Ballot Measure Committee",
+     "total": 100000.0,
+     "kind": "committee",
+     "id": "1458522"
+    },
+    {
+     "name": "Faith Votes, sponsored by PICO California Action Fund",
+     "total": 50000.0,
+     "kind": "committee"
+    }
+   ],
+   "recipientCount": 24
+  },
+  "1059890": {
+   "name": "Protect Prop. 13, a project of the Howard Jarvis Taxpayers Association",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1059890",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-09-19",
+   "received": {
+    "itemized": 1281429.11,
+    "unitemized": 900905.89,
+    "noncash": 12704391.86,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 489000.0,
+    "noncash": 1038217.78,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "Yes on Prop 43 - The Local Taxpayer Protection Act, sponsored by homeowners, businesses, and taxpayers",
+     "total": 12704391.86,
+     "kind": "committee",
+     "id": "1484860",
+     "noncash": 12704391.86
+    },
+    {
+     "name": "California Business Roundtable Issues PAC",
+     "total": 771700.0,
+     "kind": "committee",
+     "id": "1264590"
+    },
+    {
+     "name": "ISSUES PAC OF APARTMENT ASSOCIATION OF GREATER LOS ANGELES",
+     "total": 35000.0,
+     "kind": "committee",
+     "id": "1405723"
+    },
+    {
+     "name": "JON REYNOLDS",
+     "total": 5000.0,
+     "kind": "person"
+    },
+    {
+     "name": "DAN PALMER",
+     "total": 5000.0,
+     "kind": "person"
+    },
+    {
+     "name": "WILLIAM BAIRD",
+     "total": 3600.0,
+     "kind": "person"
+    },
+    {
+     "name": "BARRANCA STUDIOS LP",
+     "total": 3500.0,
+     "kind": "organization"
+    },
+    {
+     "name": "STEPHEN JANACHOWSKI",
+     "total": 3000.0,
+     "kind": "person"
+    },
+    {
+     "name": "ROBERT BARTHOLOMEW",
+     "total": 2500.0,
+     "kind": "person"
+    },
+    {
+     "name": "STREIT CAPITAL CORP",
+     "total": 2500.0,
+     "kind": "organization"
+    }
+   ],
+   "donorCount": 2873,
+   "recipients": [
+    {
+     "name": "Yes on Prop 43 - The Local Taxpayer Protection Act, sponsored by homeowners, businesses, and taxpayers",
+     "total": 1038217.78,
+     "kind": "committee",
+     "id": "1484860",
+     "noncash": 1038217.78
+    },
+    {
+     "name": "YES ON PROP. 43, A PROJECT OF THE HOWARD JARVIS TAXPAYERS ASSOCIATION",
+     "total": 475000.0,
+     "kind": "committee",
+     "id": "1493012",
+     "measure": "PROPOSITION 43"
+    },
+    {
+     "name": "NO NEW TAXES, A PROJECT OF THE HOWARD JARVIS TAXPAYERS ASSOCIATION",
+     "total": 14000.0,
+     "kind": "committee",
+     "id": "1057045"
+    }
+   ],
+   "recipientCount": 3
+  },
+  "1062281": {
+   "name": "California Nurses Association Initiative Political Action Committee",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1062281",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 2750000.0,
+    "unitemized": 0.0,
+    "noncash": 0.0,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 2750000.0,
+    "noncash": 1704.59,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "California Nurses Association",
+     "total": 2748945.14,
+     "kind": "organization"
+    },
+    {
+     "name": "Mohita Tandon",
+     "total": 1054.86,
+     "kind": "person"
+    }
+   ],
+   "donorCount": 2,
+   "recipients": [
+    {
+     "name": "United Against Prop. 39 -- Stop the Rig sponsored by nonprofit labor and civil rights organizations",
+     "total": 2000000.0,
+     "kind": "committee",
+     "measure": "Prohibits Citizens From Voting Unless They Present Government-Issued Identification. Initiative Constitutional Amendment",
+     "id": "1495206"
+    },
+    {
+     "name": "Committee for A Strong, Accountable Oakland: Yes on EE",
+     "total": 250000.0,
+     "kind": "committee",
+     "measure": "Charter Amendment Measure"
+    },
+    {
+     "name": "Yes on 4, Californians for Fair Elections, Sponsored by Government Reform Advocates",
+     "total": 250000.0,
+     "kind": "committee",
+     "measure": "Repeals Prohibition Against Public Funding of Election Campaigns. Legislative Statute"
+    },
+    {
+     "name": "Yes on Prop 1 Californians for Homes, Jobs and Affordability 2026, Sponsored by Affordable Housing Organizations",
+     "total": 250000.0,
+     "kind": "committee",
+     "measure": "Authorizes Bonds for Housing Affordability Programs. Legislative Programs",
+     "id": "1485601"
+    },
+    {
+     "name": "Yes on 40 - Billionaire Tax Now \u2013 No on 41 & 42, Sponsored by Service Employees International Union - United Healthcare Workers West",
+     "total": 1704.59,
+     "kind": "committee",
+     "noncash": 1704.59,
+     "id": "1484470"
+    }
+   ],
+   "recipientCount": 5
+  },
+  "1067655": {
+   "name": "SEIU California State Council For Working People",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1067655",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 0.0,
+    "unitemized": 11074882.65,
+    "noncash": 2222.59,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 10760000.0,
+    "noncash": 87508.59,
+    "late": 373487.04
+   },
+   "donors": [
+    {
+     "name": "SEIU California State Council",
+     "total": 2222.59,
+     "kind": "organization",
+     "noncash": 2222.59
+    }
+   ],
+   "donorCount": 1,
+   "recipients": [
+    {
+     "name": "Nurses and Educators Supporting Swalwell for Governor 2026 sponsored by SEIU California State Council",
+     "total": 2000000.0,
+     "kind": "committee"
+    },
+    {
+     "name": "No on Prop 43 Stop the Local Taxpayer Deception Act, sponsored by labor organizations",
+     "total": 1500000.0,
+     "kind": "committee",
+     "measure": "Limits Voters' Ability to Raise Revenues for Local Government Services. Legislative Constitutional Amendment. Proposition 43",
+     "id": "1492508"
+    },
+    {
+     "name": "Yes on Prop 3 to Protect Public Education, Health Care and Budget Stability sponsored by education and labor organizations",
+     "total": 1500000.0,
+     "kind": "committee",
+     "measure": "Provides Permanent Funding for Schools and Healthcare by Extending Existing Tax on High Incomes. Initiative Constitutional Amendment. Proposition 3"
+    },
+    {
+     "name": "No on 39 - Block Election Rigging sponsored by nurses, teachers, and nonprofit labor and community health clinic organizations",
+     "total": 1078200.99,
+     "kind": "committee",
+     "id": "1493991",
+     "noncash": 34713.95,
+     "late": 13487.04
+    },
+    {
+     "name": "Nurses and Educators for Healthy CA Communities sponsored by SEIU California State Council",
+     "total": 1050000.0,
+     "kind": "committee",
+     "noncash": 50000.0
+    },
+    {
+     "name": "Opportunity PAC, A Coalition of Teachers, Health Care Givers, Faculty Members, School Employees and Public and Private Employee Associations",
+     "total": 1015000.0,
+     "kind": "committee"
+    },
+    {
+     "name": "Working People United Sponsored by SEIU California State Council",
+     "total": 525000.0,
+     "kind": "committee"
+    },
+    {
+     "name": "Working People United Supporting Jessie Lopez for Assembly 2026 sponsored by SEIU California State Council",
+     "total": 500000.0,
+     "kind": "committee",
+     "id": "1490426",
+     "late": 250000.0
+    },
+    {
+     "name": "CA United for Progress in Support of Elward for Assembly 2026, Sponsored by The California Labor Federation, AFL-CIO",
+     "total": 350000.0,
+     "kind": "committee",
+     "id": "1491407",
+     "late": 100000.0
+    },
+    {
+     "name": "Alliance for a Better California, sponsored by Working Families and Labor Organizations",
+     "total": 300000.0,
+     "kind": "committee"
+    }
+   ],
+   "recipientCount": 27
+  },
+  "1072248": {
+   "name": "Members' Voice of the State Building and Construction Trades Council of California",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1072248",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 2470819.28,
+    "unitemized": 845.51,
+    "noncash": 0.0,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 2599857.25,
+    "noncash": 10558.32,
+    "late": 83399.67
+   },
+   "donors": [
+    {
+     "name": "State Building & Construction Trades Council of California",
+     "total": 876000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Operating Engineers Local Union No. 3 Issues Advocacy/Ballot Initiative PAC",
+     "total": 250000.0,
+     "kind": "committee",
+     "id": "1345344"
+    },
+    {
+     "name": "Operating Engineers Local #3 (Intermediary for Unitemized Union Member Contributions)",
+     "total": 164971.9,
+     "kind": "organization"
+    },
+    {
+     "name": "Operating Engineers Local #12 (Intermediary for Unitemized Union Member Contributions)",
+     "total": 67475.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Electrical Workers Local #11 (Intermediary for Unitemized Union Member Contributions)",
+     "total": 66386.56,
+     "kind": "organization"
+    },
+    {
+     "name": "Sheet Metal Local #104 (Intermediary for Unitemized Union Member Contributions)",
+     "total": 57694.34,
+     "kind": "organization"
+    },
+    {
+     "name": "Sheet Metal Local #105 (Intermediary for Unitemized Union Member Contributions)",
+     "total": 45235.2,
+     "kind": "organization"
+    },
+    {
+     "name": "Laborers Local #300 (Intermediary for Unitemized Union Member Contributions)",
+     "total": 43838.21,
+     "kind": "organization"
+    },
+    {
+     "name": "Electrical Workers Local #332 (Intermediary for Unitemized Union Member Contributions)",
+     "total": 43059.01,
+     "kind": "organization"
+    },
+    {
+     "name": "So. CA Pipe Trades Council #16(Intermediary for Unitemized Union Member Contributions)",
+     "total": 40607.73,
+     "kind": "organization"
+    }
+   ],
+   "donorCount": 98,
+   "recipients": [
+    {
+     "name": "No on Prop 45, sponsored by labor, health and environmental organizations",
+     "total": 1807790.57,
+     "kind": "committee",
+     "noncash": 7933.32,
+     "measure": "Expedited Environmental Review Process for Certain Projects Initiative; Proposition 45",
+     "id": "1492264"
+    },
+    {
+     "name": "Repair, Rebuild, Respond - Fund LA Fire Now, sponsored by United Firefighters of Los Angeles City",
+     "total": 200000.0,
+     "kind": "committee",
+     "measure": "Funding for the Los Angeles Fire Department Through a One-Half Percent Sales Tax Initiative Ordinance"
+    },
+    {
+     "name": "Yes on A, sponsored by San Francisco Firefighters Local 798",
+     "total": 100000.0,
+     "kind": "committee",
+     "measure": "2026 Earthquake Safety and Emergency Rseponse Bond"
+    },
+    {
+     "name": "Yes on RTM - Connect Bay Area Transit",
+     "total": 100000.0,
+     "kind": "committee",
+     "id": "1483907",
+     "late": 50000.0
+    },
+    {
+     "name": "Alliance for a Better California, sponsored by Working Families and Labor Organizations",
+     "total": 70000.0,
+     "kind": "committee"
+    },
+    {
+     "name": "No on Prop 45 - Protect California Communities",
+     "total": 66024.67,
+     "kind": "committee",
+     "id": "1479255",
+     "noncash": 2625.0,
+     "late": 23399.67
+    },
+    {
+     "name": "Yes on C, No on I, SF for Accountability in Housing sponsored by the San Francisco Building and Construction Trades Council and the San Francisco Chamber of Commerce",
+     "total": 50000.0,
+     "kind": "committee",
+     "measure": "Contributions to the Housing Fund; Measure C"
+    },
+    {
+     "name": "Yes on G - Affordable, Safe Colleges for All",
+     "total": 50000.0,
+     "kind": "committee",
+     "measure": "School Bond Measure"
+    },
+    {
+     "name": "Build Long Beach Committee, sponsored by LAANE Action Fund",
+     "total": 50000.0,
+     "kind": "committee",
+     "measure": "Block the Cuts and Build Long Beach Initiative Ordinance"
+    },
+    {
+     "name": "Safer Los Angeles County, Sponsored by Labor Organizations Representing First Responders and Other Essential Workers",
+     "total": 50000.0,
+     "kind": "committee",
+     "measure": "Safer Los Angeles County Ballot Measure                              Measure: TBD"
+    }
+   ],
+   "recipientCount": 19
+  },
+  "1077374": {
+   "name": "SEIU United Health Care Workers West Political Issues Committee",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1077374",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 530913.71,
+    "unitemized": 18628866.43,
+    "noncash": 0.0,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 310000.0,
+    "noncash": 24665202.23,
+    "late": 150000.0
+   },
+   "donors": [
+    {
+     "name": "Service Employees International Union, United Healthcare Workers West Nonprofit 501(c)(5)",
+     "total": 530913.71,
+     "kind": "committee",
+     "id": "1373047"
+    }
+   ],
+   "donorCount": 1,
+   "recipients": [
+    {
+     "name": "In-kind spending supporting: Health Care Executive Compensation Act of 2026 and Clinic Funding Accountability and Transparency Act",
+     "total": 16940962.88,
+     "kind": "organization",
+     "noncash": 16940962.88,
+     "measure": "Health Care Executive Compensation Act of 2026 and Clinic Funding Accountability and Transparency Act"
+    },
+    {
+     "name": "In-kind spending supporting: 2026 Billionaire Tax Act",
+     "total": 7716739.35,
+     "kind": "organization",
+     "noncash": 7716739.35,
+     "measure": "2026 Billionaire Tax Act"
+    },
+    {
+     "name": "California Democratic Party",
+     "total": 450000.0,
+     "kind": "committee",
+     "id": "1018392",
+     "late": 150000.0
+    },
+    {
+     "name": "Citizens for Washington Hospital",
+     "total": 10000.0,
+     "kind": "committee",
+     "id": "1430951",
+     "measure": "Funding Bond"
+    },
+    {
+     "name": "SF Women's Political Comm Voter Guide",
+     "total": 7500.0,
+     "kind": "committee",
+     "id": "1448359",
+     "noncash": 7500.0,
+     "measure": "2026 Billionaire Tax Act"
+    }
+   ],
+   "recipientCount": 5
+  },
+  "1219354": {
+   "name": "North Coast States Regional Council of Carpenters Issues PAC",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1219354",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 15000000.0,
+    "unitemized": 1657682.19,
+    "noncash": 8813.86,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 3706200.0,
+    "noncash": 0.0,
+    "late": 14000.0
+   },
+   "donors": [
+    {
+     "name": "North Coast States Regional Council of Carpenters",
+     "total": 15001566.5,
+     "kind": "organization",
+     "noncash": 1566.5
+    },
+    {
+     "name": "Northern California Carpenters Regional Council",
+     "total": 7247.36,
+     "kind": "organization",
+     "noncash": 7247.36
+    }
+   ],
+   "donorCount": 2,
+   "recipients": [
+    {
+     "name": "Yes on Prop 1 Californians for Homes, Jobs and Affordability 2026, Sponsored by Affordable Housing Organizations",
+     "total": 1000000.0,
+     "kind": "committee",
+     "id": "1485601",
+     "measure": "Authorizes bonds for housing affordability programs. Legislative Statue. Proposition 1"
+    },
+    {
+     "name": "No on 39 - Block Election Rigging sponsored by nurses, teachers, and nonprofit labor and community health clinic organizations",
+     "total": 650000.0,
+     "kind": "committee",
+     "id": "1493991",
+     "measure": "Prohibits citizens from voting unless they present government-issued identification. Initiative Constitutional Amendment. Proposition 39"
+    },
+    {
+     "name": "Yes on 37 - California Homeownership",
+     "total": 550000.0,
+     "kind": "committee",
+     "id": "1481256",
+     "measure": "California Middle-Class Homeownership and Family Home Construction Act of 2026"
+    },
+    {
+     "name": "No on Prop 43 Stop the Local Taxpayer Deception Act, sponsored by labor organizations",
+     "total": 500000.0,
+     "kind": "committee",
+     "id": "1492508",
+     "measure": "Limits Voters' Ability to Raise Revenues for Local Government Services. Legislative Constitutional Amendment. Proposition 43"
+    },
+    {
+     "name": "Fresno County for Better Roads & Safe Streets Sponsored by Nonprofit Community & Labor Orgs",
+     "total": 500000.0,
+     "kind": "committee",
+     "id": "1487086",
+     "measure": "Fresno County Transportation Improvement Act"
+    },
+    {
+     "name": "Yes on 50, Governor Newsom's Ballot Measure Committee",
+     "total": 200000.0,
+     "kind": "committee",
+     "id": "1380675",
+     "measure": "The Election Rigging Response Act Proposition 50"
+    },
+    {
+     "name": "SF for Fire, Earthquake & Disaster Prep Sponsored by San Francisco FFs Local 798",
+     "total": 100000.0,
+     "kind": "committee",
+     "id": "1486676",
+     "measure": "2026 Earthquake Safety and Emergency Response Bond"
+    },
+    {
+     "name": "Yes to Affordable Housing Supporting the Workforce Housing Solutions Act",
+     "total": 75000.0,
+     "kind": "committee",
+     "id": "1477413",
+     "measure": "Workforce Housing Solutions Act"
+    },
+    {
+     "name": "Richmond Citizen Safety, sponsored by the Richmond Police Officers Association",
+     "total": 30000.0,
+     "kind": "committee",
+     "id": "1490877",
+     "measure": "Richmond Public Safety Funding and Minimum Police Staffing Charter Amendment. Pending"
+    },
+    {
+     "name": "Friends of Peralta Colleges 2026",
+     "total": 20000.0,
+     "kind": "committee",
+     "id": "1484910",
+     "measure": "Local Parcel Tax Reauthorization"
+    }
+   ],
+   "recipientCount": 22
+  },
+  "1240169": {
+   "name": "California State Council of Laborers Issues PAC Opposing Prop. 45",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1240169",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 2339178.38,
+    "unitemized": 1282650.34,
+    "noncash": 0.0,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 2335000.0,
+    "noncash": 0.0,
+    "late": 235000.0
+   },
+   "donors": [
+    {
+     "name": "Laborers Pacific Southwest Regional Organizing Coalition Issues PAC",
+     "total": 2339178.38,
+     "kind": "committee",
+     "id": "1358725"
+    }
+   ],
+   "donorCount": 1,
+   "recipients": [
+    {
+     "name": "No on Prop 45 - Protect California Communities",
+     "total": 1700000.0,
+     "kind": "committee",
+     "id": "1479255",
+     "late": 200000.0
+    },
+    {
+     "name": "No on 39 - Block Election Rigging sponsored by nurses, teachers, and nonprofit labor and community health clinic organizations",
+     "total": 500000.0,
+     "kind": "committee",
+     "measure": "Prohibits Citizens from Voting Unless They Present Government-Issued Identification. Initiative Constitutional Amendment. Proposition 39",
+     "id": "1493991"
+    },
+    {
+     "name": "Yes on Prop 1 Californians for Homes, Jobs and Affordability 2026, Sponsored by Affordable Housing Organizations",
+     "total": 250000.0,
+     "kind": "committee",
+     "measure": "Proposition 1",
+     "id": "1485601"
+    },
+    {
+     "name": "East County Citizens for Community Colleges, Yes on Measure G, Sponsored by Laborers, Electricians, and Teachers",
+     "total": 50000.0,
+     "kind": "committee",
+     "measure": "Grossmont-Cuyamaca Community College District Fire Safety, Job Training, College Affordability, No Tax Rate Increase"
+    },
+    {
+     "name": "Blue Collar Coalition Issues PAC",
+     "total": 35000.0,
+     "kind": "committee"
+    },
+    {
+     "name": "San Diegans for Quality Schools, Yes on M",
+     "total": 25000.0,
+     "kind": "committee",
+     "id": "1484127",
+     "late": 25000.0
+    },
+    {
+     "name": "Citizens for Accountable and Transparent Government, Yes on Measure A",
+     "total": 10000.0,
+     "kind": "committee",
+     "id": "1495494",
+     "late": 10000.0
+    }
+   ],
+   "recipientCount": 7
+  },
+  "1264590": {
+   "name": "California Business Roundtable Issues PAC",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1264590",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 11500350.0,
+    "unitemized": 0.0,
+    "noncash": 2580301.0,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 13701700.0,
+    "noncash": 0.0,
+    "late": 1975000.0
+   },
+   "donors": [
+    {
+     "name": "PETER THIEL",
+     "total": 3000000.0,
+     "kind": "person"
+    },
+    {
+     "name": "ERIC SCHMIDT",
+     "total": 2580301.0,
+     "kind": "person",
+     "noncash": 2580301.0,
+     "stock": 2580301.0
+    },
+    {
+     "name": "KIM DEGEORGE",
+     "total": 1930000.0,
+     "kind": "person"
+    },
+    {
+     "name": "FARMERS GROUP, INC. AND AFFILIATED ENTITIES",
+     "total": 1500000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "BROOKFIELD PROPERTY GROUP LLC(RESPONSIBLE OFFICER: CHRISTOPHER WONG)",
+     "total": 1000000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "CHRIS LARSEN",
+     "total": 750000.0,
+     "kind": "person"
+    },
+    {
+     "name": "R&V MANAGEMENT LP",
+     "total": 510000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "JOHN HERING",
+     "total": 500000.0,
+     "kind": "person"
+    },
+    {
+     "name": "PERFECT ONE CAPITAL LLC(RESPONSIBLE OFFICER: JANE CHEN)",
+     "total": 350000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "HUDSON PACIFIC SERVICES, INC. AND AFFILIATED ENTITIES",
+     "total": 250000.0,
+     "kind": "organization"
+    }
+   ],
+   "donorCount": 39,
+   "recipients": [
+    {
+     "name": "Yes on Prop 43 - The Local Taxpayer Protection Act, sponsored by homeowners, businesses, and taxpayers",
+     "total": 11640000.0,
+     "kind": "committee",
+     "id": "1484860",
+     "late": 1640000.0,
+     "measure": "AG# 25-0006A1: Local Taxpayer Protection Act to Save Proposition 13"
+    },
+    {
+     "name": "RIGHT PATH CALIFORNIA ISSUES PAC",
+     "total": 2200000.0,
+     "kind": "committee",
+     "id": "1483288"
+    },
+    {
+     "name": "Protect Prop. 13, a project of the Howard Jarvis Taxpayers Association",
+     "total": 771700.0,
+     "kind": "committee",
+     "id": "1059890"
+    },
+    {
+     "name": "CALIFORNIANS AGAINST TAX INCREASES, SPONSORED BY THE CALIFORNIA BUSINESS ROUNDTABLE - NO ON 40",
+     "total": 525000.0,
+     "kind": "committee",
+     "id": "1485228",
+     "late": 275000.0,
+     "measure": "WEALTH TAX MEASURE: (INITIATIVE 25-0024)"
+    },
+    {
+     "name": "Golden State Promise",
+     "total": 450000.0,
+     "kind": "committee",
+     "id": "1486695",
+     "measure": "25-0024A1 TAX INITIATIVE"
+    },
+    {
+     "name": "California Building Industry Association Issues Committee Supporting Proposition 45",
+     "total": 50000.0,
+     "kind": "committee",
+     "id": "1353866",
+     "late": 50000.0
+    },
+    {
+     "name": "BUILDING INDUSTRY ASSOCIATION OF SOUTHERN CALIFORNIA PAC",
+     "total": 10000.0,
+     "kind": "committee",
+     "id": "1018412"
+    },
+    {
+     "name": "LCCC PAC, A BI-PARTISAN COALITION OF MUNICIPAL, COUNTY, LATINO APPOINTED AND ELECTED LEADERS",
+     "total": 10000.0,
+     "kind": "committee",
+     "id": "1432932"
+    },
+    {
+     "name": "YES ON C, NO ON D TO PROTECT SAN FRANCISCO'S SMALL BUSINESSES AND ECONOMIC RECOVERY",
+     "total": 10000.0,
+     "kind": "committee",
+     "id": "1485633",
+     "measure": "PROPOSITION C (SUPPORT); PROPOSITION D (OPPOSE)"
+    },
+    {
+     "name": "Yes on 45 - Building a More Affordable California, A Coalition of Water, Affordable Housing, Clean Energy, Small Business, Healthcare & Community Leaders",
+     "total": 10000.0,
+     "kind": "committee",
+     "id": "1484853",
+     "late": 10000.0
+    }
+   ],
+   "recipientCount": 10
+  },
+  "1268914": {
+   "name": "Reform California with Carl De Maio - Ballot Measure Committee",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1268914",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 5413387.88,
+    "unitemized": 1456268.6,
+    "noncash": 112547.82,
+    "loans": 0.0,
+    "late": 39474.28
+   },
+   "gave": {
+    "cash": 25000.0,
+    "noncash": 3111062.6,
+    "late": 57500.0
+   },
+   "donors": [
+    {
+     "name": "Henry Matson",
+     "total": 53961.81,
+     "kind": "person",
+     "late": 1041.98
+    },
+    {
+     "name": "William Owen",
+     "total": 44048.25,
+     "kind": "person"
+    },
+    {
+     "name": "Dale Broome, MD",
+     "total": 42000.0,
+     "kind": "person"
+    },
+    {
+     "name": "George Klabin",
+     "total": 40000.0,
+     "kind": "person"
+    },
+    {
+     "name": "Kathryn Starr",
+     "total": 40000.0,
+     "kind": "person"
+    },
+    {
+     "name": "Yes on 41 - Californians for Transparency and Accountability, a Coalition of Small Businesses, Taxpayers, Good Government Advocates, Accountants and Auditing Experts",
+     "total": 40000.0,
+     "kind": "committee",
+     "id": "1488423"
+    },
+    {
+     "name": "Californians for Voter ID, Yes on 39",
+     "total": 35500.0,
+     "kind": "committee",
+     "id": "1479607",
+     "noncash": 35500.0
+    },
+    {
+     "name": "The Lincoln Club of Orange County Issues PAC",
+     "total": 35500.0,
+     "kind": "committee",
+     "id": "1340182",
+     "noncash": 35500.0
+    },
+    {
+     "name": "Thomas Sudberry Jr.",
+     "total": 29500.0,
+     "kind": "person"
+    },
+    {
+     "name": "Kathleen Flynn",
+     "total": 25000.0,
+     "kind": "person"
+    }
+   ],
+   "donorCount": 14160,
+   "recipients": [
+    {
+     "name": "Californians for Voter ID",
+     "total": 2993892.0,
+     "kind": "committee",
+     "noncash": 2993892.0
+    },
+    {
+     "name": "Californians for Voter ID, Yes on 39",
+     "total": 57500.0,
+     "kind": "person",
+     "id": "1479607",
+     "late": 57500.0
+    },
+    {
+     "name": "In-kind spending supporting: Prop 39 - California Election Integrity Initiative 2026 - 1984 (25-0007A1)",
+     "total": 35500.0,
+     "kind": "organization",
+     "noncash": 35500.0,
+     "measure": "Prop 39 - California Election Integrity Initiative 2026 - 1984 (25-0007A1)"
+    },
+    {
+     "name": "The Lincoln Club of Orange County Issues PAC",
+     "total": 35500.0,
+     "kind": "committee",
+     "noncash": 35500.0
+    },
+    {
+     "name": "Contribution supporting: Prop 39 - California Election Integrity Initiative 2026 - 1984 (25-0007A1)",
+     "total": 25000.0,
+     "kind": "organization",
+     "measure": "Prop 39 - California Election Integrity Initiative 2026 - 1984 (25-0007A1)"
+    },
+    {
+     "name": "Californians to Protect Retirement and Life Savings",
+     "total": 22537.26,
+     "kind": "committee",
+     "noncash": 22537.26
+    },
+    {
+     "name": "Californians for a More Transparent and Effective Government",
+     "total": 21807.92,
+     "kind": "committee",
+     "noncash": 21807.92
+    },
+    {
+     "name": "Fairs, Farms and Family Fund, Senator Alvarado-Gil's Ballot Measurer Committee",
+     "total": 1825.42,
+     "kind": "committee",
+     "noncash": 1825.42
+    }
+   ],
+   "recipientCount": 8
+  },
+  "1296994": {
+   "name": "District Council of Iron Workers of the State of California and Vicinity Political Issues Committee",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1296994",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-09-19",
+   "received": {
+    "itemized": 1000000.0,
+    "unitemized": 478043.57,
+    "noncash": 0.0,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 1230000.0,
+    "noncash": 0.0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "District Council of Iron Workers of the State of California and Vicinity",
+     "total": 1000000.0,
+     "kind": "organization"
+    }
+   ],
+   "donorCount": 1,
+   "recipients": [
+    {
+     "name": "No on Prop 45 - Protect California Communitites",
+     "total": 1000000.0,
+     "kind": "committee",
+     "measure": "Modified Environmental Review for Certain Projects"
+    },
+    {
+     "name": "Antonio Villaraigosa For Governor 2026-Straight from the Heart of California",
+     "total": 200000.0,
+     "kind": "committee"
+    },
+    {
+     "name": "Blue Collar Coalition Issues PAC",
+     "total": 25000.0,
+     "kind": "committee"
+    },
+    {
+     "name": "Yes on G - Affordable, Safe Colleges for All",
+     "total": 5000.0,
+     "kind": "committee",
+     "measure": "Contra Costa Community College Bond"
+    }
+   ],
+   "recipientCount": 4
+  },
+  "1301846": {
+   "name": "Western States Regional Council of Carpenters Issues Committee",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1301846",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-09-19",
+   "received": {
+    "itemized": 2500000.0,
+    "unitemized": 0.0,
+    "noncash": 0.0,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 3015000.0,
+    "noncash": 0.0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "Western States Regional Council of Carpenters",
+     "total": 2500000.0,
+     "kind": "organization"
+    }
+   ],
+   "donorCount": 1,
+   "recipients": [
+    {
+     "name": "YES on Prop 1 - Californians for Homes, Jobs & Affordability 2026 Sponsored by Affordable Housing Organizations",
+     "total": 1000000.0,
+     "kind": "committee",
+     "measure": "Proposition 1"
+    },
+    {
+     "name": "No on 39 - Block Election Rigging sponsored by nurses, teachers, and nonprofit labor and community health clinic organizations",
+     "total": 500000.0,
+     "kind": "committee",
+     "measure": "Proposition 39",
+     "id": "1493991"
+    },
+    {
+     "name": "No on Prop 43 Stop the Local Taxpayer Deception Act, sponsored by labor organizations",
+     "total": 500000.0,
+     "kind": "committee",
+     "measure": "Proposition 43",
+     "id": "1492508"
+    },
+    {
+     "name": "CA Homes Committee",
+     "total": 450000.0,
+     "kind": "committee",
+     "measure": "Creates Loan Program for Middle-Income Buyers of Qualified Homes. Initiative Statute. 25-0013A1"
+    },
+    {
+     "name": "Repair, Rebuild, Respond - Fund LA Fire Now, Sponsored by United Firefighters of Los Angeles City",
+     "total": 250000.0,
+     "kind": "committee",
+     "measure": "Funding for LAFD through 1/2 Cent Sales Tax"
+    },
+    {
+     "name": "Governor Newsom's Ballot Measure Committee; Yes On 50,The Election Rigging Response Act",
+     "total": 200000.0,
+     "kind": "committee",
+     "measure": "Proposition 50"
+    },
+    {
+     "name": "Lindsey Horvath Ballot Measure Committee for Accountability and Progress",
+     "total": 110000.0,
+     "kind": "committee",
+     "measure": "Lindsey Horvath Ballot Measure Committee for Accountability & Progress"
+    },
+    {
+     "name": "Coalition of Parents, Classified Employees, and Teachers for Better Compton Unified Schools",
+     "total": 5000.0,
+     "kind": "committee",
+     "measure": "Bond Measure"
+    }
+   ],
+   "recipientCount": 8
+  },
+  "1345344": {
+   "name": "Operating Engineers Local Union No. 3 Issues Advocacy/Ballot Initiative PAC",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1345344",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 0.0,
+    "unitemized": 1334158.5,
+    "noncash": 0.0,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 2159000.0,
+    "noncash": 0.0,
+    "late": 18500.0
+   },
+   "donors": [],
+   "donorCount": 0,
+   "recipients": [
+    {
+     "name": "Contribution opposing: MODIFIES ENVIRONMENTAL REVIEW FOR CERTAIN PROJECTS. INITIATIVE STATUTE.",
+     "total": 1000000.0,
+     "kind": "organization",
+     "measure": "MODIFIES ENVIRONMENTAL REVIEW FOR CERTAIN PROJECTS. INITIATIVE STATUTE."
+    },
+    {
+     "name": "Recipient not named in this schedule",
+     "total": 1000000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Contribution supporting: Save Our Local Hospitals Yes on A",
+     "total": 100000.0,
+     "kind": "organization",
+     "measure": "Save Our Local Hospitals Yes on A"
+    },
+    {
+     "name": "Contribution supporting: Yes on G, Affordable, Safe Colleges for All",
+     "total": 25000.0,
+     "kind": "organization",
+     "measure": "Yes on G, Affordable, Safe Colleges for All"
+    },
+    {
+     "name": "Contribution supporting: TEMPORARY EMERGENCY MEDICAL, HEALTHCARE, FOOD, HOUSING, AND ESSENTIAL SERVICES PROTECTION MEASURE.",
+     "total": 15000.0,
+     "kind": "organization",
+     "measure": "TEMPORARY EMERGENCY MEDICAL, HEALTHCARE, FOOD, HOUSING, AND ESSENTIAL SERVICES PROTECTION MEASURE."
+    },
+    {
+     "name": "Contribution supporting: WINDSOR'S LOCAL SALES TAX MEASURE",
+     "total": 10000.0,
+     "kind": "organization",
+     "measure": "WINDSOR'S LOCAL SALES TAX MEASURE"
+    },
+    {
+     "name": "Contribution supporting: SUTTER COUNTY SAFETY/ WATER PROTECTION MEASURE",
+     "total": 5000.0,
+     "kind": "organization",
+     "measure": "SUTTER COUNTY SAFETY/ WATER PROTECTION MEASURE"
+    },
+    {
+     "name": "Parks for All PAC - Yes on Measure H",
+     "total": 5000.0,
+     "kind": "organization",
+     "id": "1491888",
+     "late": 5000.0
+    },
+    {
+     "name": "Yes on K - Residents to keep Rohnert Park Strong and Safe",
+     "total": 5000.0,
+     "kind": "organization",
+     "id": "1495606",
+     "late": 5000.0
+    },
+    {
+     "name": "Yes on CC, Friends of Marin Health",
+     "total": 5000.0,
+     "kind": "organization",
+     "id": "1484486",
+     "late": 5000.0
+    }
+   ],
+   "recipientCount": 13
+  },
+  "1353866": {
+   "name": "California Building Industry Association Issues Committee Supporting Proposition 45",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1353866",
+   "measures": [
+    {
+     "id": "45",
+     "side": "yes"
+    }
+   ],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 10075385.08,
+    "unitemized": 0.01,
+    "noncash": 0.0,
+    "loans": 0.0,
+    "late": 362614.0
+   },
+   "gave": {
+    "cash": 11060600.0,
+    "noncash": 0.0,
+    "late": 150000.0
+   },
+   "donors": [
+    {
+     "name": "Lennar Corporation",
+     "total": 1073920.0,
+     "kind": "organization"
+    },
+    {
+     "name": "SEMPRA",
+     "total": 1000000.0,
+     "kind": "organization",
+     "id": "1011327"
+    },
+    {
+     "name": "Building Industry Association of Southern California Issues PAC",
+     "total": 900000.0,
+     "kind": "committee",
+     "id": "1442568"
+    },
+    {
+     "name": "Five Point Operating Company, LP and Affiliated Entities",
+     "total": 750000.0,
+     "kind": "organization",
+     "id": "1293569"
+    },
+    {
+     "name": "KB Home",
+     "total": 707363.0,
+     "kind": "organization",
+     "id": "1008202"
+    },
+    {
+     "name": "Lennar Corporation and its affiliates",
+     "total": 525000.0,
+     "kind": "organization",
+     "id": "1229831"
+    },
+    {
+     "name": "Building Industry Association of San Diego County",
+     "total": 350000.0,
+     "kind": "organization",
+     "id": "1494977"
+    },
+    {
+     "name": "Lewis Management Corp.",
+     "total": 350000.0,
+     "kind": "organization",
+     "id": "1009404"
+    },
+    {
+     "name": "RMV Community Development Company, Inc. and affiliated entities",
+     "total": 350000.0,
+     "kind": "organization",
+     "id": "1285322"
+    },
+    {
+     "name": "Taylor Morrison of California LLC(Kenneth Dar Arens)",
+     "total": 322530.0,
+     "kind": "organization",
+     "id": "1353246"
+    }
+   ],
+   "donorCount": 72,
+   "recipients": [
+    {
+     "name": "Yes on 45 - Building a More Affordable California, A Coalition of Water, Affordable Housing, Clean Energy, Small Business, Healthcare & Community Leaders",
+     "total": 10900000.0,
+     "kind": "committee",
+     "id": "1484853",
+     "late": 150000.0
+    },
+    {
+     "name": "Yes on Prop 1 Californians for Homes, Jobs and Affordability 2026, Sponsored by Affordable Housing Organizations",
+     "total": 100000.0,
+     "kind": "committee",
+     "id": "1485601",
+     "measure": "Proposition 1"
+    },
+    {
+     "name": "California Democratic Party",
+     "total": 95000.0,
+     "kind": "committee",
+     "id": "1018392"
+    },
+    {
+     "name": "Monique Limon Ballot Measure Committee to Advance California",
+     "total": 40000.0,
+     "kind": "committee",
+     "id": "1474254"
+    },
+    {
+     "name": "Building a California for Everyone - Lori Wilson Ballot Measure Committee",
+     "total": 24100.0,
+     "kind": "committee",
+     "id": "1477199"
+    },
+    {
+     "name": "Stephanie Nguyen for California, a Ballot Measure Committee",
+     "total": 13500.0,
+     "kind": "committee",
+     "id": "1465996"
+    },
+    {
+     "name": "Californians for Action Jessica Caloza Ballot Measure Committee",
+     "total": 10000.0,
+     "kind": "committee",
+     "id": "1478784"
+    },
+    {
+     "name": "Dream Big California, State Senator Jesse Arreguin Ballot Measure Committee",
+     "total": 10000.0,
+     "kind": "committee",
+     "id": "1484144"
+    },
+    {
+     "name": "Moving California Forward; Assemblymember Mike Fong Ballot Measure Committee",
+     "total": 8000.0,
+     "kind": "committee",
+     "id": "1479200"
+    },
+    {
+     "name": "Maggy Krell's Campaign for Youth Success Ballot Measure Committee",
+     "total": 5000.0,
+     "kind": "committee",
+     "id": "1477828"
+    }
+   ],
+   "recipientCount": 11
+  },
+  "1357256": {
+   "name": "Dignity CA Service Employees International Union SEIU Local 2015",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1357256",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 12446000.0,
+    "unitemized": 0.0,
+    "noncash": 0.0,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 10394565.0,
+    "noncash": 33558.3,
+    "late": 319406.14
+   },
+   "donors": [
+    {
+     "name": "SEIU COPE (Service Employees International Union Committee on Political Education) (Fed PAC ID #C00004036)",
+     "total": 11900000.0,
+     "kind": "committee",
+     "id": "1331498"
+    },
+    {
+     "name": "SEIU Local 2015",
+     "total": 546000.0,
+     "kind": "organization"
+    }
+   ],
+   "donorCount": 2,
+   "recipients": [
+    {
+     "name": "Yes on 50, the Election Rigging Response Act, Governor Newsom's Ballot Measure Committee",
+     "total": 2015000.0,
+     "kind": "committee",
+     "noncash": 15000.0,
+     "measure": "The Election Rigging Response Act Proposition 50"
+    },
+    {
+     "name": "Nurses and Educators Supporting Swalwell for Governor 2026 sponsored by SEIU California State Council",
+     "total": 2000000.0,
+     "kind": "committee"
+    },
+    {
+     "name": "No on 39 - Block Election Rigging sponsored by nurses, teachers, and nonprofit labor and community health clinic organizations",
+     "total": 1000000.0,
+     "kind": "committee",
+     "measure": "Prohibits Citizens from Voting Unless They Present Government-Issued Identification. Initiative Constitutional Amendment. Proposition 39",
+     "id": "1493991"
+    },
+    {
+     "name": "California Democratic Party",
+     "total": 586440.0,
+     "kind": "committee",
+     "id": "1018392"
+    },
+    {
+     "name": "Yes on ER - Restore Healthcare for Angelenos, Sponsored by St. John's Community Health and Health Justice Action Fund",
+     "total": 502109.72,
+     "kind": "committee",
+     "noncash": 2109.72,
+     "measure": "Essential Services Restoration Act for Los Angeles County General Sales Tax Measure"
+    },
+    {
+     "name": "Communities United for Change in Support of Marissa Roy for City Attorney 2026",
+     "total": 500000.0,
+     "kind": "committee"
+    },
+    {
+     "name": "Working People United Sponsored by SEIU California State Council",
+     "total": 375000.0,
+     "kind": "committee"
+    },
+    {
+     "name": "Building a Working SF Sponsored by Labor Organizations",
+     "total": 250000.0,
+     "kind": "committee"
+    },
+    {
+     "name": "Opportunity PAC -- A Coalition of Teachers, Health Care Workers, Nurses, Faculty Members, School Employees, and Public and Private Labor Organizations",
+     "total": 250000.0,
+     "kind": "committee"
+    },
+    {
+     "name": "Working People in Support of Karen Bass for Mayor 2026, Sponsored by Los Angeles County Federation of Labor, AFL-CIO",
+     "total": 250000.0,
+     "kind": "committee"
+    }
+   ],
+   "recipientCount": 151
+  },
+  "1358148": {
+   "name": "Southern California District Council of Laborers Issues PAC",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1358148",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 0.0,
+    "unitemized": 130084.42,
+    "noncash": 0.0,
+    "loans": 1000000.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 1375000.0,
+    "noncash": 0.0,
+    "late": 417500.0
+   },
+   "donors": [
+    {
+     "name": "United Business Bank",
+     "total": 1000000.0,
+     "kind": "organization",
+     "loan": 1000000.0
+    }
+   ],
+   "donorCount": 1,
+   "recipients": [
+    {
+     "name": "No on Prop 45 - Protect California Communities",
+     "total": 1300000.0,
+     "kind": "committee",
+     "id": "1479255",
+     "late": 300000.0
+    },
+    {
+     "name": "Yes on Measure I - IE Moves",
+     "total": 100000.0,
+     "kind": "committee",
+     "measure": "Local Transportation Improvement Program"
+    },
+    {
+     "name": "Yes on A, Riverside County Citizens for Traffic Relief & Local Jobs, Sponsored by Construction Labor Management and Businesses",
+     "total": 100000.0,
+     "kind": "committee",
+     "measure": "Initiative measure to increase transactions and use tax of fund traffic, infrastructure and safety projects"
+    },
+    {
+     "name": "East County Citizens for Community Colleges, Yes on Measure G, Sponsored by Laborers, Electricians, and Teachers",
+     "total": 100000.0,
+     "kind": "committee"
+    },
+    {
+     "name": "San Diego Accountability Project Sponsored by Laborers' Local 89",
+     "total": 75000.0,
+     "kind": "committee",
+     "measure": "San Diego Public Safety and Infrastructure Repair Measure"
+    },
+    {
+     "name": "San Diegans for Quality Schools, Yes on M",
+     "total": 50000.0,
+     "kind": "committee",
+     "id": "1484127",
+     "late": 50000.0
+    },
+    {
+     "name": "Citizens for Accountable and Transparent Government, Yes on Measure A",
+     "total": 25000.0,
+     "kind": "committee",
+     "id": "1495494",
+     "late": 25000.0
+    },
+    {
+     "name": "Firefighters and Paramedics Protecting Pasadena Yes On Measure PFD Major Funding by Pasadena Firefighters Local 809",
+     "total": 25000.0,
+     "kind": "committee",
+     "id": "1494749",
+     "late": 25000.0
+    },
+    {
+     "name": "Fund LA Fire - Yes On Measure FD, Sponsored By United Firefighters Of Los Angeles City",
+     "total": 10000.0,
+     "kind": "committee",
+     "id": "1480084",
+     "late": 10000.0
+    },
+    {
+     "name": "Yes on PRK, Angelenos for Clean, Affordable and Safe Parks, a project of TPL",
+     "total": 5000.0,
+     "kind": "committee",
+     "id": "1496609",
+     "late": 5000.0
+    }
+   ],
+   "recipientCount": 11
+  },
+  "1373047": {
+   "name": "Service Employees International Union, United Healthcare Workers West Nonprofit 501(c)(5)",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1373047",
+   "measures": [],
+   "from": "2026-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 0.0,
+    "unitemized": 22452609.08,
+    "noncash": 0.0,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 19847294.71,
+    "noncash": 2605314.37,
+    "late": 0.0
+   },
+   "donors": [],
+   "donorCount": 0,
+   "recipients": [
+    {
+     "name": "Yes on 40 - Billionaire Tax Now \u2013 No on 41 & 42, Sponsored by Service Employees International Union - United Healthcare Workers West",
+     "total": 21732452.86,
+     "kind": "committee",
+     "id": "1484470",
+     "noncash": 2416071.86,
+     "measure": "2026 Billionaire Tax Act"
+    },
+    {
+     "name": "SEIU United Health Care Workers West Political Issues Committee",
+     "total": 530913.71,
+     "kind": "committee",
+     "id": "1077374"
+    },
+    {
+     "name": "In-kind spending supporting: 2026 Billionaire Tax Act",
+     "total": 189242.51,
+     "kind": "organization",
+     "noncash": 189242.51,
+     "measure": "2026 Billionaire Tax Act"
+    }
+   ],
+   "recipientCount": 3
+  },
+  "1378400": {
+   "name": "Service Employees International Union - SEIU Local 2015 Issues PAC",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1378400",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 4152152.23,
+    "unitemized": 0.0,
+    "noncash": 0.0,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 1787500.0,
+    "noncash": 152152.23,
+    "late": 1230000.0
+   },
+   "donors": [
+    {
+     "name": "Service Employees International Union Political Education and Action Fund (SEIU PEA) (MPO)",
+     "total": 4000000.0,
+     "kind": "committee",
+     "id": "1025322"
+    },
+    {
+     "name": "SEIU Local 2015",
+     "total": 152152.23,
+     "kind": "organization"
+    }
+   ],
+   "donorCount": 2,
+   "recipients": [
+    {
+     "name": "Yes on Prop 3, sponsored by education and labor organizations",
+     "total": 1000000.0,
+     "kind": "committee",
+     "measure": "Provides Permanent Funding for Schools and Healthcare by Extending Existing Tax on High Incomes. Initiative Constitutional Amendment. Proposition 3"
+    },
+    {
+     "name": "No on Prop 43 Stop the Local Taxpayer Deception Act, sponsored by labor organizations",
+     "total": 1000000.0,
+     "kind": "committee",
+     "id": "1492508",
+     "late": 1000000.0
+    },
+    {
+     "name": "Stand Up for SF sponsored by labor organizations",
+     "total": 550000.0,
+     "kind": "committee",
+     "measure": "Gross Receipts Tax on Executive Pay City and County of San Francisco"
+    },
+    {
+     "name": "Yes on 50, the Election Rigging Response Act, Governor Newsom's Ballot Measure Committee",
+     "total": 152152.23,
+     "kind": "committee",
+     "noncash": 152152.23,
+     "measure": "The Election Rigging Response Act. Proposition 50"
+    },
+    {
+     "name": "Fair Access no on D",
+     "total": 150000.0,
+     "kind": "committee",
+     "id": "1494110",
+     "late": 150000.0
+    },
+    {
+     "name": "Lindsey Horvath Ballot Measure Committee for Accountability and Progress",
+     "total": 100000.0,
+     "kind": "committee",
+     "measure": "Lindsey Horvath Ballot Measure Committee for Accountability and Progress"
+    },
+    {
+     "name": "Californians for a Responsible Budget-Yes on Proposition 2 a Ballot Measure Committee Controlled by Jesse Gabriel",
+     "total": 50000.0,
+     "kind": "committee",
+     "measure": "Increases State's Rainy Day Fund. Legislative Constitutional Amendment.                             Proposition 2"
+    },
+    {
+     "name": "Tax Foreclosures, Yes on J",
+     "total": 50000.0,
+     "kind": "committee",
+     "measure": "Removal of Foreclosure Exemption for Real Property Transfer Tax"
+    },
+    {
+     "name": "Yes on B, Our City Our Bank",
+     "total": 50000.0,
+     "kind": "committee",
+     "id": "1488530",
+     "late": 50000.0
+    },
+    {
+     "name": "Yes on RTM- Connect Bay Area Transit",
+     "total": 25000.0,
+     "kind": "committee",
+     "id": "1483907",
+     "late": 25000.0
+    }
+   ],
+   "recipientCount": 15
+  },
+  "1400190": {
+   "name": "Homeownership for Families, sponsored by California Association of Realtors",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1400190",
+   "measures": [
+    {
+     "id": "37",
+     "side": "yes"
+    }
+   ],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 7000000.0,
+    "unitemized": 0.0,
+    "noncash": 0.0,
+    "loans": -3000000.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 8850000.0,
+    "noncash": 0.0,
+    "late": 3910600.0
+   },
+   "donors": [
+    {
+     "name": "California Association of Realtors Issues Mobilization PAC",
+     "total": 5000000.0,
+     "kind": "committee",
+     "id": "1025675"
+    },
+    {
+     "name": "NATIONAL ASSOCIATION OF REALTORS",
+     "total": 2000000.0,
+     "kind": "organization"
+    }
+   ],
+   "donorCount": 2,
+   "recipients": [
+    {
+     "name": "Yes on 37 - California Homeownership",
+     "total": 8760600.0,
+     "kind": "committee",
+     "id": "1481256",
+     "late": 3910600.0
+    },
+    {
+     "name": "CA HOMES COMMITTEE",
+     "total": 4000000.0,
+     "kind": "committee"
+    }
+   ],
+   "recipientCount": 2
+  },
+  "1465399": {
+   "name": "California Primary Care Association Advocates Issues Committee",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1465399",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 1112500.0,
+    "unitemized": 0.0,
+    "noncash": 0.0,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 1009999.0,
+    "noncash": 0.0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "AltaMed Health",
+     "total": 250000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "El Proyecto del Barrio, Inc.",
+     "total": 250000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "The Doctors Company",
+     "total": 250000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "North East Medical Services (NEMS)",
+     "total": 100000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Camarena Health",
+     "total": 75000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Health Center Partners of Southern California",
+     "total": 50000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Cares Community Health DBA One Community Health",
+     "total": 50000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "JWCH Institute, Inc.",
+     "total": 50000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Family HealthCare Network",
+     "total": 37500.0,
+     "kind": "organization"
+    }
+   ],
+   "donorCount": 9,
+   "recipients": [
+    {
+     "name": "No on 39 - Block Election Rigging sponsored by nurses, teachers, and nonprofit labor and community health clinic organizations",
+     "total": 600000.0,
+     "kind": "committee",
+     "id": "1493991"
+    },
+    {
+     "name": "Protect Patients: Stop the Attack on Community Health Centers and Clinics, sponsored by California Primary Care Association Advocates",
+     "total": 409999.0,
+     "kind": "committee",
+     "id": "1484266"
+    }
+   ],
+   "recipientCount": 2
+  },
+  "1479255": {
+   "name": "No on Prop 45 - Protect California Communities",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1479255",
+   "measures": [
+    {
+     "id": "45",
+     "side": "no"
+    }
+   ],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 9045241.0,
+    "unitemized": 0.0,
+    "noncash": 2625.0,
+    "loans": 0.0,
+    "late": 1733725.0
+   },
+   "gave": {
+    "cash": 0,
+    "noncash": 0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "California State Council of Laborers Issues PAC Opposing Prop. 45",
+     "total": 1735000.0,
+     "kind": "committee",
+     "id": "1240169",
+     "late": 200000.0
+    },
+    {
+     "name": "Southern California District Council of Laborers Issues PAC",
+     "total": 1300000.0,
+     "kind": "committee",
+     "id": "1358148",
+     "late": 300000.0
+    },
+    {
+     "name": "Operating Engineers Local Union No. 3 Issues Advocacy/Ballot Initiative PAC",
+     "total": 1000000.0,
+     "kind": "committee",
+     "id": "1345344"
+    },
+    {
+     "name": "Disctrict Council of Iron Workers of the State of California Vicinity",
+     "total": 1000000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "International Union of Operating Engineers Local 12",
+     "total": 1000000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "California State Pipe Trades Council of the United Association Political Action Fund",
+     "total": 500000.0,
+     "kind": "committee",
+     "id": "1018937"
+    },
+    {
+     "name": "Northern California District Council of Laborers",
+     "total": 500000.0,
+     "kind": "organization",
+     "late": 500000.0
+    },
+    {
+     "name": "Southern California Pipe Trades District Council #16",
+     "total": 472434.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Boilermakers Local 92",
+     "total": 250000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "International Brotherhood of Boilermakers Local 549",
+     "total": 250000.0,
+     "kind": "organization"
+    }
+   ],
+   "donorCount": 48,
+   "recipients": [],
+   "recipientCount": 0
+  },
+  "1479607": {
+   "name": "Californians for Voter ID, Yes on 39",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1479607",
+   "measures": [
+    {
+     "id": "39",
+     "side": "yes"
+    }
+   ],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 29571845.06,
+    "unitemized": 56436.43,
+    "noncash": 3124286.45,
+    "loans": 0.0,
+    "late": 215981.6
+   },
+   "gave": {
+    "cash": 0.0,
+    "noncash": 34606.22,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "Richard Uihlein",
+     "total": 17000000.0,
+     "kind": "person"
+    },
+    {
+     "name": "Joseph Gebbia",
+     "total": 8000000.0,
+     "kind": "person"
+    },
+    {
+     "name": "Reform California with Carl De Maio - Ballot Measure Committee",
+     "total": 3160979.5,
+     "kind": "committee",
+     "id": "1268914",
+     "noncash": 3078479.5,
+     "late": 57500.0
+    },
+    {
+     "name": "SR Bray LLC",
+     "total": 1000000.0,
+     "kind": "organization",
+     "loan": 1000000.0
+    },
+    {
+     "name": "Nicole Shanahan",
+     "total": 370000.0,
+     "kind": "person"
+    },
+    {
+     "name": "Perfect One Capital",
+     "total": 300000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Stark Industrial LLC",
+     "total": 250000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Douglas Leone",
+     "total": 250000.0,
+     "kind": "person"
+    },
+    {
+     "name": "Cameron Winklevoss",
+     "total": 250000.0,
+     "kind": "person"
+    },
+    {
+     "name": "Tyler Winklevoss",
+     "total": 250000.0,
+     "kind": "person"
+    }
+   ],
+   "donorCount": 474,
+   "recipients": [
+    {
+     "name": "Don Wagner Ballot Measure Committee to Protect Fair Elections",
+     "total": 15639.76,
+     "kind": "committee",
+     "noncash": 15639.76
+    },
+    {
+     "name": "Reform California with Carl De Maio - Ballot Measure Committee",
+     "total": 9200.0,
+     "kind": "committee",
+     "noncash": 9200.0,
+     "id": "1268914"
+    },
+    {
+     "name": "The Lincoln Club of Orange County Issues PAC",
+     "total": 9200.0,
+     "kind": "committee",
+     "noncash": 9200.0
+    },
+    {
+     "name": "In-kind spending opposing: The Election Rigging Response Act",
+     "total": 566.46,
+     "kind": "organization",
+     "noncash": 566.46,
+     "measure": "The Election Rigging Response Act"
+    }
+   ],
+   "recipientCount": 4
+  },
+  "1481256": {
+   "name": "Yes on 37 - California Homeownership",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1481256",
+   "measures": [
+    {
+     "id": "37",
+     "side": "yes"
+    }
+   ],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 24052600.0,
+    "unitemized": 0.0,
+    "noncash": 52363.68,
+    "loans": 0.0,
+    "late": 3930363.56
+   },
+   "gave": {
+    "cash": 300000.0,
+    "noncash": 55000.0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "Homeownership for Families, sponsored by California Association of Realtors",
+     "total": 12760600.0,
+     "kind": "committee",
+     "id": "1400190",
+     "late": 3910600.0
+    },
+    {
+     "name": "California Association of Realtors Issues Mobilization PAC",
+     "total": 6002500.0,
+     "kind": "committee",
+     "id": "1025675"
+    },
+    {
+     "name": "Building a Better California",
+     "total": 6000000.0,
+     "kind": "committee",
+     "id": "1486767"
+    },
+    {
+     "name": "National Association of Realtor",
+     "total": 1250000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "United Brotherhood of Carpenters & Joiners of America",
+     "total": 750000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "North Coast States Regional Council of Carpenters Issues PAC",
+     "total": 550000.0,
+     "kind": "committee",
+     "id": "1219354"
+    },
+    {
+     "name": "Western States Regional Council of Carpenters Issues Committee",
+     "total": 450000.0,
+     "kind": "committee",
+     "id": "1301846"
+    },
+    {
+     "name": "Building a Stronger California, Sponsored by Western States Council of Carpenters",
+     "total": 100000.0,
+     "kind": "committee",
+     "id": "1043345"
+    },
+    {
+     "name": "California Democratic Party",
+     "total": 60469.08,
+     "kind": "committee",
+     "id": "1018392",
+     "noncash": 50705.52,
+     "late": 9763.56
+    },
+    {
+     "name": "California Forever (CF) Operations, Inc.",
+     "total": 50000.0,
+     "kind": "organization"
+    }
+   ],
+   "donorCount": 14,
+   "recipients": [
+    {
+     "name": "California Democratic Party",
+     "total": 300000.0,
+     "kind": "organization",
+     "id": "1018392"
+    },
+    {
+     "name": "Yes on Prop 1 Californians for Home, Jobs and Affordability 2026, sponsored by Affordable Housing Organizations",
+     "total": 55000.0,
+     "kind": "committee",
+     "noncash": 55000.0,
+     "measure": "The Veterans and Affordable Housing Bond Act of 2026, Prop. 1"
+    }
+   ],
+   "recipientCount": 2
+  },
+  "1483073": {
+   "name": "Californians for Responsible Healthcare, Sponsored by Service Employees International Union - United Healthcare Workers West",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1483073",
+   "measures": [
+    {
+     "id": "44",
+     "side": "yes"
+    }
+   ],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 0.0,
+    "unitemized": 0.0,
+    "noncash": 16929633.88,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 0,
+    "noncash": 0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "SEIU United Health Care Workers West Political Issues Committee",
+     "total": 16929633.88,
+     "kind": "committee",
+     "id": "1077374",
+     "noncash": 16929633.88
+    }
+   ],
+   "donorCount": 1,
+   "recipients": [],
+   "recipientCount": 0
+  },
+  "1484266": {
+   "name": "Protect Patients: Stop the Attack on Community Health Centers and Clinics, sponsored by California Primary Care Association Advocates",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1484266",
+   "measures": [
+    {
+     "id": "44",
+     "side": "no"
+    }
+   ],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 37618377.03,
+    "unitemized": 0.0,
+    "noncash": 973623.32,
+    "loans": 0.0,
+    "late": 93193.21
+   },
+   "gave": {
+    "cash": 284500.0,
+    "noncash": 0.0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "Altamed Health Services Corporation",
+     "total": 6132867.69,
+     "kind": "organization",
+     "id": "1302661",
+     "noncash": 665000.0
+    },
+    {
+     "name": "California Primary Care Association",
+     "total": 1672990.39,
+     "kind": "organization",
+     "id": "1476074",
+     "noncash": 122990.39
+    },
+    {
+     "name": "Family Health Centers of San Diego",
+     "total": 1515309.0,
+     "kind": "organization",
+     "noncash": 15309.0
+    },
+    {
+     "name": "Wellspace Health",
+     "total": 1500000.0,
+     "kind": "organization",
+     "id": "1485378"
+    },
+    {
+     "name": "North East Medical Services",
+     "total": 1500000.0,
+     "kind": "organization",
+     "id": "1421694"
+    },
+    {
+     "name": "San Ysidro Health",
+     "total": 1007548.8,
+     "kind": "organization",
+     "noncash": 7428.26,
+     "late": 120.54
+    },
+    {
+     "name": "Innercare",
+     "total": 1000000.0,
+     "kind": "organization",
+     "id": "1472079"
+    },
+    {
+     "name": "Neighborhood Healthcare",
+     "total": 920550.12,
+     "kind": "organization",
+     "id": "1470550"
+    },
+    {
+     "name": "Community Health Center Network",
+     "total": 776870.0,
+     "kind": "organization"
+    },
+    {
+     "name": "SAC Health",
+     "total": 766668.16,
+     "kind": "organization"
+    }
+   ],
+   "donorCount": 150,
+   "recipients": [
+    {
+     "name": "California Democratic Party",
+     "total": 259500.0,
+     "kind": "committee",
+     "id": "1018392"
+    },
+    {
+     "name": "Planned Parenthood Affiliates of California Votes PAC",
+     "total": 25000.0,
+     "kind": "committee",
+     "id": "1331005"
+    }
+   ],
+   "recipientCount": 2
+  },
+  "1484470": {
+   "name": "Yes on 40 - Billionaire Tax Now \u2013 No on 41 & 42, Sponsored by Service Employees International Union - United Healthcare Workers West",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1484470",
+   "measures": [
+    {
+     "id": "40",
+     "side": "yes"
+    },
+    {
+     "id": "41",
+     "side": "no"
+    },
+    {
+     "id": "42",
+     "side": "no"
+    }
+   ],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 22198222.5,
+    "unitemized": 49783.22,
+    "noncash": 10506961.42,
+    "loans": 0.0,
+    "late": 130374.58
+   },
+   "gave": {
+    "cash": 0,
+    "noncash": 0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "Service Employees International Union, United Healthcare Workers West Nonprofit 501(c)(5)",
+     "total": 22077898.56,
+     "kind": "committee",
+     "id": "1373047",
+     "noncash": 2761517.56
+    },
+    {
+     "name": "SEIU United Health Care Workers West Political Issues Committee",
+     "total": 7733164.35,
+     "kind": "committee",
+     "id": "1077374",
+     "noncash": 7733164.35
+    },
+    {
+     "name": "SEIU United Health Care Workers West Political Action Committee",
+     "total": 2000000.0,
+     "kind": "committee",
+     "id": "1020788"
+    },
+    {
+     "name": "Saikat Chakrabarti",
+     "total": 201000.0,
+     "kind": "person"
+    },
+    {
+     "name": "Ross Boucher",
+     "total": 200000.0,
+     "kind": "person"
+    },
+    {
+     "name": "California Labor Federation AFL-CIO",
+     "total": 200000.0,
+     "kind": "committee",
+     "id": "1018355"
+    },
+    {
+     "name": "Hillary Perkins",
+     "total": 100000.0,
+     "kind": "person"
+    },
+    {
+     "name": "Tax the Ultra-Rich Now, YES on 3 & 40, NO on 41 & 42",
+     "total": 71250.0,
+     "kind": "committee",
+     "id": "1495036",
+     "noncash": 11250.0,
+     "late": 60000.0
+    },
+    {
+     "name": "John O'Farrell",
+     "total": 35000.0,
+     "kind": "person",
+     "late": 10000.0
+    },
+    {
+     "name": "James Stone",
+     "total": 25000.0,
+     "kind": "person"
+    }
+   ],
+   "donorCount": 203,
+   "recipients": [],
+   "recipientCount": 0
+  },
+  "1484853": {
+   "name": "Yes on 45 - Building a More Affordable California, A Coalition of Water, Affordable Housing, Clean Energy, Small Business, Healthcare & Community Leaders",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1484853",
+   "measures": [
+    {
+     "id": "45",
+     "side": "yes"
+    }
+   ],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 32136431.0,
+    "unitemized": 75.0,
+    "noncash": 1367.89,
+    "loans": 2300000.0,
+    "late": 2667010.0
+   },
+   "gave": {
+    "cash": 725000.0,
+    "noncash": 0.0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "Building a Better California",
+     "total": 10000000.0,
+     "kind": "committee",
+     "id": "1486767"
+    },
+    {
+     "name": "California Building Industry Association Issues Committee Supporting Proposition 45",
+     "total": 7350000.0,
+     "kind": "committee",
+     "id": "1353866",
+     "late": 150000.0
+    },
+    {
+     "name": "CA Business PAC, sponsored by CA Chamber of Commerce (aka CALBUSPAC)",
+     "total": 3900000.0,
+     "kind": "committee",
+     "id": "1021742"
+    },
+    {
+     "name": "CALIFORNIA BUILDING INDUSTRY ASSOCIATION",
+     "total": 3239000.0,
+     "kind": "organization",
+     "late": 989000.0
+    },
+    {
+     "name": "Building Resilient Infrastructure for a Decarbonized Green Economy Issues PAC (BRIDGE Issues) Yes on Prop 45, Funded by PG&E Corporation",
+     "total": 2300000.0,
+     "kind": "committee",
+     "id": "1490585"
+    },
+    {
+     "name": "EDISON INTERNATIONAL & AFFILIATED ENTITIES",
+     "total": 2000000.0,
+     "kind": "organization",
+     "loan": 2000000.0
+    },
+    {
+     "name": "CALIFORNIA ASSOCIATION OF REALTORS",
+     "total": 1500000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "YUHAAVIATAM OF SAN MANUEL NATION",
+     "total": 750000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "MODERN INFRASTRUCTURE ALIIANCE ACTION FUND, SPONSORED BY PROLOGIS",
+     "total": 500000.0,
+     "kind": "committee",
+     "id": "1488414"
+    },
+    {
+     "name": "BLOOM ENERGY CORPORATION",
+     "total": 500000.0,
+     "kind": "organization",
+     "late": 250000.0
+    }
+   ],
+   "donorCount": 87,
+   "recipients": [
+    {
+     "name": "CALIFORNIA REPUBLICAN PARTY",
+     "total": 725000.0,
+     "kind": "committee",
+     "id": "1030435"
+    }
+   ],
+   "recipientCount": 1
+  },
+  "1484860": {
+   "name": "Yes on Prop 43 - The Local Taxpayer Protection Act, sponsored by homeowners, businesses, and taxpayers",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1484860",
+   "measures": [
+    {
+     "id": "43",
+     "side": "yes"
+    }
+   ],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 13359760.21,
+    "unitemized": 301.23,
+    "noncash": 1206942.03,
+    "loans": 0.0,
+    "late": 2115586.29
+   },
+   "gave": {
+    "cash": 0.0,
+    "noncash": 12704391.86,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "California Business Roundtable Issues PAC",
+     "total": 11640000.0,
+     "kind": "committee",
+     "id": "1264590",
+     "late": 1640000.0
+    },
+    {
+     "name": "Protect Prop. 13, a project of the Howard Jarvis Taxpayers Association",
+     "total": 1038217.78,
+     "kind": "committee",
+     "id": "1059890",
+     "noncash": 1038217.78
+    },
+    {
+     "name": "Douglas Emmett Properties, LP and affiliated entities",
+     "total": 1000000.0,
+     "kind": "organization",
+     "id": "1412248"
+    },
+    {
+     "name": "Kilroy Realty, LP",
+     "total": 1000000.0,
+     "kind": "organization",
+     "id": "1008339"
+    },
+    {
+     "name": "Right Path California Issues PAC, sponsored by taxpayer and business advocates",
+     "total": 584310.54,
+     "kind": "committee",
+     "id": "1483288",
+     "noncash": 168724.25,
+     "late": 415586.29
+    },
+    {
+     "name": "1800 Capital, Inc. (Formerly - Ace Beverage Group, Inc.)",
+     "total": 500000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Jerry A. Greenberg",
+     "total": 250000.0,
+     "kind": "person",
+     "id": "1448311"
+    },
+    {
+     "name": "McCourt Partners Real Estate, LLC(Frank McCourt)",
+     "total": 100000.0,
+     "kind": "organization",
+     "id": "1488768"
+    },
+    {
+     "name": "Andrew Schwartzberg",
+     "total": 100000.0,
+     "kind": "person",
+     "id": "1482803"
+    },
+    {
+     "name": "Moss Management Services, Inc.",
+     "total": 85000.0,
+     "kind": "organization"
+    }
+   ],
+   "donorCount": 75,
+   "recipients": [
+    {
+     "name": "Protect Prop. 13, a project of the Howard Jarvis Taxpayers Association",
+     "total": 12704391.86,
+     "kind": "committee",
+     "id": "1059890",
+     "noncash": 12704391.86
+    }
+   ],
+   "recipientCount": 1
+  },
+  "1485601": {
+   "name": "Yes on Prop 1 Californians for Homes, Jobs and Affordability 2026, Sponsored by Affordable Housing Organizations",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1485601",
+   "measures": [
+    {
+     "id": "1",
+     "side": "yes"
+    }
+   ],
+   "from": "2026-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 13989562.25,
+    "unitemized": 5.43,
+    "noncash": 209981.27,
+    "loans": 0.0,
+    "late": 1534058.75
+   },
+   "gave": {
+    "cash": 0,
+    "noncash": 0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "Airbnb, Inc.",
+     "total": 1001082.4,
+     "kind": "organization",
+     "late": 1082.4
+    },
+    {
+     "name": "North Coast States Regional Council of Carpenters Issues PAC",
+     "total": 1000000.0,
+     "kind": "committee",
+     "id": "1219354"
+    },
+    {
+     "name": "Western States Regional Council of Carpenters Issues Committee",
+     "total": 1000000.0,
+     "kind": "committee",
+     "id": "1301846"
+    },
+    {
+     "name": "Building a Better California",
+     "total": 1000000.0,
+     "kind": "committee",
+     "id": "1486767"
+    },
+    {
+     "name": "Californians for Affordable Homes, Yes on Proposition 1, sponsored by NPH Action Fund",
+     "total": 700000.0,
+     "kind": "committee",
+     "id": "1492745"
+    },
+    {
+     "name": "Mobilizing Economic Transformation Across (Meta) California",
+     "total": 602000.0,
+     "kind": "committee",
+     "id": "1483390"
+    },
+    {
+     "name": "Anthropic PBC",
+     "total": 500000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "OpenAI OpCo, LLC (Adam Thompson)",
+     "total": 500000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Pacific West Communities, Inc.",
+     "total": 500000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Housing Trust Silicon Valley",
+     "total": 400000.0,
+     "kind": "organization",
+     "id": "1410802"
+    }
+   ],
+   "donorCount": 135,
+   "recipients": [],
+   "recipientCount": 0
+  },
+  "1485847": {
+   "name": "Yes on 38: Californians for Life-Saving Immunology Research and Cures, sponsored by the Michelson Center for Public Policy",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1485847",
+   "measures": [
+    {
+     "id": "38",
+     "side": "yes"
+    }
+   ],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 11000000.0,
+    "unitemized": 0.0,
+    "noncash": 29216.06,
+    "loans": 60200000.0,
+    "late": 200000.0
+   },
+   "gave": {
+    "cash": 256000.0,
+    "noncash": 0.0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "Gary K. Michelson and Affiliated Entity Michelson Center for Public Policy",
+     "total": 53200000.0,
+     "kind": "organization",
+     "id": "1313622",
+     "loan": 47200000.0
+    },
+    {
+     "name": "Michelson Center for Public Policy, Inc. - Yes on 38 (Nonprofit 501 (c)(4))",
+     "total": 13200000.0,
+     "kind": "committee",
+     "id": "1494727",
+     "loan": 13000000.0,
+     "late": 200000.0
+    },
+    {
+     "name": "Meyer Luskin",
+     "total": 5000000.0,
+     "kind": "person"
+    },
+    {
+     "name": "California Democratic Party",
+     "total": 26275.18,
+     "kind": "committee",
+     "id": "1018392",
+     "noncash": 26275.18
+    },
+    {
+     "name": "United Domestic Workers of America Issues PAC",
+     "total": 1500.97,
+     "kind": "committee",
+     "id": "1367548",
+     "noncash": 1500.97
+    },
+    {
+     "name": "United Domestic Workers of America Action Fund",
+     "total": 1439.91,
+     "kind": "committee",
+     "id": "1302384",
+     "noncash": 1439.91
+    }
+   ],
+   "donorCount": 6,
+   "recipients": [
+    {
+     "name": "California Democratic Party",
+     "total": 256000.0,
+     "kind": "committee",
+     "id": "1018392"
+    }
+   ],
+   "recipientCount": 1
+  },
+  "1486695": {
+   "name": "Golden State Promise",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1486695",
+   "measures": [
+    {
+     "id": "40",
+     "side": "no"
+    }
+   ],
+   "from": "2026-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 10450000.0,
+    "unitemized": 0.0,
+    "noncash": 0.0,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 50000.0,
+    "noncash": 0.0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "Chris Larsen",
+     "total": 5000000.0,
+     "kind": "person"
+    },
+    {
+     "name": "Ripple Labs",
+     "total": 5000000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "California Business Roundtable Issues PAC",
+     "total": 450000.0,
+     "kind": "committee",
+     "id": "1264590"
+    }
+   ],
+   "donorCount": 3,
+   "recipients": [
+    {
+     "name": "Recipient not named in this schedule",
+     "total": 50000.0,
+     "kind": "organization"
+    }
+   ],
+   "recipientCount": 1
+  },
+  "1486767": {
+   "name": "Building a Better California",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1486767",
+   "measures": [],
+   "from": "2026-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 229301271.59,
+    "unitemized": 25.0,
+    "noncash": 103946617.74,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 324750000.0,
+    "noncash": 0.0,
+    "late": 71300000.0
+   },
+   "donors": [
+    {
+     "name": "SERGEY BRIN",
+     "total": 102000000.0,
+     "kind": "person"
+    },
+    {
+     "name": "ERIC SCHMIDT",
+     "total": 40236457.01,
+     "kind": "person",
+     "noncash": 37210280.5,
+     "stock": 37210280.5
+    },
+    {
+     "name": "L. JOHN DOERR, III",
+     "total": 40000000.0,
+     "kind": "person"
+    },
+    {
+     "name": "PATRICK COLLISON",
+     "total": 33169793.76,
+     "kind": "person",
+     "noncash": 11169793.76,
+     "stock": 11169793.76
+    },
+    {
+     "name": "VINOD KHOSLA",
+     "total": 12561504.0,
+     "kind": "person",
+     "noncash": 12561504.0,
+     "stock": 12561504.0
+    },
+    {
+     "name": "CHRIS LARSEN",
+     "total": 12511844.8,
+     "kind": "person"
+    },
+    {
+     "name": "MICHAEL MORITZ",
+     "total": 7500000.0,
+     "kind": "person"
+    },
+    {
+     "name": "KAVITARK RAM SHRIRAM",
+     "total": 5005599.45,
+     "kind": "person",
+     "noncash": 5005599.45,
+     "stock": 5005599.45
+    },
+    {
+     "name": "FRANK SLOOTMAN",
+     "total": 5000000.0,
+     "kind": "person"
+    },
+    {
+     "name": "ALPHAFOXTROT LLC(RESPONSIBLE OFFICER: LYNSI SNYDER)",
+     "total": 4968061.28,
+     "kind": "organization"
+    }
+   ],
+   "donorCount": 78,
+   "recipients": [
+    {
+     "name": "Yes on 42 - Protect Retirement & Life Savings, a Coalition of Retirees, Blue-Collar Workers, Seniors, Veterans, Small Businesses & Taxpayers",
+     "total": 159100000.0,
+     "kind": "committee",
+     "id": "1488418",
+     "late": 31300000.0,
+     "measure": "PROPOSITION 42"
+    },
+    {
+     "name": "No on Prop 40 - Doctors, Teachers, Small Businesses, Working Families and Public Safety Against the Reckless Wealth Tax Experiment",
+     "total": 158500000.0,
+     "kind": "committee",
+     "id": "1492108",
+     "late": 40000000.0,
+     "measure": "PROPOSITION 40"
+    },
+    {
+     "name": "Yes on 41 - Californians for Transparency and Accountability, a Coalition of Small Businesses, Taxpayers, Good Government Advocates, Accountants and Auditing Experts",
+     "total": 58350000.0,
+     "kind": "committee",
+     "id": "1488423",
+     "measure": "PROPOSITION 41"
+    },
+    {
+     "name": "Yes on 45 - Building a More Affordable California, A Coalition of Water, Affordable Housing, Clean Energy, Small Business, Healthcare & Community Leaders",
+     "total": 10000000.0,
+     "kind": "committee",
+     "id": "1484853",
+     "measure": "PROPOSITION 45"
+    },
+    {
+     "name": "Yes on 37 - California Homeownership",
+     "total": 6000000.0,
+     "kind": "committee",
+     "id": "1481256",
+     "measure": "PROPOSITION 37"
+    },
+    {
+     "name": "CALIFORNIANS TO PROTECT OUR SCHOOLS, SPONSORED BY BUILDING A BETTER CALIFORNIA",
+     "total": 3100000.0,
+     "kind": "committee",
+     "id": "1488421",
+     "measure": "REQUIRES NEW STATE TAXES BE SUBJECT TO EXISTING VOTER-APPROVED SCHOOL FUNDING REQUIREMENT AND STATE SPENDING LIMIT. INITIATIVE CONSTITUTIONAL AMENDMENT. (25-0038A1)"
+    },
+    {
+     "name": "Yes on Prop 1 Californians for Homes, Jobs and Affordability 2026, Sponsored by Affordable Housing Organizations",
+     "total": 1000000.0,
+     "kind": "committee",
+     "id": "1485601",
+     "measure": "PROPOSITION 1"
+    }
+   ],
+   "recipientCount": 7
+  },
+  "1488418": {
+   "name": "Yes on 42 - Protect Retirement & Life Savings, a Coalition of Retirees, Blue-Collar Workers, Seniors, Veterans, Small Businesses & Taxpayers",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1488418",
+   "measures": [
+    {
+     "id": "42",
+     "side": "yes"
+    }
+   ],
+   "from": "2026-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 127950000.0,
+    "unitemized": 0.0,
+    "noncash": 27037.26,
+    "loans": 0.0,
+    "late": 31300000.0
+   },
+   "gave": {
+    "cash": 162500.0,
+    "noncash": 0.0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "Building a Better California",
+     "total": 159100000.0,
+     "kind": "committee",
+     "id": "1486767",
+     "late": 31300000.0
+    },
+    {
+     "name": "PEACE OFFICERS RESEARCH ASSOCIATION OF CALIFORNIA POLITICAL ISSUES COMMITTEE (PORAC PIC)",
+     "total": 150000.0,
+     "kind": "committee",
+     "id": "1054918"
+    },
+    {
+     "name": "Reform California with Carl De Maio - Ballot Measure Committee",
+     "total": 22537.26,
+     "kind": "committee",
+     "id": "1268914",
+     "noncash": 22537.26
+    },
+    {
+     "name": "REFORM LOCAL GOVERNMENT PAC",
+     "total": 4500.0,
+     "kind": "committee",
+     "id": "1452276",
+     "noncash": 4500.0
+    }
+   ],
+   "donorCount": 4,
+   "recipients": [
+    {
+     "name": "REPAIR, REBUILD, RESPOND - FUND LA FIRE NOW, SPONSORED BY UNITED FIREFIGHTERS OF LOS ANGELES CITY",
+     "total": 50000.0,
+     "kind": "committee",
+     "id": "1480084",
+     "measure": "FUNDING FOR THE LA FIRE DEPARTMENT THROUGH A ONE-HALF PERCENT SALES TAX. INITIATIVE ORDINANCE."
+    },
+    {
+     "name": "REFORM LOCAL GOVERNMENT PAC",
+     "total": 45000.0,
+     "kind": "committee",
+     "id": "1452276",
+     "measure": "REFORM LOCAL GOVERNMENT PAC"
+    },
+    {
+     "name": "YES ON A, SPONSORED BY SAN FRANCISCO FIREFIGHTERS LOCAL 798",
+     "total": 25000.0,
+     "kind": "committee",
+     "id": "1486676",
+     "measure": "PROPOSITION A"
+    },
+    {
+     "name": "California Democratic Party",
+     "total": 11500.0,
+     "kind": "committee",
+     "id": "1018392"
+    },
+    {
+     "name": "DEMOCRATIC PARTY OF ORANGE COUNTY",
+     "total": 10000.0,
+     "kind": "committee",
+     "id": "1018495",
+     "measure": "DEMOCRATIC PARTY OF ORANGE COUNTY"
+    },
+    {
+     "name": "SAN DIEGO COUNTY DEMOCRATIC PARTY",
+     "total": 10000.0,
+     "kind": "committee",
+     "id": "1018460",
+     "measure": "SAN DIEGO COUNTY DEMOCRATIC PARTY"
+    },
+    {
+     "name": "LOS ANGELES COUNTY DEMOCRATIC PARTY - STATE CANDIDATE COMMITTEE",
+     "total": 10000.0,
+     "kind": "committee",
+     "id": "1237135"
+    },
+    {
+     "name": "AVANCE DEMOCRATIC CLUB",
+     "total": 1000.0,
+     "kind": "committee",
+     "id": "1369752"
+    }
+   ],
+   "recipientCount": 8
+  },
+  "1488423": {
+   "name": "Yes on 41 - Californians for Transparency and Accountability, a Coalition of Small Businesses, Taxpayers, Good Government Advocates, Accountants and Auditing Experts",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1488423",
+   "measures": [
+    {
+     "id": "41",
+     "side": "yes"
+    }
+   ],
+   "from": "2026-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 58350100.0,
+    "unitemized": 38.0,
+    "noncash": 26307.92,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 40000.0,
+    "noncash": 0.0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "Building a Better California",
+     "total": 58350000.0,
+     "kind": "committee",
+     "id": "1486767"
+    },
+    {
+     "name": "Reform California with Carl De Maio - Ballot Measure Committee",
+     "total": 21807.92,
+     "kind": "committee",
+     "id": "1268914",
+     "noncash": 21807.92
+    },
+    {
+     "name": "REFORM LOCAL GOVERNMENT PAC",
+     "total": 4500.0,
+     "kind": "committee",
+     "id": "1452276",
+     "noncash": 4500.0
+    },
+    {
+     "name": "MARY STRONG",
+     "total": 100.0,
+     "kind": "person"
+    }
+   ],
+   "donorCount": 4,
+   "recipients": [
+    {
+     "name": "Reform California with Carl De Maio - Ballot Measure Committee",
+     "total": 40000.0,
+     "kind": "committee",
+     "id": "1268914",
+     "measure": "REFORM CALIFORNIA WITH CARL DE MAIO - BALLOT MEASURE COMMITTEE"
+    }
+   ],
+   "recipientCount": 1
+  },
+  "1489007": {
+   "name": "No on Prop 39 - Californians for Voting Rights, sponsored by California Donor Table & ACLU of Northern California",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1489007",
+   "measures": [
+    {
+     "id": "39",
+     "side": "no"
+    }
+   ],
+   "from": "2026-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 4430650.0,
+    "unitemized": 702.56,
+    "noncash": 366322.13,
+    "loans": 0.0,
+    "late": 74530.63
+   },
+   "gave": {
+    "cash": 0.0,
+    "noncash": 0.0,
+    "late": 500000.0
+   },
+   "donors": [
+    {
+     "name": "M. Quinn Delaney",
+     "total": 1500000.0,
+     "kind": "person"
+    },
+    {
+     "name": "Patty Quillin",
+     "total": 1500000.0,
+     "kind": "person"
+    },
+    {
+     "name": "Gwendolyn M. Sontheim",
+     "total": 500000.0,
+     "kind": "person"
+    },
+    {
+     "name": "ACLU of Northern California Issues Committee",
+     "total": 450794.25,
+     "kind": "committee",
+     "id": "1423278",
+     "noncash": 75748.28,
+     "late": 25045.97
+    },
+    {
+     "name": "California Democratic Party",
+     "total": 194712.95,
+     "kind": "committee",
+     "id": "1018392",
+     "noncash": 193385.14,
+     "stock": 400.0,
+     "late": 1327.81
+    },
+    {
+     "name": "California Donor Table Issues Committee",
+     "total": 132977.41,
+     "kind": "committee",
+     "id": "1489719",
+     "noncash": 2977.41
+    },
+    {
+     "name": "ACLU of Northern California Election Issues Committee",
+     "total": 100000.0,
+     "kind": "committee",
+     "id": "1440576"
+    },
+    {
+     "name": "California Community Foundation",
+     "total": 100000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Wendy Munger",
+     "total": 100000.0,
+     "kind": "person"
+    },
+    {
+     "name": "ACLU California Action Issues Committee",
+     "total": 96094.34,
+     "kind": "committee",
+     "id": "1488681",
+     "noncash": 58241.51,
+     "late": 37852.83
+    }
+   ],
+   "donorCount": 37,
+   "recipients": [
+    {
+     "name": "United Against Prop. 39 -- Stop the Rig sponsored by nonprofit labor and civil rights organizations",
+     "total": 500000.0,
+     "kind": "committee",
+     "id": "1495206",
+     "late": 500000.0
+    }
+   ],
+   "recipientCount": 1
+  },
+  "1490585": {
+   "name": "Building Resilient Infrastructure for a Decarbonized Green Economy Issues PAC (BRIDGE Issues) Yes on Prop 45, Funded by PG&E Corporation",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1490585",
+   "measures": [
+    {
+     "id": "45",
+     "side": "yes"
+    }
+   ],
+   "from": "2026-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 2400000.0,
+    "unitemized": 0.0,
+    "noncash": 0.0,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 2300000.0,
+    "noncash": 0.0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "PG&E CORPORATION AND AFFILIATED ENTITIES",
+     "total": 2400000.0,
+     "kind": "organization"
+    }
+   ],
+   "donorCount": 1,
+   "recipients": [
+    {
+     "name": "Yes on 45 - Building a More Affordable California, A Coalition of Water, Affordable Housing, Clean Energy, Small Business, Healthcare & Community Leaders",
+     "total": 2300000.0,
+     "kind": "committee",
+     "id": "1484853",
+     "measure": "CEQA REFORM INITATIVE"
+    }
+   ],
+   "recipientCount": 1
+  },
+  "1492108": {
+   "name": "No on Prop 40 - Doctors, Teachers, Small Businesses, Working Families and Public Safety Against the Reckless Wealth Tax Experiment",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1492108",
+   "measures": [
+    {
+     "id": "40",
+     "side": "no"
+    }
+   ],
+   "from": "2026-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 118721279.44,
+    "unitemized": 0.0,
+    "noncash": 39981.97,
+    "loans": 0.0,
+    "late": 40000000.0
+   },
+   "gave": {
+    "cash": 3750.0,
+    "noncash": 0.0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "Building a Better California",
+     "total": 158500000.0,
+     "kind": "committee",
+     "id": "1486767",
+     "late": 40000000.0
+    },
+    {
+     "name": "CALIFORNIA MEDICAL ASSOCIATION",
+     "total": 100000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "CALIFORNIA PRIMARY CARE ASSOCIATION ADVOCATES",
+     "total": 100000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "PLANNED PARENTHOOD AFFILIATES OF CALIFORNIA VOTES PAC",
+     "total": 34293.58,
+     "kind": "committee",
+     "id": "1331005",
+     "noncash": 34293.58
+    },
+    {
+     "name": "STOP THE SQUEEZE - NO ON PROP 40",
+     "total": 21279.44,
+     "kind": "committee",
+     "id": "1485007"
+    },
+    {
+     "name": "PLANNED PARENTHOOD AFFILIATES OF CALIFORNIA, INC",
+     "total": 2747.51,
+     "kind": "organization",
+     "noncash": 2747.51
+    },
+    {
+     "name": "UNITED DOMESTIC WORKERS OF AMERICA ISSUES PAC",
+     "total": 1500.97,
+     "kind": "committee",
+     "id": "1367548",
+     "noncash": 1500.97
+    },
+    {
+     "name": "UNITED DOMESTIC WORKERS OF AMERICA ACTION FUND",
+     "total": 1439.91,
+     "kind": "committee",
+     "id": "1302384",
+     "noncash": 1439.91
+    }
+   ],
+   "donorCount": 8,
+   "recipients": [
+    {
+     "name": "California Democratic Party",
+     "total": 2500.0,
+     "kind": "committee",
+     "id": "1018392"
+    },
+    {
+     "name": "LOS ANGELES COUNTY DEMOCRATIC PARTY-ISSUES AND ADVOCACY COMMITTEE",
+     "total": 1250.0,
+     "kind": "committee",
+     "id": "1019126"
+    }
+   ],
+   "recipientCount": 2
+  },
+  "1492264": {
+   "name": "No on Prop 45, sponsored by labor, health and environmental organizations",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1492264",
+   "measures": [
+    {
+     "id": "45",
+     "side": "no"
+    }
+   ],
+   "from": "2026-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 19511627.44,
+    "unitemized": 2854.76,
+    "noncash": 192058.9,
+    "loans": 0.0,
+    "late": 75978.26
+   },
+   "gave": {
+    "cash": 5303500.0,
+    "noncash": 0.0,
+    "late": 4100000.0
+   },
+   "donors": [
+    {
+     "name": "Wendy Schmidt",
+     "total": 10000000.0,
+     "kind": "person"
+    },
+    {
+     "name": "Clean and Healthy California, Sponsored By Environmental Organizations",
+     "total": 7129065.0,
+     "kind": "committee",
+     "id": "1460932",
+     "noncash": 129065.0
+    },
+    {
+     "name": "Members' Voice of the State Building and Construction Trades Council of California",
+     "total": 1183933.32,
+     "kind": "committee",
+     "id": "1072248",
+     "noncash": 7933.32
+    },
+    {
+     "name": "State Building and Construction Trades Council of California Independent Expenditure PAC",
+     "total": 823857.25,
+     "kind": "committee",
+     "id": "1377164"
+    },
+    {
+     "name": "District Council of Iron Workers of the State of California and Vicinity PAC",
+     "total": 500000.0,
+     "kind": "committee",
+     "id": "1036761"
+    },
+    {
+     "name": "Lena Gonzalez's Ballot Measure Committee for a Better Tomorrow",
+     "total": 44886.74,
+     "kind": "committee",
+     "id": "1475960",
+     "late": 44886.74
+    },
+    {
+     "name": "California Democratic Party",
+     "total": 34319.79,
+     "kind": "committee",
+     "id": "1018392",
+     "noncash": 30415.77,
+     "late": 3904.02
+    },
+    {
+     "name": "Anne Earhart",
+     "total": 25000.0,
+     "kind": "person",
+     "late": 25000.0
+    },
+    {
+     "name": "State Building and Construction Trades Council of California PAC",
+     "total": 10000.0,
+     "kind": "committee",
+     "id": "1018846",
+     "noncash": 10000.0
+    },
+    {
+     "name": "Center for Biological Diversity Action Fund",
+     "total": 7067.19,
+     "kind": "organization",
+     "noncash": 7067.19
+    }
+   ],
+   "donorCount": 38,
+   "recipients": [
+    {
+     "name": "Campaign for People over Polluters, No on Prop. 45",
+     "total": 9100000.0,
+     "kind": "committee",
+     "id": "1493079",
+     "late": 4100000.0
+    },
+    {
+     "name": "California Democratic Party",
+     "total": 303500.0,
+     "kind": "organization",
+     "id": "1018392"
+    }
+   ],
+   "recipientCount": 2
+  },
+  "1492508": {
+   "name": "No on Prop 43 Stop the Local Taxpayer Deception Act, sponsored by labor organizations",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1492508",
+   "measures": [
+    {
+     "id": "43",
+     "side": "no"
+    }
+   ],
+   "from": "2026-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 7073500.01,
+    "unitemized": 0.0,
+    "noncash": 668784.73,
+    "loans": 0.0,
+    "late": 1459000.0
+   },
+   "gave": {
+    "cash": 300000.0,
+    "noncash": 0.0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "SEIU California State Council For Working People",
+     "total": 1503928.03,
+     "kind": "committee",
+     "id": "1067655",
+     "noncash": 3928.03
+    },
+    {
+     "name": "Service Employees International Union - SEIU Local 2015 Issues PAC",
+     "total": 1000000.0,
+     "kind": "committee",
+     "id": "1378400",
+     "late": 1000000.0
+    },
+    {
+     "name": "California Professional Firefighters Ballot Issues Committee",
+     "total": 846379.0,
+     "kind": "committee",
+     "id": "1042437",
+     "noncash": 496379.0
+    },
+    {
+     "name": "Southern California Partnership For Jobs (Nonprofit 501 (C)(6))",
+     "total": 500000.0,
+     "kind": "committee",
+     "id": "1391049"
+    },
+    {
+     "name": "California Alliance for Jobs - Rebuild California Committee",
+     "total": 500000.0,
+     "kind": "committee",
+     "id": "1241892"
+    },
+    {
+     "name": "California Teachers Association/ Issues PAC",
+     "total": 500000.0,
+     "kind": "committee",
+     "id": "1045740"
+    },
+    {
+     "name": "North Coast States Regional Council of Carpenters Issues PAC",
+     "total": 500000.0,
+     "kind": "committee",
+     "id": "1219354"
+    },
+    {
+     "name": "Service Employees International Union Local 1021 Issues PAC",
+     "total": 500000.0,
+     "kind": "committee",
+     "id": "1296947"
+    },
+    {
+     "name": "Service Employees International Union Local 721 CTW, CLC Issues & Initiatives sponsored by service employee unions",
+     "total": 500000.0,
+     "kind": "committee",
+     "id": "1048450"
+    },
+    {
+     "name": "Western States Regional Council of Carpenters Issues Committee",
+     "total": 500000.0,
+     "kind": "committee",
+     "id": "1301846"
+    }
+   ],
+   "donorCount": 36,
+   "recipients": [
+    {
+     "name": "California Democratic Party",
+     "total": 300000.0,
+     "kind": "committee",
+     "id": "1018392"
+    }
+   ],
+   "recipientCount": 1
+  },
+  "1492745": {
+   "name": "Californians for Affordable Homes, Yes on Proposition 1, sponsored by NPH Action Fund",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1492745",
+   "measures": [
+    {
+     "id": "1",
+     "side": "yes"
+    }
+   ],
+   "from": "2026-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 1025000.0,
+    "unitemized": 0.0,
+    "noncash": 96540.2,
+    "loans": 0.0,
+    "late": 75244.29
+   },
+   "gave": {
+    "cash": 721000.0,
+    "noncash": 0.0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "NPH Action Fund Political Issues Committee",
+     "total": 871784.49,
+     "kind": "committee",
+     "id": "1387772",
+     "noncash": 96540.2,
+     "late": 75244.29
+    },
+    {
+     "name": "Scott D. Cook",
+     "total": 150000.0,
+     "kind": "person"
+    },
+    {
+     "name": "H. Signe Ostby",
+     "total": 150000.0,
+     "kind": "person"
+    },
+    {
+     "name": "Sequoia Living, Inc.",
+     "total": 25000.0,
+     "kind": "organization"
+    }
+   ],
+   "donorCount": 4,
+   "recipients": [
+    {
+     "name": "Yes on Prop 1 Californians for Homes, Jobs and Affordability 2026, Sponsored by Affordable Housing Organizations",
+     "total": 700000.0,
+     "kind": "committee",
+     "measure": "Prop 1: The Veterans and Affordable Housing Bond Act of 2026",
+     "id": "1485601"
+    },
+    {
+     "name": "San Francisco Democratic County Central Committee",
+     "total": 15000.0,
+     "kind": "committee"
+    },
+    {
+     "name": "San Francisco Democratic Party",
+     "total": 6000.0,
+     "kind": "organization"
+    }
+   ],
+   "recipientCount": 3
+  },
+  "1493079": {
+   "name": "Campaign for People over Polluters, No on Prop. 45",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1493079",
+   "measures": [
+    {
+     "id": "45",
+     "side": "no"
+    }
+   ],
+   "from": "2026-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 6573794.71,
+    "unitemized": 52.01,
+    "noncash": 16518.84,
+    "loans": 0.0,
+    "late": 5308785.76
+   },
+   "gave": {
+    "cash": 45500.0,
+    "noncash": 0.0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "No on Prop 45, sponsored by labor, health and environmental organizations",
+     "total": 9100000.0,
+     "kind": "committee",
+     "id": "1492264",
+     "late": 4100000.0
+    },
+    {
+     "name": "Center for Biological Diversity, Inc.",
+     "total": 700000.0,
+     "kind": "organization",
+     "late": 100000.0
+    },
+    {
+     "name": "Steven L. Merrill",
+     "total": 552883.3,
+     "kind": "person",
+     "late": 252883.3
+    },
+    {
+     "name": "Kat Taylor",
+     "total": 500000.0,
+     "kind": "person",
+     "late": 500000.0
+    },
+    {
+     "name": "Earthjustice",
+     "total": 448276.6,
+     "kind": "organization",
+     "noncash": 12374.14,
+     "late": 35902.45
+    },
+    {
+     "name": "Jane Fonda Climate PAC (FED PAC ID #C00806893)",
+     "total": 250000.0,
+     "kind": "committee",
+     "id": "1448772",
+     "late": 250000.0
+    },
+    {
+     "name": "The Wildlands Conservancy",
+     "total": 100000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Amy J. Bricker",
+     "total": 54144.7,
+     "kind": "person",
+     "noncash": 4144.7
+    },
+    {
+     "name": "Michael S. Lee",
+     "total": 50000.0,
+     "kind": "person"
+    },
+    {
+     "name": "Natural Resources Defense Council (NRDC) Action Fund, Inc.",
+     "total": 35000.0,
+     "kind": "organization",
+     "late": 10000.0
+    }
+   ],
+   "donorCount": 45,
+   "recipients": [
+    {
+     "name": "San Diego County Democratic Party",
+     "total": 20000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "California Environmental Voters Issues Committee",
+     "total": 20000.0,
+     "kind": "committee"
+    },
+    {
+     "name": "Alameda County Democratic Central Committee",
+     "total": 5000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "California Democratic Party",
+     "total": 500.0,
+     "kind": "committee",
+     "id": "1018392"
+    }
+   ],
+   "recipientCount": 4
+  },
+  "1493991": {
+   "name": "No on 39 - Block Election Rigging sponsored by nurses, teachers, and nonprofit labor and community health clinic organizations",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1493991",
+   "measures": [
+    {
+     "id": "39",
+     "side": "no"
+    }
+   ],
+   "from": "2026-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 18852400.0,
+    "unitemized": 0.0,
+    "noncash": 908221.89,
+    "loans": 0.0,
+    "late": 1342731.24
+   },
+   "gave": {
+    "cash": 4606000.0,
+    "noncash": 19472.0,
+    "late": 2199374.67
+   },
+   "donors": [
+    {
+     "name": "California Democratic Party",
+     "total": 4528979.53,
+     "kind": "committee",
+     "id": "1018392",
+     "noncash": 456657.86,
+     "late": 872321.67
+    },
+    {
+     "name": "The Tribal Council of the Federated Indians of Graton Rancheria",
+     "total": 2000000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "SEIU California State Council For Working People",
+     "total": 1071815.41,
+     "kind": "committee",
+     "id": "1067655",
+     "noncash": 41815.41
+    },
+    {
+     "name": "California Teachers Association/ Issues PAC",
+     "total": 1000000.0,
+     "kind": "committee",
+     "id": "1045740"
+    },
+    {
+     "name": "Dignity CA Service Employees International Union SEIU Local 2015",
+     "total": 1000000.0,
+     "kind": "committee",
+     "id": "1357256"
+    },
+    {
+     "name": "Reed Hastings",
+     "total": 1000000.0,
+     "kind": "person"
+    },
+    {
+     "name": "Committee to Engage and Empower California Voters",
+     "total": 800000.0,
+     "kind": "committee",
+     "id": "1427205",
+     "late": 200000.0
+    },
+    {
+     "name": "American Federation of State, County and Municipal Employees, AFL-CIO (MPO) Small Contributor Committee",
+     "total": 650000.0,
+     "kind": "committee",
+     "id": "1019646"
+    },
+    {
+     "name": "North Coast States Regional Council of Carpenters Issues PAC",
+     "total": 650000.0,
+     "kind": "committee",
+     "id": "1219354"
+    },
+    {
+     "name": "California Primary Care Association Advocates Issues Committee",
+     "total": 600000.0,
+     "kind": "committee",
+     "id": "1465399"
+    }
+   ],
+   "donorCount": 59,
+   "recipients": [
+    {
+     "name": "United Against Prop. 39 -- Stop the Rig sponsored by nonprofit labor and civil rights organizations",
+     "total": 5669472.0,
+     "kind": "committee",
+     "id": "1495206",
+     "noncash": 19472.0,
+     "late": 2150000.0
+    },
+    {
+     "name": "Communities for an Affordable California, Yes on 3, No on 39 and 43 Sponsored by Million Voters Project Action Fund",
+     "total": 1115374.67,
+     "kind": "committee",
+     "id": "1496598",
+     "late": 49374.67
+    },
+    {
+     "name": "Planned Parenthood Affiliates of California VOTES PAC",
+     "total": 40000.0,
+     "kind": "committee"
+    }
+   ],
+   "recipientCount": 3
+  },
+  "1494727": {
+   "name": "Michelson Center for Public Policy, Inc. - Yes on 38 (Nonprofit 501 (c)(4))",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1494727",
+   "measures": [
+    {
+     "id": "38",
+     "side": "yes"
+    }
+   ],
+   "from": "2026-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 13000000.0,
+    "unitemized": 0.0,
+    "noncash": 0.0,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 13000000.0,
+    "noncash": 0.0,
+    "late": 200000.0
+   },
+   "donors": [
+    {
+     "name": "GARY K. MICHELSON (FORMERLY GARY K. MICHELSON AND AFFILIATED ENTITY MICHELSON CENTER FOR PUBLIC POLICY)",
+     "total": 10000000.0,
+     "kind": "person",
+     "id": "1313622"
+    },
+    {
+     "name": "MICHELSON CENTER FOR PUBLIC POLICY, INC.",
+     "total": 3000000.0,
+     "kind": "organization"
+    }
+   ],
+   "donorCount": 2,
+   "recipients": [
+    {
+     "name": "Yes on 38: Californians for Life-Saving Immunology Research and Cures, sponsored by the Michelson Center for Public Policy",
+     "total": 13200000.0,
+     "kind": "committee",
+     "id": "1485847",
+     "late": 200000.0
+    }
+   ],
+   "recipientCount": 1
+  },
+  "1495206": {
+   "name": "United Against Prop. 39 -- Stop the Rig sponsored by nonprofit labor and civil rights organizations",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1495206",
+   "measures": [
+    {
+     "id": "39",
+     "side": "no"
+    }
+   ],
+   "from": "2026-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 10550000.0,
+    "unitemized": 0.0,
+    "noncash": 20661.11,
+    "loans": 0.0,
+    "late": 2925000.0
+   },
+   "gave": {
+    "cash": 0,
+    "noncash": 0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "No on 39 - Block Election Rigging sponsored by nurses, teachers, and nonprofit labor and community health clinic organizations",
+     "total": 5669472.0,
+     "kind": "committee",
+     "id": "1493991",
+     "noncash": 19472.0,
+     "late": 2150000.0
+    },
+    {
+     "name": "California Democratic Party",
+     "total": 2600000.0,
+     "kind": "committee",
+     "id": "1018392"
+    },
+    {
+     "name": "California Nurses Association Initiative Political Action Committee",
+     "total": 2000000.0,
+     "kind": "committee",
+     "id": "1062281"
+    },
+    {
+     "name": "Consumer Attorneys of California Issues Political Action Committee",
+     "total": 1000000.0,
+     "kind": "committee",
+     "id": "1038905"
+    },
+    {
+     "name": "Ronald Conway",
+     "total": 500000.0,
+     "kind": "person"
+    },
+    {
+     "name": "Lytton Rancheria Tribal Government",
+     "total": 500000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "No on Prop 39 - Californians for Voting Rights, sponsored by California Donor Table & ACLU of Northern California",
+     "total": 500000.0,
+     "kind": "committee",
+     "id": "1489007",
+     "late": 500000.0
+    },
+    {
+     "name": "Sean Parker",
+     "total": 250000.0,
+     "kind": "person",
+     "late": 250000.0
+    },
+    {
+     "name": "Building a Stronger West, sponsored by Western States Regional Council of Carpenters",
+     "total": 150000.0,
+     "kind": "committee",
+     "id": "1043345"
+    },
+    {
+     "name": "Erica Lawson",
+     "total": 125000.0,
+     "kind": "person"
+    }
+   ],
+   "donorCount": 14,
+   "recipients": [],
+   "recipientCount": 0
+  },
+  "1496598": {
+   "name": "Communities for an Affordable California, Yes on 3, No on 39 and 43 Sponsored by Million Voters Project Action Fund",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1496598",
+   "measures": [
+    {
+     "id": "3",
+     "side": "yes"
+    },
+    {
+     "id": "39",
+     "side": "no"
+    },
+    {
+     "id": "43",
+     "side": "no"
+    }
+   ],
+   "from": "2026-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 2156000.0,
+    "unitemized": 0.0,
+    "noncash": 182429.0,
+    "loans": 0.0,
+    "late": 146455.75
+   },
+   "gave": {
+    "cash": 0,
+    "noncash": 0,
+    "late": 0.0
+   },
+   "donors": [
+    {
+     "name": "No on 39 - Block Election Rigging sponsored by nurses, teachers, and nonprofit labor and community health clinic organizations",
+     "total": 1140062.0,
+     "kind": "committee",
+     "id": "1493991",
+     "late": 74062.0
+    },
+    {
+     "name": "Yes on Prop 3, Sponsored by Education and Labor Organizations",
+     "total": 610000.0,
+     "kind": "committee",
+     "id": "1483562",
+     "late": 70000.0
+    },
+    {
+     "name": "United Domestic Workers of America Issues PAC",
+     "total": 350000.0,
+     "kind": "committee",
+     "id": "1367548"
+    },
+    {
+     "name": "California Community Foundation",
+     "total": 200000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "Black Californians for Thriving Communities - Yes on Prop 3, No on Props 39 & 43, Sponsored by California Black Power Network Action Fund",
+     "total": 182429.0,
+     "kind": "committee",
+     "id": "1497742",
+     "noncash": 182429.0
+    },
+    {
+     "name": "Force for Change Ballot Measure Sponsored by Center for Empowered Politics",
+     "total": 2393.75,
+     "kind": "committee",
+     "id": "1471738",
+     "late": 2393.75
+    }
+   ],
+   "donorCount": 6,
+   "recipients": [],
+   "recipientCount": 0
+  }
+ }
+}
