@@ -12,7 +12,7 @@ Streams only the tables it needs out of the 1.6 GB zip using HTTP range requests
 Refuses to publish a committee whose itemized donors do not reconcile to its own
 filed summary totals. See README, "Committee detail", for the rules applied here.
 """
-import argparse, collections, csv, datetime as dt, html, json, os, re, struct, subprocess, sys, zlib
+import argparse, collections, csv, datetime as dt, hashlib, html, json, os, re, struct, subprocess, sys, zlib
 
 EXPORT = "https://campaignfinance.cdn.sos.ca.gov/dbwebexport.zip"
 FPPC = "https://www.fppc.ca.gov/search-filings/top-10-contributors-list/november-2026-general-election/"
@@ -116,6 +116,11 @@ def person(r, p):
 
 def key(name):
     return re.sub(r"[^A-Z0-9]", "", re.sub(r"\(.*?(\)|$)", "", name.upper()))
+
+
+def name_words(name):
+    common = {"SPONSORED", "COMMITTEE", "CALIFORNIA", "CALIFORNIANS", "ISSUES", "WITH", "FROM", "THAT", "COALITION"}
+    return {w for w in re.findall(r"[A-Z0-9]+", name.upper()) if len(w) > 3 and w not in common}
 
 
 def parse_fppc(text):
@@ -245,7 +250,7 @@ def main():
     print("Export last modified:", modified)
     export_date = dt.datetime.strptime(modified.strip(), "%a, %d %b %Y %H:%M:%S %Z").date()
 
-    xref = cached(a.cache, "xref", lambda: {r["FILER_ID"]: r["XREF_ID"] for r in stream_rows(directory, "FILER_XREF_CD") if r.get("XREF_ID")})
+    xref = cached(a.cache, "xref-" + hashlib.sha256(modified.encode()).hexdigest()[:16], lambda: {r["FILER_ID"]: r["XREF_ID"] for r in stream_rows(directory, "FILER_XREF_CD") if r.get("XREF_ID")})
     public = {}                                   # legacy id -> public id
     for pub, leg in xref.items():
         if leg != pub: public[leg] = pub
@@ -258,6 +263,12 @@ def main():
         if r["donorId"] and r["amount"] >= FOLLOW_MIN: profiled.add(r["donorId"])
     filer_ids = {xref.get(i, i) for i in profiled} | profiled
     print(f"Profiling {len(profiled)} committees")
+
+    # Cached extracts hold only these committees from this export. Anything else must not reuse them:
+    # a stale cache once dropped the main Prop 3 committee without any error.
+    stamp = hashlib.sha256((modified + ",".join(sorted(filer_ids))).encode()).hexdigest()[:16]
+    a.cache = os.path.join(a.cache, stamp)
+    os.makedirs(a.cache, exist_ok=True)
 
     def cover_rows():
         return [r for r in stream_rows(directory, "CVR_CAMPAIGN_DISCLOSURE_CD") if r["FILER_ID"] in filer_ids and (date(r["THRU_DATE"]) or date(r["RPT_DATE"]) or SINCE) >= SINCE]
@@ -366,6 +377,12 @@ def main():
             problems.append(f"{pub} {name}: itemized rows do not match filed schedule totals ; left out")
             continue
 
+        # FPPC's links can point at the wrong committee, so its name must resemble the filer's.
+        info = measure_committees.get(pub)
+        if info and not (name_words(info["name"]) & name_words(name)):
+            problems.append(f"{pub}: FPPC calls this {info['name']!r} but it files as {name!r}; left out")
+            continue
+
         ranked = donors.ranked()
         recips = gave.ranked()
         top = [party(r, known_ids) for r in ranked[:TOP_DONORS]]
@@ -374,7 +391,6 @@ def main():
             if src["measure"]: p["measure"] = src["measure"]
         out_cash = sum(r["cash"] for r in recips)
         out_noncash = sum(r["noncash"] for r in recips)
-        info = measure_committees.get(pub)
         result[pub] = {
             "name": info["name"] if info else name,
             "url": f"https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id={pub}",

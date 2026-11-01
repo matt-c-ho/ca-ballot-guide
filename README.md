@@ -55,6 +55,7 @@ data/
     committees.json         committee donors and giving (generated, do not edit)
 scripts/validate.mjs        data checks (runs on every Vercel build)
 scripts/build-committees.py generates committees.json from official sources
+scripts/check-committees.py decides whether a new committees.json is safe to publish
 vercel.json                 Vercel build settings and security headers
 ```
 
@@ -152,7 +153,7 @@ To refresh:
 2. In `election.json`, update `money.asOf`, the totals in `money.intro`, `money.funders`, and `money.max` (the chart's scale) if the largest bar grows.
 3. Update any dated figures elsewhere, such as the "largest single committee" bullet on Prop 42 and the Prop 38 funder bullet.
 
-A daily cloud routine ("CA Ballot Guide: daily FPPC money refresh", 08:00 UTC, through Nov 4, 2026) follows these steps automatically: it compares FPPC's "Last Modified" date with `money.asOf`, does nothing if they match, and otherwise updates the figures, runs the validator, and pushes to `main`. Manage it at claude.ai/code/routines. Its cloud environment must allow `www.fppc.ca.gov` and `github.com`.
+A daily cloud routine ("CA Ballot Guide: daily FPPC money refresh", 3am Pacific, through Nov 4, 2026) follows these steps automatically: it compares FPPC's "Last Modified" date with `money.asOf`, does nothing if they match, and otherwise updates the figures, runs the validator, and pushes to `main`. Manage it at claude.ai/code/routines. Its cloud environment must allow `www.fppc.ca.gov`, `github.com`, and `campaignfinance.cdn.sos.ca.gov`.
 
 Props 41 and 42 have no separate opposing committee; the Yes on 40 campaign opposes them. The FPPC table lists that committee under all three measures. This guide counts it once, under Prop 40, and shows 41 and 42 with no opposing money.
 
@@ -164,7 +165,9 @@ Props 41 and 42 have no separate opposing committee; the Yes on 40 campaign oppo
 python3 scripts/build-committees.py --cache /tmp/calaccess --report /tmp/committees-report.txt
 ```
 
-The script reads the [FPPC list](https://www.fppc.ca.gov/search-filings/top-10-contributors-list/november-2026-general-election/) to find each measure's committees and any committee FPPC lists as giving them $1M or more. It then streams those committees' records from the Secretary of State's [CAL-ACCESS raw export](https://www.sos.ca.gov/campaign-lobbying/helpful-resources/raw-data-campaign-finance-and-lobbying-activity). Delete the cache directory to pick up a newer export. This is a snapshot: rerun it to refresh, because the daily routine does not. Doing that in the routine would also require allowing `campaignfinance.cdn.sos.ca.gov`.
+The script reads the [FPPC list](https://www.fppc.ca.gov/search-filings/top-10-contributors-list/november-2026-general-election/) to find each measure's committees and any committee FPPC lists as giving them $1M or more. It then streams those committees' records from the Secretary of State's [CAL-ACCESS raw export](https://www.sos.ca.gov/campaign-lobbying/helpful-resources/raw-data-campaign-finance-and-lobbying-activity). Cached extracts are tied to the export's date and the committee list, so a stale cache can't be reused.
+
+The daily routine refreshes this too, once its cloud environment allows `campaignfinance.cdn.sos.ca.gov`. It runs at 3am Pacific because the state updates the export a little after 1am. It only publishes if `scripts/check-committees.py` passes, comparing the new build with the published file and the build report. Otherwise it leaves the site as it was and reports why.
 
 Rules it applies:
 
@@ -175,7 +178,7 @@ Rules it applies:
 - **IDs.** Older committees file under legacy IDs, which `FILER_XREF_CD` maps to their public IDs. Cal-Access links use public IDs.
 - **Privacy.** Publishes names and amounts only, never addresses, employers, or occupations. `validate.mjs` enforces this.
 
-Read the `--report` file after each run. Its FPPC comparison should be checked by hand, because differences are normal but not always harmless. The export can be newer than FPPC, FPPC combines affiliated donors (Homeownership for Families and California Association of Realtors, for example), and FPPC's page can contain typos ("$2,000,0000" for the Graton Rancheria tribal council). A few small gaps remain unexplained, such as about 0.1–0.2% on in-kind gifts to Yes on 40.
+When running by hand, also run the checker and read the `--report` file. FPPC differences are normal but not always harmless. The export can be newer than FPPC, FPPC combines affiliated donors (Homeownership for Families and California Association of Realtors, for example), and FPPC's page can contain typos ("$2,000,0000" for the Graton Rancheria tribal council). The checker stops on any donor more than 1% below FPPC unless its `KNOWN_LOWER` list holds a reason traced by hand. A few small gaps remain unexplained, such as about 0.1–0.2% on in-kind gifts to Yes on 40.
 
 ## Design
 

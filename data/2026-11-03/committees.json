@@ -635,7 +635,7 @@
    "donorCount": 13,
    "recipients": [
     {
-     "name": "Yes on Prop 3, sponsored by education and labor organizations",
+     "name": "Yes on Prop 3 to Protect Public Education, Health Care and Budget Stability, sponsored by education and labor organizations",
      "total": 60501618.98,
      "kind": "committee",
      "id": "1483562",
@@ -700,6 +700,141 @@
     }
    ],
    "recipientCount": 24
+  },
+  "1052379": {
+   "name": "PACE of California School Employees Association - Issues",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1052379",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 17131.8,
+    "unitemized": 1061783.17,
+    "noncash": 0.0,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 2836300.0,
+    "noncash": 0.0,
+    "late": 25000.0
+   },
+   "donors": [
+    {
+     "name": "Chris Myers",
+     "total": 2150.0,
+     "kind": "person"
+    },
+    {
+     "name": "Heidi Holliday Mcfarland",
+     "total": 1850.5,
+     "kind": "person"
+    },
+    {
+     "name": "Espie Medellin",
+     "total": 1348.0,
+     "kind": "person"
+    },
+    {
+     "name": "Debra Ladwig",
+     "total": 1075.0,
+     "kind": "person"
+    },
+    {
+     "name": "Debb Jachens",
+     "total": 989.0,
+     "kind": "person"
+    },
+    {
+     "name": "Robin Jackson",
+     "total": 779.0,
+     "kind": "person"
+    },
+    {
+     "name": "Cassandra Mancini",
+     "total": 645.0,
+     "kind": "person"
+    },
+    {
+     "name": "Derek Alan Eckstein",
+     "total": 463.0,
+     "kind": "person"
+    },
+    {
+     "name": "Brandon Navarro",
+     "total": 450.0,
+     "kind": "person"
+    },
+    {
+     "name": "Frances L Santillan",
+     "total": 380.0,
+     "kind": "person"
+    }
+   ],
+   "donorCount": 57,
+   "recipients": [
+    {
+     "name": "Yes on Prop 3 to Protect Public Education, Health Care and Budget Stability, sponsored by education and labor organizations",
+     "total": 2000000.0,
+     "kind": "committee",
+     "measure": "Proposition 3",
+     "id": "1483562"
+    },
+    {
+     "name": "Californians for Protecting Public Education Healthcare & Budget Stability Sponsored by Education and Labor Organizations",
+     "total": 500000.0,
+     "kind": "committee",
+     "measure": "Proposition 3"
+    },
+    {
+     "name": "Alliance for a Better California, Sponsored by Working Families and Labor Organizations",
+     "total": 212000.0,
+     "kind": "committee"
+    },
+    {
+     "name": "Working Families Say No To Propositions 41 and 42 Sponsored by Labor Unions",
+     "total": 125000.0,
+     "kind": "committee",
+     "id": "1497412",
+     "late": 25000.0
+    },
+    {
+     "name": "Californians for Action Jessica Caloza Ballot Measure Committee",
+     "total": 10000.0,
+     "kind": "committee"
+    },
+    {
+     "name": "Committee for Safe, Modern Laguna Beach Schools, Yes on A",
+     "total": 2500.0,
+     "kind": "committee",
+     "measure": "Laguna Beach Unified School District, Safe, Modern Laguna Beach Unified School District School Bond Measure"
+    },
+    {
+     "name": "Palo Alto Community Center 2026",
+     "total": 2500.0,
+     "kind": "committee",
+     "measure": "City of Palo Alto Community Safety/Services Measure"
+    },
+    {
+     "name": "Yes on SMS-Citizens for Strong San Marino Schools",
+     "total": 2500.0,
+     "kind": "committee",
+     "measure": "Combined Parcel Tax Renewal Measure"
+    },
+    {
+     "name": "Yes on A - Invest in Calaveras Kids",
+     "total": 1900.0,
+     "kind": "committee",
+     "measure": "Calaveras Unified School District Fund Improvements to Public Education Facilities Bond Measure"
+    },
+    {
+     "name": "Committee for Quality Valley Community Schools",
+     "total": 1900.0,
+     "kind": "committee",
+     "measure": "Local Education Funding Renewal; Measure A"
+    }
+   ],
+   "recipientCount": 12
   },
   "1059890": {
    "name": "Protect Prop. 13, a project of the Howard Jarvis Taxpayers Association",
@@ -909,10 +1044,11 @@
      "id": "1492508"
     },
     {
-     "name": "Yes on Prop 3 to Protect Public Education, Health Care and Budget Stability sponsored by education and labor organizations",
+     "name": "Yes on Prop 3 to Protect Public Education, Health Care and Budget Stability, sponsored by education and labor organizations",
      "total": 1500000.0,
      "kind": "committee",
-     "measure": "Provides Permanent Funding for Schools and Healthcare by Extending Existing Tax on High Incomes. Initiative Constitutional Amendment. Proposition 3"
+     "measure": "Provides Permanent Funding for Schools and Healthcare by Extending Existing Tax on High Incomes. Initiative Constitutional Amendment. Proposition 3",
+     "id": "1483562"
     },
     {
      "name": "No on 39 - Block Election Rigging sponsored by nurses, teachers, and nonprofit labor and community health clinic organizations",
@@ -1273,6 +1409,146 @@
     }
    ],
    "recipientCount": 22
+  },
+  "1240104": {
+   "name": "California Federation of Teachers COPE Prop/Ballot Committee",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1240104",
+   "measures": [],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 3360258.97,
+    "unitemized": 1308.09,
+    "noncash": 0.0,
+    "loans": 0.0,
+    "late": 0.0
+   },
+   "gave": {
+    "cash": 3692000.0,
+    "noncash": 11056.22,
+    "late": 350000.0
+   },
+   "donors": [
+    {
+     "name": "United Educators of San Francisco (Unitemized Member Dues)",
+     "total": 380481.29,
+     "kind": "organization"
+    },
+    {
+     "name": "United Teachers Los Angeles (Unitemized Member Dues)",
+     "total": 331830.87,
+     "kind": "organization"
+    },
+    {
+     "name": "Los Angeles College Faculty Guild (Unitemized Member Contributions)",
+     "total": 189265.15,
+     "kind": "organization"
+    },
+    {
+     "name": "AFT Guild-San Diego Community College (Unitemized Member Contributions)",
+     "total": 159439.32,
+     "kind": "organization"
+    },
+    {
+     "name": "UC AFT (Unitemized Member Contributions)",
+     "total": 145694.23,
+     "kind": "organization"
+    },
+    {
+     "name": "Poway Federation of Teachers (Unitemized Member Contributions)",
+     "total": 135632.98,
+     "kind": "organization"
+    },
+    {
+     "name": "Newport-Mesa Federation of Teachers (Unitemized Member Contributions)",
+     "total": 88233.19,
+     "kind": "organization"
+    },
+    {
+     "name": "Salinas Valley Federation of Teachers (Unitemized Member Contributions)",
+     "total": 87992.66,
+     "kind": "organization"
+    },
+    {
+     "name": "Los Rios College Federation of Teachers (Unitemized Member Contributions)",
+     "total": 87764.81,
+     "kind": "organization"
+    },
+    {
+     "name": "ABC Federation of Teachers (Unitemized Member Contributions)",
+     "total": 84636.04,
+     "kind": "organization"
+    }
+   ],
+   "donorCount": 168,
+   "recipients": [
+    {
+     "name": "Yes on 50, the Election Rigging Response Act, Governor Newsom's Ballot Measure Committee",
+     "total": 1000628.43,
+     "kind": "committee",
+     "noncash": 628.43,
+     "measure": "The Election Rigging Response Act. Proposition 50."
+    },
+    {
+     "name": "Yes on Prop 3 to Protect Public Education, Health Care and Budget Stability, sponsored by education and labor organizations",
+     "total": 1000000.0,
+     "kind": "committee",
+     "measure": "Provides Permanent Funding for Schools and Healthcare by Extending Existing Tax on High Incomes. Initiative Constitutional Amendment. Statewide",
+     "id": "1483562"
+    },
+    {
+     "name": "Yes on Prop 3 to Protect Public Education, Health Care and Budge Stability, sponsored by education and labor organizations",
+     "total": 500000.0,
+     "kind": "committee",
+     "measure": "Provides Permanent Funding for Schools and Healthcare by Extending Existing Tax on High Incomes. Initiative Constitutional Amendment. Statewide"
+    },
+    {
+     "name": "Million More Voters, Sponsored by the California Labor Federation, AFL-CIO",
+     "total": 350000.0,
+     "kind": "committee",
+     "id": "1291923",
+     "late": 250000.0
+    },
+    {
+     "name": "No on Prop 43 Stop the Local Taxpayer Deception Act, sponsored by labor organizations",
+     "total": 250000.0,
+     "kind": "committee",
+     "measure": "Limits Voters Ability to Raise Revenues for Local Government Services. Legislative Constitutional Amendment. Proposition 43.",
+     "id": "1492508"
+    },
+    {
+     "name": "No on 39 - Block Election Rigging Sponsored by Nurses, Teachers, and Noprofit Labor and Community Health Clinic Organizations",
+     "total": 250000.0,
+     "kind": "committee",
+     "measure": "Prohibits Citizens from Voting Unless They Present Government-Issued Identification. Initiative Constitutional Amendment.  Proposition 39 Statewide"
+    },
+    {
+     "name": "Californians for Protecting Public Education, Health Care and Budget Stability, Sponsored by Education and Labor Organization",
+     "total": 250000.0,
+     "kind": "committee",
+     "measure": "Provides permanent funding for schools and healthcare by extending existing tax on high incomes. Initiative constitutional amendment. (25-0016)"
+    },
+    {
+     "name": "Alliance for a Better California sponsored by working families and labor organizations",
+     "total": 212000.0,
+     "kind": "committee",
+     "id": "1340076"
+    },
+    {
+     "name": "Working Families say No to Propositions 41 and 42 Sponsored by Labor Unions",
+     "total": 100000.0,
+     "kind": "committee",
+     "measure": "Proposition 41"
+    },
+    {
+     "name": "Yes on Prop 3 to Protect Public Education, Health Care and Budget Stability, sponsored by education and labor organizations",
+     "total": 100000.0,
+     "kind": "committee",
+     "id": "1483562",
+     "late": 100000.0
+    }
+   ],
+   "recipientCount": 15
   },
   "1240169": {
    "name": "California State Council of Laborers Issues PAC Opposing Prop. 45",
@@ -2800,6 +3076,127 @@
    "donorCount": 1,
    "recipients": [],
    "recipientCount": 0
+  },
+  "1483562": {
+   "name": "Yes on Prop 3 to Protect Public Education, Health Care and Budget Stability, sponsored by education and labor organizations",
+   "url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1483562",
+   "measures": [
+    {
+     "id": "3",
+     "side": "yes"
+    }
+   ],
+   "from": "2025-01-01",
+   "thru": "2026-10-17",
+   "received": {
+    "itemized": 70202500.0,
+    "unitemized": 0.0,
+    "noncash": 1947292.35,
+    "loans": 0.0,
+    "late": 7168861.37
+   },
+   "gave": {
+    "cash": 1540000.0,
+    "noncash": 0.0,
+    "late": 46666.67
+   },
+   "donors": [
+    {
+     "name": "California Teachers Association/ Issues PAC",
+     "total": 60502956.9,
+     "kind": "committee",
+     "id": "1045740",
+     "noncash": 563619.42,
+     "late": 6664337.48
+    },
+    {
+     "name": "National Education Association (MPO)",
+     "total": 7500000.0,
+     "kind": "committee",
+     "id": "1073358"
+    },
+    {
+     "name": "California Federation of Teachers COPE Prop/Ballot Committee",
+     "total": 1850000.0,
+     "kind": "committee",
+     "id": "1240104",
+     "late": 100000.0
+    },
+    {
+     "name": "PACE of California School Employees Association - Issues",
+     "total": 1600000.0,
+     "kind": "committee",
+     "id": "1052379"
+    },
+    {
+     "name": "SEIU California State Council For Working People",
+     "total": 1509028.58,
+     "kind": "committee",
+     "id": "1067655",
+     "noncash": 9028.58
+    },
+    {
+     "name": "Service Employees International Union - SEIU Local 2015 Issues PAC",
+     "total": 1000000.0,
+     "kind": "committee",
+     "id": "1378400"
+    },
+    {
+     "name": "California School Employees Association",
+     "total": 1000000.0,
+     "kind": "organization"
+    },
+    {
+     "name": "California Democratic Party",
+     "total": 788610.21,
+     "kind": "committee",
+     "id": "1018392",
+     "noncash": 788172.37,
+     "late": 437.84
+    },
+    {
+     "name": "American Federation of Teachers, AFL-CIO Committee on Political Education (FEC PAC ID# C000028860)",
+     "total": 650000.0,
+     "kind": "committee",
+     "id": "1355826",
+     "late": 200000.0
+    },
+    {
+     "name": "United Domestic Workers of America Issues PAC",
+     "total": 508758.75,
+     "kind": "committee",
+     "id": "1367548",
+     "noncash": 8758.75
+    }
+   ],
+   "donorCount": 35,
+   "recipients": [
+    {
+     "name": "California Democratic Party",
+     "total": 800000.0,
+     "kind": "committee",
+     "id": "1018392"
+    },
+    {
+     "name": "Communities for an Affordable California, Yes on 3, No on 39 and 43 Sponsored by Million Voters Project Action Fund",
+     "total": 586666.67,
+     "kind": "committee",
+     "id": "1496598",
+     "late": 46666.67
+    },
+    {
+     "name": "Working People in Supporting of Prop 3 and in Opposition of Prop 39, 43 and 45, Sponsored by Los Angeles County Federation of Labor AFL-CIO",
+     "total": 100000.0,
+     "kind": "committee",
+     "measure": "Provides Permanent Funding for Schools and Healthcare by Extending Existing Tax on High Incomes. Initiative Constitutional Amendment. Proposition 3"
+    },
+    {
+     "name": "Planned Parenthood Affiliates of California VOTES PAC",
+     "total": 100000.0,
+     "kind": "committee"
+    }
+   ],
+   "recipientCount": 4
   },
   "1484266": {
    "name": "Protect Patients: Stop the Attack on Community Health Centers and Clinics, sponsored by California Primary Care Association Advocates",
@@ -4627,7 +5024,7 @@
      "late": 74062.0
     },
     {
-     "name": "Yes on Prop 3, Sponsored by Education and Labor Organizations",
+     "name": "Yes on Prop 3 to Protect Public Education, Health Care and Budget Stability, sponsored by education and labor organizations",
      "total": 610000.0,
      "kind": "committee",
      "id": "1483562",
