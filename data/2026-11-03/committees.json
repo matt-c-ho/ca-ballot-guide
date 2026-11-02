@@ -1,5 +1,5 @@
 {
- "exportDate": "2026-11-01",
+ "exportDate": "2026-11-02",
  "latestLate": "2026-10-31",
  "since": "2025-01-01",
  "committees": {
@@ -19,7 +19,7 @@
    "gave": {
     "cash": 8016464.0,
     "noncash": 18585276.66,
-    "late": 8793723.28
+    "late": 8795901.73
    },
    "donors": [
     {
@@ -102,11 +102,11 @@
     },
     {
      "name": "Valley Families for Melissa Hurtado for Senate 2026",
-     "total": 3690126.27,
+     "total": 3691212.1,
      "kind": "committee",
      "id": "1456951",
      "noncash": 2006617.94,
-     "late": 668508.33
+     "late": 669594.16
     },
     {
      "name": "United Against Prop. 39 -- Stop the Rig sponsored by nonprofit labor and civil rights organizations",
@@ -125,11 +125,11 @@
     },
     {
      "name": "Catherine Blakespear for Senate 2026",
-     "total": 2392171.31,
+     "total": 2392497.81,
      "kind": "committee",
      "id": "1456912",
      "noncash": 1570608.12,
-     "late": 821563.19
+     "late": 821889.69
     },
     {
      "name": "Brian Pacheco for Assembly 2026",
@@ -149,11 +149,11 @@
     },
     {
      "name": "Mara Elliott for Senate 2026",
-     "total": 1328047.23,
+     "total": 1328401.11,
      "kind": "committee",
      "id": "1483627",
      "noncash": 924281.79,
-     "late": 403765.44
+     "late": 404119.32
     },
     {
      "name": "Becerra for Governor 2026",
