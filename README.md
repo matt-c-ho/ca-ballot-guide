@@ -134,14 +134,28 @@ Fill in `data/<election>/results.json`:
 
 When results exist and polls have closed, each card shows a status chip, each measure page gets a Results chart (labeled Yes and No bars with a tick at the share needed to pass), and My ballot compares them with the viewer's choices.
 
-### Planned: fetching results automatically
+### Fetching results
 
-Not built yet; the `my-ballot` branch is kept for this work. Research so far:
+`python3 scripts/fetch-results.py` updates the statewide propositions from the Secretary of State feed (`https://api.sos.ca.gov/returns/ballot-measures`). It exits 0 when it updates, 3 when the report is unchanged, and 1 when it refuses. It refuses, leaving `results.json` as it was, if:
 
-- **State propositions:** the Secretary of State publishes JSON at `https://api.sos.ca.gov/returns/ballot-measures` (yes/no votes and percentages per proposition) and county reporting status at `/returns/status`. **Before Election Day this feed serves test data** (in October 2026 every proposition showed about 80% yes and 100% reporting), so a fetcher must never publish before polls close. The site's polls-close gate is a second safeguard.
-- **Local measures (O, P, Q, R and Santa Clara's share of RTM):** published by the Santa Clara County Registrar. Its site blocks automated requests and the export format is unconfirmed, so these may need to be entered by hand.
-- **RTM** passes on the combined vote of five counties (Alameda, Contra Costa, San Francisco, San Mateo, Santa Clara). There is no single official combined total; it has to be summed from the county results.
-- Proposed approach: a script that writes `results.json` (manual first), then optionally a scheduled GitHub Action that commits it. Pushing workflow files needs the `workflow` scope on the GitHub login (`gh auth refresh -s workflow`).
+- the report is stamped before polls close (the feed serves test data before Election Day)
+- any proposition is missing
+- a percentage disagrees with its vote counts
+- the report is older than the published one
+- any proposition lost more than 1% of its votes
+
+Outcomes are only `leading` or `trailing`, worked out from `passPct`. The feed's `/returns/status` endpoint was still serving 2024 test data on election night, so it is not used.
+
+Two cloud routines run the fetcher and push to `main`: "CA Ballot Guide: results, election week" runs every 20 minutes on Nov 3–4, and "CA Ballot Guide: results, daily" runs at 6 p.m. Pacific from Nov 5 through Dec 11. Their environment must allow `api.sos.ca.gov`.
+
+**Local measures (O, P, Q, R, RTM) are entered by hand.** The Santa Clara County Registrar blocks automated requests. RTM passes on the combined vote of five counties (Alameda, Contra Costa, San Francisco, San Mateo, Santa Clara), so enter it only from a combined official total or after summing all five counties' official results. For example:
+
+```
+python3 scripts/fetch-results.py --local O=41250,19870 --local P=40110,21020 \
+  --source "Santa Clara County Registrar of Voters" --source-url https://... --as-of "Nov 4, 5:00 p.m. PT"
+```
+
+Later state refreshes keep these entries. After certification (counties by Dec 3, Secretary of State by Dec 11), change each `outcome` to `passed` or `failed` and set `final` to `true` by hand.
 
 ## Updating campaign money
 

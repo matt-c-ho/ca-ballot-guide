@@ -92,6 +92,9 @@ for (const e of index.elections) {
     for (const [id, x] of Object.entries(r.measures || {})) {
       if (!ids.has(id)) err(`${dir}/results.json`, `unknown measure "${id}"`);
       if (!OUTCOMES.includes(x.outcome)) err(`${dir}/results.json [${id}]`, `outcome must be one of ${OUTCOMES.join(", ")}`);
+      for (const f of ["yes", "no"]) if (x[f] != null && !(Number.isInteger(x[f]) && x[f] >= 0)) err(`${dir}/results.json [${id}]`, `${f} must be a whole number of votes`);
+      if (x.yesPct != null && (typeof x.yesPct !== "number" || x.yesPct < 0 || x.yesPct > 100)) err(`${dir}/results.json [${id}]`, "yesPct must be 0 to 100");
+      if (x.sourceUrl && !/^https:\/\//.test(x.sourceUrl)) err(`${dir}/results.json [${id}]`, "sourceUrl must be https");
     }
   }
   console.log(`${e.id}: ${ids.size} measures, ${Object.keys(groups).length} groups`);

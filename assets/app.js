@@ -166,6 +166,12 @@ const passWords = pct => pct > 66 ? "two-thirds (66.7%) yes" : pct === 50 ? "mor
 // Results as a two-bar chart: Yes and No on one 0–100% scale, each labeled with its
 // share and vote count (--yes / --no colors; the labels, not the colors, carry the
 // meaning). A tick on the Yes bar marks the share needed to pass.
+// A measure can carry its own source (local measures come from the county, not the state).
+function resultSource(r) {
+  const src = r.source || S.results.source, url = r.sourceUrl || S.results.sourceUrl, when = r.updated || S.results.updated;
+  return `${esc(src || "")}${when ? ` · updated ${esc(when)}` : ""}${url ? ` · <a href="${esc(url)}" target="_blank" rel="noopener">official results</a>` : ""}`;
+}
+
 function resultsSection(m) {
   const r = resultFor(m.id);
   if (!r) return "";
@@ -182,7 +188,7 @@ function resultsSection(m) {
       ${bar("No", no, r.no, false)}
     </div>
     <p class="small muted"><span class="rneed-key" aria-hidden="true"></span>Needs ${passWords(need)} to pass.</p>
-    <p class="src">${esc(S.results.source || "")}${S.results.updated ? ` · updated ${esc(S.results.updated)}` : ""}${S.results.sourceUrl ? ` · <a href="${S.results.sourceUrl}" target="_blank" rel="noopener">official results</a>` : ""}</p>
+    <p class="src">${resultSource(r)}</p>
   </section>`;
 }
 
