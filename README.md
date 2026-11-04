@@ -146,7 +146,7 @@ When results exist and polls have closed, each card shows a status chip, each me
 
 Outcomes are only `leading` or `trailing`, worked out from `passPct`. The feed's `/returns/status` endpoint was still serving 2024 test data on election night, so it is not used.
 
-Two cloud routines run the fetcher and push to `main`: "CA Ballot Guide: results, election week" runs every 20 minutes on Nov 3–4, and "CA Ballot Guide: results, daily" runs at 6 p.m. Pacific from Nov 5 through Dec 11. Their environment must allow `api.sos.ca.gov`.
+Two cloud routines run the fetcher and push to `main`: "CA Ballot Guide: results, election week" runs hourly at 5 past the hour on Nov 3–4, and "CA Ballot Guide: results, daily" runs at 6 p.m. Pacific from Nov 5 through Dec 11. Their environment must allow `api.sos.ca.gov`.
 
 **Local measures (O, P, Q, R, RTM) are entered by hand.** The Santa Clara County Registrar blocks automated requests. RTM passes on the combined vote of five counties (Alameda, Contra Costa, San Francisco, San Mateo, Santa Clara), so enter it only from a combined official total or after summing all five counties' official results. For example:
 
