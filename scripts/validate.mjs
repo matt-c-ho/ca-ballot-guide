@@ -95,6 +95,11 @@ for (const e of index.elections) {
       for (const f of ["yes", "no"]) if (x[f] != null && !(Number.isInteger(x[f]) && x[f] >= 0)) err(`${dir}/results.json [${id}]`, `${f} must be a whole number of votes`);
       if (x.yesPct != null && (typeof x.yesPct !== "number" || x.yesPct < 0 || x.yesPct > 100)) err(`${dir}/results.json [${id}]`, "yesPct must be 0 to 100");
       if (x.sourceUrl && !/^https:\/\//.test(x.sourceUrl)) err(`${dir}/results.json [${id}]`, "sourceUrl must be https");
+      if (x.counties) {
+        const sum = f => x.counties.reduce((t, c) => t + c[f], 0);
+        if (sum("yes") !== x.yes || sum("no") !== x.no) err(`${dir}/results.json [${id}]`, "county yes/no must add up to the measure totals");
+        for (const c of x.counties) if (!/^https:\/\//.test(c.sourceUrl || "")) err(`${dir}/results.json [${id}]`, `county ${c.name} needs an https sourceUrl`);
+      }
     }
   }
   console.log(`${e.id}: ${ids.size} measures, ${Object.keys(groups).length} groups`);

@@ -168,7 +168,8 @@ const passWords = pct => pct > 66 ? "two-thirds (66.7%) yes" : pct === 50 ? "mor
 // meaning). A tick on the Yes bar marks the share needed to pass.
 // A measure can carry its own source (local measures come from the county, not the state).
 function resultSource(r) {
-  const src = r.source || S.results.source, url = r.sourceUrl || S.results.sourceUrl, when = r.updated || S.results.updated;
+  const own = k => (k in r ? r[k] : S.results[k]);
+  const src = own("source"), url = own("sourceUrl"), when = own("updated");
   return `${esc(src || "")}${when ? ` · updated ${esc(when)}` : ""}${url ? ` · <a href="${esc(url)}" target="_blank" rel="noopener">official results</a>` : ""}`;
 }
 
@@ -188,6 +189,7 @@ function resultsSection(m) {
       ${bar("No", no, r.no, false)}
     </div>
     <p class="small muted"><span class="rneed-key" aria-hidden="true"></span>Needs ${passWords(need)} to pass.</p>
+    ${(r.counties || []).length ? `<h4>By county</h4><ol class="flows">${r.counties.map(c => `<li><span class="flow-name"><a href="${esc(c.sourceUrl)}" target="_blank" rel="noopener">${esc(c.name)}</a><span class="who">${(100 * c.yes / (c.yes + c.no)).toFixed(1)}% yes · updated ${esc(c.asOf)}</span></span><span class="flow-amt num">${c.yes.toLocaleString("en-US")} / ${c.no.toLocaleString("en-US")}</span></li>`).join("")}</ol>` : ""}
     <p class="src">${resultSource(r)}</p>
   </section>`;
 }

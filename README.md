@@ -56,6 +56,8 @@ data/
 scripts/validate.mjs        data checks (runs on every Vercel build)
 scripts/build-committees.py generates committees.json from official sources
 scripts/check-committees.py decides whether a new committees.json is safe to publish
+scripts/fetch-results.py   statewide results from the Secretary of State; local results by hand
+scripts/fetch-rtm.py       Measure RTM from the five counties
 vercel.json                 Vercel build settings and security headers
 ```
 
@@ -148,7 +150,16 @@ Outcomes are only `leading` or `trailing`, worked out from `passPct`. The feed's
 
 Two cloud routines run the fetcher and push to `main`: "CA Ballot Guide: results, election week" runs hourly from 3 a.m. to 11 p.m. Pacific on Nov 4, and "CA Ballot Guide: results, daily" runs at 6 p.m. Pacific from Nov 5 through Dec 11. Their environment must allow `api.sos.ca.gov`.
 
-**Local measures (O, P, Q, R, RTM) are entered by hand.** The Santa Clara County Registrar blocks automated requests. RTM passes on the combined vote of five counties (Alameda, Contra Costa, San Francisco, San Mateo, Santa Clara), so enter it only from a combined official total or after summing all five counties' official results. For example:
+**Measure RTM** passes on the combined vote of five counties, and no official source publishes that combined total. `python3 scripts/fetch-rtm.py` reads three counties' official results: Alameda's results page, San Francisco's results page, and San Mateo's CSV, which it checks against San Mateo's results portal. It keeps each county's latest figures and update time in `rtm-counties.json`. Contra Costa and Santa Clara block automated requests, so enter them by hand from their official results pages:
+
+```
+python3 scripts/fetch-rtm.py --county "Contra Costa=123456,98765" --county "Santa Clara=234567,198765" \
+  --as-of "Nov 5, 2026 5:00 PM" --source-url https://...
+```
+
+RTM appears on the site only once all five counties are present. Its page lists each county with its own update time, so a hand-entered county that has fallen behind is visible. The fetcher refuses a county whose total vote falls or whose update time goes backward. The results routines run it after the state fetch, and their environment must also allow `www.alamedacountyca.gov`, `www.sfelections.org`, `smcacre.gov`, and `www.livevoterturnout.com`.
+
+**Measures O, P, Q and R are entered by hand.** The Santa Clara County Registrar blocks automated requests. For example:
 
 ```
 python3 scripts/fetch-results.py --local O=41250,19870 --local P=40110,21020 \
