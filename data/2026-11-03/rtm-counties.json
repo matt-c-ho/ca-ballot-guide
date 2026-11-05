@@ -19,5 +19,19 @@
     "asOf": "2026-11-04T02:03:18",
     "sourceUrl": "https://smcacre.gov/elections/november-3-2026-election-results",
     "how": "fetched"
+  },
+  "Contra Costa": {
+    "yes": 146383,
+    "no": 114875,
+    "asOf": "2026-11-03",
+    "sourceUrl": "https://www.contracosta.ca.gov/7761/Election-Results",
+    "how": "entered by hand"
+  },
+  "Santa Clara": {
+    "yes": 164491,
+    "no": 139339,
+    "asOf": "2026-11-04T16:49:59",
+    "sourceUrl": "https://www.sccvote.org",
+    "how": "entered by hand"
   }
 }

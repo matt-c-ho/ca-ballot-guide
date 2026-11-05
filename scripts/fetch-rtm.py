@@ -3,7 +3,7 @@
 
   python3 scripts/fetch-rtm.py
       Fetch Alameda, San Francisco and San Mateo from their official results pages.
-  python3 scripts/fetch-rtm.py --county "Santa Clara=812345,690123" --as-of "Nov 5, 2026 5:00 PM" \
+  python3 scripts/fetch-rtm.py --county "Santa Clara=812345,690123"  (plain digits) --as-of "Nov 5, 2026 5:00 PM" \
       --source-url https://vote.santaclaracounty.gov/...
       Enter a county by hand from its official results page.
 
@@ -110,8 +110,11 @@ def san_mateo():
 FETCHERS = {"Alameda": alameda, "San Francisco": san_francisco, "San Mateo": san_mateo}
 
 
-def label(t):
-    return t.strftime("%b %-d, %-I:%M %p").replace("AM", "a.m.").replace("PM", "p.m.")
+def label(iso):
+    """Display form of a stored time. A date with no time (some county reports give none) says so."""
+    if len(iso) == 10:
+        return dt.date.fromisoformat(iso).strftime("%b %-d") + " (time not given)"
+    return dt.datetime.fromisoformat(iso).strftime("%b %-d, %-I:%M %p").replace("AM", "a.m.").replace("PM", "p.m.")
 
 
 def main():
@@ -134,15 +137,19 @@ def main():
             if not (a.as_of and a.source_url and a.source_url.startswith("https://")):
                 raise Refused("--county needs --as-of and an https --source-url")
             t = None
-            for f in ("%b %d, %Y %I:%M %p", "%B %d, %Y %I:%M %p"):
+            for f in ("%b %d, %Y %I:%M %p", "%B %d, %Y %I:%M %p", "%b %d, %Y %I:%M:%S %p", "%B %d, %Y %I:%M:%S %p"):
                 try: t = dt.datetime.strptime(a.as_of, f); break
                 except ValueError: pass
+            for f in ("%b %d, %Y", "%B %d, %Y"):     # Date only, when the county report gives no time.
+                try: t = t or dt.datetime.strptime(a.as_of, f).date(); break
+                except ValueError: pass
             if not t:
-                raise Refused(f'--as-of must look like "Nov 5, 2026 5:00 PM", not {a.as_of!r}')
+                raise Refused(f'--as-of must look like "Nov 5, 2026 5:00 PM" or "Nov 5, 2026", not {a.as_of!r}')
             for item in a.county:
-                m = re.fullmatch(r"\s*([A-Za-z ]+?)\s*=\s*([\d,]+)\s*,\s*([\d,]+)\s*", item)
+                # Plain digits only: "146,383,114,875" could be split more than one way.
+                m = re.fullmatch(r"\s*([A-Za-z ]+?)\s*=\s*(\d+)\s*,\s*(\d+)\s*", item)
                 if not m or m[1] not in COUNTIES:
-                    raise Refused(f"{item!r} must be COUNTY=YES,NO with COUNTY one of {', '.join(COUNTIES)}")
+                    raise Refused(f"{item!r} must be COUNTY=YES,NO in plain digits (no thousands commas), with COUNTY one of {', '.join(COUNTIES)}")
                 fresh[m[1]] = (num(m[2]), num(m[3]), t, a.source_url, "entered by hand")
         else:
             for county, fetch in FETCHERS.items():
@@ -178,8 +185,8 @@ def main():
             "yes": yes, "no": no, "yesPct": round(100 * yes / (yes + no), 1), "noPct": round(100 * no / (yes + no), 1),
             "outcome": "leading" if yes > no else "trailing", "final": False,
             "source": "Sum of the five counties' official results", "sourceUrl": "",
-            "updated": f"{label(dt.datetime.fromisoformat(oldest))} to {label(dt.datetime.fromisoformat(max(store[c]['asOf'] for c in COUNTIES)))} PT, varying by county",
-            "counties": [{"name": c, "yes": store[c]["yes"], "no": store[c]["no"], "asOf": label(dt.datetime.fromisoformat(store[c]["asOf"])),
+            "updated": f"{label(oldest)} to {label(max(store[c]['asOf'] for c in COUNTIES))} PT, varying by county",
+            "counties": [{"name": c, "yes": store[c]["yes"], "no": store[c]["no"], "asOf": label(store[c]["asOf"]),
                           "sourceUrl": store[c]["sourceUrl"]} for c in COUNTIES],
         }
         print(f"RTM combined: {yes:,} yes, {no:,} no ({results['measures']['RTM']['yesPct']}% yes), {results['measures']['RTM']['outcome']}")

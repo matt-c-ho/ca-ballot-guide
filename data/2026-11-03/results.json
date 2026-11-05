@@ -115,6 +115,54 @@
       "noPct": 54.3,
       "outcome": "trailing",
       "final": false
+    },
+    "RTM": {
+      "yes": 737398,
+      "no": 456356,
+      "yesPct": 61.8,
+      "noPct": 38.2,
+      "outcome": "leading",
+      "final": false,
+      "source": "Sum of the five counties' official results",
+      "sourceUrl": "",
+      "updated": "Nov 3 (time not given) to Nov 4, 4:49 p.m. PT, varying by county",
+      "counties": [
+        {
+          "name": "Alameda",
+          "yes": 193325,
+          "no": 103295,
+          "asOf": "Nov 4, 2:07 a.m.",
+          "sourceUrl": "https://www.alamedacountyca.gov/rovresults/260/"
+        },
+        {
+          "name": "Contra Costa",
+          "yes": 146383,
+          "no": 114875,
+          "asOf": "Nov 3 (time not given)",
+          "sourceUrl": "https://www.contracosta.ca.gov/7761/Election-Results"
+        },
+        {
+          "name": "San Francisco",
+          "yes": 150307,
+          "no": 42620,
+          "asOf": "Nov 4, 4:00 p.m.",
+          "sourceUrl": "https://www.sfelections.org/results/20261103/"
+        },
+        {
+          "name": "San Mateo",
+          "yes": 82892,
+          "no": 56227,
+          "asOf": "Nov 4, 2:03 a.m.",
+          "sourceUrl": "https://smcacre.gov/elections/november-3-2026-election-results"
+        },
+        {
+          "name": "Santa Clara",
+          "yes": 164491,
+          "no": 139339,
+          "asOf": "Nov 4, 4:49 p.m.",
+          "sourceUrl": "https://www.sccvote.org"
+        }
+      ]
     }
   },
   "reportTime": "2026-11-04T19:20:00"

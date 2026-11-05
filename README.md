@@ -153,11 +153,11 @@ Two cloud routines run the fetcher and push to `main`: "CA Ballot Guide: results
 **Measure RTM** passes on the combined vote of five counties, and no official source publishes that combined total. `python3 scripts/fetch-rtm.py` reads three counties' official results: Alameda's results page, San Francisco's results page, and San Mateo's CSV, which it checks against San Mateo's results portal. It keeps each county's latest figures and update time in `rtm-counties.json`. Contra Costa and Santa Clara block automated requests, so enter them by hand from their official results pages:
 
 ```
-python3 scripts/fetch-rtm.py --county "Contra Costa=123456,98765" --county "Santa Clara=234567,198765" \
+python3 scripts/fetch-rtm.py --county "Contra Costa=123456,98765" --county "Santa Clara=234567,198765"  # plain digits, no thousands commas \
   --as-of "Nov 5, 2026 5:00 PM" --source-url https://...
 ```
 
-RTM appears on the site only once all five counties are present. Its page lists each county with its own update time, so a hand-entered county that has fallen behind is visible. The fetcher refuses a county whose total vote falls or whose update time goes backward. The results routines run it after the state fetch, and their environment must also allow `www.alamedacountyca.gov`, `www.sfelections.org`, `smcacre.gov`, and `www.livevoterturnout.com`.
+If a county report shows only a date, pass just the date (`--as-of "Nov 3, 2026"`). The page then says the time was not given. RTM appears on the site only once all five counties are present. Its page lists each county with its own update time, so a hand-entered county that has fallen behind is visible. The fetcher refuses a county whose total vote falls or whose update time goes backward. The results routines run it after the state fetch, and their environment must also allow `www.alamedacountyca.gov`, `www.sfelections.org`, `smcacre.gov`, and `www.livevoterturnout.com`.
 
 **Measures O, P, Q and R are entered by hand.** The Santa Clara County Registrar blocks automated requests. For example:
 
