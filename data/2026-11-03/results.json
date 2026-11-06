@@ -117,15 +117,15 @@
       "final": false
     },
     "RTM": {
-      "yes": 775619,
-      "no": 465203,
-      "yesPct": 62.5,
-      "noPct": 37.5,
+      "yes": 795635,
+      "no": 482768,
+      "yesPct": 62.2,
+      "noPct": 37.8,
       "outcome": "leading",
       "final": false,
       "source": "Sum of the five counties' official results",
       "sourceUrl": "",
-      "updated": "Nov 3 (time not given) to Nov 5, 4:00 p.m. PT, varying by county",
+      "updated": "Nov 3 (time not given) to Nov 5, 5:11 p.m. PT, varying by county",
       "counties": [
         {
           "name": "Alameda",
@@ -157,9 +157,9 @@
         },
         {
           "name": "Santa Clara",
-          "yes": 164491,
-          "no": 139339,
-          "asOf": "Nov 4, 4:49 p.m.",
+          "yes": 184507,
+          "no": 156904,
+          "asOf": "Nov 5, 5:11 p.m.",
           "sourceUrl": "https://www.sccvote.org"
         }
       ]
