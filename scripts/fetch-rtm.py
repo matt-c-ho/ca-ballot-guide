@@ -23,8 +23,8 @@ UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML,
 PAGES = {
     "Alameda": "https://www.alamedacountyca.gov/rovresults/260/",
     "San Francisco": "https://www.sfelections.org/results/20261103/",
-    # Linked as "Results on CSV" from https://smcacre.gov/elections/november-3-2026-election-results.
-    "San Mateo": "https://smcacre.gov/media/9143/download?attachment",
+    # The "Results on CSV" link on this page; the county posts each update under a new link.
+    "San Mateo": "https://smcacre.gov/elections/november-3-2026-election-results",
 }
 RESULTS_PAGE = {
     "Alameda": PAGES["Alameda"],
@@ -82,7 +82,10 @@ def san_francisco():
 
 
 def san_mateo():
-    rows = list(csv.reader(io.StringIO(get(PAGES["San Mateo"]))))
+    link = re.search(r'<a[^>]*href="(/media/\d+/download[^"]*)"[^>]*title="Results on CSV"', get(PAGES["San Mateo"]))
+    if not link:
+        raise Refused("San Mateo: 'Results on CSV' link not found on the county's results page")
+    rows = list(csv.reader(io.StringIO(get("https://smcacre.gov" + html.unescape(link[1])))))
     h = rows[0]
     try:
         title, name, votes = h.index("Contest_title"), h.index("candidate_name"), h.index("total_votes")
