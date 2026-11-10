@@ -1,22 +1,22 @@
 {
   "Alameda": {
-    "yes": 271677,
-    "no": 136936,
-    "asOf": "2026-11-06T17:32:00",
+    "yes": 354169,
+    "no": 175786,
+    "asOf": "2026-11-09T16:59:00",
     "sourceUrl": "https://www.alamedacountyca.gov/rovresults/260/",
     "how": "fetched"
   },
   "San Francisco": {
-    "yes": 253023,
-    "no": 67123,
-    "asOf": "2026-11-08T16:00:00",
+    "yes": 256951,
+    "no": 67837,
+    "asOf": "2026-11-09T16:00:00",
     "sourceUrl": "https://www.sfelections.org/results/20261103/",
     "how": "fetched"
   },
   "San Mateo": {
-    "yes": 99401,
-    "no": 66332,
-    "asOf": "2026-11-06T16:22:33",
+    "yes": 129438,
+    "no": 84825,
+    "asOf": "2026-11-09T16:27:09",
     "sourceUrl": "https://smcacre.gov/elections/november-3-2026-election-results",
     "how": "fetched"
   },
