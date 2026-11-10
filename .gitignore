@@ -3,3 +3,8 @@
 node_modules/
 .env*
 dist/
+
+# Claude Code personal settings and MCP config can hold tokens; never commit them
+.claude/settings.local.json
+.claude/*.local.*
+.mcp.json
