@@ -117,10 +117,10 @@
       "final": false
     },
     "RTM": {
-      "yes": 1166532,
-      "no": 672383,
-      "yesPct": 63.4,
-      "noPct": 36.6,
+      "yes": 1187258,
+      "no": 687539,
+      "yesPct": 63.3,
+      "noPct": 36.7,
       "outcome": "leading",
       "final": false,
       "source": "Sum of the five counties' official results",
@@ -157,9 +157,9 @@
         },
         {
           "name": "Santa Clara",
-          "yes": 224688,
-          "no": 190374,
-          "asOf": "Nov 7, 4:50 p.m.",
+          "yes": 245414,
+          "no": 205530,
+          "asOf": "Nov 8, 5:03 p.m.",
           "sourceUrl": "https://results.enr.clarityelections.com/CA/Santa_Clara/127570/web.345435/#/summary"
         }
       ]
