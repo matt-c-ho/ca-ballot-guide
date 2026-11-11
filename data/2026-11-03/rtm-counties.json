@@ -7,9 +7,9 @@
     "how": "fetched"
   },
   "San Francisco": {
-    "yes": 256951,
-    "no": 67837,
-    "asOf": "2026-11-09T16:00:00",
+    "yes": 259562,
+    "no": 68311,
+    "asOf": "2026-11-10T16:00:00",
     "sourceUrl": "https://www.sfelections.org/results/20261103/",
     "how": "fetched"
   },
