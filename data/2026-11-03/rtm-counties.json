@@ -21,16 +21,16 @@
     "how": "fetched"
   },
   "Contra Costa": {
-    "yes": 201286,
-    "no": 153561,
-    "asOf": "2026-11-06T15:03:32",
+    "yes": 236425,
+    "no": 176440,
+    "asOf": "2026-11-10T15:35:35",
     "sourceUrl": "https://www.contracosta.ca.gov/7761/Election-Results",
     "how": "entered by hand"
   },
   "Santa Clara": {
-    "yes": 271760,
-    "no": 225402,
-    "asOf": "2026-11-09T17:02:33",
+    "yes": 293137,
+    "no": 241540,
+    "asOf": "2026-11-10T17:08:38",
     "sourceUrl": "https://results.enr.clarityelections.com/CA/Santa_Clara/127570/web.345435/#/summary",
     "how": "entered by hand"
   }
