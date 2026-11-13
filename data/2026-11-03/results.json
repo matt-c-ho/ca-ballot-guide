@@ -117,15 +117,15 @@
       "final": false
     },
     "RTM": {
-      "yes": 1300988,
-      "no": 762192,
-      "yesPct": 63.1,
-      "noPct": 36.9,
+      "yes": 1332857,
+      "no": 783012,
+      "yesPct": 63.0,
+      "noPct": 37.0,
       "outcome": "leading",
       "final": false,
       "source": "Sum of the five counties' official results",
       "sourceUrl": "",
-      "updated": "Nov 9, 4:59 p.m. to Nov 12, 9:24 a.m. PT, varying by county",
+      "updated": "Nov 9, 4:59 p.m. to Nov 12, 5:03 p.m. PT, varying by county",
       "counties": [
         {
           "name": "Alameda",
@@ -157,9 +157,9 @@
         },
         {
           "name": "Santa Clara",
-          "yes": 293137,
-          "no": 241540,
-          "asOf": "Nov 10, 5:08 p.m.",
+          "yes": 325006,
+          "no": 262360,
+          "asOf": "Nov 12, 5:03 p.m.",
           "sourceUrl": "https://results.enr.clarityelections.com/CA/Santa_Clara/127570/web.345435/#/summary"
         }
       ]
