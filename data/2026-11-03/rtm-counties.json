@@ -1,8 +1,8 @@
 {
   "Alameda": {
-    "yes": 354169,
-    "no": 175786,
-    "asOf": "2026-11-09T16:59:00",
+    "yes": 363637,
+    "no": 178069,
+    "asOf": "2026-11-13T18:14:00",
     "sourceUrl": "https://www.alamedacountyca.gov/rovresults/260/",
     "how": "fetched"
   },
@@ -21,16 +21,16 @@
     "how": "fetched"
   },
   "Contra Costa": {
-    "yes": 236425,
-    "no": 176440,
-    "asOf": "2026-11-10T15:35:35",
+    "yes": 238439,
+    "no": 177506,
+    "asOf": "2026-11-13T15:05:19",
     "sourceUrl": "https://www.contracosta.ca.gov/7761/Election-Results",
     "how": "entered by hand"
   },
   "Santa Clara": {
-    "yes": 325006,
-    "no": 262360,
-    "asOf": "2026-11-12T17:03:51",
+    "yes": 326668,
+    "no": 263435,
+    "asOf": "2026-11-13T15:28:26",
     "sourceUrl": "https://results.enr.clarityelections.com/CA/Santa_Clara/127570/web.345435/#/summary",
     "how": "entered by hand"
   }

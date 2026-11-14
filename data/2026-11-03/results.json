@@ -117,28 +117,28 @@
       "final": false
     },
     "RTM": {
-      "yes": 1334100,
-      "no": 783397,
-      "yesPct": 63.0,
-      "noPct": 37.0,
+      "yes": 1347244,
+      "no": 787821,
+      "yesPct": 63.1,
+      "noPct": 36.9,
       "outcome": "leading",
       "final": false,
       "source": "Sum of the five counties' official results",
       "sourceUrl": "",
-      "updated": "Nov 9, 4:59 p.m. to Nov 13, 4:08 p.m. PT, varying by county",
+      "updated": "Nov 10, 4:00 p.m. to Nov 13, 6:14 p.m. PT, varying by county",
       "counties": [
         {
           "name": "Alameda",
-          "yes": 354169,
-          "no": 175786,
-          "asOf": "Nov 9, 4:59 p.m.",
+          "yes": 363637,
+          "no": 178069,
+          "asOf": "Nov 13, 6:14 p.m.",
           "sourceUrl": "https://www.alamedacountyca.gov/rovresults/260/"
         },
         {
           "name": "Contra Costa",
-          "yes": 236425,
-          "no": 176440,
-          "asOf": "Nov 10, 3:35 p.m.",
+          "yes": 238439,
+          "no": 177506,
+          "asOf": "Nov 13, 3:05 p.m.",
           "sourceUrl": "https://www.contracosta.ca.gov/7761/Election-Results"
         },
         {
@@ -157,9 +157,9 @@
         },
         {
           "name": "Santa Clara",
-          "yes": 325006,
-          "no": 262360,
-          "asOf": "Nov 12, 5:03 p.m.",
+          "yes": 326668,
+          "no": 263435,
+          "asOf": "Nov 13, 3:28 p.m.",
           "sourceUrl": "https://results.enr.clarityelections.com/CA/Santa_Clara/127570/web.345435/#/summary"
         }
       ]
