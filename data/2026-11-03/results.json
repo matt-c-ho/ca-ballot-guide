@@ -1,131 +1,131 @@
 {
   "status": "partial",
-  "updated": "November 12, 2026, 5:26 p.m. PT · 100.0% (23,860 of 23,860) precincts reporting",
+  "updated": "November 13, 2026, 5:41 p.m. PT · 100.0% (23,860 of 23,860) precincts reporting",
   "source": "California Secretary of State, semi-official results",
   "sourceUrl": "https://electionresults.sos.ca.gov/returns/ballot-measures",
   "measures": {
     "1": {
-      "yes": 7431747,
-      "no": 4741816,
-      "yesPct": 61.0,
-      "noPct": 39.0,
+      "yes": 7671623,
+      "no": 4894457,
+      "yesPct": 61.1,
+      "noPct": 38.9,
       "outcome": "leading",
       "final": false
     },
     "2": {
-      "yes": 7452045,
-      "no": 4711379,
-      "yesPct": 61.3,
-      "noPct": 38.7,
+      "yes": 7687286,
+      "no": 4868471,
+      "yesPct": 61.2,
+      "noPct": 38.8,
       "outcome": "leading",
       "final": false
     },
     "3": {
-      "yes": 7446087,
-      "no": 4827304,
+      "yes": 7692704,
+      "no": 4979302,
       "yesPct": 60.7,
       "noPct": 39.3,
       "outcome": "leading",
       "final": false
     },
     "4": {
-      "yes": 5968387,
-      "no": 6044166,
+      "yes": 6161137,
+      "no": 6239634,
       "yesPct": 49.7,
       "noPct": 50.3,
       "outcome": "trailing",
       "final": false
     },
     "5": {
-      "yes": 6127885,
-      "no": 5679394,
-      "yesPct": 51.9,
-      "noPct": 48.1,
+      "yes": 6311322,
+      "no": 5866443,
+      "yesPct": 51.8,
+      "noPct": 48.2,
       "outcome": "leading",
       "final": false
     },
     "37": {
-      "yes": 7554881,
-      "no": 4553452,
+      "yes": 7803813,
+      "no": 4695782,
       "yesPct": 62.4,
       "noPct": 37.6,
       "outcome": "leading",
       "final": false
     },
     "38": {
-      "yes": 6548501,
-      "no": 5589266,
-      "yesPct": 54.0,
-      "noPct": 46.0,
+      "yes": 6754186,
+      "no": 5774286,
+      "yesPct": 53.9,
+      "noPct": 46.1,
       "outcome": "leading",
       "final": false
     },
     "39": {
-      "yes": 4871114,
-      "no": 7477429,
-      "yesPct": 39.4,
-      "noPct": 60.6,
+      "yes": 5034170,
+      "no": 7714821,
+      "yesPct": 39.5,
+      "noPct": 60.5,
       "outcome": "trailing",
       "final": false
     },
     "40": {
-      "yes": 5882606,
-      "no": 6483165,
-      "yesPct": 47.6,
-      "noPct": 52.4,
+      "yes": 6089704,
+      "no": 6676867,
+      "yesPct": 47.7,
+      "noPct": 52.3,
       "outcome": "trailing",
       "final": false
     },
     "41": {
-      "yes": 5451798,
-      "no": 6688500,
+      "yes": 5622062,
+      "no": 6909754,
       "yesPct": 44.9,
       "noPct": 55.1,
       "outcome": "trailing",
       "final": false
     },
     "42": {
-      "yes": 6297179,
-      "no": 5962013,
-      "yesPct": 51.4,
-      "noPct": 48.6,
+      "yes": 6491507,
+      "no": 6163388,
+      "yesPct": 51.3,
+      "noPct": 48.7,
       "outcome": "leading",
       "final": false
     },
     "43": {
-      "yes": 5123154,
-      "no": 6934655,
-      "yesPct": 42.5,
-      "noPct": 57.5,
+      "yes": 5279327,
+      "no": 7166888,
+      "yesPct": 42.4,
+      "noPct": 57.6,
       "outcome": "trailing",
       "final": false
     },
     "44": {
-      "yes": 2153891,
-      "no": 9877471,
+      "yes": 2225539,
+      "no": 10194721,
       "yesPct": 17.9,
       "noPct": 82.1,
       "outcome": "trailing",
       "final": false
     },
     "45": {
-      "yes": 5234827,
-      "no": 6761782,
+      "yes": 5397124,
+      "no": 6987162,
       "yesPct": 43.6,
       "noPct": 56.4,
       "outcome": "trailing",
       "final": false
     },
     "RTM": {
-      "yes": 1332857,
-      "no": 783012,
+      "yes": 1334100,
+      "no": 783397,
       "yesPct": 63.0,
       "noPct": 37.0,
       "outcome": "leading",
       "final": false,
       "source": "Sum of the five counties' official results",
       "sourceUrl": "",
-      "updated": "Nov 9, 4:59 p.m. to Nov 12, 5:03 p.m. PT, varying by county",
+      "updated": "Nov 9, 4:59 p.m. to Nov 13, 4:08 p.m. PT, varying by county",
       "counties": [
         {
           "name": "Alameda",
@@ -150,9 +150,9 @@
         },
         {
           "name": "San Mateo",
-          "yes": 157695,
-          "no": 100115,
-          "asOf": "Nov 12, 9:24 a.m.",
+          "yes": 158938,
+          "no": 100500,
+          "asOf": "Nov 13, 4:08 p.m.",
           "sourceUrl": "https://smcacre.gov/elections/november-3-2026-election-results"
         },
         {
@@ -165,5 +165,5 @@
       ]
     }
   },
-  "reportTime": "2026-11-12T17:26:00"
+  "reportTime": "2026-11-13T17:41:00"
 }
