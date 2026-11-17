@@ -117,21 +117,21 @@
       "final": false
     },
     "RTM": {
-      "yes": 1347374,
-      "no": 787881,
+      "yes": 1352565,
+      "no": 789304,
       "yesPct": 63.1,
       "noPct": 36.9,
       "outcome": "leading",
       "final": false,
       "source": "Sum of the five counties' official results",
       "sourceUrl": "",
-      "updated": "Nov 10, 4:00 p.m. to Nov 16, 4:23 p.m. PT, varying by county",
+      "updated": "Nov 10, 4:00 p.m. to Nov 16, 6:53 p.m. PT, varying by county",
       "counties": [
         {
           "name": "Alameda",
-          "yes": 363637,
-          "no": 178069,
-          "asOf": "Nov 13, 6:14 p.m.",
+          "yes": 364100,
+          "no": 178183,
+          "asOf": "Nov 16, 6:53 p.m.",
           "sourceUrl": "https://www.alamedacountyca.gov/rovresults/260/"
         },
         {
@@ -157,9 +157,9 @@
         },
         {
           "name": "Santa Clara",
-          "yes": 326668,
-          "no": 263435,
-          "asOf": "Nov 13, 3:28 p.m.",
+          "yes": 331396,
+          "no": 264744,
+          "asOf": "Nov 16, 4:32 p.m.",
           "sourceUrl": "https://results.enr.clarityelections.com/CA/Santa_Clara/127570/web.345435/#/summary"
         }
       ]

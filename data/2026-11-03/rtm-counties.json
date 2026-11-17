@@ -1,8 +1,8 @@
 {
   "Alameda": {
-    "yes": 363637,
-    "no": 178069,
-    "asOf": "2026-11-13T18:14:00",
+    "yes": 364100,
+    "no": 178183,
+    "asOf": "2026-11-16T18:53:00",
     "sourceUrl": "https://www.alamedacountyca.gov/rovresults/260/",
     "how": "fetched"
   },
@@ -28,9 +28,9 @@
     "how": "entered by hand"
   },
   "Santa Clara": {
-    "yes": 326668,
-    "no": 263435,
-    "asOf": "2026-11-13T15:28:26",
+    "yes": 331396,
+    "no": 264744,
+    "asOf": "2026-11-16T16:32:45",
     "sourceUrl": "https://results.enr.clarityelections.com/CA/Santa_Clara/127570/web.345435/#/summary",
     "how": "entered by hand"
   }
