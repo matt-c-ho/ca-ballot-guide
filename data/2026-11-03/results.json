@@ -1,116 +1,116 @@
 {
   "status": "partial",
-  "updated": "November 18, 2026, 5:21 p.m. PT · 100.0% (23,860 of 23,860) precincts reporting",
+  "updated": "November 19, 2026, 5:05 p.m. PT · 100.0% (23,860 of 23,860) precincts reporting",
   "source": "California Secretary of State, semi-official results",
   "sourceUrl": "https://electionresults.sos.ca.gov/returns/ballot-measures",
   "measures": {
     "1": {
-      "yes": 7843654,
-      "no": 4986245,
+      "yes": 7850771,
+      "no": 4988224,
       "yesPct": 61.1,
       "noPct": 38.9,
       "outcome": "leading",
       "final": false
     },
     "2": {
-      "yes": 7853053,
-      "no": 4965286,
+      "yes": 7859814,
+      "no": 4967516,
       "yesPct": 61.3,
       "noPct": 38.7,
       "outcome": "leading",
       "final": false
     },
     "3": {
-      "yes": 7865183,
-      "no": 5071341,
+      "yes": 7872199,
+      "no": 5073464,
       "yesPct": 60.8,
       "noPct": 39.2,
       "outcome": "leading",
       "final": false
     },
     "4": {
-      "yes": 6298755,
-      "no": 6360153,
+      "yes": 6304468,
+      "no": 6363345,
       "yesPct": 49.8,
       "noPct": 50.2,
       "outcome": "trailing",
       "final": false
     },
     "5": {
-      "yes": 6457343,
-      "no": 5982606,
+      "yes": 6462792,
+      "no": 5985814,
       "yesPct": 51.9,
       "noPct": 48.1,
       "outcome": "leading",
       "final": false
     },
     "37": {
-      "yes": 7974951,
-      "no": 4783873,
+      "yes": 7981649,
+      "no": 4786131,
       "yesPct": 62.5,
       "noPct": 37.5,
       "outcome": "leading",
       "final": false
     },
     "38": {
-      "yes": 6893078,
-      "no": 5895274,
+      "yes": 6897944,
+      "no": 5899362,
       "yesPct": 53.9,
       "noPct": 46.1,
       "outcome": "leading",
       "final": false
     },
     "39": {
-      "yes": 5137242,
-      "no": 7876030,
+      "yes": 5140213,
+      "no": 7882179,
       "yesPct": 39.5,
       "noPct": 60.5,
       "outcome": "trailing",
       "final": false
     },
     "40": {
-      "yes": 6238610,
-      "no": 6793688,
+      "yes": 6244824,
+      "no": 6796618,
       "yesPct": 47.9,
       "noPct": 52.1,
       "outcome": "trailing",
       "final": false
     },
     "41": {
-      "yes": 5729089,
-      "no": 7063296,
+      "yes": 5732146,
+      "no": 7069224,
       "yesPct": 44.8,
       "noPct": 55.2,
       "outcome": "trailing",
       "final": false
     },
     "42": {
-      "yes": 6614165,
-      "no": 6303362,
+      "yes": 6617658,
+      "no": 6308893,
       "yesPct": 51.2,
       "noPct": 48.8,
       "outcome": "leading",
       "final": false
     },
     "43": {
-      "yes": 5377483,
-      "no": 7327065,
+      "yes": 5380175,
+      "no": 7333275,
       "yesPct": 42.3,
       "noPct": 57.7,
       "outcome": "trailing",
       "final": false
     },
     "44": {
-      "yes": 2275768,
-      "no": 10402196,
+      "yes": 2277966,
+      "no": 10408932,
       "yesPct": 18.0,
       "noPct": 82.0,
       "outcome": "trailing",
       "final": false
     },
     "45": {
-      "yes": 5502896,
-      "no": 7138872,
+      "yes": 5506308,
+      "no": 7144333,
       "yesPct": 43.5,
       "noPct": 56.5,
       "outcome": "trailing",
@@ -165,5 +165,5 @@
       ]
     }
   },
-  "reportTime": "2026-11-18T17:21:00"
+  "reportTime": "2026-11-19T17:05:00"
 }
