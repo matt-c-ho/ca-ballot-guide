@@ -7,16 +7,16 @@
     "how": "fetched"
   },
   "San Francisco": {
-    "yes": 260607,
-    "no": 68495,
-    "asOf": "2026-11-17T16:00:00",
+    "yes": 260764,
+    "no": 68535,
+    "asOf": "2026-11-23T16:00:00",
     "sourceUrl": "https://www.sfelections.org/results/20261103/",
     "how": "fetched"
   },
   "San Mateo": {
-    "yes": 159068,
-    "no": 100560,
-    "asOf": "2026-11-16T16:23:47",
+    "yes": 159288,
+    "no": 100688,
+    "asOf": "2026-11-23T16:29:45",
     "sourceUrl": "https://smcacre.gov/elections/november-3-2026-election-results",
     "how": "fetched"
   },
