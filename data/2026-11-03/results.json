@@ -1,137 +1,137 @@
 {
   "status": "partial",
-  "updated": "November 25, 2026, 5:38 p.m. PT · 100.0% (23,860 of 23,860) precincts reporting",
+  "updated": "November 25, 2026, 6:54 p.m. PT · 100.0% (23,860 of 23,860) precincts reporting",
   "source": "California Secretary of State, semi-official results",
   "sourceUrl": "https://electionresults.sos.ca.gov/returns/ballot-measures",
   "measures": {
     "1": {
-      "yes": 7908291,
-      "no": 5011562,
+      "yes": 7912244,
+      "no": 5013208,
       "yesPct": 61.2,
       "noPct": 38.8,
       "outcome": "leading",
       "final": false
     },
     "2": {
-      "yes": 7914903,
-      "no": 4993022,
+      "yes": 7918710,
+      "no": 4994809,
       "yesPct": 61.3,
       "noPct": 38.7,
       "outcome": "leading",
       "final": false
     },
     "3": {
-      "yes": 7929574,
-      "no": 5097791,
+      "yes": 7933536,
+      "no": 5099455,
       "yesPct": 60.9,
       "noPct": 39.1,
       "outcome": "leading",
       "final": false
     },
     "4": {
-      "yes": 6350999,
-      "no": 6396757,
+      "yes": 6354181,
+      "no": 6399083,
       "yesPct": 49.8,
       "noPct": 50.2,
       "outcome": "trailing",
       "final": false
     },
     "5": {
-      "yes": 6507837,
-      "no": 6019012,
+      "yes": 6511022,
+      "no": 6021239,
       "yesPct": 52.0,
       "noPct": 48.0,
       "outcome": "leading",
       "final": false
     },
     "37": {
-      "yes": 8038079,
-      "no": 4810389,
+      "yes": 8041970,
+      "no": 4812020,
       "yesPct": 62.6,
       "noPct": 37.4,
       "outcome": "leading",
       "final": false
     },
     "38": {
-      "yes": 6942929,
-      "no": 5935565,
+      "yes": 6945930,
+      "no": 5938115,
       "yesPct": 53.9,
       "noPct": 46.1,
       "outcome": "leading",
       "final": false
     },
     "39": {
-      "yes": 5170624,
-      "no": 7934242,
+      "yes": 5172758,
+      "no": 7937763,
       "yesPct": 39.5,
       "noPct": 60.5,
       "outcome": "trailing",
       "final": false
     },
     "40": {
-      "yes": 6294852,
-      "no": 6829675,
+      "yes": 6298238,
+      "no": 6831957,
       "yesPct": 48.0,
       "noPct": 52.0,
       "outcome": "trailing",
       "final": false
     },
     "41": {
-      "yes": 5764169,
-      "no": 7118332,
+      "yes": 5766431,
+      "no": 7121626,
       "yesPct": 44.7,
       "noPct": 55.3,
       "outcome": "trailing",
       "final": false
     },
     "42": {
-      "yes": 6654356,
-      "no": 6353934,
+      "yes": 6656959,
+      "no": 6356934,
       "yesPct": 51.2,
       "noPct": 48.8,
       "outcome": "leading",
       "final": false
     },
     "43": {
-      "yes": 5408562,
-      "no": 7384732,
+      "yes": 5410588,
+      "no": 7388211,
       "yesPct": 42.3,
       "noPct": 57.7,
       "outcome": "trailing",
       "final": false
     },
     "44": {
-      "yes": 2296807,
-      "no": 10471118,
+      "yes": 2298191,
+      "no": 10475248,
       "yesPct": 18.0,
       "noPct": 82.0,
       "outcome": "trailing",
       "final": false
     },
     "45": {
-      "yes": 5539744,
-      "no": 7191698,
+      "yes": 5542070,
+      "no": 7194874,
       "yesPct": 43.5,
       "noPct": 56.5,
       "outcome": "trailing",
       "final": false
     },
     "RTM": {
-      "yes": 1359542,
-      "no": 791977,
+      "yes": 1359953,
+      "no": 792164,
       "yesPct": 63.2,
       "noPct": 36.8,
       "outcome": "leading",
       "final": false,
       "source": "Sum of the five counties' official results",
       "sourceUrl": "",
-      "updated": "Nov 16, 6:53 p.m. to Nov 23, 4:29 p.m. PT, varying by county",
+      "updated": "Nov 20, 4:26 p.m. to Nov 25, 6:34 p.m. PT, varying by county",
       "counties": [
         {
           "name": "Alameda",
-          "yes": 364100,
-          "no": 178183,
-          "asOf": "Nov 16, 6:53 p.m.",
+          "yes": 364511,
+          "no": 178370,
+          "asOf": "Nov 25, 6:34 p.m.",
           "sourceUrl": "https://www.alamedacountyca.gov/rovresults/260/"
         },
         {
@@ -165,5 +165,5 @@
       ]
     }
   },
-  "reportTime": "2026-11-25T17:38:00"
+  "reportTime": "2026-11-25T18:54:00"
 }
